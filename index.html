@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save One Person — What If One Introduction Could Save a Life?</title>
+<meta name="description" content="Save One Person uses the power of media to connect people who need living organ donors with people willing to save a life.">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green:  #1A685B;
+    --green2: #145248;
+    --yellow: #FFAC00;
+    --dark:   #1f1f1f;
+    --gray:   #797E88;
+    --light:  #f6f6f6;
+    --white:  #ffffff;
+  }
+
+  body { font-family: 'Nunito', sans-serif; color: var(--gray); background: var(--white); }
+
+  a { text-decoration: none; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 48px;
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.08);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; }
+  .nav-logo img { height: 56px; width: 56px; }
+  .nav-logo span { font-size: 17px; font-weight: 900; color: #1A685B; letter-spacing: 0.5px; line-height: 1.2; }
+  .nav-logo span small { display: block; font-size: 10px; font-weight: 600; color: #FFAC00; letter-spacing: 2px; text-transform: uppercase; }
+  .nav-btns { display: flex; gap: 12px; align-items: center; }
+  .btn-green {
+    background: var(--green); color: var(--white);
+    padding: 11px 26px; border-radius: 6px;
+    font-size: 14px; font-weight: 700;
+    transition: background 0.2s;
+  }
+  .btn-green:hover { background: var(--green2); }
+  .btn-yellow {
+    background: var(--yellow); color: var(--white);
+    padding: 11px 26px; border-radius: 6px;
+    font-size: 14px; font-weight: 700;
+    transition: opacity 0.2s;
+  }
+  .btn-yellow:hover { opacity: 0.88; }
+  .btn-outline {
+    border: 2px solid var(--green); color: var(--green);
+    padding: 9px 22px; border-radius: 6px;
+    font-size: 14px; font-weight: 700;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover { background: var(--green); color: white; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: #0f1f1c;
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    padding-top: 80px;
+  }
+  .hero-text {
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 80px 64px 80px 72px;
+    text-align: left;
+  }
+  .hero-image {
+    position: relative; overflow: hidden;
+  }
+  .hero-image img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .hero h1 {
+    font-size: clamp(32px, 4vw, 60px);
+    font-weight: 900; color: var(--white);
+    line-height: 1.1; margin-bottom: 24px;
+  }
+  .hero h1 span { color: var(--yellow); }
+  .hero p {
+    font-size: 18px; color: rgba(255,255,255,0.8);
+    max-width: 520px; line-height: 1.75; margin-bottom: 40px;
+  }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; }
+  .btn-hero-primary {
+    background: var(--yellow); color: var(--white);
+    padding: 16px 40px; border-radius: 6px;
+    font-size: 16px; font-weight: 800;
+    transition: opacity 0.2s;
+    box-shadow: 0 4px 20px rgba(255,172,0,0.4);
+  }
+  .btn-hero-primary:hover { opacity: 0.9; }
+  .btn-hero-secondary {
+    background: var(--green); color: var(--white);
+    padding: 16px 36px; border-radius: 6px;
+    font-size: 16px; font-weight: 800;
+    transition: background 0.2s;
+  }
+  .btn-hero-secondary:hover { background: var(--green2); }
+  .btn-hero-outline {
+    background: transparent; color: var(--white);
+    padding: 14px 34px; border-radius: 6px;
+    font-size: 16px; font-weight: 700;
+    border: 2px solid rgba(255,255,255,0.6);
+    transition: border-color 0.2s;
+  }
+  .btn-hero-outline:hover { border-color: white; }
+
+  /* ── SECTIONS ── */
+  section { padding: 88px 48px; }
+  .container { max-width: 960px; margin: 0 auto; }
+  .section-label {
+    font-size: 12px; font-weight: 800; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--yellow);
+    margin-bottom: 14px;
+  }
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 900; color: var(--dark);
+    line-height: 1.2; margin-bottom: 20px;
+  }
+  .lead { font-size: 18px; line-height: 1.8; color: var(--gray); max-width: 680px; }
+
+  /* ── MISSION ── */
+  .mission { background: var(--light); }
+  .mission-body { margin-top: 36px; }
+  .mission-body p {
+    font-size: 18px; line-height: 1.85; color: var(--gray);
+    margin-bottom: 16px; max-width: 780px;
+  }
+  blockquote {
+    margin-top: 44px;
+    border-left: 5px solid var(--green);
+    padding: 24px 32px;
+    background: white;
+    border-radius: 0 8px 8px 0;
+    font-size: 20px; font-style: italic;
+    color: var(--dark); font-weight: 700;
+    line-height: 1.7;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  }
+
+  /* ── WHAT WE DO ── */
+  .what { background: var(--white); }
+  .three-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 48px; }
+  .service-card {
+    background: var(--light); border-radius: 10px;
+    padding: 36px 28px;
+    border-top: 4px solid var(--green);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+  .service-card h3 { font-size: 20px; font-weight: 800; color: var(--dark); margin-bottom: 12px; }
+  .service-card p { font-size: 15px; line-height: 1.75; }
+
+  /* ── HOW TO HELP ── */
+  .help { background: var(--light); }
+  .help-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 48px; }
+  .help-card {
+    background: var(--white); border-radius: 10px;
+    padding: 36px 28px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  }
+  .help-card h3 { font-size: 20px; font-weight: 800; color: var(--green); margin-bottom: 14px; }
+  .help-card p { font-size: 15px; line-height: 1.75; }
+
+  /* ── WHY ── */
+  .why { background: var(--green); }
+  .why .section-label { color: var(--yellow); }
+  .why h2 { color: var(--white); }
+  .why .lead { color: rgba(255,255,255,0.85); }
+  .why-body { margin-top: 32px; }
+  .why-body p { font-size: 18px; line-height: 1.85; color: rgba(255,255,255,0.85); margin-bottom: 16px; max-width: 780px; }
+
+  /* ── DONATE ── */
+  .donate { background: var(--white); text-align: center; }
+  .donate h2 { max-width: 700px; margin: 0 auto 20px; }
+  .donate-list {
+    list-style: none; margin: 32px auto;
+    max-width: 560px; text-align: left;
+  }
+  .donate-list li {
+    font-size: 16px; line-height: 1.9; color: var(--gray);
+    padding-left: 28px; position: relative;
+  }
+  .donate-list li::before {
+    content: '✓'; position: absolute; left: 0;
+    color: var(--green); font-weight: 800;
+  }
+  .donate-tagline {
+    font-size: 18px; font-weight: 700; color: var(--dark);
+    margin: 8px 0 32px; line-height: 1.6;
+  }
+  .donate .btn-big {
+    background: var(--yellow); color: var(--white);
+    padding: 18px 60px; border-radius: 6px;
+    font-size: 18px; font-weight: 900;
+    display: inline-block;
+    box-shadow: 0 6px 24px rgba(255,172,0,0.4);
+    transition: opacity 0.2s;
+  }
+  .donate .btn-big:hover { opacity: 0.9; }
+  .donate-note { margin-top: 16px; font-size: 13px; color: #aaa; }
+  .donate-contact { margin-top: 32px; font-size: 16px; color: var(--gray); line-height: 2; }
+  .donate-contact a { color: var(--green); font-weight: 700; }
+
+  /* ── CLOSING ── */
+  .closing { background: var(--dark); text-align: center; }
+  .closing h2 { color: var(--white); max-width: 700px; margin: 0 auto 16px; }
+  .closing p { max-width: 500px; margin: 0 auto 40px; font-size: 18px; color: rgba(255,255,255,0.7); line-height: 1.8; }
+  .closing .tagline {
+    margin-top: 48px; font-size: 18px; font-style: italic;
+    color: var(--yellow); font-weight: 700;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #111; padding: 40px 48px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px;
+    border-top: 3px solid var(--green);
+  }
+  .footer-logo { display: flex; align-items: center; gap: 12px; }
+  .footer-logo img { height: 52px; width: 52px; }
+  .footer-logo span { font-size: 16px; font-weight: 900; color: white; }
+  .footer-info { text-align: right; }
+  .footer-info p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 2; }
+  .footer-info a { color: var(--yellow); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 860px) {
+    nav { padding: 14px 20px; }
+    section { padding: 64px 24px; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-image { height: 320px; }
+    .hero-text { padding: 40px 24px; text-align: center; }
+    .hero-btns { justify-content: center; }
+    .three-grid, .help-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; padding: 32px 24px; }
+    .footer-info { text-align: center; }
+    .nav-btns .btn-outline { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://saveoneperson.org" class="nav-logo">
+    <img src="https://sendy.saveonepersonnow.org/uploads/IMG_3407-1-1.png" alt="Save One Person">
+    <span>Save One Person<small>501(c)(3) Nonprofit</small></span>
+  </a>
+  <div class="nav-btns">
+    <a href="tel:9175726385" class="btn-outline">Call Lauren</a>
+    <a href="mailto:Save1Person@aol.com" class="btn-green">Partner With Us</a>
+    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-yellow" target="_blank">Donate Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>What If One Introduction<br>Could <span>Save a Life?</span></h1>
+    <p>Save One Person uses the power of media to connect people who need living organ donors with people willing to save a life.</p>
+    <div class="hero-btns">
+      <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-hero-primary" target="_blank">Donate Now</a>
+      <a href="mailto:Save1Person@aol.com" class="btn-hero-secondary">Partner With Us</a>
+      <a href="tel:9175726385" class="btn-hero-outline">Call Lauren &nbsp; 917-572-6385</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=960&q=90" alt="Organ donation - hands forming a heart">
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+  <div class="container">
+    <div class="section-label">Our Mission</div>
+    <h2>Save One Person</h2>
+    <div class="mission-body">
+      <p>Save One Person is dedicated to helping connect people who need living kidney and liver donors with individuals willing to save a life.</p>
+      <p>We believe media can be one of the most powerful tools for creating miracles.</p>
+      <p>A single story can reach thousands of people.</p>
+      <p>One of those people may become the donor that changes a life forever.</p>
+      <blockquote>
+        "One story can save a life.<br>
+        One donor can save a life.<br>
+        One introduction can save a life."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="what" id="what-we-do">
+  <div class="container">
+    <div class="section-label">What We Do</div>
+    <h2>How We Create Miracles</h2>
+    <div class="three-grid">
+      <div class="service-card">
+        <h3>Media Outreach</h3>
+        <p>We share life-saving stories through television, radio, podcasts, newspapers, social media, and digital platforms.</p>
+      </div>
+      <div class="service-card">
+        <h3>Create Connections</h3>
+        <p>We help create opportunities for people in need of living organ donors to be seen and heard.</p>
+      </div>
+      <div class="service-card">
+        <h3>Build Partnerships</h3>
+        <p>We work with media companies, philanthropists, healthcare leaders, corporations, influencers, and community organizations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO HELP -->
+<section class="help" id="help">
+  <div class="container">
+    <div class="section-label">How You Can Help</div>
+    <h2>Join the Mission</h2>
+    <div class="help-grid">
+      <div class="help-card">
+        <h3>Donate</h3>
+        <p>Your tax-deductible contribution helps us expand our reach and tell more life-saving stories.</p>
+      </div>
+      <div class="help-card">
+        <h3>Make an Introduction</h3>
+        <p>Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.</p>
+      </div>
+      <div class="help-card">
+        <h3>Become a Partner</h3>
+        <p>Organizations and companies can help amplify life-saving messages and expand our impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS MATTERS -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-label">Why This Matters</div>
+    <h2>The Gap We Close</h2>
+    <div class="why-body">
+      <p>Many people in need of living organ donors are waiting, hoping, and praying for someone to step forward.</p>
+      <p>Many potential donors would gladly help if they simply heard the right story.</p>
+      <p>Save One Person exists to close that gap through media, technology, storytelling, and human connection.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section class="donate" id="donate">
+  <div class="container">
+    <div class="section-label">Support the Mission</div>
+    <h2>Make a Tax-Deductible Donation</h2>
+    <p class="lead" style="margin: 0 auto;">Your donation helps us:</p>
+    <ul class="donate-list">
+      <li>Expand media outreach</li>
+      <li>Share more life-saving stories</li>
+      <li>Reach more potential living donors</li>
+      <li>Build technology and AI tools</li>
+      <li>Educate the public about living organ donation</li>
+      <li>Create more opportunities for life-saving matches</li>
+    </ul>
+    <p class="donate-tagline">
+      A single story can reach thousands.<br>
+      A single introduction can save a life.<br>
+      A single donation can help create a miracle.
+    </p>
+    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-big" target="_blank">Donate Now</a>
+    <p class="donate-note">Save One Person is a registered 501(c)(3) nonprofit. All donations are tax-deductible.</p>
+    <div class="donate-contact">
+      Questions? Call or Text Lauren<br>
+      <a href="tel:9175726385">917-572-6385</a> &nbsp;|&nbsp;
+      <a href="mailto:Save1Person@aol.com">Save1Person@aol.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="container">
+    <h2>Let's Bring Forth the Future of Living Organ Donation Together</h2>
+    <p>Every day someone is waiting for a miracle. Together we can help more people find one.</p>
+    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-big" style="background:var(--yellow);color:white;padding:18px 60px;border-radius:6px;font-size:18px;font-weight:900;display:inline-block;box-shadow:0 6px 24px rgba(255,172,0,0.4);" target="_blank">Donate Now</a>
+    <p class="tagline">Because sometimes one introduction can save a life.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="https://sendy.saveonepersonnow.org/uploads/IMG_3407-1-1.png" alt="Save One Person">
+    <span>Save One Person</span>
+  </div>
+  <div class="footer-info">
+    <p>
+      <strong style="color:white;">Lauren Finkelstein</strong> &nbsp;|&nbsp; Founder, Save One Person<br>
+      <a href="tel:9175726385">917-572-6385</a> &nbsp;|&nbsp;
+      <a href="mailto:Save1Person@aol.com">Save1Person@aol.com</a> &nbsp;|&nbsp;
+      <a href="https://www.saveoneperson.org" target="_blank">www.saveoneperson.org</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
