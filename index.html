@@ -3,417 +3,2033 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Save One Person — What If One Introduction Could Save a Life?</title>
-<meta name="description" content="Save One Person uses the power of media to connect people who need living organ donors with people willing to save a life.">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+<title>Save One Person — One Introduction Can Save a Life</title>
+<meta name="description" content="Save One Person uses the power of media, storytelling, and human connection to help people in need of living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles find the support they need. Donate, partner, or share a story to help save a life.">
+<meta name="author" content="Save One Person">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600;1,9..144,700&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img, video { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
 
-  :root {
-    --green:  #1A685B;
-    --green2: #145248;
-    --yellow: #FFAC00;
-    --dark:   #1f1f1f;
-    --gray:   #797E88;
-    --light:  #f6f6f6;
-    --white:  #ffffff;
-  }
+/* ── TOKENS ── */
+:root {
+  --emerald:        #008e40;
+  --emerald-soft:   #7fd4a4;
+  --emerald-dark:   #006830;
+  --navy:           #1c2029;
+  --navy-deep:      #0f1620; /* oklch(0.155 0.04 265) — source future/footer bg */
+  --background:     #ffffff;
+  --secondary:      #e4eaf0;
+  --card:           #ffffff;
+  --border:         #bec8d4;
+  --foreground:     #1c2029;
+  --muted:          #6b7280;
+  --white:          #ffffff;
 
-  body { font-family: 'Nunito', sans-serif; color: var(--gray); background: var(--white); }
+  --grad-emerald:   linear-gradient(135deg, #008e40 0%, #00b356 100%);
+  --grad-navy:      linear-gradient(135deg, #010207 0%, #1c2029 100%);
 
-  a { text-decoration: none; }
+  --shadow-soft:    0 8px 32px rgba(0,0,0,0.10);
+  --shadow-glow:    0 0 32px rgba(0,142,64,0.40);
 
-  /* ── NAV ── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 18px 48px;
-    background: rgba(255,255,255,0.96);
-    box-shadow: 0 1px 20px rgba(0,0,0,0.08);
-  }
-  .nav-logo { display: flex; align-items: center; gap: 12px; }
-  .nav-logo img { height: 56px; width: 56px; }
-  .nav-logo span { font-size: 17px; font-weight: 900; color: #1A685B; letter-spacing: 0.5px; line-height: 1.2; }
-  .nav-logo span small { display: block; font-size: 10px; font-weight: 600; color: #FFAC00; letter-spacing: 2px; text-transform: uppercase; }
-  .nav-btns { display: flex; gap: 12px; align-items: center; }
-  .btn-green {
-    background: var(--green); color: var(--white);
-    padding: 11px 26px; border-radius: 6px;
-    font-size: 14px; font-weight: 700;
-    transition: background 0.2s;
-  }
-  .btn-green:hover { background: var(--green2); }
-  .btn-yellow {
-    background: var(--yellow); color: var(--white);
-    padding: 11px 26px; border-radius: 6px;
-    font-size: 14px; font-weight: 700;
-    transition: opacity 0.2s;
-  }
-  .btn-yellow:hover { opacity: 0.88; }
-  .btn-outline {
-    border: 2px solid var(--green); color: var(--green);
-    padding: 9px 22px; border-radius: 6px;
-    font-size: 14px; font-weight: 700;
-    transition: all 0.2s;
-  }
-  .btn-outline:hover { background: var(--green); color: white; }
+  --r-xl:  16px;
+  --r-2xl: 20px;
+  --r-3xl: 24px;
 
-  /* ── HERO ── */
-  .hero {
-    min-height: 100vh;
-    background: #0f1f1c;
-    display: grid;
-    grid-template-columns: 1fr 480px;
-    padding-top: 80px;
-  }
-  .hero-text {
-    display: flex; flex-direction: column;
-    justify-content: center;
-    padding: 80px 64px 80px 72px;
-    text-align: left;
-  }
-  .hero-image {
-    position: relative; overflow: hidden;
-  }
-  .hero-image img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-  }
-  .hero h1 {
-    font-size: clamp(32px, 4vw, 60px);
-    font-weight: 900; color: var(--white);
-    line-height: 1.1; margin-bottom: 24px;
-  }
-  .hero h1 span { color: var(--yellow); }
-  .hero p {
-    font-size: 18px; color: rgba(255,255,255,0.8);
-    max-width: 520px; line-height: 1.75; margin-bottom: 40px;
-  }
-  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; }
-  .btn-hero-primary {
-    background: var(--yellow); color: var(--white);
-    padding: 16px 40px; border-radius: 6px;
-    font-size: 16px; font-weight: 800;
-    transition: opacity 0.2s;
-    box-shadow: 0 4px 20px rgba(255,172,0,0.4);
-  }
-  .btn-hero-primary:hover { opacity: 0.9; }
-  .btn-hero-secondary {
-    background: var(--green); color: var(--white);
-    padding: 16px 36px; border-radius: 6px;
-    font-size: 16px; font-weight: 800;
-    transition: background 0.2s;
-  }
-  .btn-hero-secondary:hover { background: var(--green2); }
-  .btn-hero-outline {
-    background: transparent; color: var(--white);
-    padding: 14px 34px; border-radius: 6px;
-    font-size: 16px; font-weight: 700;
-    border: 2px solid rgba(255,255,255,0.6);
-    transition: border-color 0.2s;
-  }
-  .btn-hero-outline:hover { border-color: white; }
+  --dur-fast:   120ms;
+  --dur-base:   240ms;
+  --dur-slow:   500ms;
+  --dur-slower: 900ms;
 
-  /* ── SECTIONS ── */
-  section { padding: 88px 48px; }
-  .container { max-width: 960px; margin: 0 auto; }
-  .section-label {
-    font-size: 12px; font-weight: 800; letter-spacing: 3px;
-    text-transform: uppercase; color: var(--yellow);
-    margin-bottom: 14px;
-  }
-  h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: clamp(28px, 3.5vw, 44px);
-    font-weight: 900; color: var(--dark);
-    line-height: 1.2; margin-bottom: 20px;
-  }
-  .lead { font-size: 18px; line-height: 1.8; color: var(--gray); max-width: 680px; }
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  /* ── MISSION ── */
-  .mission { background: var(--light); }
-  .mission-body { margin-top: 36px; }
-  .mission-body p {
-    font-size: 18px; line-height: 1.85; color: var(--gray);
-    margin-bottom: 16px; max-width: 780px;
-  }
-  blockquote {
-    margin-top: 44px;
-    border-left: 5px solid var(--green);
-    padding: 24px 32px;
-    background: white;
-    border-radius: 0 8px 8px 0;
-    font-size: 20px; font-style: italic;
-    color: var(--dark); font-weight: 700;
-    line-height: 1.7;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-  }
+/* ── BASE ── */
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+}
+.font-display { font-family: 'Fraunces', serif; }
 
-  /* ── WHAT WE DO ── */
-  .what { background: var(--white); }
-  .three-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 48px; }
-  .service-card {
-    background: var(--light); border-radius: 10px;
-    padding: 36px 28px;
-    border-top: 4px solid var(--green);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-  .service-card h3 { font-size: 20px; font-weight: 800; color: var(--dark); margin-bottom: 12px; }
-  .service-card p { font-size: 15px; line-height: 1.75; }
+/* ── UTILITIES ── */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+.container-md { max-width: 896px; margin: 0 auto; padding: 0 40px; }
+.container-5xl { max-width: 1024px; margin: 0 auto; padding: 0 40px; }
+.container-6xl { max-width: 1152px; margin: 0 auto; padding: 0 40px; }
+.text-emerald { color: var(--emerald); }
+.text-emerald-soft { color: var(--emerald-soft); }
+.text-navy { color: var(--navy); }
+.text-muted { color: var(--muted); }
+.text-balance { text-wrap: balance; }
 
-  /* ── HOW TO HELP ── */
-  .help { background: var(--light); }
-  .help-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 48px; }
-  .help-card {
-    background: var(--white); border-radius: 10px;
-    padding: 36px 28px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.05);
-  }
-  .help-card h3 { font-size: 20px; font-weight: 800; color: var(--green); margin-bottom: 14px; }
-  .help-card p { font-size: 15px; line-height: 1.75; }
+/* ── GLASS ── */
+.glass {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.13);
+}
+.glass-light {
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.55);
+}
 
-  /* ── WHY ── */
-  .why { background: var(--green); }
-  .why .section-label { color: var(--yellow); }
-  .why h2 { color: var(--white); }
-  .why .lead { color: rgba(255,255,255,0.85); }
-  .why-body { margin-top: 32px; }
-  .why-body p { font-size: 18px; line-height: 1.85; color: rgba(255,255,255,0.85); margin-bottom: 16px; max-width: 780px; }
+/* ── GRADIENTS ── */
+.gradient-emerald { background: var(--grad-emerald); }
+.gradient-navy    { background: var(--grad-navy); }
 
-  /* ── DONATE ── */
-  .donate { background: var(--white); text-align: center; }
-  .donate h2 { max-width: 700px; margin: 0 auto 20px; }
-  .donate-list {
-    list-style: none; margin: 32px auto;
-    max-width: 560px; text-align: left;
-  }
-  .donate-list li {
-    font-size: 16px; line-height: 1.9; color: var(--gray);
-    padding-left: 28px; position: relative;
-  }
-  .donate-list li::before {
-    content: '✓'; position: absolute; left: 0;
-    color: var(--green); font-weight: 800;
-  }
-  .donate-tagline {
-    font-size: 18px; font-weight: 700; color: var(--dark);
-    margin: 8px 0 32px; line-height: 1.6;
-  }
-  .donate .btn-big {
-    background: var(--yellow); color: var(--white);
-    padding: 18px 60px; border-radius: 6px;
-    font-size: 18px; font-weight: 900;
-    display: inline-block;
-    box-shadow: 0 6px 24px rgba(255,172,0,0.4);
-    transition: opacity 0.2s;
-  }
-  .donate .btn-big:hover { opacity: 0.9; }
-  .donate-note { margin-top: 16px; font-size: 13px; color: #aaa; }
-  .donate-contact { margin-top: 32px; font-size: 16px; color: var(--gray); line-height: 2; }
-  .donate-contact a { color: var(--green); font-weight: 700; }
+/* ── ANIMATIONS ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+@keyframes scroll-hint {
+  0%   { transform: translateY(0); opacity: 1; }
+  75%  { transform: translateY(18px); opacity: 0; }
+  76%  { transform: translateY(0); opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.8; }
+}
 
-  /* ── CLOSING ── */
-  .closing { background: var(--dark); text-align: center; }
-  .closing h2 { color: var(--white); max-width: 700px; margin: 0 auto 16px; }
-  .closing p { max-width: 500px; margin: 0 auto 40px; font-size: 18px; color: rgba(255,255,255,0.7); line-height: 1.8; }
-  .closing .tagline {
-    margin-top: 48px; font-size: 18px; font-style: italic;
-    color: var(--yellow); font-weight: 700;
-  }
+.float-slow { animation: float 6s ease-in-out infinite; }
 
-  /* ── FOOTER ── */
-  footer {
-    background: #111; padding: 40px 48px;
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 20px;
-    border-top: 3px solid var(--green);
-  }
-  .footer-logo { display: flex; align-items: center; gap: 12px; }
-  .footer-logo img { height: 52px; width: 52px; }
-  .footer-logo span { font-size: 16px; font-weight: 900; color: white; }
-  .footer-info { text-align: right; }
-  .footer-info p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 2; }
-  .footer-info a { color: var(--yellow); }
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-slower) var(--ease),
+              transform var(--dur-slower) var(--ease);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 860px) {
-    nav { padding: 14px 20px; }
-    section { padding: 64px 24px; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-image { height: 320px; }
-    .hero-text { padding: 40px 24px; text-align: center; }
-    .hero-btns { justify-content: center; }
-    .three-grid, .help-grid { grid-template-columns: 1fr; }
-    footer { flex-direction: column; text-align: center; padding: 32px 24px; }
-    .footer-info { text-align: center; }
-    .nav-btns .btn-outline { display: none; }
-  }
+/* ── NAV ── */
+#nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* source: px-10 = 40px, py-5 = 20px, via inner max-w-7xl container */
+  padding: 20px 0;
+  transition: background 500ms cubic-bezier(0.4,0,0.2,1),
+              box-shadow 500ms cubic-bezier(0.4,0,0.2,1);
+}
+#nav .nav-inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav.scrolled {
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 1px 0 var(--border);
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: opacity 200ms;
+}
+.nav-brand:hover { opacity: 0.85; }
+.nav-brand img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  /* source: gap measured at ~32px between items */
+  gap: 32px;
+}
+.nav-links a {
+  /* source: fontSize 14px, fontWeight 500, letterSpacing normal, no uppercase */
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  color: rgba(255,255,255,0.85);
+  transition: color 240ms;
+}
+#nav.scrolled .nav-links a { color: var(--muted); }
+.nav-links a:hover { color: var(--white); }
+#nav.scrolled .nav-links a:hover { color: var(--navy); }
+/* ── BUTTONS ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  /* source: fontSize 14px, fontWeight 600, letter-spacing 0.7px, uppercase */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  border-radius: 9999px;
+  /* source: padding 10px 20px, total 40px height, 144px width for Donate Now */
+  padding: 10px 20px;
+  transition: background 240ms, color 240ms, border-color 240ms,
+              transform 120ms, box-shadow 240ms;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.85);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.10); color: var(--white); }
+#nav.scrolled .btn-ghost { border-color: var(--border); color: var(--navy); }
+#nav.scrolled .btn-ghost:hover { background: var(--secondary); }
+.btn-emerald {
+  background: var(--grad-emerald);
+  color: var(--white);
+  box-shadow: var(--shadow-glow);
+}
+.btn-emerald:hover { box-shadow: 0 0 48px rgba(0,142,64,0.55); transform: translateY(-2px); }
+.btn-navy {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-navy:hover { background: var(--navy-deep); }
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  color: var(--white);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg,
+    rgba(1,2,7,0.82) 0%,
+    rgba(28,32,41,0.68) 50%,
+    rgba(1,2,7,0.94) 100%);
+}
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(80px);
+  pointer-events: none;
+}
+.hero-blob-1 {
+  width: 480px; height: 480px;
+  bottom: 80px; left: -160px;
+  background: rgba(0,142,64,0.20);
+  animation: float 6s ease-in-out infinite;
+}
+.hero-blob-2 {
+  width: 420px; height: 420px;
+  bottom: 40px; right: -128px;
+  background: rgba(0,142,64,0.10);
+}
+.hero-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 160px 40px 96px; /* source: pt-40=160px, pb-24=96px, px-10=40px */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  justify-content: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+}
+.hero-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--emerald);
+  flex-shrink: 0;
+}
+.hero h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 88px;       /* source: 88px exact */
+  font-weight: 500;
+  line-height: 92.4px;   /* source: 92.4px = 1.05 × 88 */
+  letter-spacing: -1.76px; /* source: -1.76px */
+  max-width: 1024px;     /* source: max-w-5xl = 1024px */
+  margin-top: 32px;      /* source: mt-8 = 32px */
+  margin-bottom: 0;
+  text-wrap: balance;
+}
+.hero h1 em {
+  color: var(--emerald-soft);
+  font-style: normal;
+}
+.hero-desc {
+  font-size: 20px;
+  line-height: 32.5px;   /* source: 32.5px */
+  color: rgba(255,255,255,0.80);
+  max-width: 672px;      /* source: max-w-2xl = 672px */
+  margin-top: 32px;      /* source: mt-8 = 32px */
+  margin-bottom: 0;
+}
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;             /* source: gap-3 = 12px */
+  margin-top: 40px;      /* source: mt-10 = 40px */
+  margin-bottom: 0;
+  align-items: center;
+}
+/* Hero buttons: larger padding than nav button */
+.hero-btns .btn {
+  padding: 16px 28px;    /* source: px-7=28px py-4=16px */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.52px; /* source: tracking-[0.18em] at 14px = 2.52px */
+  text-transform: uppercase;
+}
+.hero-btns .btn-ghost {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+}
+.hero-btns .btn-ghost:hover { background: rgba(255,255,255,0.10); }
+.hero-btns .btn-transparent {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.85);
+  border-radius: 9999px;
+}
+.hero-btns .btn-transparent:hover { background: rgba(255,255,255,0.08); }
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;              /* source: gap-4 = 16px */
+  width: 100%;            /* source: w-full */
+  margin-top: 64px;       /* source: mt-16 = 64px */
+}
+.hero-card {
+  border-radius: 20px; /* source: rounded-2xl = 20px, p-5 = 20px */
+  padding: 20px;
+  transition: background 240ms;
+}
+.hero-card:hover { background: rgba(255,255,255,0.12); }
+.hero-card .label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+  line-height: 16px;
+}
+.hero-card .value {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white);
+  margin-top: 8px;
+}
+.hero-card .sub {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255,255,255,0.60);
+}
+
+/* ── SCROLL HINT ── */
+.scroll-hint-wrap {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.60);
+}
+.scroll-hint-box {
+  width: 24px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  position: relative;
+  overflow: hidden;
+}
+.scroll-hint-dot {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.7);
+  animation: scroll-hint 2s ease-in-out infinite;
+}
+
+/* ── SECTION DEFAULTS ── */
+/* source: py-36 = 144px light sections, py-44 = 176px dark sections */
+section { padding: 144px 0; }
+section.section-dark { padding: 176px 0; }
+
+/* section label: source = 12px/600/uppercase/tracking-[0.22em]=2.64px */
+.section-label {
+  font-size: 12px;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 16px;
+}
+.section-label-soft { color: var(--emerald-soft); }
+
+/* h2: source standard = Fraunces 60px/500/-1.2px/60px line-height, mt-4=16px */
+h2.display {
+  font-family: 'Fraunces', serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: var(--navy);
+  text-wrap: balance;
+  margin-top: 16px;
+}
+/* large dark sections: 72px/-1.44px (impact, cta-closing) */
+h2.display-lg {
+  font-family: 'Fraunces', serif;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: -1.44px;
+  color: var(--white);
+  text-wrap: balance;
+  margin-top: 16px;
+}
+/* future section: 64px/-1.28px */
+h2.display-future {
+  font-family: 'Fraunces', serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -1.28px;
+  color: var(--white);
+  text-wrap: balance;
+  margin-top: 16px;
+}
+h2.display.light { color: var(--white); }
+
+/* ── PROBLEM SECTION ── */
+.problem { background: var(--background); }
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.problem-img-wrap {
+  position: relative;
+}
+.problem-img {
+  border-radius: var(--r-3xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.problem-img img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: top;
+}
+.problem-img-caption {
+  position: absolute;
+  bottom: -24px;
+  left: 16px;
+  right: 16px;
+  border-radius: var(--r-2xl);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-soft);
+}
+.problem-img-caption .cap-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 4px;
+}
+.problem-img-caption .cap-text {
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.problem-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 40px;
+}
+.stat-card {
+  border-radius: var(--r-2xl);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 20px;
+  transition: transform var(--dur-base), box-shadow var(--dur-base);
+}
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+.stat-card .stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.stat-card .stat-label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── MISSION ── */
+.mission {
+  background: var(--secondary);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.mission::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,142,64,0.40), transparent);
+}
+.mission blockquote {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.375;
+  color: var(--navy);
+  text-wrap: balance;
+}
+.mission blockquote em {
+  color: var(--emerald);
+  font-style: normal;
+}
+.mission-quote-wrap {
+  position: relative;
+  margin-top: 64px;
+  border-radius: var(--r-3xl);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 56px;
+  box-shadow: var(--shadow-soft);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── HOW IT WORKS ── */
+.how { background: var(--background); }
+.steps-line {
+  position: absolute;
+  left: 0; right: 0;
+  top: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,142,64,0.40), transparent);
+  pointer-events: none;
+}
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+  margin-top: 64px;
+}
+.step-card {
+  border-radius: var(--r-3xl);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--dur-base), box-shadow var(--dur-base);
+}
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 48px rgba(0,142,64,0.12);
+}
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.step-num {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--grad-emerald);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-glow);
+}
+.step-line { flex: 1; height: 1px; background: var(--border); }
+.step-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  color: var(--navy);
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+.step-card p { font-size: 15px; line-height: 1.75; color: var(--muted); }
+
+/* ── WHAT WE DO ── */
+.what { background: var(--secondary); }
+.what-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+.what-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-3xl);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 32px;
+  transition: transform var(--dur-base), box-shadow var(--dur-base);
+  height: 100%;
+}
+.what-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+.what-card-glow {
+  position: absolute;
+  top: -48px; right: -48px;
+  width: 128px; height: 128px;
+  border-radius: 50%;
+  background: rgba(0,142,64,0.10);
+  filter: blur(40px);
+  transition: background var(--dur-base);
+  pointer-events: none;
+}
+.what-card:hover .what-card-glow { background: rgba(0,142,64,0.25); }
+.what-card-num {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 16px;
+}
+.what-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 28px;
+  color: var(--navy);
+  margin-bottom: 32px;
+  text-wrap: balance;
+}
+.what-card ul { display: flex; flex-direction: column; gap: 12px; }
+.what-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: rgba(28,32,41,0.88);
+}
+.what-card li .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--emerald);
+  flex-shrink: 0;
+}
+
+/* ── IMPACT ── */
+.impact {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+}
+.impact-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.impact-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg,
+    rgba(1,2,7,0.68) 0%,
+    rgba(28,32,41,0.80) 50%,
+    rgba(1,2,7,0.95) 100%);
+}
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 64px;
+}
+.impact-stat {
+  border-radius: var(--r-2xl);
+  padding: 24px;
+  text-align: left;
+}
+.impact-stat .num {
+  font-family: 'Fraunces', serif;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--emerald-soft);
+  margin-bottom: 8px;
+}
+.impact-stat .lbl {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ── WHY THIS MATTERS ── */
+.why { background: var(--background); }
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+.mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  height: 640px;
+}
+.mosaic-a {
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
+  border-radius: var(--r-3xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.mosaic-b {
+  grid-column: 5 / 7;
+  grid-row: 1 / 4;
+  border-radius: var(--r-3xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.mosaic-c {
+  grid-column: 5 / 7;
+  grid-row: 4 / 7;
+  border-radius: var(--r-3xl);
+  background: var(--grad-emerald);
+  padding: 16px;
+  color: var(--white);
+  box-shadow: var(--shadow-glow);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.mosaic-d {
+  grid-column: 1 / 4;
+  grid-row: 5 / 7;
+  border-radius: var(--r-3xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.mosaic-e {
+  grid-column: 4 / 7;
+  grid-row: 5 / 7;
+  border-radius: var(--r-3xl);
+  background: var(--navy);
+  padding: 16px;
+  color: var(--white);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.mosaic img { width: 100%; height: 100%; object-fit: cover; }
+.mosaic-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.mosaic-text {
+  font-family: 'Fraunces', serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.why-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 32px;
+}
+.why-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--r-xl);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--navy);
+  transition: border-color var(--dur-base), box-shadow var(--dur-base);
+}
+.why-tag:hover { border-color: var(--emerald); box-shadow: 0 0 0 3px rgba(0,142,64,0.10); }
+.why-tag .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--emerald);
+  flex-shrink: 0;
+}
+
+/* ── FUTURE ── */
+.future {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy-deep);
+  color: var(--white);
+}
+.future-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.40;
+}
+.future-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg,
+    var(--navy-deep) 0%,
+    rgba(1,2,7,0.65) 50%,
+    var(--navy-deep) 100%);
+}
+.future-inner {
+  position: relative;
+  z-index: 2;
+}
+.future-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 96px;
+  align-items: center;
+}
+.future-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.future-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 16px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+.future-list li .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--emerald);
+  flex-shrink: 0;
+  margin-top: 9px;
+}
+.future-tagline {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: var(--emerald-soft);
+  text-wrap: balance;
+  margin-top: 40px;
+}
+
+/* ── ORBIT ── */
+.orbit-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+.orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0,142,64,0.28);
+  inset: 0;
+}
+.orbit-ring-2 { inset: 8%; }
+.orbit-ring-3 { inset: 16%; }
+.orbit-ring-4 { inset: 24%; }
+.orbit-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.orbit-core {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--grad-emerald);
+  box-shadow: var(--shadow-glow);
+  display: grid;
+  place-items: center;
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  color: var(--white);
+}
+.orbit-dot {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 14px; height: 14px;
+  margin-left: -7px; margin-top: -7px;
+  border-radius: 50%;
+  background: rgba(0,142,64,0.85);
+  box-shadow: var(--shadow-glow);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ── HOW TO HELP ── */
+.help { background: var(--background); }
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 64px;
+}
+.help-card {
+  border-radius: var(--r-3xl);
+  border: 1.5px solid var(--border);
+  background: var(--card);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform var(--dur-base), box-shadow var(--dur-base);
+}
+.help-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+.help-card .card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 16px;
+}
+.help-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--navy);
+  margin-bottom: 16px;
+  text-wrap: balance;
+}
+.help-card p { font-size: 15px; line-height: 1.75; color: var(--muted); flex: 1; }
+.help-card .card-cta {
+  margin-top: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color var(--dur-base);
+}
+.help-card:hover .card-cta { color: var(--emerald); }
+
+/* ── DONATE ── */
+.donate { background: var(--secondary); }
+.donate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.donate-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.donate-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: 18px;
+  color: var(--navy);
+  line-height: 1.6;
+}
+.donate-list li .check {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--grad-emerald);
+  flex-shrink: 0;
+  margin-top: 2px;
+  display: grid;
+  place-items: center;
+}
+.donate-list li .check::after {
+  content: '';
+  width: 8px; height: 5px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg) translateY(-1px);
+}
+.donate-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r-3xl);
+  background: var(--grad-navy);
+  padding: 48px;
+  color: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+.donate-card-glow {
+  position: absolute;
+  top: -64px; right: -64px;
+  width: 224px; height: 224px;
+  border-radius: 50%;
+  background: rgba(0,142,64,0.30);
+  filter: blur(64px);
+  pointer-events: none;
+}
+.donate-card .label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--emerald-soft);
+}
+.donate-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  text-wrap: balance;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.donate-card p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 40px;
+}
+.donate-card .note {
+  margin-top: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+}
+
+/* ── FOUNDER ── */
+.founder { background: var(--background); }
+.founder-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 80px;
+}
+.founder-grid > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.founder-img-wrap { position: relative; }
+.founder-img {
+  border-radius: var(--r-3xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.founder-img img {
+  width: 100%;
+  height: 583px;
+  object-fit: cover;
+  object-position: top;
+}
+.founder-badge {
+  position: absolute;
+  bottom: -24px;
+  right: 24px;
+  max-width: 260px;
+  border-radius: var(--r-2xl);
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+}
+.founder-badge .badge-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--emerald);
+  margin-bottom: 8px;
+}
+.founder-badge .badge-name {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+.founder-badge .badge-sub {
+  font-size: 12px;
+  color: var(--muted);
+}
+.founder-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+/* ── CTA ── */
+.cta {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  text-align: center;
+}
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg,
+    rgba(1,2,7,0.85) 0%,
+    rgba(28,32,41,0.70) 50%,
+    rgba(1,2,7,0.95) 100%);
+}
+.cta-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--grad-navy);
+  color: #fff;
+  position: relative;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px;
+}
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-logo-wrap img {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.footer-tagline {
+  margin-top: 24px;
+  max-width: 280px;
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  line-height: 1.35;
+  color: rgba(255,255,255,0.9);
+}
+.footer-col-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--emerald-soft);
+}
+.footer-founder-name {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.footer-founder-role {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+}
+.footer-contact-list {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+}
+.footer-contact-list a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: color 200ms;
+}
+.footer-contact-list a:hover { color: var(--emerald-soft); }
+.footer-action-col {
+  text-align: right;
+}
+.footer-action-btns {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.footer-btn-donate {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  background: var(--grad-emerald);
+  box-shadow: var(--shadow-glow);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 200ms;
+}
+.footer-btn-donate:hover { opacity: 0.88; }
+.footer-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: background 200ms;
+}
+.footer-btn-outline:hover { background: rgba(255,255,255,0.10); }
+@media (max-width: 768px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+  .footer-action-col { text-align: left; }
+  .footer-action-btns { justify-content: flex-start; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .problem-grid, .why-grid, .future-grid,
+  .founder-grid, .donate-grid { grid-template-columns: 1fr; gap: 48px; }
+  .mosaic { display: none; }
+  .steps-grid, .what-grid, .help-grid { grid-template-columns: 1fr; }
+  .impact-stats { grid-template-columns: repeat(2, 1fr); }
+  .hero-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  :root { --section-py: 80px; }
+  section { padding: 80px 0; }
+  .container, .container-md { padding: 0 24px; }
+  #nav { padding: 16px 24px; }
+  #nav.scrolled { padding: 12px 24px; }
+  .hero-inner { padding: 120px 24px 80px; }
+  .nav-links { display: none; }
+  .hero-btns .btn { font-size: 12px; padding: 10px 18px; }
+  .impact-stats { grid-template-columns: 1fr 1fr; }
+  .mission-quote-wrap { padding: 32px 24px; }
+  .donate-card { padding: 32px; }
+  footer { flex-direction: column; text-align: center; padding: 32px 24px; }
+  .footer-info { text-align: center; }
+  .orbit-wrap { max-width: 300px; }
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
-  <a href="https://saveoneperson.org" class="nav-logo">
-    <img src="https://sendy.saveonepersonnow.org/uploads/IMG_3407-1-1.png" alt="Save One Person">
-    <span>Save One Person<small>501(c)(3) Nonprofit</small></span>
-  </a>
-  <div class="nav-btns">
-    <a href="tel:9175726385" class="btn-outline">Call Lauren</a>
-    <a href="mailto:Save1Person@aol.com" class="btn-green">Partner With Us</a>
-    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-yellow" target="_blank">Donate Now</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <h1>What If One Introduction<br>Could <span>Save a Life?</span></h1>
-    <p>Save One Person uses the power of media to connect people who need living organ donors with people willing to save a life.</p>
-    <div class="hero-btns">
-      <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-hero-primary" target="_blank">Donate Now</a>
-      <a href="mailto:Save1Person@aol.com" class="btn-hero-secondary">Partner With Us</a>
-      <a href="tel:9175726385" class="btn-hero-outline">Call Lauren &nbsp; 917-572-6385</a>
+<header id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" aria-label="Save One Person">
+      <img src="https://stalwart-puffpuff-744c94.netlify.app/logo.png"
+           alt="Save One Person"
+           style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#mission">Mission</a>
+      <a href="#how">How It Works</a>
+      <a href="#impact">Impact</a>
+      <a href="#partners">Partners</a>
+      <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" target="_blank" rel="noopener noreferrer">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-btns">
+      <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+         class="btn btn-emerald" target="_blank" rel="noopener noreferrer">Donate Now</a>
     </div>
   </div>
-  <div class="hero-image">
-    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=960&q=90" alt="Organ donation - hands forming a heart">
+</header>
+
+<!-- HERO -->
+<section id="top" class="hero reveal-section" style="padding:0;">
+  <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg"
+       alt="Two hands reaching toward one another"
+       class="hero-bg">
+  <div class="hero-overlay"></div>
+  <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+  <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="reveal">
+      <div class="hero-badge glass">
+        <span class="dot" aria-hidden="true"></span>
+        A Movement For Life-Saving Connections
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:100ms">
+      <h1 class="font-display">
+        What If One Introduction<br>
+        <em>Could Save a Life?</em>
+      </h1>
+    </div>
+    <div class="reveal" style="transition-delay:180ms">
+      <p class="hero-desc">
+        Every day, thousands of people, including children, parents, siblings, and friends, are waiting for a living kidney donor, a living liver donor, a bone marrow match, or another life-saving medical miracle that could give them a second chance at life. Many compassionate people would help if they simply knew someone was in need. The tragedy is not a lack of generosity, but a lack of awareness. Save One Person exists to bridge that gap by harnessing the power of media, technology, and human connection, ensuring that every story has the chance to reach the person who can help save a life.
+      </p>
+    </div>
+    <div class="reveal" style="transition-delay:260ms">
+      <div class="hero-btns">
+        <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+           class="btn btn-emerald" target="_blank" rel="noopener noreferrer">
+          Donate Now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry"
+           class="btn btn-ghost">Partner With Us</a>
+        <a href="tel:9175726385"
+           class="btn btn-transparent">Call Lauren</a>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:340ms">
+      <div class="hero-cards">
+        <div class="hero-card glass">
+          <div class="label">Founder</div>
+          <div class="value font-display">Lauren Finkelstein</div>
+          <div class="sub">Save One Person</div>
+        </div>
+        <a href="tel:9175726385" class="hero-card glass">
+          <div class="label">Direct</div>
+          <div class="value font-display">917-572-6385</div>
+          <div class="sub">Tap to call</div>
+        </a>
+        <a href="mailto:Save1Person@aol.com" class="hero-card glass">
+          <div class="label">Email</div>
+          <div class="value font-display" style="font-size:15px;">Save1Person@aol.com</div>
+          <div class="sub">Reach out anytime</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint-wrap" aria-hidden="true">
+    <div class="scroll-hint-box">
+      <div class="scroll-hint-dot"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="reveal">
+        <div class="problem-img-wrap">
+          <div class="problem-img">
+            <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/child-D6VtbEtx.png"
+                 alt="A patient holding hands with family in a hospital room"
+                 loading="lazy">
+          </div>
+          <div class="problem-img-caption glass-light">
+            <div class="cap-label">The Reality</div>
+            <div class="cap-text">The longest wait in medicine is for a match that never arrives.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal">
+          <div class="section-label">The Problem</div>
+          <h2 class="display">Thousands Are Waiting.</h2>
+        </div>
+        <div class="reveal" style="transition-delay:120ms">
+          <div style="margin-top:32px; display:flex; flex-direction:column; gap:20px; font-size:17px; line-height:1.85; color:var(--muted);">
+            <p>Every day, individuals and families face an agonizing wait, not knowing if the call they are praying for will ever come.</p>
+            <p>Thousands of people urgently need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles. Many compassionate people would step forward if they simply knew someone needed them. The tragedy is not a shortage of willing hearts, but a shortage of visibility. Patients and potential donors occupy the same world but rarely cross paths.</p>
+            <p style="font-weight:500; color:var(--navy);">Save One Person exists to close that gap. Through media, storytelling, and human connection, we bring the right story to the right person at the right time, because one introduction truly can save a life.</p>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:200ms">
+          <div class="problem-stats">
+            <div class="stat-card">
+              <div class="stat-num font-display"><span class="count" data-target="1000">0</span>+</div>
+              <div class="stat-label">People Waiting</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num font-display">17/day</div>
+              <div class="stat-label">Added Daily</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num font-display"><span class="count" data-target="5000">0</span>+</div>
+              <div class="stat-label">Stories Shared</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num font-display"><span class="count" data-target="2000">0</span>+</div>
+              <div class="stat-label">Matches Made</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- MISSION -->
-<section class="mission" id="mission">
+<section id="mission" class="mission">
+  <div class="container-md" style="text-align:center;">
+    <div class="reveal">
+      <div class="section-label">Our Mission</div>
+      <h2 class="display">Media as a force for miracles.</h2>
+    </div>
+    <div class="reveal" style="transition-delay:120ms">
+      <div style="margin-top:32px; display:flex; flex-direction:column; gap:24px; font-size:16px; line-height:1.625; color:var(--muted); max-width:672px; margin-left:auto; margin-right:auto;">
+        <p>We connect those who need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles with the individuals who have the power to save them. Behind every medical crisis is a human story, and that story, when amplified to the right audience, can unlock a life-changing response.</p>
+        <p>Our platform harnesses television, radio, podcasts, social media, and digital channels to broadcast these stories at scale. Because the most powerful tool in medicine is not always a drug or a procedure. Sometimes, it is simply putting two people in the same room.</p>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:200ms">
+      <div class="mission-quote-wrap">
+        <svg aria-hidden="true" style="position:absolute;top:-24px;left:40px;width:48px;height:48px;color:var(--emerald);fill:currentColor;" viewBox="0 0 24 24">
+          <path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0-2-2zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0-2-2z"/>
+        </svg>
+        <blockquote class="font-display">
+          One story can reach millions. One introduction can save a life.
+          <em>One act of generosity can change a family's future forever.</em>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="how">
   <div class="container">
-    <div class="section-label">Our Mission</div>
-    <h2>Save One Person</h2>
-    <div class="mission-body">
-      <p>Save One Person is dedicated to helping connect people who need living kidney and liver donors with individuals willing to save a life.</p>
-      <p>We believe media can be one of the most powerful tools for creating miracles.</p>
-      <p>A single story can reach thousands of people.</p>
-      <p>One of those people may become the donor that changes a life forever.</p>
-      <blockquote>
-        "One story can save a life.<br>
-        One donor can save a life.<br>
-        One introduction can save a life."
-      </blockquote>
+    <div class="reveal">
+      <div class="section-label">How It Works</div>
+      <h2 class="display" style="max-width:768px;">Three steps. One life changed forever.</h2>
+    </div>
+    <div class="steps-grid">
+      <div style="position:absolute; top:48px; left:0; right:0; height:1px;
+                  background:linear-gradient(90deg, transparent, rgba(0,142,64,0.40), transparent);
+                  pointer-events:none;" aria-hidden="true"></div>
+      <div class="reveal" style="transition-delay:80ms">
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-num">01</div>
+            <div class="step-line"></div>
+          </div>
+          <h3>Share The Story</h3>
+          <p>We help bring powerful personal stories to television, radio, podcasts, newspapers, social media, and digital platforms.</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:160ms">
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-num">02</div>
+            <div class="step-line"></div>
+          </div>
+          <h3>Reach Potential Donors</h3>
+          <p>Stories reach people who may never have known someone needed their help.</p>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:240ms">
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-num">03</div>
+            <div class="step-line"></div>
+          </div>
+          <h3>Create Life-Saving Connections</h3>
+          <p>The right story reaches the right person, creating an opportunity for a life-saving match.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- WHAT WE DO -->
-<section class="what" id="what-we-do">
+<section id="partners" class="what">
   <div class="container">
-    <div class="section-label">What We Do</div>
-    <h2>How We Create Miracles</h2>
-    <div class="three-grid">
-      <div class="service-card">
-        <h3>Media Outreach</h3>
-        <p>We share life-saving stories through television, radio, podcasts, newspapers, social media, and digital platforms.</p>
+    <div class="reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="display" style="max-width:768px;">A platform built to make the right introduction.</h2>
+    </div>
+    <div class="what-grid">
+      <div class="reveal" style="transition-delay:80ms">
+        <article class="what-card">
+          <div class="what-card-glow" aria-hidden="true"></div>
+          <div class="what-card-num">01</div>
+          <h3>Media Outreach</h3>
+          <ul>
+            <li><span class="dot" aria-hidden="true"></span><span>Television</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Radio</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Podcasts</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Social Media</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Digital Publications</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>News Media</span></li>
+          </ul>
+        </article>
       </div>
-      <div class="service-card">
-        <h3>Create Connections</h3>
-        <p>We help create opportunities for people in need of living organ donors to be seen and heard.</p>
+      <div class="reveal" style="transition-delay:160ms">
+        <article class="what-card">
+          <div class="what-card-glow" aria-hidden="true"></div>
+          <div class="what-card-num">02</div>
+          <h3>Create Connections</h3>
+          <ul>
+            <li><span class="dot" aria-hidden="true"></span><span>Amplify stories</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Increase visibility</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Expand awareness</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Generate opportunities</span></li>
+          </ul>
+        </article>
       </div>
-      <div class="service-card">
-        <h3>Build Partnerships</h3>
-        <p>We work with media companies, philanthropists, healthcare leaders, corporations, influencers, and community organizations.</p>
+      <div class="reveal" style="transition-delay:240ms">
+        <article class="what-card">
+          <div class="what-card-glow" aria-hidden="true"></div>
+          <div class="what-card-num">03</div>
+          <h3>Build Partnerships</h3>
+          <ul>
+            <li><span class="dot" aria-hidden="true"></span><span>Healthcare leaders</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Media companies</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Philanthropists</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Technology partners</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Corporations</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Community organizations</span></li>
+          </ul>
+        </article>
       </div>
     </div>
   </div>
 </section>
 
-<!-- HOW TO HELP -->
-<section class="help" id="help">
-  <div class="container">
-    <div class="section-label">How You Can Help</div>
-    <h2>Join the Mission</h2>
-    <div class="help-grid">
-      <div class="help-card">
-        <h3>Donate</h3>
-        <p>Your tax-deductible contribution helps us expand our reach and tell more life-saving stories.</p>
+<!-- IMPACT -->
+<section id="impact" class="impact" style="padding:176px 0;">
+  <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/impact-horizon-KLV9X_e1.jpg"
+       alt="A figure looking out toward a sunset horizon"
+       class="impact-bg" loading="lazy">
+  <div class="impact-overlay"></div>
+  <div class="container-6xl" style="text-align:center;">
+    <div class="reveal">
+      <div class="section-label section-label-soft">Impact</div>
+      <h2 class="display-lg">One Story Can Change Everything</h2>
+    </div>
+    <div class="reveal" style="transition-delay:120ms">
+      <div style="margin-top:32px; display:flex; flex-direction:column; gap:12px; font-size:18px; line-height:1.625; color:rgba(255,255,255,0.80); max-width:672px; margin-left:auto; margin-right:auto;">
+        <p>A story shared can reach millions.</p>
+        <p>One introduction can change a life forever.</p>
+        <p>A successful match gives a family their future back.</p>
       </div>
-      <div class="help-card">
-        <h3>Make an Introduction</h3>
-        <p>Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.</p>
-      </div>
-      <div class="help-card">
-        <h3>Become a Partner</h3>
-        <p>Organizations and companies can help amplify life-saving messages and expand our impact.</p>
+    </div>
+    <div class="reveal" style="transition-delay:200ms">
+      <div class="impact-stats">
+        <div class="impact-stat glass">
+          <div class="num font-display"><span class="count" data-target="5000">0</span>+</div>
+          <div class="lbl">Stories Shared</div>
+        </div>
+        <div class="impact-stat glass">
+          <div class="num font-display"><span class="count" data-target="1">0</span> Million+</div>
+          <div class="lbl">People Reached</div>
+        </div>
+        <div class="impact-stat glass">
+          <div class="num font-display"><span class="count" data-target="1200">0</span>+</div>
+          <div class="lbl">Families Transformed</div>
+        </div>
+        <div class="impact-stat glass">
+          <div class="num font-display">24/7</div>
+          <div class="lbl">Someone Is Waiting</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- WHY THIS MATTERS -->
-<section class="why" id="why">
+<section class="why">
   <div class="container">
-    <div class="section-label">Why This Matters</div>
-    <h2>The Gap We Close</h2>
-    <div class="why-body">
-      <p>Many people in need of living organ donors are waiting, hoping, and praying for someone to step forward.</p>
-      <p>Many potential donors would gladly help if they simply heard the right story.</p>
-      <p>Save One Person exists to close that gap through media, technology, storytelling, and human connection.</p>
+    <div class="why-grid">
+      <!-- Mosaic desktop -->
+      <div class="reveal">
+        <div class="mosaic">
+          <div class="mosaic-a">
+            <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/child-D6VtbEtx.png"
+                 alt="Patient with family" loading="lazy">
+          </div>
+          <div class="mosaic-b">
+            <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/family-celebration-BH46mSCz.jpg"
+                 alt="Family celebrating" loading="lazy">
+          </div>
+          <div class="mosaic-c">
+            <div class="mosaic-label" style="color:rgba(255,255,255,0.75)">Belief</div>
+            <div class="mosaic-text">Awareness bridges hope and miracles.</div>
+          </div>
+          <div class="mosaic-d">
+            <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg"
+                 alt="Hands reaching" loading="lazy">
+          </div>
+          <div class="mosaic-e">
+            <div class="mosaic-label" style="color:var(--emerald-soft)">Our Mission</div>
+            <div class="mosaic-text">Share every story until the right person hears it.</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal">
+          <div class="section-label">Why This Matters</div>
+          <h2 class="display">The Gap Is Awareness</h2>
+        </div>
+        <div class="reveal" style="transition-delay:100ms">
+          <div style="margin-top:32px; display:flex; flex-direction:column; gap:20px; font-size:17px; line-height:1.85; color:var(--muted);">
+            <p>Many people need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles. Many people are willing to help.</p>
+            <p>Patients and potential donors, as well as marrow recipients and willing matches, share the same world but rarely cross paths.</p>
+            <p style="font-weight:600; color:var(--navy);">We bridge that gap through:</p>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:180ms">
+          <div class="why-tags">
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Media</div>
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Technology</div>
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Storytelling</div>
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Partnerships</div>
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Community Engagement</div>
+            <div class="why-tag"><span class="dot" aria-hidden="true"></span>Human Connection</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section class="future" style="padding:176px 0;">
+  <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/network-future-C4ldnWew.jpg"
+       alt="" class="future-bg" loading="lazy" aria-hidden="true">
+  <div class="future-overlay" aria-hidden="true"></div>
+  <div class="container future-inner">
+    <div class="future-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-label section-label-soft">The Future</div>
+          <h2 class="display-future">Bringing the future of life-saving connections together.</h2>
+        </div>
+        <div class="reveal" style="transition-delay:100ms">
+          <p style="margin-top:32px; font-size:17px; color:rgba(255,255,255,0.75);">Imagine a world where:</p>
+        </div>
+        <div class="reveal" style="transition-delay:160ms">
+          <ul class="future-list">
+            <li><span class="dot" aria-hidden="true"></span><span>Every patient's story is discoverable.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Media reaches potential living donors and matches instantly.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Technology expands awareness.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>Communities unite around saving lives.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>More families find hope.</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span>More lives are saved.</span></li>
+          </ul>
+        </div>
+        <div class="reveal" style="transition-delay:220ms">
+          <p class="future-tagline font-display">This is the future Save One Person is building.</p>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:100ms">
+        <div class="orbit-wrap">
+          <div class="orbit-ring float-slow" style="animation-delay:0s"></div>
+          <div class="orbit-ring orbit-ring-2" style="animation:float 8s ease-in-out infinite; animation-delay:0.5s"></div>
+          <div class="orbit-ring orbit-ring-3" style="animation:float 10s ease-in-out infinite; animation-delay:1s"></div>
+          <div class="orbit-ring orbit-ring-4" style="animation:float 7s ease-in-out infinite; animation-delay:1.5s"></div>
+          <div class="orbit-center">
+            <div class="orbit-core font-display">SOP</div>
+          </div>
+          <!-- Orbit dots at equal angular positions -->
+          <span class="orbit-dot" style="transform:rotate(0deg) translate(clamp(90px,22vw,200px)) rotate(0deg); animation-delay:0s"></span>
+          <span class="orbit-dot" style="transform:rotate(60deg) translate(clamp(90px,22vw,200px)) rotate(-60deg); animation-delay:0.3s"></span>
+          <span class="orbit-dot" style="transform:rotate(120deg) translate(clamp(90px,22vw,200px)) rotate(-120deg); animation-delay:0.6s"></span>
+          <span class="orbit-dot" style="transform:rotate(180deg) translate(clamp(90px,22vw,200px)) rotate(-180deg); animation-delay:0.9s"></span>
+          <span class="orbit-dot" style="transform:rotate(240deg) translate(clamp(90px,22vw,200px)) rotate(-240deg); animation-delay:1.2s"></span>
+          <span class="orbit-dot" style="transform:rotate(300deg) translate(clamp(90px,22vw,200px)) rotate(-300deg); animation-delay:1.5s"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO HELP -->
+<section class="help">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">How You Can Help</div>
+      <h2 class="display">Three ways to help save a life.</h2>
+    </div>
+    <div class="help-grid">
+      <div class="reveal" style="transition-delay:80ms">
+        <article class="help-card">
+          <div class="card-tag">Give</div>
+          <h3>Donate</h3>
+          <p>Your tax-deductible contribution helps expand our reach and tell more life-saving stories.</p>
+          <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+             target="_blank" rel="noopener noreferrer" class="card-cta">Donate Now →</a>
+        </article>
+      </div>
+      <div class="reveal" style="transition-delay:160ms">
+        <article class="help-card">
+          <div class="card-tag">Connect</div>
+          <h3>Make An Introduction</h3>
+          <p>Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.</p>
+          <a href="mailto:Save1Person@aol.com" class="card-cta">Email Lauren →</a>
+        </article>
+      </div>
+      <div class="reveal" style="transition-delay:240ms">
+        <article class="help-card">
+          <div class="card-tag">Amplify</div>
+          <h3>Become A Partner</h3>
+          <p>Organizations and companies can help amplify life-saving messages and expand our impact.</p>
+          <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry" class="card-cta">Partner With Us →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW YOU CAN HELP -->
+<section style="padding:120px 0; background:#fff;">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:64px;">
+      <div class="section-label">How You Can Help</div>
+      <h2 class="display" style="max-width:700px; margin-left:auto; margin-right:auto;">Three ways to help save a life.</h2>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      <div class="reveal" style="border:1px solid var(--border); border-radius:20px; padding:40px 32px; display:flex; flex-direction:column; gap:24px;">
+        <div>
+          <div style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--emerald); margin-bottom:16px;">Give</div>
+          <h3 class="font-display" style="font-size:28px; line-height:1.2; color:var(--navy); margin-bottom:12px;">Donate</h3>
+          <p style="font-size:16px; line-height:1.6; color:var(--muted);">Your tax-deductible contribution helps expand our reach and tell more life-saving stories.</p>
+        </div>
+        <div style="margin-top:auto;">
+          <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" target="_blank" rel="noopener noreferrer" style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">Donate Now <span>→</span></a>
+        </div>
+      </div>
+      <div class="reveal" style="border:1px solid var(--border); border-radius:20px; padding:40px 32px; display:flex; flex-direction:column; gap:24px; transition-delay:80ms;">
+        <div>
+          <div style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--emerald); margin-bottom:16px;">Connect</div>
+          <h3 class="font-display" style="font-size:28px; line-height:1.2; color:var(--navy); margin-bottom:12px;">Make An Introduction</h3>
+          <p style="font-size:16px; line-height:1.6; color:var(--muted);">Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.</p>
+        </div>
+        <div style="margin-top:auto;">
+          <a href="mailto:Save1Person@aol.com" style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">Email Lauren <span>→</span></a>
+        </div>
+      </div>
+      <div class="reveal" style="border:1px solid var(--border); border-radius:20px; padding:40px 32px; display:flex; flex-direction:column; gap:24px; transition-delay:160ms;">
+        <div>
+          <div style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--emerald); margin-bottom:16px;">Amplify</div>
+          <h3 class="font-display" style="font-size:28px; line-height:1.2; color:var(--navy); margin-bottom:12px;">Become A Partner</h3>
+          <p style="font-size:16px; line-height:1.6; color:var(--muted);">Organizations and companies can help amplify life-saving messages and expand our impact.</p>
+        </div>
+        <div style="margin-top:auto;">
+          <a href="mailto:Save1Person@aol.com" style="font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); text-decoration:none; display:inline-flex; align-items:center; gap:8px;">Partner With Us <span>→</span></a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- DONATE -->
-<section class="donate" id="donate">
+<section id="donate" class="donate">
   <div class="container">
-    <div class="section-label">Support the Mission</div>
-    <h2>Make a Tax-Deductible Donation</h2>
-    <p class="lead" style="margin: 0 auto;">Your donation helps us:</p>
-    <ul class="donate-list">
-      <li>Expand media outreach</li>
-      <li>Share more life-saving stories</li>
-      <li>Reach more potential living donors</li>
-      <li>Build technology and AI tools</li>
-      <li>Educate the public about living organ donation</li>
-      <li>Create more opportunities for life-saving matches</li>
-    </ul>
-    <p class="donate-tagline">
-      A single story can reach thousands.<br>
-      A single introduction can save a life.<br>
-      A single donation can help create a miracle.
-    </p>
-    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-big" target="_blank">Donate Now</a>
-    <p class="donate-note">Save One Person is a registered 501(c)(3) nonprofit. All donations are tax-deductible.</p>
-    <div class="donate-contact">
-      Questions? Call or Text Lauren<br>
-      <a href="tel:9175726385">917-572-6385</a> &nbsp;|&nbsp;
-      <a href="mailto:Save1Person@aol.com">Save1Person@aol.com</a>
+    <div class="donate-grid">
+      <div>
+        <div class="reveal">
+          <div class="section-label">Your Impact</div>
+          <h2 class="display" style="max-width:460px;">Your Donation Creates Opportunities For Miracles</h2>
+        </div>
+        <div class="reveal" style="transition-delay:120ms">
+          <ul class="donate-list">
+            <li><span class="check" aria-hidden="true"></span><span>Expand media outreach</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>Share more life-saving stories</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>Reach more potential living donors and matches</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>Build technology and AI tools</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>Educate the public</span></li>
+            <li><span class="check" aria-hidden="true"></span><span>Create life-saving matches</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reveal" style="transition-delay:120ms">
+        <div class="donate-card">
+          <div class="donate-card-glow" aria-hidden="true"></div>
+          <div class="label">Tax-Deductible</div>
+          <h3>Help send the next story to the right person.</h3>
+          <p>Every contribution funds storytelling, technology, and outreach that connects people in need of living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles with those who can help them.</p>
+          <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+             class="btn btn-emerald" target="_blank" rel="noopener noreferrer"
+             style="padding:16px 32px; font-size:14px;">Donate Now</a>
+          <div class="note">Secure checkout via Save One Person</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CLOSING -->
-<section class="closing">
+<!-- FOUNDER -->
+<section class="founder">
   <div class="container">
-    <h2>Let's Bring Forth the Future of Living Organ Donation Together</h2>
-    <p>Every day someone is waiting for a miracle. Together we can help more people find one.</p>
-    <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" class="btn-big" style="background:var(--yellow);color:white;padding:18px 60px;border-radius:6px;font-size:18px;font-weight:900;display:inline-block;box-shadow:0 6px 24px rgba(255,172,0,0.4);" target="_blank">Donate Now</a>
-    <p class="tagline">Because sometimes one introduction can save a life.</p>
+    <div class="founder-grid">
+      <div class="reveal">
+        <div class="founder-img-wrap">
+          <div class="founder-img">
+            <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/ceo-BmSwDvux.jpeg"
+                 alt="Lauren Finkelstein, Founder of Save One Person"
+                 loading="lazy">
+          </div>
+          <div class="founder-badge" style="background:rgba(255,255,255,0.7);border-radius:20px;">
+            <div class="badge-label">Founder</div>
+            <div class="badge-name font-display">Lauren Finkelstein</div>
+            <div class="badge-sub">Save One Person</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="reveal">
+          <div class="section-label">The Founder</div>
+          <h2 class="display">Meet Lauren Finkelstein</h2>
+          <p style="font-size:18px; color:var(--muted); margin-top:8px;">Founder, Save One Person</p>
+        </div>
+        <div class="reveal" style="transition-delay:120ms">
+          <p style="margin-top:32px; font-size:17px; line-height:1.85; color:rgba(28,32,41,0.85);">
+            Driven by a personal conviction that awareness saves lives, Lauren founded Save One Person to harness the reach of media, the power of storytelling, and the warmth of human connection, helping patients find living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles.
+          </p>
+        </div>
+        <div class="reveal" style="transition-delay:200ms">
+          <div class="founder-btns">
+            <a href="tel:9175726385" class="btn btn-navy">Call Lauren</a>
+            <a href="mailto:Save1Person@aol.com"
+               class="btn btn-ghost"
+               style="border-color:var(--border); color:var(--navy);">Email Lauren</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">
-    <img src="https://sendy.saveonepersonnow.org/uploads/IMG_3407-1-1.png" alt="Save One Person">
-    <span>Save One Person</span>
+<!-- CTA CLOSING -->
+<section class="cta" style="padding:176px 0;">
+  <img src="https://stalwart-puffpuff-744c94.netlify.app/assets/family-celebration-BH46mSCz.jpg"
+       alt="A multigenerational family embracing at golden hour"
+       class="cta-bg" loading="lazy">
+  <div class="cta-overlay"></div>
+  <div class="container-5xl" style="text-align:center;">
+    <div class="reveal">
+      <div class="section-label section-label-soft">Join The Movement</div>
+      <h2 class="display-lg">Every Day Someone Is Waiting For A Miracle</h2>
+    </div>
+    <div class="reveal" style="transition-delay:120ms">
+      <div style="margin-top:32px; display:flex; flex-direction:column; gap:12px; font-size:18px; color:rgba(255,255,255,0.85); max-width:672px; margin-left:auto; margin-right:auto;">
+        <p>Together we can help more people find hope.</p>
+        <p>One story shared can reach millions of hearts.</p>
+        <p>One introduction made can change a destiny.</p>
+        <p>One donation given can open a door to healing.</p>
+      </div>
+    </div>
+    <div class="reveal" style="transition-delay:200ms">
+      <div class="cta-btns">
+        <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+           class="btn btn-emerald" target="_blank" rel="noopener noreferrer"
+           style="padding:16px 32px; font-size:14px; letter-spacing:0.18em;">Donate Now</a>
+        <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry"
+           class="btn btn-ghost" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.25); padding:16px 32px; font-size:14px; letter-spacing:0.18em;">Partner With Us</a>
+        <a href="tel:9175726385"
+           class="btn" style="border:1px solid rgba(255,255,255,0.15); padding:16px 32px; font-size:14px; letter-spacing:0.18em; color:rgba(255,255,255,0.85);">Call Lauren</a>
+      </div>
+    </div>
   </div>
-  <div class="footer-info">
-    <p>
-      <strong style="color:white;">Lauren Finkelstein</strong> &nbsp;|&nbsp; Founder, Save One Person<br>
-      <a href="tel:9175726385">917-572-6385</a> &nbsp;|&nbsp;
-      <a href="mailto:Save1Person@aol.com">Save1Person@aol.com</a> &nbsp;|&nbsp;
-      <a href="https://www.saveoneperson.org" target="_blank">www.saveoneperson.org</a>
-    </p>
+</section>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact">
+  <div class="footer-inner">
+    <!-- Col 1: Brand -->
+    <div>
+      <div class="footer-logo-wrap">
+        <img src="https://stalwart-puffpuff-744c94.netlify.app/logo.png" alt="Save One Person">
+      </div>
+      <p class="footer-tagline">Because One Introduction Can Save A Life.</p>
+    </div>
+    <!-- Col 2: Founder -->
+    <div>
+      <div class="footer-col-label">Founder</div>
+      <p class="footer-founder-name">Lauren Finkelstein</p>
+      <p class="footer-founder-role">Founder, Save One Person</p>
+      <ul class="footer-contact-list">
+        <li><a href="tel:9175726385">917-572-6385</a></li>
+        <li><a href="mailto:Save1Person@aol.com">Save1Person@aol.com</a></li>
+        <li><a href="https://www.saveoneperson.org" target="_blank" rel="noopener noreferrer">www.saveoneperson.org</a></li>
+      </ul>
+    </div>
+    <!-- Col 3: Take Action -->
+    <div class="footer-action-col">
+      <div class="footer-col-label">Take Action</div>
+      <div class="footer-action-btns">
+        <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+           class="footer-btn-donate" target="_blank" rel="noopener noreferrer">Donate</a>
+        <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry"
+           class="footer-btn-outline">Partner</a>
+        <a href="mailto:Save1Person@aol.com"
+           class="footer-btn-outline">Contact</a>
+      </div>
+    </div>
   </div>
 </footer>
+
+<script>
+/* ── NAV SCROLL ── */
+(function () {
+  var nav = document.getElementById('nav');
+  window.addEventListener('scroll', function () {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+})();
+
+/* ── REVEAL ON SCROLL ── */
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+
+  els.forEach(function (el) { io.observe(el); });
+})();
+
+/* ── COUNT-UP ANIMATION ── */
+(function () {
+  var counters = document.querySelectorAll('.count');
+  if (!counters.length) return;
+
+  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function animateCount(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10);
+    var dur = 1800;
+    var start = null;
+
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / dur, 1);
+      var val = Math.round(easeOut(progress) * target);
+      el.textContent = val.toLocaleString();
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        animateCount(e.target);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(function (c) { io.observe(c); });
+})();
+</script>
 
 </body>
 </html>
