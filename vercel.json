@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "builds": [
+    { "src": "save-one-person.html", "use": "@vercel/static" }
+  ],
   "routes": [
     { "src": "/", "dest": "/save-one-person.html" },
     { "src": "/(.*)", "dest": "/save-one-person.html" }
