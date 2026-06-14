@@ -123,6 +123,61 @@ body {
   transform: translateY(0);
 }
 
+/* ── HAMBURGER ── */
+.nav-hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.10);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--dur-base);
+}
+.nav-hamburger:hover { background: rgba(255,255,255,0.18); }
+#nav.scrolled .nav-hamburger { color: var(--navy); background: rgba(0,0,0,0.06); }
+
+/* Mobile menu overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  background: rgba(15,22,32,0.97);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 48px 24px;
+}
+.mobile-menu-overlay.is-open { display: flex; }
+.mobile-menu-overlay a {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.90);
+  transition: color var(--dur-base);
+}
+.mobile-menu-overlay a:hover { color: var(--emerald-soft); }
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.10);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ── NAV ── */
 #nav {
   position: fixed;
@@ -1183,7 +1238,7 @@ footer {
 .footer-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 40px;
+  padding: 80px 40px 0;  /* bottom handled by copyright bar */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 48px;
@@ -1281,40 +1336,200 @@ footer {
   transition: background 200ms;
 }
 .footer-btn-outline:hover { background: rgba(255,255,255,0.10); }
-@media (max-width: 768px) {
-  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .footer-action-col { text-align: left; }
-  .footer-action-btns { justify-content: flex-start; }
-}
-
 /* ── RESPONSIVE ── */
+
+/* ≤1024px: stack two-column grids, collapse step/what/help grids */
 @media (max-width: 1024px) {
   .problem-grid, .why-grid, .future-grid,
   .founder-grid, .donate-grid { grid-template-columns: 1fr; gap: 48px; }
   .mosaic { display: none; }
-  .steps-grid, .what-grid, .help-grid { grid-template-columns: 1fr; }
+  .steps-grid, .what-grid, .help-grid { grid-template-columns: 1fr; gap: 24px; }
   .impact-stats { grid-template-columns: repeat(2, 1fr); }
   .hero-cards { grid-template-columns: 1fr; }
+  section { padding: 112px 0; }            /* py-28 = 112px on tablet */
+  section.section-dark { padding: 112px 0; }
+  .container, .container-md, .container-5xl, .container-6xl { padding: 0 24px; }
+  /* Problem image height at tablet */
+  .problem-img img { height: 480px; }
+  /* Mission quote */
+  .mission-quote-wrap { padding: 40px; }
+  /* h2 sizes down */
+  h2.display { font-size: 48px; line-height: 48px; }
+  h2.display-lg { font-size: 56px; line-height: 56px; }
+  h2.display-future { font-size: 48px; line-height: 48px; }
+  /* Second "How You Can Help" inline grid */
+  [style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
 }
+
+/* ≤768px: full mobile styles */
 @media (max-width: 768px) {
-  :root { --section-py: 80px; }
+  /* Section spacing: py-28 = 112px -> keep at 80px on phone */
   section { padding: 80px 0; }
-  .container, .container-md { padding: 0 24px; }
-  #nav { padding: 16px 24px; }
-  #nav.scrolled { padding: 12px 24px; }
-  .hero-inner { padding: 120px 24px 80px; }
+  section.section-dark { padding: 80px 0; }
+
+  /* Container horizontal padding: px-6 = 24px */
+  .container, .container-md, .container-5xl, .container-6xl { padding: 0 24px; }
+
+  /* NAV: hamburger visible, nav links hidden, Donate hidden */
+  #nav { padding: 0; }
+  #nav .nav-inner { padding: 0 24px; }
   .nav-links { display: none; }
-  .hero-btns .btn { font-size: 12px; padding: 10px 18px; }
-  .impact-stats { grid-template-columns: 1fr 1fr; }
-  .mission-quote-wrap { padding: 32px 24px; }
-  .donate-card { padding: 32px; }
-  footer { flex-direction: column; text-align: center; padding: 32px 24px; }
-  .footer-info { text-align: center; }
-  .orbit-wrap { max-width: 300px; }
+  .nav-btns { display: none; }
+  .nav-hamburger { display: inline-flex; }
+
+  /* HERO */
+  .hero-inner { padding: 100px 24px 80px; }
+  .hero h1 {
+    font-size: 36px;        /* text-4xl */
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin-top: 24px;
+  }
+  .hero-desc {
+    font-size: 18px;
+    line-height: 1.625;
+    margin-top: 24px;
+  }
+  /* Buttons stack vertically on mobile */
+  .hero-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .hero-btns .btn {
+    font-size: 13px;
+    padding: 14px 24px;
+    letter-spacing: 0.14em;
+    justify-content: center;
+  }
+  /* Hero cards: single column */
+  .hero-cards {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  /* Problem image */
+  .problem-img img { height: 280px; }
+  .problem-img-caption { padding: 12px 16px; bottom: -20px; }
+  .problem-img-caption .cap-text { font-size: 14px; }
+
+  /* Problem stats: 2 cols */
+  .problem-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 32px;
+  }
+  .stat-card { padding: 16px; }
+  .stat-card .stat-num { font-size: 22px; }
+
+  /* Section headings */
+  h2.display { font-size: 36px; line-height: 1.1; letter-spacing: -0.5px; }
+  h2.display-lg { font-size: 40px; line-height: 1.1; letter-spacing: -0.5px; }
+  h2.display-future { font-size: 36px; line-height: 1.1; letter-spacing: -0.5px; }
+
+  /* Mission quote */
+  .mission-quote-wrap { padding: 40px 24px; margin-top: 40px; }
+  .mission blockquote { font-size: 22px; }
+
+  /* Steps */
+  .steps-grid { grid-template-columns: 1fr; gap: 16px; }
+  .step-card { padding: 24px; }
+
+  /* What grid */
+  .what-grid { grid-template-columns: 1fr; gap: 16px; }
+  .what-card { padding: 24px; }
+
+  /* Impact */
+  .impact-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .impact-stat { padding: 20px 16px; }
+  .impact-stat .num { font-size: 28px; }
+
+  /* Why grid */
+  .why-tags { grid-template-columns: 1fr 1fr; gap: 8px; }
+
+  /* Future */
+  .future-grid { grid-template-columns: 1fr; gap: 48px; }
+  .orbit-wrap { max-width: 280px; }
+
+  /* Help */
+  .help-grid { grid-template-columns: 1fr; gap: 16px; }
+  .help-card { padding: 24px; }
+  .help-card h3 { font-size: 24px; line-height: 28px; }
+
+  /* Donate */
+  .donate-grid { grid-template-columns: 1fr; gap: 40px; }
+  .donate-card { padding: 28px 24px; }
+  .donate-card h3 { font-size: 32px; }
+  .donate-list li { font-size: 16px; }
+
+  /* Founder */
+  .founder-grid { grid-template-columns: 1fr; gap: 48px; }
+  .founder-img img { height: 380px; }
+  .founder-badge { max-width: 220px; bottom: -20px; }
+  .founder-btns { flex-direction: column; }
+  .founder-btns .btn { justify-content: center; }
+
+  /* CTA */
+  .cta-btns {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .cta-btns .btn { justify-content: center; }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 64px 24px 0;
+  }
+  .footer-action-col { text-align: left; }
+  .footer-action-btns { justify-content: flex-start; }
+  .footer-tagline { font-size: 20px; }
+  /* Footer copyright bar on mobile */
+  footer > div[style*="border-top"] {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-top: 40px !important;
+  }
+
+  /* Second How-You-Can-Help inline section */
+  .inline-help-grid { grid-template-columns: 1fr !important; }
+}
+
+/* 640px (sm): hero buttons go horizontal, hero cards 3-col */
+@media (min-width: 640px) and (max-width: 767px) {
+  .hero-btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero-btns .btn { width: auto; }
+  .hero-cards { grid-template-columns: repeat(3, 1fr); }
+  .problem-img img { height: 480px; }
+  .problem-stats { grid-template-columns: repeat(4, 1fr); }
 }
 </style>
 </head>
 <body>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#mission" class="mobile-menu-link">Mission</a>
+  <a href="#how" class="mobile-menu-link">How It Works</a>
+  <a href="#impact" class="mobile-menu-link">Impact</a>
+  <a href="#partners" class="mobile-menu-link">Partners</a>
+  <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation" target="_blank" rel="noopener noreferrer" class="mobile-menu-link">Donate</a>
+  <a href="#contact" class="mobile-menu-link">Contact</a>
+  <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
+     class="btn btn-emerald" target="_blank" rel="noopener noreferrer" style="margin-top:16px;">Donate Now</a>
+</div>
 
 <!-- NAV -->
 <header id="nav">
@@ -1336,6 +1551,11 @@ footer {
       <a href="https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation"
          class="btn btn-emerald" target="_blank" rel="noopener noreferrer">Donate Now</a>
     </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Open menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M4 7h16"/><path d="M4 17h16"/>
+      </svg>
+    </button>
   </div>
 </header>
 
@@ -1785,7 +2005,7 @@ footer {
       <div class="section-label">How You Can Help</div>
       <h2 class="display" style="max-width:700px; margin-left:auto; margin-right:auto;">Three ways to help save a life.</h2>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+    <div class="inline-help-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
       <div class="reveal" style="border:1px solid var(--border); border-radius:20px; padding:40px 32px; display:flex; flex-direction:column; gap:24px;">
         <div>
           <div style="font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--emerald); margin-bottom:16px;">Give</div>
@@ -1967,6 +2187,11 @@ footer {
       </div>
     </div>
   </div>
+  <!-- Copyright bar -->
+  <div style="border-top:1px solid rgba(255,255,255,0.10); margin-top:64px; padding-top:32px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; font-size:11px; letter-spacing:0.20em; text-transform:uppercase; color:rgba(255,255,255,0.45); max-width:1280px; margin-left:auto; margin-right:auto; padding-left:40px; padding-right:40px; padding-bottom:32px;">
+    <span>© 2026 Save One Person</span>
+    <span>501(c)(3) — Tax-Deductible Donations</span>
+  </div>
 </footer>
 
 <script>
@@ -1976,6 +2201,31 @@ footer {
   window.addEventListener('scroll', function () {
     nav.classList.toggle('scrolled', window.scrollY > 40);
   }, { passive: true });
+})();
+
+/* ── MOBILE MENU ── */
+(function () {
+  var hamburger = document.getElementById('navHamburger');
+  var closeBtn = document.getElementById('mobileMenuClose');
+  var menu = document.getElementById('mobileMenu');
+  var links = menu.querySelectorAll('a');
+
+  function openMenu() {
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  links.forEach(function(link) {
+    link.addEventListener('click', closeMenu);
+  });
 })();
 
 /* ── REVEAL ON SCROLL ── */
