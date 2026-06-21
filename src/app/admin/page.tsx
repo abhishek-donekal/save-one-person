@@ -108,9 +108,7 @@ export default async function AdminDashboardPage() {
                 { label: 'Media', href: '/media' },
                 { label: 'Partners', href: '/partners' },
               ].map((l) => (
-                <Link key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" style={{ padding: '8px 12px', borderRadius: 'var(--r-xl)', fontSize: 14, color: 'var(--navy)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8fafc', textDecoration: 'none', transition: 'background 200ms' }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = 'var(--secondary)' }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = '#f8fafc' }}
+                <Link key={l.href} href={l.href} target="_blank" rel="noopener noreferrer" className="hover-bg-secondary" style={{ padding: '8px 12px', borderRadius: 'var(--r-xl)', fontSize: 14, color: 'var(--navy)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#f8fafc', textDecoration: 'none', transition: 'background 200ms' }}
                 >
                   {l.label}
                   <span style={{ color: 'var(--muted)', fontSize: 12 }}>↗</span>
