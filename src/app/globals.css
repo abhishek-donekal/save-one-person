@@ -111,6 +111,34 @@ body {
   transform: translateY(0);
 }
 
+/* Fallback: if JS disabled or IntersectionObserver missing, always show content */
+.no-js .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Stat-card link variant (hover/focus state for clickable stat cards) */
+.stat-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.stat-card-link:hover,
+.stat-card-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
 /* ── HAMBURGER ── */
 .nav-hamburger {
   display: none;
@@ -186,6 +214,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+/* Shop product grid — responsive, 2-col on mobile */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .shop-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+@media (max-width: 340px) {
+  .shop-grid { grid-template-columns: 1fr; }
+}
+.nav-btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 .nav-scrolled {
   background: rgba(255,255,255,0.97);
@@ -1642,10 +1692,12 @@ footer {
   section.section-dark { padding: 80px 0; }
   .container, .container-md, .container-5xl, .container-6xl { padding: 0 24px; }
   .site-nav { padding: 0; }
-  .site-nav .nav-inner { padding: 0 24px; }
+  .site-nav .nav-inner { padding: 0 16px; gap: 4px; }
   .nav-links { display: none; }
   .nav-btns { display: none; }
-  .nav-hamburger { display: inline-flex; }
+  .nav-actions { margin-left: auto; }
+  .nav-actions button { width: 44px; height: 44px; justify-content: center; }
+  .nav-hamburger { display: inline-flex; width: 44px; height: 44px; }
   .hero-inner { padding: 100px 24px 80px; }
   .hero h1 { font-size: 36px; line-height: 1.05; letter-spacing: -0.5px; margin-top: 24px; }
   .hero-desc { font-size: 18px; line-height: 1.625; margin-top: 24px; }

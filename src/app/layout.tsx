@@ -16,6 +16,7 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.saveonepersonnow.org'),
   title: {
     default: 'Save One Person — One Introduction Can Save a Life',
     template: '%s | Save One Person',
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Lauren Finkelstein' }],
   creator: 'Save One Person',
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -43,7 +47,7 @@ export const metadata: Metadata = {
       'Connecting patients who need living organ donors and bone marrow matches with the people who can save their lives.',
     images: [
       {
-        url: 'https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg',
+        url: 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg',
         width: 1200,
         height: 630,
         alt: 'Save One Person',
@@ -69,6 +73,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://stalwart-puffpuff-744c94.netlify.app" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://saveoneperson.org" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body style={{ fontFamily: "'Inter', sans-serif" }}>{children}</body>
     </html>
   )

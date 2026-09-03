@@ -28,11 +28,11 @@ export default function ContactPage() {
               <h2 className="display" style={{ marginTop: 16, marginBottom: 32 }}>Lauren Finkelstein</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                 {[
-                  { icon: '📞', label: 'Phone', value: '917-572-6385', href: 'tel:9175726385' },
-                  { icon: '✉️', label: 'Email', value: 'Save1Person@aol.com', href: 'mailto:Save1Person@aol.com' },
-                  { icon: '🌐', label: 'Website', value: 'saveoneperson.org', href: 'https://www.saveoneperson.org' },
+                  { icon: '📞', label: 'Phone', value: '917-572-6385', href: 'tel:9175726385', external: false },
+                  { icon: '✉️', label: 'Email', value: 'Save1Person@aol.com', href: 'mailto:Save1Person@aol.com', external: false },
+                  { icon: '🌐', label: 'Website', value: 'saveonepersonnow.org', href: 'https://www.saveonepersonnow.org', external: true },
                 ].map((item) => (
-                  <a key={item.label} href={item.href} className="hover-border-emerald" style={{ display: 'flex', gap: 16, alignItems: 'flex-start', padding: 20, border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)', background: 'var(--white)', textDecoration: 'none' }}>
+                  <a key={item.label} href={item.href} target={item.external ? '_blank' : undefined} rel={item.external ? 'noopener noreferrer' : undefined} className="hover-border-emerald" style={{ display: 'flex', gap: 16, alignItems: 'flex-start', padding: 20, border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)', background: 'var(--white)', textDecoration: 'none' }}>
                     <span style={{ fontSize: 24 }}>{item.icon}</span>
                     <div>
                       <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--emerald)', marginBottom: 4 }}>{item.label}</div>

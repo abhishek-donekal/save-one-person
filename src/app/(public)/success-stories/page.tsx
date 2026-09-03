@@ -41,11 +41,12 @@ export default async function SuccessStoriesPage() {
                 <div key={story.id} className="story-card">
                   <div className="story-card-img">
                     <Image
-                      src={story.image_url || 'https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg'}
+                      src={story.image_url || 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg'}
                       alt={story.patient_name}
                       width={400}
-                      height={200}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      height={240}
+                      sizes="(max-width: 640px) 100vw, 400px"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
                     />
                   </div>
                   <div className="story-card-body">

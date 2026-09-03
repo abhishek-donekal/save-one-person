@@ -38,6 +38,13 @@ export default async function SuccessStoryPage({ params }: Props) {
 
   const paragraphs = story.story_text.split('\n\n').filter(Boolean)
 
+  function youtubeId(url: string | null): string | null {
+    if (!url) return null
+    const m = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|v\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/)
+    return m ? m[1] : null
+  }
+  const ytId = youtubeId(story.video_url)
+
   return (
     <>
       <div className="page-hero">
@@ -52,14 +59,25 @@ export default async function SuccessStoryPage({ params }: Props) {
 
       <div className="page-content">
         <div className="container-md">
-          {story.image_url && (
+          {ytId ? (
+            <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', marginBottom: 48, boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9' }}>
+              <iframe
+                src={`https://www.youtube.com/embed/${ytId}`}
+                title={story.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
+          ) : story.image_url && (
             <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', marginBottom: 48, boxShadow: 'var(--shadow-soft)' }}>
               <Image
                 src={story.image_url}
                 alt={story.patient_name}
                 width={896}
-                height={480}
-                style={{ width: '100%', height: 480, objectFit: 'cover' }}
+                height={560}
+                sizes="(max-width: 896px) 100vw, 896px"
+                style={{ width: '100%', height: 'auto', maxHeight: 560, objectFit: 'cover', objectPosition: 'center top' }}
               />
             </div>
           )}
@@ -86,15 +104,13 @@ export default async function SuccessStoryPage({ params }: Props) {
             </Link>
             <div style={{ display: 'flex', gap: 8 }}>
               <a href="mailto:Save1Person@aol.com" className="btn btn-emerald" style={{ padding: '10px 20px', fontSize: 13 }}>Share Your Story</a>
-              <a
-                href={`https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation`}
+              <Link
+                href="/donate"
                 className="btn btn-navy"
                 style={{ padding: '10px 20px', fontSize: 13 }}
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 Donate
-              </a>
+              </Link>
             </div>
           </div>
         </div>

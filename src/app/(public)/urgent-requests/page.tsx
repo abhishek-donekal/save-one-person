@@ -27,6 +27,11 @@ export default async function UrgentRequestsPage() {
           <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
             These patients and families are waiting for a life-saving match right now. Sharing their story could change everything.
           </p>
+          <div style={{ marginTop: 28, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link href="/urgent-requests/submit" className="btn btn-emerald" style={{ padding: '14px 28px', fontSize: 14 }}>
+              Post Your Urgent Need →
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -53,8 +58,14 @@ export default async function UrgentRequestsPage() {
                   <div key={req.id} style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
                     <div style={{ display: 'grid', gridTemplateColumns: req.image_url ? '320px 1fr' : '1fr', gap: 0 }}>
                       {req.image_url && (
-                        <div style={{ position: 'relative', height: '100%', minHeight: 240 }}>
-                          <Image src={req.image_url} alt={req.patient_name} fill style={{ objectFit: 'cover' }} />
+                        <div style={{ position: 'relative', height: '100%', minHeight: 280 }}>
+                          <Image
+                            src={req.image_url}
+                            alt={req.patient_name}
+                            fill
+                            sizes="(max-width: 640px) 100vw, 320px"
+                            style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                          />
                         </div>
                       )}
                       <div style={{ padding: 40 }}>

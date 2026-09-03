@@ -11,31 +11,31 @@ export default async function AdminDashboardPage() {
   const [
     { count: storiesCount },
     { count: requestsCount },
-    { count: blogsCount },
     { count: mediaCount },
-    { count: partnersCount },
+    { count: shopCount },
+    { count: messagesCount },
   ] = await Promise.all([
     supabase.from('success_stories').select('*', { count: 'exact', head: true }),
     supabase.from('urgent_requests').select('*', { count: 'exact', head: true }).eq('status', 'open'),
-    supabase.from('blog_posts').select('*', { count: 'exact', head: true }).eq('published', true),
     supabase.from('media_entries').select('*', { count: 'exact', head: true }),
-    supabase.from('partners').select('*', { count: 'exact', head: true }),
+    supabase.from('shop_products').select('*', { count: 'exact', head: true }).eq('published', true),
+    supabase.from('contact_messages').select('*', { count: 'exact', head: true }).eq('handled', false),
   ])
 
   const stats = [
-    { label: 'Total Stories', value: storiesCount ?? 0, href: '/admin/stories', color: 'var(--emerald)' },
+    { label: 'New Messages', value: messagesCount ?? 0, href: '/admin/messages', color: 'var(--emerald)' },
     { label: 'Open Requests', value: requestsCount ?? 0, href: '/admin/urgent-requests', color: '#dc2626' },
-    { label: 'Published Posts', value: blogsCount ?? 0, href: '/admin/blog', color: '#2563eb' },
+    { label: 'Total Stories', value: storiesCount ?? 0, href: '/admin/stories', color: '#2563eb' },
     { label: 'Media Entries', value: mediaCount ?? 0, href: '/admin/media', color: '#7c3aed' },
-    { label: 'Partners', value: partnersCount ?? 0, href: '/admin/partners', color: '#d97706' },
+    { label: 'Shop Products', value: shopCount ?? 0, href: '/admin/shop', color: '#d97706' },
   ]
 
   const quickLinks = [
-    { label: 'New Story', href: '/admin/stories/new', desc: 'Add a success story' },
     { label: 'New Request', href: '/admin/urgent-requests/new', desc: 'Add an urgent request' },
-    { label: 'New Blog Post', href: '/admin/blog/new', desc: 'Write a blog post' },
-    { label: 'Add Media', href: '/admin/media', desc: 'Add press coverage' },
-    { label: 'View Site', href: '/', desc: 'Visit saveoneperson.org', external: true },
+    { label: 'New Story', href: '/admin/stories/new', desc: 'Add a success story' },
+    { label: 'Manage Shop', href: '/admin/shop', desc: 'Products, featured, coupons' },
+    { label: 'Messages', href: '/admin/messages', desc: 'Read contact form messages' },
+    { label: 'View Site', href: '/', desc: 'Visit saveonepersonnow.org', external: true },
   ]
 
   return (

@@ -1,7 +1,13 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+
+// NOTE for redirects agent: add a permanent redirect /blog → /success-stories in
+// next.config.ts. Until the blog_posts table has published rows, /blog calls
+// notFound() (returns 404); the redirect gives visitors a graceful destination
+// instead. Remove/keep as desired once posts are published.
 
 export const metadata: Metadata = {
   title: 'Blog — Organ Donation Education & Stories',
@@ -15,6 +21,13 @@ export default async function BlogPage() {
     .select('id, title, slug, excerpt, featured_image_url, author, category, published_at, created_at')
     .eq('published', true)
     .order('published_at', { ascending: false })
+
+  // No published posts yet: return a 404 rather than showing a bare placeholder,
+  // so the route never looks unfinished. The dynamic listing below runs unchanged
+  // once posts exist.
+  if (!posts || posts.length === 0) {
+    notFound()
+  }
 
   return (
     <>
@@ -30,17 +43,12 @@ export default async function BlogPage() {
 
       <div className="page-content">
         <div className="container">
-          {(!posts || posts.length === 0) ? (
-            <div style={{ textAlign: 'center', padding: '80px 0', color: 'var(--muted)' }}>
-              <p style={{ fontSize: 18 }}>Blog posts coming soon.</p>
-            </div>
-          ) : (
-            <div className="card-grid">
-              {posts.map((post) => (
+          <div className="card-grid">
+            {posts.map((post) => (
                 <div key={post.id} className="story-card">
                   <div className="story-card-img">
                     <Image
-                      src={post.featured_image_url || 'https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg'}
+                      src={post.featured_image_url || 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg'}
                       alt={post.title}
                       width={400}
                       height={200}
@@ -64,8 +72,7 @@ export default async function BlogPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </>

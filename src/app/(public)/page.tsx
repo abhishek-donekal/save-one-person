@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     'Save One Person uses the power of media, storytelling, and human connection to help people find living kidney donors, liver donors, bone marrow matches, and other life-saving miracles.',
 }
 
-const DONATE_URL =
-  'https://save-one-person.myshopify.com/collections/all/products/save-one-person-tax-deductible-donation'
+const DONATE_URL = '/donate'
 
 export default async function HomePage() {
   const supabase = await createClient()
@@ -33,7 +32,7 @@ export default async function HomePage() {
       {/* ── HERO ── */}
       <section id="top" className="hero" style={{ padding: 0 }}>
         <Image
-          src="https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg"
+          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg"
           alt="Two hands reaching toward one another"
           fill
           priority
@@ -66,7 +65,7 @@ export default async function HomePage() {
 
           <RevealOnScroll delay={260}>
             <div className="hero-btns">
-              <a href={DONATE_URL} className="btn btn-emerald" target="_blank" rel="noopener noreferrer">
+              <a href={DONATE_URL} className="btn btn-emerald">
                 Donate Now
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="M5 12h14M13 5l7 7-7 7" />
@@ -113,11 +112,11 @@ export default async function HomePage() {
               <div className="problem-img-wrap">
                 <div className="problem-img">
                   <Image
-                    src="https://stalwart-puffpuff-744c94.netlify.app/assets/child-D6VtbEtx.png"
-                    alt="A patient holding hands with family"
+                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&q=80&auto=format&fit=crop"
+                    alt="Patient hand with IV in hospital bed — the long wait for a transplant match"
                     width={600}
                     height={560}
-                    style={{ width: '100%', height: 560, objectFit: 'cover', objectPosition: 'top' }}
+                    style={{ width: '100%', height: 560, objectFit: 'cover', objectPosition: 'center' }}
                   />
                 </div>
                 <div className="problem-img-caption glass-light">
@@ -130,12 +129,12 @@ export default async function HomePage() {
             <div>
               <RevealOnScroll>
                 <div className="section-label">The Problem</div>
-                <h2 className="display">Thousands Are Waiting.</h2>
+                <h2 className="display">100,000+ Are Waiting.</h2>
               </RevealOnScroll>
               <RevealOnScroll delay={120}>
                 <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 20, fontSize: 17, lineHeight: 1.85, color: 'var(--muted)' }}>
                   <p>Every day, individuals and families face an agonizing wait, not knowing if the call they are praying for will ever come.</p>
-                  <p>Thousands of people urgently need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles. Many compassionate people would step forward if they simply knew someone needed them.</p>
+                  <p>Over 100,000 people in the U.S. urgently need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles. Many compassionate people would step forward if they simply knew someone needed them.</p>
                   <p style={{ fontWeight: 500, color: 'var(--navy)' }}>Save One Person exists to close that gap. Through media, storytelling, and human connection, we bring the right story to the right person at the right time.</p>
                 </div>
               </RevealOnScroll>
@@ -149,14 +148,14 @@ export default async function HomePage() {
                     <div className="stat-num font-display">17/day</div>
                     <div className="stat-label">Die Waiting</div>
                   </div>
-                  <div className="stat-card">
+                  <Link href="/success-stories" className="stat-card stat-card-link">
                     <div className="stat-num font-display">{storyCount ?? 0}+</div>
-                    <div className="stat-label">Stories Shared</div>
-                  </div>
-                  <div className="stat-card">
+                    <div className="stat-label">Success Stories →</div>
+                  </Link>
+                  <Link href="/urgent-requests" className="stat-card stat-card-link">
                     <div className="stat-num font-display">{requestCount ?? 0}</div>
-                    <div className="stat-label">Need Help Now</div>
-                  </div>
+                    <div className="stat-label">Urgent Requests →</div>
+                  </Link>
                 </div>
               </RevealOnScroll>
             </div>
@@ -252,7 +251,7 @@ export default async function HomePage() {
       {/* ── IMPACT ── */}
       <section id="impact" className="impact section-dark" style={{ position: 'relative' }}>
         <Image
-          src="https://stalwart-puffpuff-744c94.netlify.app/assets/impact-horizon-KLV9X_e1.jpg"
+          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/impact-horizon-KLV9X_e1.jpg"
           alt="A figure looking out toward a sunset horizon"
           fill
           style={{ objectFit: 'cover', zIndex: -2 }}
@@ -295,17 +294,17 @@ export default async function HomePage() {
             <RevealOnScroll>
               <div className="mosaic">
                 <div className="mosaic-a" style={{ position: 'relative' }}>
-                  <Image src="https://stalwart-puffpuff-744c94.netlify.app/assets/child-D6VtbEtx.png" alt="Patient with family" fill style={{ objectFit: 'cover' }} />
+                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/child-D6VtbEtx.png" alt="Patient with family" fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="mosaic-b" style={{ position: 'relative' }}>
-                  <Image src="https://stalwart-puffpuff-744c94.netlify.app/assets/family-celebration-BH46mSCz.jpg" alt="Family celebrating" fill style={{ objectFit: 'cover' }} />
+                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/family-celebration-BH46mSCz.jpg" alt="Family celebrating" fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="mosaic-c">
                   <div className="mosaic-label" style={{ color: 'rgba(255,255,255,0.75)' }}>Belief</div>
                   <div className="mosaic-text">Awareness bridges hope and miracles.</div>
                 </div>
                 <div className="mosaic-d" style={{ position: 'relative' }}>
-                  <Image src="https://stalwart-puffpuff-744c94.netlify.app/assets/hero-hands-f9VxfxAk.jpg" alt="Hands reaching" fill style={{ objectFit: 'cover' }} />
+                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg" alt="Hands reaching" fill style={{ objectFit: 'cover' }} />
                 </div>
                 <div className="mosaic-e">
                   <div className="mosaic-label" style={{ color: 'var(--emerald-soft)' }}>Our Mission</div>
@@ -343,7 +342,7 @@ export default async function HomePage() {
       {/* ── FUTURE ── */}
       <section className="future section-dark" style={{ position: 'relative' }}>
         <Image
-          src="https://stalwart-puffpuff-744c94.netlify.app/assets/network-future-C4ldnWew.jpg"
+          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/network-future-C4ldnWew.jpg"
           alt=""
           fill
           aria-hidden="true"
@@ -401,13 +400,16 @@ export default async function HomePage() {
         <div className="container">
           <RevealOnScroll>
             <div className="section-label">How You Can Help</div>
-            <h2 className="display">Three ways to help save a life.</h2>
+            <h2 className="display">Four ways to help save a life.</h2>
           </RevealOnScroll>
-          <div className="help-grid">
+          {/* auto-fit keeps this responsive (4→2→1 across breakpoints) after adding the 4th card,
+              matching the advisors grid pattern used elsewhere on this page. */}
+          <div className="help-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
             {[
-              { tag: 'Give', title: 'Donate', body: 'Your tax-deductible contribution helps expand our reach and tell more life-saving stories.', cta: 'Donate Now →', href: DONATE_URL, external: true },
+              { tag: 'Give', title: 'Donate', body: 'Your tax-deductible contribution helps expand our reach and tell more life-saving stories.', cta: 'Donate Now →', href: DONATE_URL, external: false },
               { tag: 'Connect', title: 'Make An Introduction', body: 'Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.', cta: 'Email Lauren →', href: 'mailto:Save1Person@aol.com', external: false },
               { tag: 'Amplify', title: 'Become A Partner', body: 'Organizations and companies can help amplify life-saving messages and expand our impact.', cta: 'Partner With Us →', href: 'mailto:Save1Person@aol.com?subject=Partnership%20Inquiry', external: false },
+              { tag: 'Involve', title: 'Volunteer', body: 'Give your time and talent. Join the mission and help us reach more people who are waiting for a match.', cta: 'Get Involved →', href: '/contact', external: false },
             ].map((card, i) => (
               <RevealOnScroll key={card.tag} delay={(i + 1) * 80}>
                 <article className="help-card">
@@ -445,7 +447,7 @@ export default async function HomePage() {
                 <div className="label">Tax-Deductible</div>
                 <h3>Help send the next story to the right person.</h3>
                 <p>Every contribution funds storytelling, technology, and outreach that connects people in need of living donors and bone marrow matches with those who can help them.</p>
-                <a href={DONATE_URL} className="btn btn-emerald" target="_blank" rel="noopener noreferrer" style={{ padding: '16px 32px', fontSize: 14 }}>Donate Now</a>
+                <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 14 }}>Donate Now</a>
                 <div className="note">Secure checkout via Save One Person</div>
               </div>
             </RevealOnScroll>
@@ -461,7 +463,7 @@ export default async function HomePage() {
               <div className="founder-img-wrap">
                 <div className="founder-img">
                   <Image
-                    src="https://stalwart-puffpuff-744c94.netlify.app/assets/ceo-BmSwDvux.jpeg"
+                    src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/ceo-BmSwDvux.jpeg"
                     alt="Lauren Finkelstein, Founder of Save One Person"
                     width={600}
                     height={583}
@@ -497,9 +499,175 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── OUR BIGGER VISION (video) ── */}
+      <section className="vision-video" style={{ paddingTop: 96, paddingBottom: 96 }}>
+        <div className="container-md">
+          <RevealOnScroll>
+            <div style={{ textAlign: 'center', marginBottom: 40 }}>
+              <div className="section-label">Our Bigger Vision</div>
+              <h2 className="display" style={{ marginTop: 12 }}>Every media outlet. One Save One Person unit.</h2>
+              <p style={{ marginTop: 20, fontSize: 17, lineHeight: 1.8, color: 'var(--muted)', maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
+                Our long-term goal is to inspire every media outlet — TV, radio, print, and digital — to create their own Save One Person unit. Imagine if every media station dedicated just a few minutes each week to spotlight someone in need. Together, we could save thousands of lives. One story. One miracle. One person at a time.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={120}>
+            <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9', background: '#000' }}>
+              <iframe
+                src="https://www.youtube.com/embed/ZEF9VNqnK-M"
+                title="Save One Person — Our Bigger Vision"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* ── SHARE YOUR STORY ── */}
+      <section className="share-story section-dark" style={{ position: 'relative', paddingTop: 88, paddingBottom: 88 }}>
+        <Image
+          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/family-celebration-BH46mSCz.jpg"
+          alt=""
+          fill
+          aria-hidden="true"
+          style={{ objectFit: 'cover', opacity: 0.25, zIndex: 0 }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(15,23,42,0.92), rgba(28,32,41,0.88))', zIndex: 1 }} aria-hidden="true" />
+        <div className="container-md" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
+          <RevealOnScroll>
+            <div className="section-label section-label-soft">Share Your Story</div>
+            <h2 className="display-lg" style={{ color: 'white' }}>Need a Living Donor or a Medical Miracle?</h2>
+            <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.82)', lineHeight: 1.8, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>
+              If you or someone you love is in need of a living organ donor or facing a serious medical crisis, share your story with a photo and contact information. We&apos;ll feature it on our site and send it to our media partners to help find a match.
+            </p>
+          </RevealOnScroll>
+          <RevealOnScroll delay={140}>
+            <div style={{ marginTop: 36, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Link href="/urgent-requests/submit" className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 14, letterSpacing: '0.1em' }}>
+                Share Your Story →
+              </Link>
+              <a href="mailto:Save1Person@aol.com?subject=My%20Story" className="btn btn-ghost" style={{ padding: '16px 32px', fontSize: 14, letterSpacing: '0.1em', borderColor: 'rgba(255,255,255,0.4)', color: 'white' }}>
+                Email Us Directly
+              </a>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* ── ADVISORS / TEAM ── */}
+      <section className="advisors" style={{ background: 'var(--secondary)', paddingTop: 96, paddingBottom: 96 }}>
+        <div className="container">
+          <RevealOnScroll>
+            <div style={{ textAlign: 'center', marginBottom: 56 }}>
+              <div className="section-label">The Team Behind Lauren</div>
+              <h2 className="display" style={{ marginTop: 12 }}>Trusted advisors guiding the mission.</h2>
+            </div>
+          </RevealOnScroll>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 28 }}>
+            <RevealOnScroll>
+              <article style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ position: 'relative', aspectRatio: '4/5', background: 'linear-gradient(160deg, #eef2f6 0%, #e6ebf0 100%)' }}>
+                  <Image
+                    src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/wp/2025/03/Simon-Jacobson.jpg"
+                    alt="Rabbi Simon Jacobson, Advisor & Mentor"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                  />
+                </div>
+                <div style={{ padding: 32, display: 'flex', flexDirection: 'column', gap: 16, flex: 1 }}>
+                  <div>
+                    <div className="section-label" style={{ marginBottom: 6 }}>Advisor & Mentor</div>
+                    <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: 26, color: 'var(--navy)' }}>Rabbi Simon Jacobson</h3>
+                  </div>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    Rabbi Jacobson is the author of the best-selling book <em>Toward a Meaningful Life</em>, a William Morrow publication that has sold over 300,000 copies to date and has been translated into Hebrew, French, Spanish, Dutch, Portuguese, Italian, Russian, German, Hungarian and Czech.
+                  </p>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    He leads The Meaningful Life Center, which bridges the secular and the spiritual, through a wide variety of live and online programming. The Center presents to people of all backgrounds the universal teachings of Torah as a blueprint for life.
+                  </p>
+                  <p style={{ fontSize: 13, color: 'var(--muted)', fontStyle: 'italic', marginTop: 'auto' }}>
+                    Meaningful Life Center · 788 Eastern Parkway · Brooklyn, NY 11213
+                  </p>
+                  <a href="https://www.meaningfullife.com/" target="_blank" rel="noopener noreferrer" className="btn btn-navy" style={{ padding: '11px 20px', fontSize: 13, alignSelf: 'flex-start' }}>
+                    Meaningful Life Center →
+                  </a>
+                </div>
+              </article>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={120}>
+              <article style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ position: 'relative', aspectRatio: '4/5', background: 'linear-gradient(160deg, #eef2f6 0%, #e6ebf0 100%)' }}>
+                  <Image
+                    src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/wp/2025/03/Loren-Lahav.png"
+                    alt="Loren Lahav, Global Outreach Strategist"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  />
+                </div>
+                <div style={{ padding: 32, display: 'flex', flexDirection: 'column', gap: 16, flex: 1 }}>
+                  <div>
+                    <div className="section-label" style={{ marginBottom: 6 }}>Global Outreach Strategist</div>
+                    <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: 26, color: 'var(--navy)' }}>Loren Lahav</h3>
+                  </div>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    Loren Lahav is the author of the best-selling book <em>Chicken Soup for The Soul: Time To Thrive</em>; <em>Life TuneUps: Your Personal Plan to Find Balance, Discover Your Passion, and Step into Greatness</em>; <em>The Greatest Love: Being An Extraordinary Mom</em>; <em>Drama Free Divorce Detox: Finding Your True Self After Divorce</em>; and the creator of The &ldquo;I AM Cards&rdquo; Series for Men, Women & Children.
+                  </p>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    She spearheaded the Global Life & Health Mastery Program for Anthony Robbins — leading hundreds of thousands of people throughout the world to turn around their health issues through the use of proper nutrition and the mind/body balance connection. Loren is the Founder and CEO of TRUE LLC and travels the world teaching people from all the top stages.
+                  </p>
+                  <p style={{ fontSize: 13, color: 'var(--muted)', fontStyle: 'italic', marginTop: 'auto' }}>
+                    TRUE LLC · 11700 Charleston Blvd · Las Vegas, NV 89135
+                  </p>
+                </div>
+              </article>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={200}>
+              <article style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <div style={{ position: 'relative', aspectRatio: '4/5', background: 'linear-gradient(160deg, #eef2f6 0%, #e6ebf0 100%)' }}>
+                  <Image
+                    src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/team/cto-abhishek.jpg"
+                    alt="Abhishek Donekal, Chief Technology Officer"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                  />
+                </div>
+                <div style={{ padding: 32, display: 'flex', flexDirection: 'column', gap: 16, flex: 1 }}>
+                  <div>
+                    <div className="section-label" style={{ marginBottom: 6 }}>Chief Technology Officer</div>
+                    <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: 26, color: 'var(--navy)' }}>Abhishek Donekal</h3>
+                  </div>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    Abhishek holds a Master&rsquo;s in Data Science &amp; Artificial Intelligence from Florida International University and works as an AI Engineer, designing and implementing intelligent systems that turn data into real-world impact.
+                  </p>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    As CTO, he leads technology for Save One Person — building the website, search, shop, and AI-powered outreach that bring urgent stories to the right people at the right time, on a fast, reliable, modern foundation.
+                  </p>
+                </div>
+              </article>
+            </RevealOnScroll>
+          </div>
+
+          <RevealOnScroll delay={220}>
+            <div style={{ marginTop: 40, textAlign: 'center' }}>
+              <Link href="/about" className="btn btn-ghost" style={{ borderColor: 'var(--border)', color: 'var(--navy)', padding: '12px 24px', fontSize: 13 }}>
+                Read full About page →
+              </Link>
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="cta section-dark" style={{ position: 'relative' }}>
-        <Image src="https://stalwart-puffpuff-744c94.netlify.app/assets/family-celebration-BH46mSCz.jpg" alt="A multigenerational family embracing at golden hour" fill style={{ objectFit: 'cover', zIndex: -2 }} />
+        <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/family-celebration-BH46mSCz.jpg" alt="A multigenerational family embracing at golden hour" fill style={{ objectFit: 'cover', zIndex: -2 }} />
         <div className="cta-overlay" />
         <div className="container-5xl" style={{ textAlign: 'center' }}>
           <RevealOnScroll>
@@ -516,7 +684,7 @@ export default async function HomePage() {
           </RevealOnScroll>
           <RevealOnScroll delay={200}>
             <div className="cta-btns">
-              <a href={DONATE_URL} className="btn btn-emerald" target="_blank" rel="noopener noreferrer" style={{ padding: '16px 32px', fontSize: 14, letterSpacing: '0.18em' }}>Donate Now</a>
+              <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 14, letterSpacing: '0.18em' }}>Donate Now</a>
               <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry" className="btn btn-ghost" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.25)', padding: '16px 32px', fontSize: 14, letterSpacing: '0.18em' }}>Partner With Us</a>
               <a href="tel:9175726385" className="btn" style={{ border: '1px solid rgba(255,255,255,0.15)', padding: '16px 32px', fontSize: 14, letterSpacing: '0.18em', color: 'rgba(255,255,255,0.85)' }}>Call Lauren</a>
             </div>

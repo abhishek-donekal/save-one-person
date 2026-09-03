@@ -7,10 +7,13 @@ import { useRouter } from 'next/navigation'
 
 const NAV = [
   { href: '/admin', label: 'Dashboard', icon: '⊞' },
+  { href: '/admin/messages', label: 'Messages', icon: '✉' },
   { href: '/admin/stories', label: 'Success Stories', icon: '✦' },
   { href: '/admin/urgent-requests', label: 'Urgent Requests', icon: '⚡' },
   { href: '/admin/blog', label: 'Blog Posts', icon: '✎' },
   { href: '/admin/media', label: 'Media', icon: '▶' },
+  { href: '/admin/shop', label: 'Shop Products', icon: '🛍' },
+  { href: '/admin/shop/coupons', label: 'Coupons', icon: '﹪' },
   { href: '/admin/partners', label: 'Partners', icon: '◈' },
 ]
 
