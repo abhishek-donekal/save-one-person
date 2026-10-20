@@ -89,7 +89,7 @@ Rebuild of the Save One Person nonprofit website from a static single-page clone
 
 ## Notes / Gotchas
 
-- Vercel Hobby plan + private repo: production deploys are **blocked** unless the commit author is `abhishek-donekal <vamshidhar.abhsihek2@gmail.com>`. Commit with that identity (or redeploy from the Vercel dashboard).
+- Vercel Hobby plan + private repo: production deploys are **blocked** unless the commit author is `abhishek-donekal <abhishek-donekal@users.noreply.github.com>` (the last identity that deployed from a push). Commit with that identity (or redeploy from the Vercel dashboard).
 - Vercel org `abhsiheks-projects-351d4109` is on **Hobby (free)** plan → Deployment Protection "Require Log In" must stay **OFF** or it 404/blocks public access.
 - Next.js 16 uses async `cookies()` and `proxy` (middleware deprecated warning is non-fatal).
 - Server components cannot use `onMouseEnter`/`onMouseLeave` — use CSS hover classes (`.hover-lift`, `.hover-border-emerald`, `.hover-bg-secondary` in globals.css).
