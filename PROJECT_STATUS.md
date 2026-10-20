@@ -20,9 +20,9 @@ Rebuild of the Save One Person nonprofit website from a static single-page clone
 ### Key references
 
 - **Supabase project:** `kglvtgohmfulykkspfmj` → https://kglvtgohmfulykkspfmj.supabase.co
-- **Vercel project:** `save-one-person-nextjs`
-- **Live (temp) URL:** https://save-one-person-nextjs.vercel.app
-- **Target domain:** saveonepersonnow.org
+- **Vercel project:** `save-one-person` (team `abhsiheks-projects-351d4109`); serves saveonepersonnow.org + www
+- **Live URL:** https://www.saveonepersonnow.org
+- **Also builds from this repo:** `save-one-person-nextjs` (does not serve saveonepersonnow.org; candidate to disconnect)
 - **Admin login:** /admin/login (email: adonekal@gmail.com)
 - **GitHub:** abhishek-donekal/save-one-person (master)
 
@@ -77,7 +77,7 @@ Rebuild of the Save One Person nonprofit website from a static single-page clone
 
 | # | Task | Notes |
 |---|------|-------|
-| 1 | **Move domain** | Point `saveonepersonnow.org` + `www` from old `save-one-person` project → new `save-one-person-nextjs` project (Vercel dashboard). Blocking go-live. |
+| 1 | ~~**Move domain**~~ | Done: `saveonepersonnow.org` + `www` are on the `save-one-person` Vercel project (confirmed 2026-10-20). |
 | 2 | **Content migration** | DB tables empty. Migrate real content from saveoneperson.org: 57+ patient/urgent posts, 9 named success stories (Hershey Fellig, Torrey Greene, Stuart Zimmer…), media archive (10+ press). |
 | 3 | **Supabase Storage** | Set up storage bucket so admin can upload images/videos (currently URL-only fields). |
 | 4 | **Confirm Shopify URL** | `https://save-one-person.myshopify.com/2` had a likely typo — confirm correct collection/product URL. |

@@ -260,7 +260,7 @@ Living donation is a profound act of generosity. Having your family''s support m
 
 ## Resources
 
-To learn more about becoming a living donor or to share someone''s story, contact Save One Person at Save1Person@aol.com or visit saveoneperson.org.',
+To learn more about becoming a living donor or to share someone''s story, contact Save One Person at Save1Person@aol.com or visit saveonepersonnow.org.',
   'Starting the conversation about organ donation with family is one of the most important things you can do. Here is how to approach it.',
   'Lauren Finkelstein',
   'Resources',
