@@ -52,7 +52,7 @@ export default function AdminLoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@saveoneperson.org"
+                placeholder="you@example.com"
                 autoComplete="email"
               />
             </div>
@@ -87,7 +87,7 @@ export default function AdminLoginPage() {
 
         <div style={{ textAlign: 'center', marginTop: 24 }}>
           <Link href="/" style={{ fontSize: 14, color: 'rgba(255,255,255,0.5)', transition: 'color 200ms' }}>
-            ← Back to saveoneperson.org
+            ← Back to saveonepersonnow.org
           </Link>
         </div>
       </div>

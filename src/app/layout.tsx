@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://saveoneperson.org',
+    url: 'https://www.saveonepersonnow.org',
     siteName: 'Save One Person',
     title: 'Save One Person — One Introduction Can Save a Life',
     description:
@@ -75,7 +75,6 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <head>
         <link rel="preconnect" href="https://stalwart-puffpuff-744c94.netlify.app" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://saveoneperson.org" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
       <body style={{ fontFamily: "'Inter', sans-serif" }}>{children}</body>
