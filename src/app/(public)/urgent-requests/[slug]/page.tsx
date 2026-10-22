@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { getFeaturedRequest } from '@/lib/featuredRequests'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -11,11 +12,12 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const supabase = await createClient()
-  const { data } = await supabase
+  const { data: dbData } = await supabase
     .from('urgent_requests')
     .select('title, patient_name, medical_condition')
     .eq('slug', slug)
     .single()
+  const data = dbData ?? getFeaturedRequest(slug)
 
   return {
     title: data?.title || 'Urgent Request',
@@ -28,11 +30,12 @@ const DONATE_URL = '/donate'
 export default async function UrgentRequestPage({ params }: Props) {
   const { slug } = await params
   const supabase = await createClient()
-  const { data: req } = await supabase
+  const { data: dbReq } = await supabase
     .from('urgent_requests')
     .select('*')
     .eq('slug', slug)
     .single()
+  const req = dbReq ?? getFeaturedRequest(slug)
 
   if (!req || !req.published || req.submission_status === 'pending') notFound()
 

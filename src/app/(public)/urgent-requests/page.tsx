@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
+import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 
 export const metadata: Metadata = {
   title: 'Urgent Requests — People Who Need Help Now',
@@ -10,13 +11,18 @@ export const metadata: Metadata = {
 
 export default async function UrgentRequestsPage() {
   const supabase = await createClient()
-  const { data: requests } = await supabase
+  const { data: dbRequests } = await supabase
     .from('urgent_requests')
     .select('*')
     .eq('published', true)
     .eq('status', 'open')
     .order('urgent', { ascending: false })
     .order('created_at', { ascending: false })
+
+  const requests = [
+    ...FEATURED_REQUESTS.filter((f) => !(dbRequests || []).some((r) => r.slug === f.slug)),
+    ...(dbRequests || []),
+  ]
 
   return (
     <>
@@ -37,7 +43,7 @@ export default async function UrgentRequestsPage() {
 
       <div className="page-content">
         <div className="container">
-          {(!requests || requests.length === 0) ? (
+          {requests.length === 0 ? (
             <div style={{ textAlign: 'center', padding: '80px 0' }}>
               <div style={{ fontSize: 48, marginBottom: 16 }}>🙏</div>
               <h2 className="display" style={{ fontSize: 36, marginBottom: 16 }}>No Open Requests At This Time</h2>
