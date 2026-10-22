@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Save One Person
 
-## Getting Started
+Website for **Save One Person**, a nonprofit that uses media and storytelling to help patients find living organ donors and bone marrow matches.
 
-First, run the development server:
+**Live site:** https://www.saveonepersonnow.org
+
+- Urgent requests: https://www.saveonepersonnow.org/urgent-requests
+- Donate: https://www.saveonepersonnow.org/donate
+- Admin (content management): https://www.saveonepersonnow.org/admin
+
+## Stack
+
+- Next.js (App Router, TypeScript, Tailwind)
+- Supabase (database, auth, image storage)
+- Vercel hosting: project `save-one-person` serves `saveonepersonnow.org` and `www.saveonepersonnow.org`
+- Shop: Shopify
+
+Page content (urgent requests, stories, blog, media, partners) lives in Supabase and is edited from `/admin`, so content changes go live without a deploy.
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000. Supabase keys go in `.env.local`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploying
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pushes to `master` deploy to production on Vercel. The Vercel team is on the Hobby plan with a private repo, so a push is only deployed when Vercel can match the commit author to the account owner; otherwise the deployment shows as "Blocked". If that happens, deploy from your machine with `npx vercel --prod`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `PROJECT_STATUS.md` for current status and open tasks.
