@@ -648,7 +648,13 @@ export default async function HomePage() {
                     Abhishek holds a Master&rsquo;s in Data Science &amp; Artificial Intelligence from Florida International University and works as an AI Engineer, designing and implementing intelligent systems that turn data into real-world impact.
                   </p>
                   <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
-                    As CTO, he leads technology for Save One Person — building the website, search, shop, and AI-powered outreach that bring urgent stories to the right people at the right time, on a fast, reliable, modern foundation.
+                    As Chief Technology Officer, he leads technology and the entire digital platform for Save One Person &mdash; architecting the website, site-wide search, the native shop, and the AI-powered outreach that bring urgent patient stories to the right people at the right time.
+                  </p>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    His work spans full-stack engineering, machine learning, and automation &mdash; from building fast, reliable web systems to applying AI and large language models that help the mission reach more donors, share more stories, and save more lives.
+                  </p>
+                  <p style={{ fontSize: 15, lineHeight: 1.75, color: 'rgba(28,32,41,0.82)' }}>
+                    He believes technology should serve people first: every system he builds is measured by one question &mdash; does it help connect a patient with the person who can save their life?
                   </p>
                 </div>
               </article>
