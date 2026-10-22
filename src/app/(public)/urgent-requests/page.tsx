@@ -62,19 +62,19 @@ export default async function UrgentRequestsPage() {
                   : 0
                 return (
                   <div key={req.id} style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: req.image_url ? '320px 1fr' : '1fr', gap: 0 }}>
+                    <div className={`urgent-card-grid${req.image_url ? '' : ' no-image'}`}>
                       {req.image_url && (
-                        <div style={{ position: 'relative', height: '100%', minHeight: 280 }}>
+                        <Link href={`/urgent-requests/${req.slug}`} className="urgent-card-photo" aria-label={`Read ${req.patient_name}'s story`}>
                           <Image
                             src={req.image_url}
                             alt={req.patient_name}
                             fill
-                            sizes="(max-width: 640px) 100vw, 320px"
+                            sizes="(max-width: 768px) 100vw, 320px"
                             style={{ objectFit: 'cover', objectPosition: 'center top' }}
                           />
-                        </div>
+                        </Link>
                       )}
-                      <div style={{ padding: 40 }}>
+                      <div className="urgent-card-body">
                         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16, flexWrap: 'wrap' }}>
                           {req.urgent && <span className="badge badge-red">Urgent</span>}
                           <span className="badge badge-blue">{req.medical_condition}</span>

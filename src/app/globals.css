@@ -1637,6 +1637,17 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
+
+/* Urgent request cards: photo beside the text, stacked on phones */
+.urgent-card-grid { display: grid; grid-template-columns: 320px 1fr; }
+.urgent-card-grid.no-image { grid-template-columns: 1fr; }
+.urgent-card-photo { position: relative; display: block; height: 100%; min-height: 280px; }
+.urgent-card-body { padding: 40px; min-width: 0; }
+@media (max-width: 768px) {
+  .urgent-card-grid { grid-template-columns: 1fr; }
+  .urgent-card-photo { height: auto; min-height: 0; aspect-ratio: 4 / 3; }
+  .urgent-card-body { padding: 24px; }
+}
 .hover-border-emerald {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
