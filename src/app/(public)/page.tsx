@@ -55,17 +55,18 @@ export default async function HomePage() {
   return (
     <>
       {/* ── HERO ── */}
-      <section id="top" className="hero" style={{ padding: 0 }}>
-        <Image
-          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg"
-          alt="Two hands reaching toward one another"
-          fill
-          priority
-          style={{ objectFit: 'cover', zIndex: -2, position: 'absolute' }}
-        />
-        <div className="hero-overlay" />
-        <div className="hero-blob hero-blob-1" aria-hidden="true" />
-        <div className="hero-blob hero-blob-2" aria-hidden="true" />
+      <section id="top" className="hero hero-has-miracle" style={{ padding: 0 }}>
+        <div className="hero-miracle">
+          <Image
+            src="/images/miracles-happen.jpg"
+            alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
+            width={1600}
+            height={900}
+            priority
+            sizes="100vw"
+            className="hero-miracle-img"
+          />
+        </div>
 
         <div className="hero-inner">
           <RevealOnScroll>
@@ -123,11 +124,6 @@ export default async function HomePage() {
           </RevealOnScroll>
         </div>
 
-        <div className="scroll-hint-wrap" aria-hidden="true">
-          <div className="scroll-hint-box">
-            <div className="scroll-hint-dot" />
-          </div>
-        </div>
       </section>
 
       {/* ── HELP THEM NOW ── */}
@@ -189,18 +185,6 @@ export default async function HomePage() {
           </div>
         </section>
       )}
-
-      {/* ── MIRACLES HAPPEN BANNER ── */}
-      <section className="miracle-banner" aria-label="Miracles happen">
-        <Image
-          src="/images/miracles-happen.jpg"
-          alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
-          width={1600}
-          height={900}
-          sizes="100vw"
-          className="miracle-banner-img"
-        />
-      </section>
 
       {/* ── PROBLEM ── */}
       <section className="problem">

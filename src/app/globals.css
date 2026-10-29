@@ -1791,6 +1791,12 @@ footer {
 .help-now-more { margin-top: 48px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
 .help-now-more p { font-size: 18px; line-height: 1.6; color: var(--navy); max-width: 620px; }
 
-/* Homepage: Miracles Happen banner */
-.miracle-banner { background: #05060d; line-height: 0; }
-.miracle-banner-img { display: block; width: 100%; max-width: 1600px; height: auto; margin: 0 auto; }
+/* Homepage top: Miracles Happen picture replaces the hands photo */
+.hero-has-miracle { min-height: 0; background: #05060d; }
+.hero-miracle { padding-top: 76px; background: #05060d; line-height: 0; }
+.hero-miracle-img { display: block; width: 100%; max-width: 1600px; height: auto; margin: 0 auto; }
+.hero-has-miracle .hero-inner { min-height: 0; padding: 56px 40px 96px; }
+@media (max-width: 768px) {
+  .hero-miracle { padding-top: 64px; }
+  .hero-has-miracle .hero-inner { padding: 40px 24px 64px; }
+}
