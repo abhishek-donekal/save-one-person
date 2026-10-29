@@ -3,6 +3,81 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-brittany-hood',
+    slug: 'brittany-hood',
+    patient_name: 'Brittany Hood',
+    title: 'She Has Spent Years Showing Up for Her Students. Now Brittany Needs a Living Kidney Donor',
+    medical_condition: 'Polycystic Kidney Disease',
+    story_text: `Every day, Brittany Hood puts on her uniform, walks into school and shows up for the children who depend on her. She's a 35-year-old school resource officer at Ronald McNair Junior High School in Lake City, South Carolina, and she also coaches three sports at Lake City High School. She has built her life around serving others.
+
+Now, Brittany is the one asking for help. 💔 She needs a kidney transplant.
+
+Brittany has polycystic kidney disease (PKD), a genetic condition that has progressively damaged her kidneys. Her kidney function has now declined to the point that she needs a transplant, and she has recently been placed on the kidney-transplant waiting list.
+
+🩺 HER SEARCH FOR A DONOR IS NOW URGENT
+
+Brittany was diagnosed with PKD about four years ago. At first, the disease barely interfered with her life. “I just lived a normal life.” She continued rebuilding her career in law enforcement, returned to her community and kept doing what she loves.
+
+But the disease has progressed. Today, she is waiting for a kidney while continuing to work, coach and serve the young people in her community.
+
+❤️ WHY A LIVING DONOR MATTERS
+
+Because Brittany is only 35, her doctors are encouraging her to pursue a living kidney donor. Brittany explained that doctors prefer a living donor because a kidney from a living donor can potentially provide a longer-lasting transplant than a deceased-donor kidney.
+
+Several people have already reached out and completed an initial donor survey. But Brittany is still waiting for an answer.
+
+👩‍🏫 SHE SHOWS UP FOR HER STUDENTS — EVEN ON THE HARD DAYS
+
+Brittany says some days are physically and emotionally difficult. But then she thinks about the children. The students are counting on her. So she comes to work with a smile. She talks with them. She coaches. She keeps going.
+
+“The kids need you. So, I always come with a smile on my face.”
+
+That determination is what makes her story so powerful.
+
+🙏 NOW SHE NEEDS SOMEONE TO SHOW UP FOR HER
+
+Brittany isn't asking for money. She's searching for something far more precious: 🩷 a potential living kidney donor.
+
+If you are interested in exploring living kidney donation, the transplant team—not the recipient or her family—will determine whether you are medically eligible.
+
+🏥 INTERESTED IN LEARNING ABOUT LIVING KIDNEY DONATION?
+
+Potential donors should contact a transplant center directly and request a living-donor evaluation.
+
+MUSC Health — Living Donor Program: 📞 843-792-5097
+
+MUSC Health Kidney Transplant Program: ☎️ 800-277-8687
+
+📍 MUSC Health Transplant Clinic, 135 Rutledge Avenue, Charleston, SC 29425
+
+MUSC Health confirms that potential living donors are screened and evaluated by the transplant team.
+
+⚠️ Please do not assume that you are medically eligible—or ineligible—to donate. A transplant center must perform the appropriate confidential evaluation.
+
+📢 CAN'T DONATE? YOU CAN STILL HELP!
+
+You don't have to be Brittany's donor to make a difference. 📲 Share her story. 👥 Tell your friends and family. 📱 Share it on social media.
+
+The person who can help Brittany may be someone you've never met. Someone who simply hasn't heard her story yet.
+
+💚 SHE HAS SPENT YEARS SERVING OTHERS. Now let's help her find someone willing to stand beside her.
+
+Brittany continues to put one foot in front of the other—with faith, family, students and her community keeping her going. She remains hopeful that the right donor will come along.
+
+“If it's God's time, God's going to always provide.”
+
+🙏 Please share Brittany Hood's story. 💚 One person. One kidney. One extraordinary opportunity to change a life. Someone out there may be the person Brittany is waiting for.
+
+#KidneyForBrittany #HelpBrittany #LivingKidneyDonor #DonateLife #PKD`,
+    image_url: '/images/urgent/brittany-hood.jpg',
+    contact_phone: '843-792-5097',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-john-jj-gillen',
     slug: 'john-jj-gillen',
     patient_name: 'John “JJ” Gillen',
