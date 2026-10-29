@@ -1783,3 +1783,7 @@ footer {
 .help-now-link { font-size: 14px; font-weight: 600; color: var(--emerald); }
 @media (max-width: 1100px) { .help-now-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .help-now { padding: 64px 0; } .help-now-grid { grid-template-columns: 1fr; } }
+
+/* Hero: one-line statement of what Save One Person does */
+.hero-lead { display: block; font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.25; font-weight: 600; color: #fff; margin-bottom: 12px; }
+@media (max-width: 600px) { .hero-lead { font-size: 24px; } }

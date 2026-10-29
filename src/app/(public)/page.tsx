@@ -84,7 +84,8 @@ export default async function HomePage() {
 
           <RevealOnScroll delay={180}>
             <p className="hero-desc">
-              Every day, thousands of people — including children, parents, siblings, and friends — are waiting for a living kidney donor, a living liver donor, a bone marrow match, or another life-saving medical miracle. Many compassionate people would help if they simply knew someone was in need. The tragedy is not a lack of generosity, but a lack of awareness. Save One Person exists to bridge that gap.
+              <strong className="hero-lead">We use the media to create miracles.</strong>
+              Every week, we share the stories of people who need living organ donors, bone marrow matches and other medical miracles, so the person who can save them finds out.
             </p>
           </RevealOnScroll>
 
