@@ -70,27 +70,18 @@ export default async function HomePage() {
 
         <div className="hero-inner">
           <RevealOnScroll>
-            <div className="hero-badge glass">
-              <span className="dot" aria-hidden="true" />
-              A Movement For Life-Saving Connections
-            </div>
-          </RevealOnScroll>
-
-          <RevealOnScroll delay={100}>
-            <h1 className="font-display">
-              What If One Introduction<br />
-              <em>Could Save a Life?</em>
+            <h1 className="font-display hero-mission">
+              We use the media to <em>create miracles.</em>
             </h1>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={180}>
+          <RevealOnScroll delay={100}>
             <p className="hero-desc">
-              <strong className="hero-lead">We use the media to create miracles.</strong>
               Every week, we share the stories of people who need living organ donors, bone marrow matches and other medical miracles, so the person who can save them finds out.
             </p>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={260}>
+          <RevealOnScroll delay={180}>
             <div className="hero-btns">
               <a href={DONATE_URL} className="btn btn-emerald">
                 Donate Now
@@ -103,7 +94,7 @@ export default async function HomePage() {
             </div>
           </RevealOnScroll>
 
-          <RevealOnScroll delay={340}>
+          <RevealOnScroll delay={260}>
             <div className="hero-cards">
               <div className="hero-card glass">
                 <div className="label">Founder</div>

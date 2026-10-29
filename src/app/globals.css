@@ -1784,19 +1784,20 @@ footer {
 @media (max-width: 1100px) { .help-now-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .help-now { padding: 64px 0; } .help-now-grid { grid-template-columns: 1fr; } }
 
-/* Hero: one-line statement of what Save One Person does */
-.hero-lead { display: block; font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.25; font-weight: 600; color: #fff; margin-bottom: 12px; }
-@media (max-width: 600px) { .hero-lead { font-size: 24px; } }
-
-.help-now-more { margin-top: 48px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
-.help-now-more p { font-size: 18px; line-height: 1.6; color: var(--navy); max-width: 620px; }
-
 /* Homepage top: Miracles Happen picture replaces the hands photo */
 .hero-has-miracle { min-height: 0; background: #05060d; }
 .hero-miracle { padding-top: 76px; background: #05060d; line-height: 0; }
 .hero-miracle-img { display: block; width: 100%; max-width: 1600px; height: auto; margin: 0 auto; }
-.hero-has-miracle .hero-inner { min-height: 0; padding: 56px 40px 96px; }
+.hero-has-miracle .hero-inner { min-height: 0; max-width: 1080px; padding: 64px 40px 96px; align-items: center; text-align: center; }
+.hero-has-miracle .hero-mission { font-size: 60px; line-height: 1.08; letter-spacing: -1.2px; margin-top: 0; max-width: 900px; }
+.hero-has-miracle .hero-mission em { color: #f2c46d; font-style: italic; }
+.hero-has-miracle .hero-mission::before { content: ''; display: block; width: 72px; height: 2px; margin: 0 auto 28px; background: linear-gradient(90deg, transparent, #f2c46d, transparent); }
+.hero-has-miracle .hero-desc { margin: 24px auto 0; max-width: 720px; font-size: 20px; }
+.hero-has-miracle .hero-btns { justify-content: center; }
+.hero-has-miracle .hero-cards { max-width: 960px; text-align: left; }
 @media (max-width: 768px) {
   .hero-miracle { padding-top: 64px; }
   .hero-has-miracle .hero-inner { padding: 40px 24px 64px; }
+  .hero-has-miracle .hero-mission { font-size: 34px; line-height: 1.12; letter-spacing: -0.5px; }
+  .hero-has-miracle .hero-desc { font-size: 17px; line-height: 1.65; }
 }
