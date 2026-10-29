@@ -37,7 +37,20 @@ export default async function HomePage() {
     ...(dbRequests || []),
   ]
   const requestCount = openRequests.length
-  const spotlight = openRequests.filter((r) => r.image_url).slice(0, 3)
+  // Patients pinned to the front of the homepage section, in this order.
+  // Matched against the slug or name so it works for admin-dashboard entries too.
+  const PINNED = ['william']
+  const pinRank = (r: { slug: string; patient_name: string }) => {
+    const key = `${r.slug} ${r.patient_name}`.toLowerCase()
+    const i = PINNED.findIndex((p) => key.includes(p))
+    return i === -1 ? PINNED.length : i
+  }
+  const spotlight = openRequests
+    .filter((r) => r.image_url)
+    .map((r, i) => ({ r, i }))
+    .sort((a, b) => pinRank(a.r) - pinRank(b.r) || a.i - b.i)
+    .map(({ r }) => r)
+    .slice(0, 4)
 
   return (
     <>
@@ -144,7 +157,7 @@ export default async function HomePage() {
                         src={req.image_url as string}
                         alt={req.patient_name}
                         fill
-                        sizes="(max-width: 768px) 100vw, 400px"
+                        sizes="(max-width: 600px) 100vw, (max-width: 1100px) 50vw, 300px"
                         style={{ objectFit: 'cover', objectPosition: 'center top' }}
                       />
                       {req.urgent && <span className="badge badge-red help-now-badge">Urgent</span>}
