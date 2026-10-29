@@ -190,6 +190,18 @@ export default async function HomePage() {
         </section>
       )}
 
+      {/* ── MIRACLES HAPPEN BANNER ── */}
+      <section className="miracle-banner" aria-label="Miracles happen">
+        <Image
+          src="/images/miracles-happen.jpg"
+          alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
+          width={1600}
+          height={900}
+          sizes="100vw"
+          className="miracle-banner-img"
+        />
+      </section>
+
       {/* ── PROBLEM ── */}
       <section className="problem">
         <div className="container">
