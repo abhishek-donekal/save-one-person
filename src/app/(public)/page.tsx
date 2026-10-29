@@ -172,6 +172,20 @@ export default async function HomePage() {
                 </RevealOnScroll>
               ))}
             </div>
+
+            <RevealOnScroll>
+              <div className="help-now-more">
+                <p>
+                  {requestCount > spotlight.length
+                    ? `${requestCount - spotlight.length} more ${requestCount - spotlight.length === 1 ? 'person is' : 'people are'} waiting for a match.`
+                    : 'Others are waiting for a match, too.'}{' '}
+                  Every story you read and share could reach the right person.
+                </p>
+                <Link href="/urgent-requests" className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 15 }}>
+                  See Everyone Who Needs Help →
+                </Link>
+              </div>
+            </RevealOnScroll>
           </div>
         </section>
       )}

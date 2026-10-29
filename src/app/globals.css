@@ -1787,3 +1787,6 @@ footer {
 /* Hero: one-line statement of what Save One Person does */
 .hero-lead { display: block; font-family: 'Fraunces', serif; font-size: 30px; line-height: 1.25; font-weight: 600; color: #fff; margin-bottom: 12px; }
 @media (max-width: 600px) { .hero-lead { font-size: 24px; } }
+
+.help-now-more { margin-top: 48px; display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center; }
+.help-now-more p { font-size: 18px; line-height: 1.6; color: var(--navy); max-width: 620px; }
