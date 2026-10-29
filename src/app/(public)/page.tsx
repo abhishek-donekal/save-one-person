@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import { createClient } from '@/lib/supabase/server'
+import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 
 export const metadata: Metadata = {
   title: 'Save One Person — One Introduction Can Save a Life',
@@ -15,17 +16,28 @@ const DONATE_URL = '/donate'
 export default async function HomePage() {
   const supabase = await createClient()
 
-  const [{ count: storyCount }, { count: requestCount }] = await Promise.all([
+  const [{ count: storyCount }, { data: dbRequests }] = await Promise.all([
     supabase
       .from('success_stories')
       .select('*', { count: 'exact', head: true })
       .eq('published', true),
     supabase
       .from('urgent_requests')
-      .select('*', { count: 'exact', head: true })
+      .select('id, slug, patient_name, medical_condition, image_url, urgent')
       .eq('status', 'open')
-      .eq('published', true),
+      .eq('published', true)
+      .order('urgent', { ascending: false })
+      .order('created_at', { ascending: false }),
   ])
+
+  // Same list the Urgent Requests page shows: requests that ship with the
+  // site plus published database rows (a database row wins on a shared slug).
+  const openRequests = [
+    ...FEATURED_REQUESTS.filter((f) => !(dbRequests || []).some((r) => r.slug === f.slug)),
+    ...(dbRequests || []),
+  ]
+  const requestCount = openRequests.length
+  const spotlight = openRequests.filter((r) => r.image_url).slice(0, 3)
 
   return (
     <>
@@ -103,6 +115,52 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── HELP THEM NOW ── */}
+      {spotlight.length > 0 && (
+        <section className="help-now">
+          <div className="container">
+            <RevealOnScroll>
+              <div className="help-now-head">
+                <div>
+                  <div className="section-label" style={{ color: '#b91c1c' }}>Help Needed Now</div>
+                  <h2 className="display">They&apos;re Waiting for a Match.</h2>
+                  <p className="help-now-sub">
+                    Real people searching right now for a living donor. You could be the one — or you could share their story with the one.
+                  </p>
+                </div>
+                <Link href="/urgent-requests" className="btn btn-ghost help-now-all">
+                  See all {requestCount} urgent requests →
+                </Link>
+              </div>
+            </RevealOnScroll>
+
+            <div className="help-now-grid">
+              {spotlight.map((req, i) => (
+                <RevealOnScroll key={req.id} delay={i * 100}>
+                  <Link href={`/urgent-requests/${req.slug}`} className="help-now-card hover-lift">
+                    <div className="help-now-photo">
+                      <Image
+                        src={req.image_url as string}
+                        alt={req.patient_name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
+                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                      />
+                      {req.urgent && <span className="badge badge-red help-now-badge">Urgent</span>}
+                    </div>
+                    <div className="help-now-body">
+                      <span className="badge badge-blue">{req.medical_condition}</span>
+                      <h3 className="font-display help-now-name">{req.patient_name}</h3>
+                      <span className="help-now-link">Read their story →</span>
+                    </div>
+                  </Link>
+                </RevealOnScroll>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── PROBLEM ── */}
       <section className="problem">
