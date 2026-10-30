@@ -115,9 +115,11 @@ export default async function UrgentRequestPage({ params }: Props) {
 
           <div style={{ marginTop: 20, padding: '20px 24px', borderRadius: 'var(--r-2xl)', background: '#f0fdf4', border: '1.5px solid #bbf7d0', display: 'flex', gap: 16, alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' }}>
             <p style={{ fontSize: 16, color: 'var(--navy)', lineHeight: 1.5 }}>
-              <strong>Could you be a living donor?</strong> Join our donor list. Signing up never commits you.
+              {/kidney|renal|dialysis/i.test(`${req.medical_condition} ${req.title}`)
+                ? <><strong>Could you be a living kidney donor?</strong> Join our kidney donor list. Signing up never commits you.</>
+                : <><strong>Could you be a living donor?</strong> Join our donor list. Signing up never commits you.</>}
             </p>
-            <Link href="/become-a-donor" className="btn btn-emerald" style={{ padding: '12px 22px', fontSize: 13 }}>Be a Donor →</Link>
+            <Link href="/become-a-donor" className="btn btn-emerald" style={{ padding: '12px 22px', fontSize: 13 }}>{/kidney|renal|dialysis/i.test(`${req.medical_condition} ${req.title}`) ? 'Be a Kidney Donor →' : 'Be a Donor →'}</Link>
           </div>
 
           {(req.contact_email || req.contact_phone || req.social_facebook || req.social_instagram || req.social_twitter || req.social_other || req.gofundme_url) && (

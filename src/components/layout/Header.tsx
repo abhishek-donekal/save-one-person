@@ -8,7 +8,7 @@ import CartButton from '@/components/shop/CartButton'
 
 const NAV_LINKS: { href: string; label: string; external?: boolean }[] = [
   { href: '/urgent-requests', label: 'Urgent' },
-  { href: '/become-a-donor', label: 'Be a Donor' },
+  { href: '/become-a-donor', label: 'Be a Kidney Donor' },
   { href: '/success-stories', label: 'Stories' },
   { href: '/media', label: 'Media' },
   { href: '/future', label: 'Future' },

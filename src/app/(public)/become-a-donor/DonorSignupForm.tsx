@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { NMDP_URL, GIFT_URL } from '@/lib/org'
 
 const WAYS = ['Kidney', 'Liver', 'Bone marrow / stem cells', 'Not sure yet'] as const
+const WAY_LABELS: Record<string, string> = { Kidney: 'A kidney', Liver: 'Part of my liver', 'Bone marrow / stem cells': 'Bone marrow / stem cells', 'Not sure yet': 'Not sure yet' }
 const BLOOD = ["Don't know", 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'] as const
 
 export default function DonorSignupForm() {
@@ -12,7 +13,7 @@ export default function DonorSignupForm() {
   const [phone, setPhone] = useState('')
   const [location, setLocation] = useState('')
   const [bloodType, setBloodType] = useState<string>("Don't know")
-  const [ways, setWays] = useState<string[]>([])
+  const [ways, setWays] = useState<string[]>(['Kidney'])
   const [note, setNote] = useState('')
   const [adult, setAdult] = useState(false)
   const [contactOk, setContactOk] = useState(false)
@@ -81,7 +82,7 @@ export default function DonorSignupForm() {
         <div className="donor-ways">
           {WAYS.map((w) => (
             <button key={w} type="button" aria-pressed={ways.includes(w)} onClick={() => toggle(w)} style={chip(ways.includes(w))}>
-              {ways.includes(w) ? '✓ ' : ''}{w}
+              {ways.includes(w) ? '✓ ' : ''}{WAY_LABELS[w]}
             </button>
           ))}
         </div>
