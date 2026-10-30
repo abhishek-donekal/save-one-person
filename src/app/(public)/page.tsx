@@ -580,7 +580,7 @@ export default async function HomePage() {
               <div className="section-label">Watch</div>
               <h2 className="display" style={{ marginTop: 12 }}>How one story saves a life.</h2>
               <p style={{ marginTop: 20, fontSize: 17, lineHeight: 1.8, color: 'var(--muted)', maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
-                In one minute, see how Save One Person turns a story into a life-saving match — and how you can help create the next miracle.
+                In just over a minute, see how Save One Person turns a story into a life-saving match — and how you can help create the next miracle.
               </p>
             </div>
           </RevealOnScroll>
