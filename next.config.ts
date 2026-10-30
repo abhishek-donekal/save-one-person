@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
       { source: "/organ-donation", destination: "/success-stories", permanent: true },
       { source: "/inspirational-stories", destination: "/success-stories", permanent: true },
       { source: "/succes-stories", destination: "/success-stories", permanent: true }, // old misspelling
-      { source: "/volunteer-details", destination: "/ambassadors", permanent: true },
+      { source: "/volunteer-details", destination: "/", permanent: false },
       { source: "/volunteers", destination: "/contact", permanent: true },
       { source: "/media-articles", destination: "/media", permanent: true },
       { source: "/in-the-media", destination: "/media", permanent: true },
