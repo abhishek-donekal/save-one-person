@@ -71,7 +71,7 @@ export default async function HomePage() {
         <div className="hero-inner">
           <RevealOnScroll>
             <h1 className="font-display hero-mission">
-              We use the media to <em>create miracles.</em>
+              We turn media into <em>miracles.</em>
             </h1>
           </RevealOnScroll>
 
