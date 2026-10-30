@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 // admin dashboard's Messages page with a clear "Donor sign-up" subject.
 
 const EMAIL_RE = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-const WAYS = ['Kidney', 'Liver', 'Bone marrow / stem cells', 'Not sure yet'] as const
+const WAYS = ['Kidney', 'Liver', 'Bone marrow', 'Not sure yet'] as const
 const BLOOD = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-', "Don't know"] as const
 
 const WINDOW_MS = 10 * 60 * 1000

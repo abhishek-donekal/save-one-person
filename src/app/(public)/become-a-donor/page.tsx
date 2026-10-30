@@ -47,7 +47,7 @@ export default function BecomeADonorPage() {
               <div className="marrow-box">
                 <div className="section-label" style={{ marginBottom: 8 }}>Want to be a bone marrow donor instead?</div>
                 <h3>Join a bone marrow registry.</h3>
-                <p>Bone marrow and stem cell matches are found through national registries, not by us. Joining is free, takes a few minutes online, and they mail you a cheek swab kit. You can also sign up here, so we can tell you about patients searching for a match.</p>
+                <p>Bone marrow matches are found through national registries, not by us. Joining is free, takes a few minutes online, and they mail you a cheek swab kit. You can also sign up here, so we can tell you about patients searching for a match.</p>
                 <div className="marrow-links">
                   <a href={NMDP_URL} target="_blank" rel="noopener noreferrer" className="btn btn-navy">Join NMDP (Be The Match) →</a>
                   <a href={GIFT_URL} target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ borderColor: 'var(--border)', color: 'var(--navy)' }}>Join Gift of Life →</a>

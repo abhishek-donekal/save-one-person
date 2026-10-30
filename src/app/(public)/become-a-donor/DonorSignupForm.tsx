@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import { NMDP_URL, GIFT_URL } from '@/lib/org'
 
-const WAYS = ['Kidney', 'Liver', 'Bone marrow / stem cells', 'Not sure yet'] as const
-const WAY_LABELS: Record<string, string> = { Kidney: 'A kidney', Liver: 'Part of my liver', 'Bone marrow / stem cells': 'Bone marrow / stem cells', 'Not sure yet': 'Not sure yet' }
+const WAYS = ['Kidney', 'Liver', 'Bone marrow', 'Not sure yet'] as const
+const WAY_LABELS: Record<string, string> = { Kidney: 'A kidney', Liver: 'Part of my liver', 'Bone marrow': 'Bone marrow', 'Not sure yet': 'Not sure yet' }
 const BLOOD = ["Don't know", 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'] as const
 
 export default function DonorSignupForm() {
@@ -88,7 +88,7 @@ export default function DonorSignupForm() {
         </div>
       </fieldset>
 
-      {ways.includes('Bone marrow / stem cells') && (
+      {ways.includes('Bone marrow') && (
         <div className="marrow-note" role="note">
           <strong>Bone marrow donors also need to join a national registry.</strong> Patients are matched through the registry, so please sign up there too. It&apos;s a free cheek swab kit by mail.
           <div className="marrow-links">
