@@ -345,7 +345,7 @@ export default async function HomePage() {
               matching the advisors grid pattern used elsewhere on this page. */}
           <div className="help-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
             {[
-              { tag: 'Save a Life', title: 'Be A Living Kidney Donor', body: 'Most people can live a healthy life with one kidney. Join our kidney donor list and we\u2019ll reach out when someone needs one. Signing up never commits you.', cta: 'Sign Up to Be a Kidney Donor →', href: '/become-a-donor', external: false },
+              { tag: 'Save a Life', title: 'Be A Living Donor', body: 'Give a kidney, part of your liver, bone marrow or stem cells. Join our donor list and we\u2019ll reach out when someone needs you. Signing up never commits you.', cta: 'Sign Up to Be a Donor →', href: '/become-a-donor', external: false },
               { tag: 'Give', title: 'Donate', body: 'Your tax-deductible contribution helps expand our reach and tell more life-saving stories.', cta: 'Donate Now →', href: DONATE_URL, external: false },
               { tag: 'Connect', title: 'Make An Introduction', body: 'Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.', cta: 'Email Lauren →', href: 'mailto:Save1Person@aol.com', external: false },
               { tag: 'Amplify', title: 'Become A Partner', body: 'Organizations and companies can help amplify life-saving messages and expand our impact.', cta: 'Partner With Us →', href: 'mailto:Save1Person@aol.com?subject=Partnership%20Inquiry', external: false },
