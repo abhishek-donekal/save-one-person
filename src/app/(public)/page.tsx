@@ -5,7 +5,6 @@ import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import SharePanel from '@/components/ui/SharePanel'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
-import NewsletterSignup from '@/components/layout/NewsletterSignup'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
 
@@ -208,27 +207,12 @@ export default async function HomePage() {
 
             <RevealOnScroll>
               <div className="help-now-more">
-                <p>
-                  {requestCount > spotlight.length
-                    ? `${requestCount - spotlight.length} more ${requestCount - spotlight.length === 1 ? 'person is' : 'people are'} waiting for a match.`
-                    : 'Others are waiting for a match, too.'}{' '}
-                  Every story you read and share could reach the right person.
-                </p>
                 <Link href="/urgent-requests" className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 15 }}>
                   See Everyone Who Needs Help →
                 </Link>
               </div>
             </RevealOnScroll>
 
-            <RevealOnScroll>
-              <div className="alerts-band">
-                <div>
-                  <h3>Get new urgent requests by email.</h3>
-                  <p>When someone new needs a donor, you&apos;ll be among the first to know, and one share could reach their match.</p>
-                </div>
-                <NewsletterSignup tone="light" />
-              </div>
-            </RevealOnScroll>
           </div>
         </section>
       )}
