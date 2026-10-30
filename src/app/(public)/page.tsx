@@ -117,6 +117,34 @@ export default async function HomePage() {
 
       </section>
 
+      {/* ── WATCH: how one story saves a life (video) ── */}
+      <section className="vision-video" style={{ paddingTop: 96, paddingBottom: 96 }}>
+        <div className="container-md">
+          <RevealOnScroll>
+            <div style={{ textAlign: 'center', marginBottom: 40 }}>
+              <div className="section-label">Watch</div>
+              <h2 className="display" style={{ marginTop: 12 }}>How one story saves a life.</h2>
+              <p style={{ marginTop: 20, fontSize: 17, lineHeight: 1.8, color: 'var(--muted)', maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
+                In just over a minute, see how Save One Person turns a story into a life-saving match — and how you can help create the next miracle.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll delay={120}>
+            <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9', background: '#000' }}>
+              <video
+                src="/videos/save-one-person.mp4"
+                poster="/videos/save-one-person-poster.jpg"
+                controls
+                playsInline
+                preload="none"
+                title="Save One Person — Miracles happen"
+                style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+              />
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
       {/* ── HELP THEM NOW ── */}
       {spotlight.length > 0 && (
         <section className="help-now">
@@ -569,34 +597,6 @@ export default async function HomePage() {
               </RevealOnScroll>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── WATCH: how one story saves a life (video) ── */}
-      <section className="vision-video" style={{ paddingTop: 96, paddingBottom: 96 }}>
-        <div className="container-md">
-          <RevealOnScroll>
-            <div style={{ textAlign: 'center', marginBottom: 40 }}>
-              <div className="section-label">Watch</div>
-              <h2 className="display" style={{ marginTop: 12 }}>How one story saves a life.</h2>
-              <p style={{ marginTop: 20, fontSize: 17, lineHeight: 1.8, color: 'var(--muted)', maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
-                In just over a minute, see how Save One Person turns a story into a life-saving match — and how you can help create the next miracle.
-              </p>
-            </div>
-          </RevealOnScroll>
-          <RevealOnScroll delay={120}>
-            <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9', background: '#000' }}>
-              <video
-                src="/videos/save-one-person.mp4"
-                poster="/videos/save-one-person-poster.jpg"
-                controls
-                playsInline
-                preload="none"
-                title="Save One Person — Miracles happen"
-                style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
-              />
-            </div>
-          </RevealOnScroll>
         </div>
       </section>
 
