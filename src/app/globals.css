@@ -1855,3 +1855,6 @@ footer {
 .marrow-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px 18px; }
 .marrow-note .marrow-links a { color: var(--emerald); font-weight: 700; }
 .marrow-box .marrow-links .btn { padding: 12px 20px; font-size: 13px; }
+.media-alert-band { margin-top: 40px; padding: 28px 32px; border-radius: var(--r-3xl); background: var(--white); border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.media-alert-band h3 { margin-top: 6px; font-family: 'Fraunces', serif; font-size: 26px; color: var(--navy); line-height: 1.25; }
+@media (max-width: 600px) { .media-alert-band { padding: 22px; } .media-alert-band .btn { width: 100%; justify-content: center; } }

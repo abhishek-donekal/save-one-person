@@ -213,6 +213,18 @@ export default async function HomePage() {
               </div>
             </RevealOnScroll>
 
+            <RevealOnScroll>
+              <div className="media-alert-band">
+                <div>
+                  <div className="section-label">For Media Outlets</div>
+                  <h3>Sign up to receive our Save One Alerts.</h3>
+                </div>
+                <Link href="/media-alerts" className="btn btn-navy" style={{ padding: '16px 28px', fontSize: 14 }}>
+                  Get Save One Alerts →
+                </Link>
+              </div>
+            </RevealOnScroll>
+
           </div>
         </section>
       )}

@@ -78,6 +78,9 @@ export default async function MediaPage() {
           <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
             Save One Person has been featured across television, radio, podcasts, and digital media. Every mention helps reach more people who can save a life.
           </p>
+          <Link href="/media-alerts" className="btn btn-emerald" style={{ marginTop: 28, padding: '16px 28px', fontSize: 14 }}>
+            Media: Sign Up for Save One Alerts →
+          </Link>
         </div>
       </div>
 
