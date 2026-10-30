@@ -1,8 +1,8 @@
 // Emails Lauren a copy of each sign-up, via FormSubmit (free, no account).
-// The first message ever sent asks Save1Person@aol.com to click "Activate";
+// The first message ever sent asks save1person1@gmail.com to click "Activate";
 // after that every sign-up arrives as an email. Runs in the visitor's browser
 // after the sign-up has already been saved, so a failure here never loses data.
-export const NOTIFY_EMAIL = 'Save1Person@aol.com'
+export const NOTIFY_EMAIL = 'save1person1@gmail.com'
 
 export function emailLauren(subject: string, fields: Record<string, string>) {
   try {

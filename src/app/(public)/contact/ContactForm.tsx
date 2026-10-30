@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { emailLauren } from '@/lib/notify'
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '', website: '' })
@@ -23,6 +24,9 @@ export default function ContactForm() {
         setErrMsg(json.error || 'Something went wrong. Please email us directly.')
         return
       }
+      emailLauren(`New contact message: ${form.subject || form.name}`, {
+        Name: form.name, Email: form.email, Subject: form.subject || '—', Message: form.message,
+      })
       setStatus('sent')
     } catch {
       setStatus('error')

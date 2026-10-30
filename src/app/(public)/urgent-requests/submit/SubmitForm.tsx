@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { emailLauren } from '@/lib/notify'
 
 const FIELD_STYLE: React.CSSProperties = {
   width: '100%',
@@ -44,6 +45,11 @@ export default function SubmitForm() {
         setErrMsg(json.error || 'Submission failed')
         return
       }
+      const fields: Record<string, string> = {}
+      for (const [k, v] of Object.entries(body)) {
+        if (k !== 'website' && typeof v === 'string' && v.trim()) fields[k.replace(/_/g, ' ')] = v.slice(0, 5000)
+      }
+      emailLauren(`New request for help: ${String(body.patient_name || 'patient')}`, fields)
       setStatus('success')
       ;(e.target as HTMLFormElement).reset()
     } catch {
