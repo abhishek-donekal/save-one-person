@@ -32,13 +32,24 @@ export default function VideoPage() {
           One story shared. One living donor found. One life saved.
         </p>
 
-        <div className="video-frame" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
+        <div className="video-frame video-wide" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
             src="/videos/save-one-person.mp4"
             poster="/videos/save-one-person-poster.jpg"
             controls
             playsInline
             preload="metadata"
+            title="Save One Person — Be the miracle"
+            style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="video-frame video-tall" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
+          <video
+            src="/videos/save-one-person-phone.mp4"
+            poster="/videos/save-one-person-phone-poster.jpg"
+            controls
+            playsInline
+            preload="none"
             title="Save One Person — Be the miracle"
             style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
           />

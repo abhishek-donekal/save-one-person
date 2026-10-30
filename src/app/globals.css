@@ -1807,3 +1807,14 @@ footer {
 @media (max-width: 768px) {
   .video-frame { margin-left: -24px; margin-right: -24px; border-radius: 0; }
 }
+/* Phones get the tall version of the video, sized to fit the screen */
+.video-tall { display: none; }
+@media (max-width: 640px) {
+  .video-wide { display: none; }
+  .video-tall {
+    display: block; aspect-ratio: 9/16; border-radius: 0;
+    width: min(100vw, calc(82svh * 9 / 16));
+    margin-left: 0; margin-right: 0;
+    position: relative; left: 50%; transform: translateX(-50%);
+  }
+}

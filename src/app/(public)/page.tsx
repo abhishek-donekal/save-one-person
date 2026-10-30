@@ -131,10 +131,21 @@ export default async function HomePage() {
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay={120}>
-            <div className="video-frame" style={{ boxShadow: 'var(--shadow-soft)' }}>
+            <div className="video-frame video-wide" style={{ boxShadow: 'var(--shadow-soft)' }}>
               <video
                 src="/videos/save-one-person.mp4"
                 poster="/videos/save-one-person-poster.jpg"
+                controls
+                playsInline
+                preload="none"
+                title="Save One Person — Miracles happen"
+                style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
+              />
+            </div>
+            <div className="video-frame video-tall" style={{ boxShadow: 'var(--shadow-soft)' }}>
+              <video
+                src="/videos/save-one-person-phone.mp4"
+                poster="/videos/save-one-person-phone-poster.jpg"
                 controls
                 playsInline
                 preload="none"
