@@ -76,7 +76,7 @@ function PersonBlock({ p, reverse = false }: { p: Person; reverse?: boolean }) {
     <article style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: 0 }}>
         <div style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: 0 }} className="person-grid">
-          <div style={{ position: 'relative', minHeight: 380, background: p.imageFit === 'contain' ? 'linear-gradient(160deg, #eef2f6 0%, #e6ebf0 100%)' : 'var(--secondary)', order: reverse ? 2 : 1 }}>
+          <div className="person-photo" style={{ position: 'relative', aspectRatio: '4 / 5', alignSelf: 'start', background: p.imageFit === 'contain' ? 'linear-gradient(160deg, #eef2f6 0%, #e6ebf0 100%)' : 'var(--secondary)', order: reverse ? 2 : 1 }}>
             <Image
               src={p.image}
               alt={p.name}
@@ -244,6 +244,7 @@ export default function AboutPage() {
       <style>{`
         @media (max-width: 700px) {
           .person-grid { grid-template-columns: 1fr !important; }
+          .person-photo { aspect-ratio: 1 / 1 !important; order: 1 !important; }
         }
       `}</style>
     </>
