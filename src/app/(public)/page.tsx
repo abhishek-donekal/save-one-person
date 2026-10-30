@@ -572,26 +572,28 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── OUR BIGGER VISION (video) ── */}
+      {/* ── WATCH: how one story saves a life (video) ── */}
       <section className="vision-video" style={{ paddingTop: 96, paddingBottom: 96 }}>
         <div className="container-md">
           <RevealOnScroll>
             <div style={{ textAlign: 'center', marginBottom: 40 }}>
-              <div className="section-label">Our Bigger Vision</div>
-              <h2 className="display" style={{ marginTop: 12 }}>Every media outlet. One Save One Person unit.</h2>
+              <div className="section-label">Watch</div>
+              <h2 className="display" style={{ marginTop: 12 }}>How one story saves a life.</h2>
               <p style={{ marginTop: 20, fontSize: 17, lineHeight: 1.8, color: 'var(--muted)', maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
-                Our long-term goal is to inspire every media outlet — TV, radio, print, and digital — to create their own Save One Person unit. Imagine if every media station dedicated just a few minutes each week to spotlight someone in need. Together, we could save thousands of lives. One story. One miracle. One person at a time.
+                In one minute, see how Save One Person turns a story into a life-saving match — and how you can help create the next miracle.
               </p>
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay={120}>
             <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9', background: '#000' }}>
-              <iframe
-                src="https://www.youtube.com/embed/ZEF9VNqnK-M"
-                title="Save One Person — Our Bigger Vision"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ width: '100%', height: '100%', border: 0 }}
+              <video
+                src="/videos/save-one-person.mp4"
+                poster="/videos/save-one-person-poster.jpg"
+                controls
+                playsInline
+                preload="none"
+                title="Save One Person — Miracles happen"
+                style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
               />
             </div>
           </RevealOnScroll>
