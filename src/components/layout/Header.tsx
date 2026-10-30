@@ -10,7 +10,6 @@ const NAV_LINKS: { href: string; label: string; external?: boolean }[] = [
   { href: '/urgent-requests', label: 'Urgent' },
   { href: '/success-stories', label: 'Stories' },
   { href: '/media', label: 'Media' },
-  { href: '/ambassadors', label: 'Ambassadors' },
   { href: '/future', label: 'Future' },
   { href: '/faq', label: 'FAQ' },
   { href: '/shop', label: 'Shop' },

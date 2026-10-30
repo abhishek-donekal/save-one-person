@@ -36,6 +36,7 @@ const nextConfig: NextConfig = {
     return [
       // ---- Static WordPress pages -> new IA ----
       { source: "/about-us", destination: "/about", permanent: true },
+      { source: "/ambassadors", destination: "/", permanent: false }, // Ambassadors page taken down
       { source: "/mission", destination: "/about", permanent: true },
       { source: "/medical-miracles-needed", destination: "/about", permanent: true },
       { source: "/organ-donation", destination: "/success-stories", permanent: true },

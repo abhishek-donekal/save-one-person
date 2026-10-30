@@ -45,7 +45,6 @@ export default function Footer() {
               { href: '/urgent-requests/submit', label: 'Share Your Story' },
               { href: '/success-stories', label: 'Success Stories' },
               { href: '/media', label: 'In The Media' },
-              { href: '/ambassadors', label: 'Ambassadors' },
               { href: '/future', label: 'Future of Organ Donation' },
               { href: '/partners', label: 'Partners' },
               { href: '/faq', label: 'FAQ' },
