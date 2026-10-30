@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import SharePanel from '@/components/ui/SharePanel'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -98,6 +99,10 @@ export default async function MediaDetailPage({ params }: Props) {
               {item.outlet_name} featured Save One Person. {ytId ? 'Watch the full segment above.' : ''}
             </p>
           )}
+
+          <div style={{ marginTop: 32 }}>
+            <SharePanel path={`/media/${slug}`} text={`${item.outlet_name} featured Save One Person: ${item.title}`} label={ytId ? 'Share this video' : 'Share this story'} align="left" />
+          </div>
 
           {/* Original source (external only — never links back to old site) */}
           {item.source_url && (

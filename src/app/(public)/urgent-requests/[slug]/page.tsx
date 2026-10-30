@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { getFeaturedRequest } from '@/lib/featuredRequests'
+import SharePanel from '@/components/ui/SharePanel'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -14,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const supabase = await createClient()
   const { data: dbData } = await supabase
     .from('urgent_requests')
-    .select('title, patient_name, medical_condition')
+    .select('title, patient_name, medical_condition, image_url')
     .eq('slug', slug)
     .single()
   const data = dbData ?? getFeaturedRequest(slug)
@@ -22,6 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: data?.title || 'Urgent Request',
     description: data ? `${data.patient_name} urgently needs help with ${data.medical_condition}.` : undefined,
+    openGraph: data ? {
+      title: data.title,
+      description: `${data.patient_name} urgently needs a living donor. Please read and share — one share could reach the person who saves a life.`,
+      url: `https://www.saveonepersonnow.org/urgent-requests/${slug}`,
+      images: data.image_url ? [{ url: data.image_url }] : ['/images/og-miracles.jpg'],
+    } : undefined,
   }
 }
 
@@ -96,6 +103,14 @@ export default async function UrgentRequestPage({ params }: Props) {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24, fontSize: 18, lineHeight: 1.85, color: 'rgba(28,32,41,0.85)' }}>
             {paragraphs.map((para: string, i: number) => <p key={i}>{para}</p>)}
+          </div>
+
+          <div style={{ marginTop: 40, padding: '28px 24px', borderRadius: 'var(--r-3xl)', background: 'var(--background)', border: '1.5px solid var(--border)' }}>
+            <SharePanel
+              path={`/urgent-requests/${slug}`}
+              text={`${req.patient_name} needs a living donor. Please read and share — you could reach the person who saves a life. 💛`}
+              label={`Share ${req.patient_name}'s story`}
+            />
           </div>
 
           {(req.contact_email || req.contact_phone || req.social_facebook || req.social_instagram || req.social_twitter || req.social_other || req.gofundme_url) && (

@@ -47,15 +47,16 @@ export const metadata: Metadata = {
       'Connecting patients who need living organ donors and bone marrow matches with the people who can save their lives.',
     images: [
       {
-        url: 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg',
+        url: '/images/og-miracles.jpg',
         width: 1200,
         height: 630,
-        alt: 'Save One Person',
+        alt: 'Miracles happen — Save One Person',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/images/og-miracles.jpg'],
     title: 'Save One Person — One Introduction Can Save a Life',
     description:
       'Connecting patients who need living organ donors and bone marrow matches with the people who can save their lives.',

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
+import SharePanel from '@/components/ui/SharePanel'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 
@@ -142,6 +143,9 @@ export default async function HomePage() {
               />
             </div>
           </RevealOnScroll>
+          <div style={{ marginTop: 32 }}>
+            <SharePanel path="/video" text="Watch and share — one story can save a life. Be the miracle. 💛" label="Share this video" />
+          </div>
         </div>
       </section>
 
