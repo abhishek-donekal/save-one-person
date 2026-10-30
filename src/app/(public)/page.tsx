@@ -5,6 +5,9 @@ import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import SharePanel from '@/components/ui/SharePanel'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
+import NewsletterSignup from '@/components/layout/NewsletterSignup'
+import { donationCheckoutUrl } from '@/lib/shop/checkout'
+import { ORG_EIN } from '@/lib/org'
 
 export const metadata: Metadata = {
   title: 'Save One Person — One Introduction Can Save a Life',
@@ -216,6 +219,16 @@ export default async function HomePage() {
                 </Link>
               </div>
             </RevealOnScroll>
+
+            <RevealOnScroll>
+              <div className="alerts-band">
+                <div>
+                  <h3>Get new urgent requests by email.</h3>
+                  <p>When someone new needs a donor, you&apos;ll be among the first to know, and one share could reach their match.</p>
+                </div>
+                <NewsletterSignup tone="light" />
+              </div>
+            </RevealOnScroll>
           </div>
         </section>
       )}
@@ -261,7 +274,7 @@ export default async function HomePage() {
                     <div className="stat-label">People Waiting</div>
                   </div>
                   <div className="stat-card">
-                    <div className="stat-num font-display">17/day</div>
+                    <div className="stat-num font-display">12/day</div>
                     <div className="stat-label">Die Waiting</div>
                   </div>
                   <Link href="/success-stories" className="stat-card stat-card-link">
@@ -273,93 +286,11 @@ export default async function HomePage() {
                     <div className="stat-label">Urgent Requests →</div>
                   </Link>
                 </div>
+                <p className="source-note">
+                  Waiting list and daily figures: <a href="https://www.organdonor.gov/learn/organ-donation-statistics" target="_blank" rel="noopener noreferrer">HRSA, organdonor.gov</a>
+                </p>
               </RevealOnScroll>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── MISSION ── */}
-      <section id="mission" className="mission">
-        <div className="container-md" style={{ textAlign: 'center' }}>
-          <RevealOnScroll>
-            <div className="section-label">Our Mission</div>
-            <h2 className="display">Media as a force for miracles.</h2>
-          </RevealOnScroll>
-          <RevealOnScroll delay={120}>
-            <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 24, fontSize: 16, lineHeight: 1.625, color: 'var(--muted)', maxWidth: 672, marginLeft: 'auto', marginRight: 'auto' }}>
-              <p>We connect those who need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles with the individuals who have the power to save them.</p>
-              <p>Our platform harnesses television, radio, podcasts, social media, and digital channels to broadcast these stories at scale. Because the most powerful tool in medicine is not always a drug or a procedure. Sometimes, it is simply putting two people in the same room.</p>
-            </div>
-          </RevealOnScroll>
-          <RevealOnScroll delay={200}>
-            <div className="mission-quote-wrap">
-              <svg aria-hidden="true" style={{ position: 'absolute', top: -24, left: 40, width: 48, height: 48, color: 'var(--emerald)', fill: 'currentColor' }} viewBox="0 0 24 24">
-                <path d="M9 7H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0-2-2zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V9a2 2 0 0 0-2-2z" />
-              </svg>
-              <blockquote className="font-display">
-                One story can reach millions. One introduction can save a life.{' '}
-                <em>One act of generosity can change a family&apos;s future forever.</em>
-              </blockquote>
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
-
-      {/* ── HOW IT WORKS ── */}
-      <section id="how" className="how">
-        <div className="container">
-          <RevealOnScroll>
-            <div className="section-label">How It Works</div>
-            <h2 className="display" style={{ maxWidth: 768 }}>Three steps. One life changed forever.</h2>
-          </RevealOnScroll>
-          <div className="steps-grid">
-            {[
-              { num: '01', title: 'Share The Story', body: 'We help bring powerful personal stories to television, radio, podcasts, newspapers, social media, and digital platforms.' },
-              { num: '02', title: 'Reach Potential Donors', body: 'Stories reach people who may never have known someone needed their help.' },
-              { num: '03', title: 'Create Life-Saving Connections', body: 'The right story reaches the right person, creating an opportunity for a life-saving match.' },
-            ].map((step, i) => (
-              <RevealOnScroll key={step.num} delay={(i + 1) * 80}>
-                <div className="step-card">
-                  <div className="step-header">
-                    <div className="step-num">{step.num}</div>
-                    <div className="step-line" />
-                  </div>
-                  <h3>{step.title}</h3>
-                  <p>{step.body}</p>
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHAT WE DO ── */}
-      <section id="partners" className="what">
-        <div className="container">
-          <RevealOnScroll>
-            <div className="section-label">What We Do</div>
-            <h2 className="display" style={{ maxWidth: 768 }}>A platform built to make the right introduction.</h2>
-          </RevealOnScroll>
-          <div className="what-grid">
-            {[
-              { num: '01', title: 'Media Outreach', items: ['Television', 'Radio', 'Podcasts', 'Social Media', 'Digital Publications', 'News Media'] },
-              { num: '02', title: 'Create Connections', items: ['Amplify stories', 'Increase visibility', 'Expand awareness', 'Generate opportunities'] },
-              { num: '03', title: 'Build Partnerships', items: ['Healthcare leaders', 'Media companies', 'Philanthropists', 'Technology partners', 'Corporations', 'Community organizations'] },
-            ].map((card, i) => (
-              <RevealOnScroll key={card.num} delay={(i + 1) * 80}>
-                <article className="what-card">
-                  <div className="what-card-glow" aria-hidden="true" />
-                  <div className="what-card-num">{card.num}</div>
-                  <h3>{card.title}</h3>
-                  <ul>
-                    {card.items.map((item) => (
-                      <li key={item}><span className="dot" aria-hidden="true" /><span>{item}</span></li>
-                    ))}
-                  </ul>
-                </article>
-              </RevealOnScroll>
-            ))}
           </div>
         </div>
       </section>
@@ -403,125 +334,18 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ── WHY THIS MATTERS ── */}
-      <section className="why">
-        <div className="container">
-          <div className="why-grid">
-            <RevealOnScroll>
-              <div className="mosaic">
-                <div className="mosaic-a" style={{ position: 'relative' }}>
-                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/child-D6VtbEtx.png" alt="Patient with family" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="mosaic-b" style={{ position: 'relative' }}>
-                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/family-celebration-BH46mSCz.jpg" alt="Family celebrating" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="mosaic-c">
-                  <div className="mosaic-label" style={{ color: 'rgba(255,255,255,0.75)' }}>Belief</div>
-                  <div className="mosaic-text">Awareness bridges hope and miracles.</div>
-                </div>
-                <div className="mosaic-d" style={{ position: 'relative' }}>
-                  <Image src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg" alt="Hands reaching" fill style={{ objectFit: 'cover' }} />
-                </div>
-                <div className="mosaic-e">
-                  <div className="mosaic-label" style={{ color: 'var(--emerald-soft)' }}>Our Mission</div>
-                  <div className="mosaic-text">Share every story until the right person hears it.</div>
-                </div>
-              </div>
-            </RevealOnScroll>
-            <div>
-              <RevealOnScroll>
-                <div className="section-label">Why This Matters</div>
-                <h2 className="display">The Gap Is Awareness</h2>
-              </RevealOnScroll>
-              <RevealOnScroll delay={100}>
-                <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 20, fontSize: 17, lineHeight: 1.85, color: 'var(--muted)' }}>
-                  <p>Many people need living kidney donors, living liver donors, bone marrow matches, and other life-saving medical miracles. Many people are willing to help.</p>
-                  <p>Patients and potential donors share the same world but rarely cross paths.</p>
-                  <p style={{ fontWeight: 600, color: 'var(--navy)' }}>We bridge that gap through:</p>
-                </div>
-              </RevealOnScroll>
-              <RevealOnScroll delay={180}>
-                <div className="why-tags">
-                  {['Media', 'Technology', 'Storytelling', 'Partnerships', 'Community Engagement', 'Human Connection'].map((tag) => (
-                    <div key={tag} className="why-tag">
-                      <span className="dot" aria-hidden="true" />
-                      {tag}
-                    </div>
-                  ))}
-                </div>
-              </RevealOnScroll>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── FUTURE ── */}
-      <section className="future section-dark" style={{ position: 'relative' }}>
-        <Image
-          src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/network-future-C4ldnWew.jpg"
-          alt=""
-          fill
-          aria-hidden="true"
-          style={{ objectFit: 'cover', opacity: 0.4, zIndex: 0 }}
-        />
-        <div className="future-overlay" aria-hidden="true" />
-        <div className="container future-inner">
-          <div className="future-grid">
-            <div>
-              <RevealOnScroll>
-                <div className="section-label section-label-soft">The Future</div>
-                <h2 className="display-future">Bringing the future of life-saving connections together.</h2>
-              </RevealOnScroll>
-              <RevealOnScroll delay={100}>
-                <p style={{ marginTop: 32, fontSize: 17, color: 'rgba(255,255,255,0.75)' }}>Imagine a world where:</p>
-              </RevealOnScroll>
-              <RevealOnScroll delay={160}>
-                <ul className="future-list">
-                  {[
-                    "Every patient's story is discoverable.",
-                    'Media reaches potential living donors and matches instantly.',
-                    'Technology expands awareness.',
-                    'Communities unite around saving lives.',
-                    'More families find hope.',
-                    'More lives are saved.',
-                  ].map((item) => (
-                    <li key={item}><span className="dot" aria-hidden="true" /><span>{item}</span></li>
-                  ))}
-                </ul>
-              </RevealOnScroll>
-              <RevealOnScroll delay={220}>
-                <p className="future-tagline font-display">This is the future Save One Person is building.</p>
-              </RevealOnScroll>
-            </div>
-            <RevealOnScroll delay={100}>
-              <div className="orbit-wrap">
-                <div className="orbit-ring float-slow" />
-                <div className="orbit-ring orbit-ring-2" style={{ animation: 'float 8s ease-in-out infinite', animationDelay: '0.5s' }} />
-                <div className="orbit-ring orbit-ring-3" style={{ animation: 'float 10s ease-in-out infinite', animationDelay: '1s' }} />
-                <div className="orbit-ring orbit-ring-4" style={{ animation: 'float 7s ease-in-out infinite', animationDelay: '1.5s' }} />
-                <div className="orbit-center">
-                  <div className="orbit-core font-display">SOP</div>
-                </div>
-                {[0, 60, 120, 180, 240, 300].map((deg, i) => (
-                  <span key={deg} className="orbit-dot" style={{ transform: `rotate(${deg}deg) translate(clamp(90px,22vw,200px)) rotate(-${deg}deg)`, animationDelay: `${i * 0.3}s` }} />
-                ))}
-              </div>
-            </RevealOnScroll>
-          </div>
-        </div>
-      </section>
-
       {/* ── HOW TO HELP ── */}
       <section className="help">
         <div className="container">
           <RevealOnScroll>
             <div className="section-label">How You Can Help</div>
-            <h2 className="display">Four ways to help save a life.</h2>
+            <h2 className="display">Five ways to help save a life.</h2>
           </RevealOnScroll>
           {/* auto-fit keeps this responsive (4→2→1 across breakpoints) after adding the 4th card,
               matching the advisors grid pattern used elsewhere on this page. */}
           <div className="help-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
             {[
+              { tag: 'Save a Life', title: 'Be A Living Donor', body: 'Join our living donor list. When someone needs a kidney, liver or bone marrow match, we\u2019ll reach out. Signing up never commits you.', cta: 'Sign Up →', href: '/become-a-donor', external: false },
               { tag: 'Give', title: 'Donate', body: 'Your tax-deductible contribution helps expand our reach and tell more life-saving stories.', cta: 'Donate Now →', href: DONATE_URL, external: false },
               { tag: 'Connect', title: 'Make An Introduction', body: 'Know someone in media, healthcare, philanthropy, technology, entertainment, or business? Introductions help save lives.', cta: 'Email Lauren →', href: 'mailto:Save1Person@aol.com', external: false },
               { tag: 'Amplify', title: 'Become A Partner', body: 'Organizations and companies can help amplify life-saving messages and expand our impact.', cta: 'Partner With Us →', href: 'mailto:Save1Person@aol.com?subject=Partnership%20Inquiry', external: false },
@@ -563,8 +387,13 @@ export default async function HomePage() {
                 <div className="label">Tax-Deductible</div>
                 <h3>Help send the next story to the right person.</h3>
                 <p>Every contribution funds storytelling, technology, and outreach that connects people in need of living donors and bone marrow matches with those who can help them.</p>
-                <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 14 }}>Donate Now</a>
-                <div className="note">Secure checkout via Save One Person</div>
+                <div className="quick-gifts" role="group" aria-label="Quick donation amounts">
+                  {[25, 50, 100, 250].map((amt) => (
+                    <a key={amt} href={donationCheckoutUrl(amt) ?? DONATE_URL}>${amt}</a>
+                  ))}
+                </div>
+                <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '16px 32px', fontSize: 14 }}>Other Amount</a>
+                <div className="note">Secure checkout · PayPal, cards, Apple Pay &amp; Google Pay · EIN {ORG_EIN}</div>
               </div>
             </RevealOnScroll>
           </div>
@@ -612,6 +441,38 @@ export default async function HomePage() {
               </RevealOnScroll>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── FOR FAMILIES: what happens after you share ── */}
+      <section id="how" className="how">
+        <div className="container">
+          <RevealOnScroll>
+            <div className="section-label">For Families</div>
+            <h2 className="display" style={{ maxWidth: 768 }}>What happens after you share your story.</h2>
+          </RevealOnScroll>
+          <div className="steps-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
+            {[
+              { num: '01', title: 'You Share Your Story', body: 'Send us your story, a photo, and how people can reach you, online or by email.' },
+              { num: '02', title: 'We Post It', body: 'Your story goes on our Urgent page and out to people who signed up for our alerts and living donor list.' },
+              { num: '03', title: 'We Take It to the Media', body: 'We send it to our TV, radio, newspaper and podcast partners to reach people who would never have known.' },
+              { num: '04', title: 'Donors Reach Out', body: 'People who want to help contact you or your transplant center. Your transplant team handles all testing and medical decisions.' },
+            ].map((step, i) => (
+              <RevealOnScroll key={step.num} delay={(i + 1) * 80}>
+                <div className="step-card">
+                  <div className="step-header">
+                    <div className="step-num">{step.num}</div>
+                    <div className="step-line" />
+                  </div>
+                  <h3>{step.title}</h3>
+                  <p>{step.body}</p>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+          <p style={{ marginTop: 32, fontSize: 14, color: 'var(--muted)', maxWidth: 720 }}>
+            Save One Person shares stories and makes introductions. We don&apos;t give medical advice. In a medical emergency, call 911 or your doctor.
+          </p>
         </div>
       </section>
 

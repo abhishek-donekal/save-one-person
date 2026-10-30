@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ORG_EIN } from '@/lib/org'
 import DonateForm from './DonateForm'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ const TIERS = [
 
 export default function DonatePage() {
   const pgfUrl = process.env.NEXT_PUBLIC_PGF_URL
-  const ein = process.env.NEXT_PUBLIC_ORG_EIN
+  const ein = ORG_EIN
 
   return (
     <>

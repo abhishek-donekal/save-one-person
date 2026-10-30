@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import NewsletterSignup from './NewsletterSignup'
+import { ORG_EIN } from '@/lib/org'
 
 const DONATE_URL = '/donate'
 
@@ -146,6 +147,7 @@ export default function Footer() {
             <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', lineHeight: 1.6 }}>
               All donations are tax-deductible to the extent provided by law.
             </p>
+            <p style={{ marginTop: 8, fontSize: 13, color: 'rgba(255,255,255,0.75)', fontWeight: 600 }}>EIN: {ORG_EIN}</p>
           </div>
         </div>
       </div>
@@ -153,7 +155,7 @@ export default function Footer() {
       {/* Copyright bar */}
       <div className="footer-copyright">
         <span>© {new Date().getFullYear()} Save One Person</span>
-        <span>501(c)(3) — Tax-Deductible Donations</span>
+        <span>501(c)(3) — Tax-Deductible Donations · EIN {ORG_EIN}</span>
       </div>
     </footer>
   )

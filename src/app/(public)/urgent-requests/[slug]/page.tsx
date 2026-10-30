@@ -113,6 +113,13 @@ export default async function UrgentRequestPage({ params }: Props) {
             />
           </div>
 
+          <div style={{ marginTop: 20, padding: '20px 24px', borderRadius: 'var(--r-2xl)', background: '#f0fdf4', border: '1.5px solid #bbf7d0', display: 'flex', gap: 16, alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+            <p style={{ fontSize: 16, color: 'var(--navy)', lineHeight: 1.5 }}>
+              <strong>Could you be a living donor?</strong> Join our donor list. Signing up never commits you.
+            </p>
+            <Link href="/become-a-donor" className="btn btn-emerald" style={{ padding: '12px 22px', fontSize: 13 }}>Be a Donor →</Link>
+          </div>
+
           {(req.contact_email || req.contact_phone || req.social_facebook || req.social_instagram || req.social_twitter || req.social_other || req.gofundme_url) && (
             <div style={{ marginTop: 48, padding: 32, background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)' }}>
               <div className="section-label" style={{ marginBottom: 12 }}>Reach {req.patient_name} Directly</div>

@@ -1818,3 +1818,40 @@ footer {
     position: relative; left: 50%; transform: translateX(-50%);
   }
 }
+
+/* ── Be a Donor page ── */
+.donor-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+.donor-steps { list-style: none; counter-reset: ds; display: flex; flex-direction: column; gap: 22px; padding: 0; }
+.donor-steps li { counter-increment: ds; position: relative; padding-left: 56px; display: flex; flex-direction: column; gap: 4px; font-size: 16px; line-height: 1.65; color: var(--muted); }
+.donor-steps li::before { content: counter(ds); position: absolute; left: 0; top: 0; width: 38px; height: 38px; border-radius: 50%; background: var(--emerald); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.donor-steps strong { color: var(--navy); font-size: 17px; }
+.donor-ways { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.donor-two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.donor-check { display: flex; gap: 12px; align-items: flex-start; margin: 14px 0; font-size: 14px; line-height: 1.55; color: var(--navy); cursor: pointer; }
+.donor-check input { width: 20px; height: 20px; margin-top: 1px; flex: none; accent-color: var(--emerald); }
+@media (max-width: 860px) {
+  .donor-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+@media (max-width: 520px) {
+  .donor-ways, .donor-two { grid-template-columns: 1fr; }
+}
+
+/* ── Home: alerts signup band in "Help Needed Now" ── */
+.alerts-band { margin-top: 48px; padding: 32px; border-radius: var(--r-3xl); background: var(--white); border: 1.5px solid var(--border); box-shadow: var(--shadow-soft); display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items: center; }
+.alerts-band h3 { font-family: 'Fraunces', serif; font-size: 26px; color: var(--navy); line-height: 1.25; }
+.alerts-band p { margin-top: 8px; font-size: 15px; line-height: 1.65; color: var(--muted); }
+@media (max-width: 860px) { .alerts-band { grid-template-columns: 1fr; padding: 24px; } }
+
+/* ── Home: quick donation amounts ── */
+.quick-gifts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 8px 0 18px; }
+.quick-gifts a { display: flex; align-items: center; justify-content: center; padding: 14px 6px; border-radius: 14px; border: 2px solid rgba(255,255,255,0.35); color: #fff; font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; text-decoration: none; transition: background 160ms, border-color 160ms; }
+.quick-gifts a:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+.source-note { margin-top: 14px; font-size: 12px; color: var(--muted); }
+.source-note a { color: inherit; text-decoration: underline; }
+.marrow-note { margin: 0 0 24px; padding: 16px 18px; border-radius: 14px; background: #fff7e6; border: 1.5px solid #f5d38a; font-size: 14px; line-height: 1.6; color: var(--navy); }
+.marrow-box { margin-top: 36px; padding: 28px; border-radius: var(--r-2xl); border: 1.5px solid #f5d38a; background: #fffaf0; }
+.marrow-box h3 { font-family: 'Fraunces', serif; font-size: 24px; color: var(--navy); }
+.marrow-box p { margin-top: 10px; font-size: 15px; line-height: 1.7; color: var(--muted); }
+.marrow-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px 18px; }
+.marrow-note .marrow-links a { color: var(--emerald); font-weight: 700; }
+.marrow-box .marrow-links .btn { padding: 12px 20px; font-size: 13px; }
