@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { emailLauren } from '@/lib/notify'
 
 export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   const light = tone === 'light'
@@ -25,6 +26,7 @@ export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'l
         setMsg(json.error || 'Something went wrong. Please try again.')
         return
       }
+      emailLauren(`New Save One Alerts subscriber: ${email}`, { Email: email })
       setStatus('done')
       setEmail('')
     } catch {

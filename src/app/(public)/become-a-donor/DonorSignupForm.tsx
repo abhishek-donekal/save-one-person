@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { NMDP_URL, GIFT_URL } from '@/lib/org'
+import { emailLauren } from '@/lib/notify'
 
 const WAYS = ['Kidney', 'Liver', 'Bone marrow', 'Not sure yet'] as const
 const WAY_LABELS: Record<string, string> = { Kidney: 'A kidney', Liver: 'Part of my liver', 'Bone marrow': 'Bone marrow', 'Not sure yet': 'Not sure yet' }
@@ -39,6 +40,10 @@ export default function DonorSignupForm() {
       })
       const json = await res.json().catch(() => ({}))
       if (!res.ok) { setStatus('error'); setMsg(json.error || 'Something went wrong. Please try again.'); return }
+      emailLauren(`New living donor sign-up: ${name}`, {
+        Name: name, Email: email, Phone: phone || '—', 'City & state': location || '—',
+        'Would consider donating': ways.join(', '), 'Blood type': bloodType, Note: note || '—',
+      })
       setStatus('done')
     } catch {
       setStatus('error'); setMsg('Network error. Please try again.')

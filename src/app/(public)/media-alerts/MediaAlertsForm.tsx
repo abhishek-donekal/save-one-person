@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { emailLauren } from '@/lib/notify'
 
 export default function MediaAlertsForm() {
   const [f, setF] = useState({ name: '', email: '', outlet: '', role: '', phone: '', website: '' })
@@ -15,6 +16,9 @@ export default function MediaAlertsForm() {
       const res = await fetch('/api/media-alerts', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(f) })
       const json = await res.json().catch(() => ({}))
       if (!res.ok) { setStatus('error'); setMsg(json.error || 'Something went wrong. Please try again.'); return }
+      emailLauren(`New Save One Alert sign-up (media): ${f.outlet}`, {
+        Name: f.name, Email: f.email, 'Media outlet': f.outlet, Role: f.role || '—', Phone: f.phone || '—',
+      })
       setStatus('done')
     } catch {
       setStatus('error'); setMsg('Network error. Please try again.')
