@@ -32,7 +32,7 @@ export default function VideoPage() {
           One story shared. One living donor found. One life saved.
         </p>
 
-        <div style={{ marginTop: 40, borderRadius: 'var(--r-3xl)', overflow: 'hidden', aspectRatio: '16/9', background: '#000', boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
+        <div className="video-frame" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
             src="/videos/save-one-person.mp4"
             poster="/videos/save-one-person-poster.jpg"

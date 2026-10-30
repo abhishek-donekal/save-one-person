@@ -131,7 +131,7 @@ export default async function HomePage() {
             </div>
           </RevealOnScroll>
           <RevealOnScroll delay={120}>
-            <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', boxShadow: 'var(--shadow-soft)', aspectRatio: '16/9', background: '#000' }}>
+            <div className="video-frame" style={{ boxShadow: 'var(--shadow-soft)' }}>
               <video
                 src="/videos/save-one-person.mp4"
                 poster="/videos/save-one-person-poster.jpg"

@@ -1801,3 +1801,9 @@ footer {
   .hero-has-miracle .hero-mission { font-size: 34px; line-height: 1.12; letter-spacing: -0.5px; }
   .hero-has-miracle .hero-desc { font-size: 17px; line-height: 1.65; }
 }
+
+/* Main video: on phones, run edge to edge so it's as big as the screen allows */
+.video-frame { border-radius: var(--r-3xl); overflow: hidden; aspect-ratio: 16/9; background: #000; }
+@media (max-width: 768px) {
+  .video-frame { margin-left: -24px; margin-right: -24px; border-radius: 0; }
+}
