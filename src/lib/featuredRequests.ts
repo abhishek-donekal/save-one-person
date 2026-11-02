@@ -3,6 +3,66 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-karen-zabriskie',
+    slug: 'karen-zabriskie',
+    patient_name: 'Karen Zabriskie',
+    title: 'Diagnosed at 17, Still Fighting at 56: Could You Be Karen’s Lifesaving Kidney Donor?',
+    medical_condition: 'Polycystic Kidney Disease',
+    story_text: `🙏 After nearly four decades of battling kidney disease, Karen Zabriskie is hoping that one compassionate person will help change her story.
+
+For 39 years, Karen Zabriskie has lived with polycystic kidney disease (PKD), a hereditary condition that causes cysts to develop in the kidneys and can eventually lead to kidney failure.
+
+Diagnosed at just 17 years old, Karen is now 56 and searching for a living kidney donor. Her story, reported by Morris Focus on June 21, 2026, is a powerful reminder that behind every transplant appeal is a person hoping for more time, more memories, and another chance at life.
+
+💙 Karen is not asking for sympathy. She is hoping for a chance to live. And the person who could help her may be someone she has never met.
+
+🩺 KAREN ZABRISKIE’S STORY: 39 YEARS OF COURAGE AND HOPE
+
+💔 A diagnosis at 17: Karen has lived with PKD for almost four decades.
+
+🕊️ A critical search: At 56, she needs a living kidney donor.
+
+🏥 Seeking a transplant: She is listed through the Renewal Program and at Cooperman Barnabas Medical Center in Livingston, New Jersey.
+
+🤝 A donor does not always have to be a relative: Eligible strangers may also donate, subject to medical evaluation.
+
+💙 Not a direct match? There may still be an option: Kidney-paired donation can sometimes help when a willing donor is incompatible with the intended recipient.
+
+📞 HOW TO DONATE A KIDNEY TO KAREN ZABRISKIE
+
+1. Renewal Program: fill out the donor questionnaire at renewal.org/R26816
+
+2. Cooperman Barnabas Medical Center, Living Donor Program: call Alyson at (973) 322-5028, or visit cbmclivingdonor.org
+
+Please confirm with the program that it is still accepting inquiries for Karen before going ahead. Potential donors should get independent medical advice and go through formal screening before making any decision.
+
+📢 HOW YOU CAN HELP KAREN FIND HER MATCH
+
+You may not be able to donate a kidney yourself, but you can still help her appeal reach someone who might.
+
+❤️ Consider living donation: learn about the process through Karen’s transplant team.
+
+📲 Share her story with friends, family, colleagues and community groups.
+
+🌎 Spread awareness: a single share could help connect Karen with someone willing to explore donation.
+
+💌 Imagine living with a serious illness for nearly four decades and continuing to hope that the right person will come forward. For Karen, a kidney donor could mean new possibilities, precious time with loved ones, and memories that might otherwise remain uncertain.
+
+🙏 We cannot promise a miracle. But we can help a story of hope reach more people. Please share Karen Zabriskie’s story. Someone in your circle may be willing to learn about living kidney donation, and that first conversation could be the beginning of something extraordinary.
+
+One story. One compassionate decision. One chance to make a difference.
+
+#KarenZabriskie #KidneyDonor #LivingKidneyDonor #PKD #OrganDonation #MorrisCountyNJ`,
+    image_url: '/images/urgent/karen-zabriskie.jpg',
+    contact_phone: '(973) 322-5028',
+    social_other: 'https://renewal.org/R26816',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-brittany-hood',
     slug: 'brittany-hood',
     patient_name: 'Brittany Hood',
