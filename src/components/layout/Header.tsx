@@ -10,6 +10,7 @@ const NAV_LINKS: { href: string; label: string; external?: boolean }[] = [
   { href: '/urgent-requests', label: 'Urgent Requests' },
   { href: '/become-a-donor', label: 'Be a Living Donor' },
   { href: '/success-stories', label: 'Success Stories' },
+  { href: '/health-hacks', label: 'Health Hacks' },
   { href: '/media', label: 'Media' },
   { href: '/future', label: 'Future' },
   { href: '/faq', label: 'FAQ' },
