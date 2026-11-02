@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
-import MediaBrowser, { MediaHighlights, type MediaCard } from './MediaBrowser'
+import { MediaCardView, type MediaCard } from './MediaCards'
 
 function youtubeThumb(url: string | null): string | null {
   if (!url) return null
@@ -35,22 +35,30 @@ export default async function MediaPage() {
     .select('*')
     .order('published_date', { ascending: false, nullsFirst: false })
 
-  const TYPE_ORDER = ['tv', 'interview', 'podcast', 'video', 'article']
-  const cards: MediaCard[] = ((media || []) as MediaItem[]).map((m) => {
-    const yt = youtubeThumb(m.url)
-    return {
-      id: m.id,
-      title: m.title,
-      outlet: m.outlet_name || 'Save One Person',
-      type: m.media_type,
-      href: m.slug ? `/media/${m.slug}` : (m.url || '/media'),
-      thumb: m.thumbnail_url || yt,
-      isYoutube: !m.thumbnail_url && !!yt,
-      featured: !!m.featured,
-    }
-  }).sort((x, y) => Number(y.featured) - Number(x.featured) || TYPE_ORDER.indexOf(x.type) - TYPE_ORDER.indexOf(y.type))
-  const highlights = cards.filter((c) => c.featured && c.thumb && (c.type === 'tv' || c.type === 'video'))
-  const outlets = Array.from(new Set(cards.map((c) => c.outlet).filter((o) => !/^(save one person|various)$/i.test(o))))
+  const fixOutlet = (o: string | null) => {
+    const n = (o || 'Save One Person').trim()
+    if (/^pix ?11$/i.test(n)) return 'PIX11'
+    if (/^ehealth radio$/i.test(n)) return 'eHealth Radio'
+    if (/^shoutoutmiami$/i.test(n)) return 'ShoutoutMiami'
+    return n
+  }
+  const cards: MediaCard[] = ((media || []) as MediaItem[]).map((m) => ({
+    id: m.id,
+    title: m.title,
+    outlet: fixOutlet(m.outlet_name),
+    type: m.media_type,
+    href: m.slug ? `/media/${m.slug}` : (m.url || '/media'),
+    thumb: m.thumbnail_url || youtubeThumb(m.url),
+    featured: !!m.featured,
+  }))
+  const byFeatured = (x: MediaCard, y: MediaCard) => Number(y.featured) - Number(x.featured) || Number(!!y.thumb) - Number(!!x.thumb)
+  const SECTIONS = [
+    { id: 'tv', label: 'On TV', title: 'Save One Person on television.', items: cards.filter((c) => c.type === 'tv').sort(byFeatured) },
+    { id: 'celebrities', label: 'Celebrity Supporters', title: 'Stars who use their voice to save lives.', items: cards.filter((c) => c.type === 'video').sort(byFeatured) },
+    { id: 'radio', label: 'Radio & Podcasts', title: 'On the radio and in podcasts.', items: cards.filter((c) => c.type === 'interview' || c.type === 'podcast').sort(byFeatured) },
+    { id: 'articles', label: 'Articles', title: 'In newspapers and magazines.', items: cards.filter((c) => c.type === 'article').sort(byFeatured) },
+  ].filter((sec) => sec.items.length > 0)
+  const OUTLETS = ['PIX11', 'NY1 News', 'FOX 5', '1010 WINS', 'WWOR Radio', 'eHealth Radio', 'Tony Robbins Podcast', 'National Enquirer', 'Our Town', 'ShoutoutMiami', 'NYC Mayor\u2019s Office']
 
   return (
     <>
@@ -76,29 +84,33 @@ export default async function MediaPage() {
           ) : (
             <>
               <div className="media-asseen">
-                <div className="section-label" style={{ textAlign: 'center', marginBottom: 18 }}>As Featured On</div>
+                <div className="section-label" style={{ textAlign: 'center', marginBottom: 16 }}>As Featured On</div>
                 <div className="media-asseen-list">
-                  {outlets.map((o) => <span key={o}>{o}</span>)}
+                  {OUTLETS.map((o) => <span key={o}>{o}</span>)}
                 </div>
               </div>
 
-              {highlights.length > 0 && (
-                <section style={{ marginTop: 64 }}>
-                  <div className="section-label">Highlights</div>
-                  <h2 className="display" style={{ marginTop: 10, marginBottom: 28 }}>Watch Save One Person on TV.</h2>
-                  <MediaHighlights items={highlights} />
-                </section>
-              )}
+              <nav className="media-jump" aria-label="Media sections">
+                {SECTIONS.map((sec) => (
+                  <a key={sec.id} href={`#${sec.id}`}>{sec.label} <span>{sec.items.length}</span></a>
+                ))}
+              </nav>
 
-              <section style={{ marginTop: 72 }}>
-                <div className="section-label">All Coverage</div>
-                <h2 className="display" style={{ marginTop: 10, marginBottom: 24 }}>TV, radio, podcasts &amp; articles.</h2>
-                <MediaBrowser items={cards} />
-              </section>
+              {SECTIONS.map((sec) => (
+                <section key={sec.id} id={sec.id} className="media-section">
+                  <div className="media-section-head">
+                    <div className="section-label">{sec.label}</div>
+                    <h2>{sec.title}</h2>
+                  </div>
+                  <div className="media-grid">
+                    {sec.items.map((m, i) => <MediaCardView key={m.id} m={m} big={i === 0 && sec.items.length > 3} />)}
+                  </div>
+                </section>
+              ))}
             </>
           )}
 
-          <div style={{ marginTop: 80, padding: 48, background: 'var(--secondary)', borderRadius: 'var(--r-3xl)', textAlign: 'center' }}>
+          <div style={{ marginTop: 64, padding: 48, background: 'var(--secondary)', borderRadius: 'var(--r-3xl)', textAlign: 'center' }}>
             <div className="section-label">Media Inquiries</div>
             <h2 className="display" style={{ maxWidth: 600, margin: '16px auto 0' }}>Want to Feature Save One Person?</h2>
             <p style={{ marginTop: 24, fontSize: 17, color: 'var(--muted)', maxWidth: 560, margin: '24px auto 0' }}>
