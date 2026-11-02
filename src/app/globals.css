@@ -1894,7 +1894,8 @@ footer {
 .media-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
 .media-card { display: flex; flex-direction: column; background: var(--white); border: 1.5px solid var(--border); border-radius: var(--r-2xl); overflow: hidden; text-decoration: none; color: inherit; }
 .media-card-big { grid-column: span 2; grid-row: span 2; }
-.media-card-big .media-thumb { aspect-ratio: auto; flex: 1; min-height: 300px; }
+.media-card-big .media-thumb { aspect-ratio: 16 / 9; }
+.media-card-big .media-body { flex: 1; justify-content: flex-end; }
 .media-card-big .media-body h3 { font-size: 26px; -webkit-line-clamp: 2; }
 .media-thumb { position: relative; aspect-ratio: 16 / 9; background: var(--secondary); overflow: hidden; }
 .media-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; }
