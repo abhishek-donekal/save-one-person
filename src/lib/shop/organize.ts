@@ -22,6 +22,7 @@ export function sectionOf(p: Pick<ShopProduct, 'title' | 'product_type' | 'tags'
   const t = `${p.title} ${p.product_type || ''} ${(p.tags || []).join(' ')}`.toLowerCase()
   if (/donat/.test(t)) return 'Give'
   if (/apparel|t-shirt|tee\b/.test(t)) return 'Wear'
+  if (/counsel|nutrition|healing|theta/.test(t)) return 'Healing & Wellness'
   if (/\bbook\b|brochure|guide|save me, save the world|is there a god/.test(t)) return 'Read'
   if (/publiciz|asset|legacy|long-term care|coverage|insurance/.test(t)) return 'Planning & Services'
   return 'Healing & Wellness'
