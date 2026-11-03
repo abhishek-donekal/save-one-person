@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESC,
     images: [{ url: '/images/og-miracles.jpg', width: 1200, height: 630, alt: 'Miracles happen — Save One Person' }],
-    videos: [{ url: 'https://www.saveonepersonnow.org/videos/save-one-person-heavenly.mp4', secureUrl: 'https://www.saveonepersonnow.org/videos/save-one-person-heavenly.mp4', type: 'video/mp4', width: 1920, height: 1080 }],
+    videos: [{ url: 'https://www.saveonepersonnow.org/videos/save-one-person.mp4', secureUrl: 'https://www.saveonepersonnow.org/videos/save-one-person.mp4', type: 'video/mp4', width: 1920, height: 1080 }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESC, images: ['/images/og-miracles.jpg'] },
 }
@@ -34,8 +34,8 @@ export default function VideoPage() {
 
         <div className="video-frame video-wide" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
-            src="/videos/save-one-person-heavenly.mp4"
-            poster="/videos/save-one-person-heavenly-poster.jpg"
+            src="/videos/save-one-person.mp4"
+            poster="/videos/save-one-person-poster.jpg"
             controls
             playsInline
             preload="metadata"
@@ -45,8 +45,8 @@ export default function VideoPage() {
         </div>
         <div className="video-frame video-tall" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
-            src="/videos/save-one-person-heavenly-phone.mp4"
-            poster="/videos/save-one-person-heavenly-phone-poster.jpg"
+            src="/videos/save-one-person-phone.mp4"
+            poster="/videos/save-one-person-phone-poster.jpg"
             controls
             playsInline
             preload="none"
