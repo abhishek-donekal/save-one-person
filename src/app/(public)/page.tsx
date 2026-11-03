@@ -61,8 +61,8 @@ export default async function HomePage() {
       <section id="top" className="hero hero-has-miracle" style={{ padding: 0 }}>
         <div className="hero-miracle">
           <Image
-            src="/images/miracles-happen.jpg"
-            alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
+            src="/images/miracles-light.jpg"
+            alt="A glowing heart with angel wings in a soft sky, with TV, radio, newspaper and phone icons sending light to it."
             width={1600}
             height={900}
             priority
@@ -135,8 +135,8 @@ export default async function HomePage() {
           <RevealOnScroll delay={120}>
             <div className="video-frame video-wide" style={{ boxShadow: 'var(--shadow-soft)' }}>
               <video
-                src="/videos/save-one-person.mp4"
-                poster="/videos/save-one-person-poster.jpg"
+                src="/videos/save-one-person-heavenly.mp4"
+                poster="/videos/save-one-person-heavenly-poster.jpg"
                 controls
                 playsInline
                 preload="none"
@@ -146,8 +146,8 @@ export default async function HomePage() {
             </div>
             <div className="video-frame video-tall" style={{ boxShadow: 'var(--shadow-soft)' }}>
               <video
-                src="/videos/save-one-person-phone.mp4"
-                poster="/videos/save-one-person-phone-poster.jpg"
+                src="/videos/save-one-person-heavenly-phone.mp4"
+                poster="/videos/save-one-person-heavenly-phone-poster.jpg"
                 controls
                 playsInline
                 preload="none"
@@ -481,7 +481,7 @@ export default async function HomePage() {
           aria-hidden="true"
           style={{ objectFit: 'cover', opacity: 0.25, zIndex: 0 }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(15,23,42,0.92), rgba(28,32,41,0.88))', zIndex: 1 }} aria-hidden="true" />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(251,246,234,0.94), rgba(233,241,250,0.92))', zIndex: 1 }} aria-hidden="true" />
         <div className="container-md" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
           <RevealOnScroll>
             <div className="section-label section-label-soft">Share Your Story</div>

@@ -21,7 +21,9 @@ const NAV_LINKS: { href: string; label: string; external?: boolean }[] = [
 const DONATE_URL = '/donate'
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolledState, setScrolled] = useState(false)
+  // Light theme: the header always uses its light (white) style.
+  const scrolled = scrolledState || true
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {

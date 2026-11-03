@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESC,
     images: [{ url: '/images/og-miracles.jpg', width: 1200, height: 630, alt: 'Miracles happen — Save One Person' }],
-    videos: [{ url: 'https://www.saveonepersonnow.org/videos/save-one-person.mp4', secureUrl: 'https://www.saveonepersonnow.org/videos/save-one-person.mp4', type: 'video/mp4', width: 1920, height: 1080 }],
+    videos: [{ url: 'https://www.saveonepersonnow.org/videos/save-one-person-heavenly.mp4', secureUrl: 'https://www.saveonepersonnow.org/videos/save-one-person-heavenly.mp4', type: 'video/mp4', width: 1920, height: 1080 }],
   },
   twitter: { card: 'summary_large_image', title: TITLE, description: DESC, images: ['/images/og-miracles.jpg'] },
 }
 
 export default function VideoPage() {
   return (
-    <section style={{ background: '#05060d', color: '#fff', padding: '120px 0 96px' }}>
+    <section className="light-fix" style={{ background: 'linear-gradient(180deg, #e9f1fa 0%, #fbf6ea 60%, #ffffff 100%)', color: 'var(--navy)', padding: '120px 0 96px' }}>
       <div className="container-md" style={{ textAlign: 'center' }}>
         <div className="section-label" style={{ color: '#f2c46d' }}>Watch &amp; Share</div>
         <h1 className="display" style={{ marginTop: 12, color: '#fff' }}>
@@ -34,8 +34,8 @@ export default function VideoPage() {
 
         <div className="video-frame video-wide" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
-            src="/videos/save-one-person.mp4"
-            poster="/videos/save-one-person-poster.jpg"
+            src="/videos/save-one-person-heavenly.mp4"
+            poster="/videos/save-one-person-heavenly-poster.jpg"
             controls
             playsInline
             preload="metadata"
@@ -45,8 +45,8 @@ export default function VideoPage() {
         </div>
         <div className="video-frame video-tall" style={{ marginTop: 40, boxShadow: '0 30px 80px rgba(0,0,0,0.5)' }}>
           <video
-            src="/videos/save-one-person-phone.mp4"
-            poster="/videos/save-one-person-phone-poster.jpg"
+            src="/videos/save-one-person-heavenly-phone.mp4"
+            poster="/videos/save-one-person-heavenly-phone-poster.jpg"
             controls
             playsInline
             preload="none"
