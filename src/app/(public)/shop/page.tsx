@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/queries'
-import ShopBrowser from '@/components/shop/ShopBrowser'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
+import ProductCard from '@/components/shop/ProductCard'
+import { SECTIONS, sectionOf, hiddenFromList } from '@/lib/shop/organize'
 import type { CardProduct } from '@/components/shop/ProductCard'
 
 export const metadata: Metadata = {
@@ -33,10 +34,13 @@ function toCard(p: Awaited<ReturnType<typeof getAllProducts>>[number]): CardProd
 }
 
 export default async function ShopPage() {
-  const products = await getAllProducts()
+  const products = (await getAllProducts()).filter((p) => !hiddenFromList(p))
   const cards = products.map(toCard)
-  const featured = cards.filter((_, i) => products[i].featured).slice(0, 4)
-  const types = Array.from(new Set(products.map((p) => p.product_type).filter(Boolean))) as string[]
+  const featured = cards.filter((c, i) => products[i].featured && sectionOf(products[i]) !== 'Give').slice(0, 4)
+  const grouped = SECTIONS.map((name) => ({
+    name,
+    items: cards.filter((_, i) => sectionOf(products[i]) === name),
+  })).filter((g) => g.items.length > 0)
 
   return (
     <>
@@ -48,16 +52,19 @@ export default async function ShopPage() {
           <p className="shop-hero-sub">
             Books, wellness offerings, and ways to give. Every purchase helps us share more stories and save more lives.
           </p>
-          <Link href="/shop/go-bless-yourself-t-shirt" className="shop-hero-new">
-            <span className="tag">New</span> The Go Bless Yourself Tee <span aria-hidden="true">→</span>
-          </Link>
+          <div className="shop-hero-actions">
+            <a href="#donate" className="btn btn-emerald shop-hero-donate">Donate Now</a>
+            <Link href="/shop/go-bless-yourself-t-shirt" className="shop-hero-new">
+              <span className="tag">New</span> The Go Bless Yourself Tee <span aria-hidden="true">→</span>
+            </Link>
+          </div>
         </div>
       </div>
 
       <div className="page-content">
         <div className="container">
           {/* Donate first */}
-          <section className="shop-donate" aria-labelledby="shop-donate-h">
+          <section id="donate" className="shop-donate" aria-labelledby="shop-donate-h">
             <div className="shop-donate-text">
               <div className="section-label">Give</div>
               <h2 id="shop-donate-h" className="display">Donate to <em>save a life</em></h2>
@@ -79,7 +86,7 @@ export default async function ShopPage() {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 24, flexWrap: 'wrap', gap: 8 }}>
                 <div>
                   <div className="section-label">Featured</div>
-                  <h2 className="display" style={{ fontSize: 30, marginTop: 8 }}>Editor&apos;s Picks</h2>
+                  <h2 className="display" style={{ fontSize: 30, marginTop: 8 }}>Our Favorites</h2>
                 </div>
               </div>
               <div className="shop-grid">
@@ -107,12 +114,20 @@ export default async function ShopPage() {
             ))}
           </div>
 
-          {/* All products */}
-          <section>
-            <div className="section-label">All Products</div>
-            <h2 className="display" style={{ fontSize: 30, marginTop: 8, marginBottom: 28 }}>Browse the Collection</h2>
-            <ShopBrowser products={cards} types={types} />
-          </section>
+          {/* Products by section */}
+          <nav className="shop-jump" aria-label="Shop sections">
+            {grouped.map((g) => (
+              <a key={g.name} href={`#${g.name.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{g.name}</a>
+            ))}
+          </nav>
+          {grouped.map((g) => (
+            <section key={g.name} id={g.name.toLowerCase().replace(/[^a-z]+/g, '-')} className="shop-section">
+              <h2 className="display">{g.name}</h2>
+              <div className="shop-grid">
+                {g.items.map((p) => <ProductCard key={p.id} p={p} />)}
+              </div>
+            </section>
+          ))}
         </div>
       </div>
     </>

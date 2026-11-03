@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import type { ShopProduct } from './types'
 import { STATIC_PRODUCTS } from './staticProducts'
+import { renameTitle } from './organize'
 
 const PRODUCT_SELECT = `
   id, handle, title, body_html, description_text, vendor, product_type, tags, options,
@@ -12,6 +13,7 @@ const PRODUCT_SELECT = `
 function normalize(rows: unknown[]): ShopProduct[] {
   return (rows as ShopProduct[]).map((p) => ({
     ...p,
+    title: renameTitle(p.title),
     tags: p.tags || [],
     options: Array.isArray(p.options) ? p.options : [],
     variants: [...(p.variants || [])].sort((a, b) => a.position - b.position),

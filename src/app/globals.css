@@ -1986,3 +1986,17 @@ footer {
 .shop-donate .amt-pop { background: var(--emerald); border-color: var(--emerald); color: #fff; }
 .shop-donate .amt-other { grid-column: 1 / -1; font-size: 15px; font-weight: 600; }
 @media (max-width: 760px) { .shop-donate { grid-template-columns: 1fr; padding: 24px; } .shop-donate h2 { font-size: 28px; } }
+
+/* Shop: prominent donate + sections */
+.shop-hero-actions { display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 28px; }
+.shop-hero-actions .shop-hero-new { margin-top: 0; }
+.shop-hero-donate { padding: 16px 34px; font-size: 16px; }
+.shop-donate { padding: 44px; box-shadow: 0 14px 40px rgba(168,116,15,.12); scroll-margin-top: 100px; }
+.shop-donate h2 { font-size: 42px; }
+.shop-donate .amt { font-size: 20px; padding: 18px 8px; }
+.shop-jump { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 40px; }
+.shop-jump a { padding: 9px 16px; border-radius: 999px; background: #fff; border: 1.5px solid var(--border); color: var(--navy); font-weight: 600; font-size: 14px; text-decoration: none; }
+.shop-jump a:hover { border-color: var(--gold-ink); }
+.shop-section { margin-bottom: 56px; scroll-margin-top: 100px; }
+.shop-section h2 { font-size: 30px; margin-bottom: 22px; }
+@media (max-width: 760px) { .shop-donate h2 { font-size: 32px; } }
