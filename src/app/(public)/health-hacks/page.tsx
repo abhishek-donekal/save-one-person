@@ -14,7 +14,7 @@ export default function HealthHacksPage() {
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="section-label section-label-soft">Health Hacks</div>
-          <h1 className="display-lg">Live a healthy life.</h1>
+          <h1 className="display-lg">Small habits. Big <em style={{ color: '#a8740f' }}>miracles.</em></h1>
           <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7 }}>
             Quick videos from Lauren on healthy habits, food, mind, body and faith. Tap any video to watch.
           </p>

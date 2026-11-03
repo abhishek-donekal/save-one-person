@@ -53,7 +53,7 @@ You may not be able to donate a kidney yourself, but you can still help her appe
 One story. One compassionate decision. One chance to make a difference.
 
 #KarenZabriskie #KidneyDonor #LivingKidneyDonor #PKD #OrganDonation #MorrisCountyNJ`,
-    image_url: '/images/urgent/karen-zabriskie.jpg',
+    image_url: '/images/urgent/karen-zabriskie.jpg' as string | null,
     contact_phone: '(973) 322-5028',
     social_other: 'https://renewal.org/R26816',
     donation_goal: null,
@@ -61,6 +61,439 @@ One story. One compassionate decision. One chance to make a difference.
     urgent: true,
     published: true,
     status: 'open',
+  },
+  {
+    id: "featured-cristian-butler",
+    slug: "cristian-butler",
+    patient_name: "Cristian Butler",
+    title: "21-Year-Old Cristian Butler from Dallas Needs a Living Kidney Donor",
+    medical_condition: "Kidney Failure (FSGS)",
+    story_text: `URGENT SAVE ONE ALERT
+
+A mother’s plea. A young man’s future. Could you be the miracle he’s waiting for?
+
+At just 21 years old, Cristian Butler should be enjoying college and planning his future. Instead, he is fighting kidney failure.
+
+Diagnosed as a teenager with focal segmental glomerulosclerosis (FSGS), Cristian now has stage 5 kidney disease and is receiving dialysis. According to his family’s recent appeal, his kidney function is down to approximately 7%.
+
+His mother, Michelle Butler, is searching for a living kidney donor who could give her son a chance at a healthier future.
+
+Someone reading this could be the person who changes his life.
+
+Read Cristian’s story on WFAA: https://www.wfaa.com/article/news/health/asking-god-every-day-for-a-miracle-dallas-man-searches-for-kidney-donor/287-87aff619-764a-41ee-a573-08285d2df3aa
+
+Could you consider becoming a living kidney donor? All donor screening and medical decisions are made independently by qualified transplant professionals. Contact the family through their public appeal (link below) for information about how to inquire.
+
+CAN’T DONATE? PLEASE SHARE THIS STORY WITH THREE PEOPLE.
+
+If you’re unable to donate a kidney, please support Save One Person in sharing urgent stories about people who need living organ donors.`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/10/CRISITIAN.jpeg" as string | null,
+    social_other: "https://www.facebook.com/michelle.butler.940733/posts/thank-you-friends-and-family-for-sharing-my-sons-story-we-are-praying-and-believ/122334743642068896/",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-justin-lepri",
+    slug: "justin-lepri",
+    patient_name: "Justin Lepri",
+    title: "19-Year-Old Justin Lepri Needs a Living Kidney Donor",
+    medical_condition: "Stage 5 Kidney Failure",
+    story_text: `💚 19-YEAR-OLD JUSTIN LEPRI NEEDS A KIDNEY — COULD SOMEONE READING THIS BE HIS LIFELINE?
+
+Just weeks after celebrating one of the biggest milestones of his young life, 19-year-old Justin Lepri of St. Augustine, Florida, found himself facing a devastating medical crisis.
+
+In May, Justin was looking forward to graduating from Nease High School in Ponte Vedra Beach. Instead, he was hospitalized.
+
+After nearly two weeks in the hospital and extensive testing, doctors discovered that a rare genetic disorder had silently damaged his kidneys, leaving Justin with advanced Stage 5 kidney failure.
+
+💔 Now, this young man needs a kidney transplant, and his family is urgently searching for a living kidney donor.
+
+🎓 FROM GRADUATION TO A FIGHT FOR HIS FUTURE
+
+Justin’s family describes him as creative and artistic 🎨, passionate about photography and videography 📸, someone who loves nature and the outdoors 🌲, kind-hearted, funny and resilient ❤️ — a young man with dreams, adventures and milestones still ahead of him ✨.
+
+Despite his illness, Justin still walked across the graduation stage only days after returning home from the hospital. His teachers even visited him in the hospital with gifts and encouraging messages.
+
+His mother, Madelin Lepri, says Justin’s illness does not define him — and his family is determined to help him move forward.
+
+🩺 JUSTIN IS NOW ON THE NATIONAL KIDNEY TRANSPLANT WAITING LIST
+
+His family is searching for a living donor because a living-donor transplant could shorten the wait for a kidney. His medical team has encouraged the family to search for a donor before dialysis becomes necessary.
+
+🩸 WHO CAN CONSIDER DONATING?
+
+According to the family’s published appeal, potential donors should be 18 or older, be in good physical and mental health, have blood type A or O, and be willing to undergo the transplant center’s confidential medical evaluation.
+
+You don’t have to assume you’re a match — the transplant team makes that determination through medical testing. Completing the initial questionnaire does not obligate you to donate, and Justin’s family emphasizes there is no pressure or expectation.
+
+❤️ WHAT IF YOU DON’T KNOW JUSTIN?
+
+That’s okay. A living kidney donor can be someone who comes forward after learning his story. And if a potential donor isn’t directly compatible, UF Health has a kidney-paired-donation program that can link incompatible pairs with other pairs.
+
+📞 HOW TO BECOME A POTENTIAL DONOR FOR JUSTIN
+
+🏥 Transplant Center: UF Health Shands Transplant Center, Gainesville, Florida
+
+📝 Start with the UF donor questionnaire: https://redcap.ctsi.ufl.edu/redcap/surveys/?s=XNCTAY4CHJDHM44
+
+☎️ UF Health Kidney Transplant Program: 352-273-8821
+
+📧 Email: neph@medicine.ufl.edu
+
+📍 1600 SW Archer Road, Gainesville, FL 32610
+
+The transplant team — not the family — will determine whether a potential donor is medically eligible.
+
+🙏 IF YOU CAN’T DONATE, PLEASE SHARE JUSTIN’S STORY
+
+Share this story, post it on social media, and send it to friends, colleagues and family. You may not be Justin’s donor, but someone you know might be.
+
+💚 Graduation was supposed to be the beginning of Justin’s next chapter. Let’s help him have a future filled with more photographs, more adventures, more laughter and more milestones.
+
+🩵 ONE DONOR COULD CHANGE THE COURSE OF HIS LIFE.
+
+#KidneyForJustin #HelpJustin #LivingKidneyDonor #DonateLife`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/09/justin.jpeg" as string | null,
+    contact_phone: "352-273-8821",
+    contact_email: "neph@medicine.ufl.edu",
+    social_other: "https://redcap.ctsi.ufl.edu/redcap/surveys/?s=XNCTAY4CHJDHM44",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-sofia-de-la-lastra",
+    slug: "sofia-de-la-lastra",
+    patient_name: "Sofia De La Lastra",
+    title: "12-Year-Old Sofia Is Fighting to Get Her Childhood Back",
+    medical_condition: "Kidney Failure (ANCA Vasculitis & Anti-GBM)",
+    story_text: `The Story of Melina Sofia Lynn De La Lastra
+
+What began as what seemed like an ordinary illness rapidly turned into a medical nightmare.
+
+After Sofia became seriously ill in 2025, doctors discovered that her kidneys were failing. She endured hospitalizations and extensive testing before being diagnosed with two autoimmune conditions: ANCA vasculitis and Anti-GBM (Goodpasture disease).
+
+THE DIALYSIS
+
+Today, Sofia is receiving dialysis at home seven days a week. Dialysis is keeping her alive — but a transplant can give her the chance to get back to something every child deserves: school, friends and sleepovers, normal days, time with her family, and a childhood beyond dialysis.
+
+CONSIDER BEING A DONOR?
+
+Sofia can potentially receive a kidney directly from a compatible O+ or O− donor. Potential donors must be medically evaluated by the transplant team.
+
+You do not need to know Sofia personally. You do not need to assume you are a match. And getting screened does not mean you are obligated to donate.
+
+HOW TO HELP SOFIA
+
+Sofia’s transplant hospital: Children’s Hospital of The King’s Daughters (CHKD), Norfolk, Virginia
+
+Donor information/contact: kidney4sofia@gmail.com
+
+Recipient: Melina Sofia Lynn De La Lastra (date of birth October 15, 2013)
+
+NOT A MATCH?
+
+Please don’t rule yourself out just because your blood type is different. Through kidney paired exchange, a person who isn’t directly compatible with Sofia may still be able to donate a kidney to another compatible recipient, allowing Sofia to receive a compatible kidney in return.
+
+One story can reach millions. One introduction can save a life. One act of generosity can change a family’s future forever.`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/09/sofia-1.jpeg" as string | null,
+    contact_email: "kidney4sofia@gmail.com",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-ethan-hackney",
+    slug: "ethan-hackney",
+    patient_name: "Ethan Hackney",
+    title: "A Six-Year-Old Is Waiting for Someone to Be His Miracle",
+    medical_condition: "Congenital Nephrotic Syndrome",
+    story_text: `Ethan Hackney, a 6-year-old boy from Herring Cove, Nova Scotia, was diagnosed at two weeks old with congenital nephrotic syndrome, a rare kidney condition.
+
+His kidney function has fallen dramatically — from 77% to 24%.
+
+Because Ethan is a young child, doctors are seeking an adult donor under 40. The donor needs to have Type O blood — O positive or O negative.
+
+LIVING KIDNEY DONOR PROGRAM
+
+Nova Scotia Health — Legacy of Life: https://www.nshealth.ca/clinics-programs-and-services/legacy-life
+
+Living Kidney Donor Coordinator: 902-473-5501
+
+KIDNEY PAIRED DONATION
+
+If you are not directly compatible with Ethan, Kidney Paired Donation may provide another potential pathway.
+
+YOU DON’T HAVE TO KNOW ETHAN TO HELP
+
+You may not be able to donate, but you can still help this little boy’s story travel: share Ethan’s story with friends and family, forward it to people across Canada, talk about living kidney donation with people who may be eligible, and keep Ethan and his family in your thoughts and prayers.
+
+Sometimes the person who can help is not a relative or close friend. Sometimes they’re simply someone who heard the story and decided to learn more.
+
+ONE LITTLE BOY. ONE EXTRAORDINARY NEED. ONE POSSIBLE MIRACLE.
+
+Ethan has spent his entire life fighting a disease he never chose. Now his parents are asking Canadians to help them find the person who might be able to give him something priceless: more time to simply be a kid.`,
+    image_url: null as string | null,
+    contact_phone: "902-473-5501",
+    social_other: "https://www.nshealth.ca/clinics-programs-and-services/legacy-life",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-elizabeth-gutierrez",
+    slug: "elizabeth-gutierrez",
+    patient_name: "Elizabeth Gutierrez",
+    title: "Texas Mom Elizabeth Gutierrez Is Fighting for Her Third Kidney",
+    medical_condition: "Kidney Failure (FSGS)",
+    story_text: `🚨 A Young Mother Is Fighting for Her Third Kidney — Elizabeth Gutierrez Needs a Living Donor 💔💚
+
+A young mother in Corpus Christi, Texas, is making an emotional plea to strangers, hoping that one person will step forward and help give her another chance at life.
+
+Elizabeth Gutierrez, 33, has already endured two kidney transplants. Now, after years of battling kidney disease, she needs a third — and this time, she is hoping for a living donor.
+
+💔 A 33-YEAR-OLD MOTHER FACING ANOTHER FIGHT
+
+• 🩺 Elizabeth was just 16 when doctors discovered that her kidneys were scarred and severely damaged.
+
+• 🧬 She was diagnosed with FSGS, a kidney disorder that can cause progressive loss of kidney function.
+
+• 🏥 Her first two kidney transplants came from deceased donors.
+
+• ⏰ She currently spends about three hours on dialysis, three days every week.
+
+• 🏥 Last month, she endured a seven-day hospital stay that left her exhausted and frightened.
+
+🚗 HER FATHER’S MESSAGE TOOK TO THE ROAD
+
+After Elizabeth’s difficult hospitalization, her father placed a simple but powerful message on the family car: “We are seeking a HERO to donate a kidney to my 33yr. old daughter.”
+
+The photo was shared on Facebook, and calls began coming in from people interested in becoming potential donors. Elizabeth says she is deeply grateful to people willing to consider helping someone they don’t even know.
+
+👧 HER DAUGHTER IS HER GREATEST MOTIVATION
+
+For Elizabeth, this fight is about her young daughter. ❤️ She wants to be there to watch her grow up.
+
+🩺 HOW TO EXPLORE KIDNEY DONATION FOR ELIZABETH
+
+🏥 Methodist Transplant Institute — Living Kidney Donor Patient Care Center (San Antonio)
+
+📞 Living Donor Hotline: 210-575-4483
+
+📞 Toll-free: 1-800-888-0402
+
+🌐 Methodist Healthcare Kidney Live Donor Program: https://www.sahealth.com/patient-resources/kidney-live-donor-program
+
+👉 Tell the transplant team you are interested in being evaluated as a potential living donor for Elizabeth Gutierrez. They can also explain paired kidney donation and blood-type-incompatible options.
+
+📱 Family contact shown on the public appeal: 361-696-5405
+
+Her doctors and transplant team — not the public — will determine donor eligibility and compatibility through medical evaluation.
+
+🤝 CAN’T DONATE? YOU CAN STILL HELP
+
+Share Elizabeth’s story with your friends and community, forward it to someone who may be interested in living donation, and keep Elizabeth and her daughter in your thoughts and prayers.
+
+💚 #KidneyForElizabeth #LivingKidneyDonor #DonateLife #BeTheHero`,
+    image_url: null as string | null,
+    contact_phone: "210-575-4483",
+    social_other: "https://www.sahealth.com/patient-resources/kidney-live-donor-program",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-hailey-simms",
+    slug: "hailey-simms",
+    patient_name: "Hailey Simms",
+    title: "20-Year-Old Hailey Simms Needs an O-Negative Living Kidney Donor",
+    medical_condition: "Stage 5 Kidney Failure",
+    story_text: `🚨 20-Year-Old Hailey Simms Faces Stage 5 Kidney Failure — One O-Negative Donor Could Change Everything 💚🩺
+
+At just 20 years old, Hailey Simms of Medford, Oregon, is facing an extraordinary medical battle. Hailey was diagnosed with Stage 5 kidney failure in February 2025 and is now urgently searching for a living kidney donor with O-negative blood type.
+
+• 💚 Her appeal is specifically seeking a living donor with O-negative blood type.
+
+• 🙏 Potential donors from the Rogue Valley and beyond are encouraged to learn more through OHSU’s living-donor program.
+
+🩺 HOW YOU CAN HELP HAILEY
+
+If you are healthy, have O-negative blood, and want to explore living kidney donation, start at the OHSU Living Donor Program: https://ohsulivingdonor.org/
+
+❤️ To identify Hailey as the intended recipient in the application: legal name Hailey Burlington, date of birth January 22, 2006.
+
+🏥 OHSU Clinical Transplant Services — Living Kidney Donation
+
+📞 503-494-8500
+
+📧 livingdonation@ohsu.edu
+
+👉 When contacting OHSU, tell them you are interested in living kidney donation for Hailey Burlington.
+
+⚠️ Blood type and initial health information do not by themselves determine whether someone can donate. OHSU conducts an independent medical evaluation, and donors can withdraw at any time before surgery.
+
+💚 YOU DON’T HAVE TO KNOW HAILEY TO EXPLORE DONATION
+
+A living donor does not have to be a family member. OHSU also offers paired-exchange options when a donor and recipient are not compatible.
+
+🤝 CAN’T DONATE? YOU CAN STILL HELP
+
+Share Hailey’s story, tell friends and family about the search for an O-negative living donor, and forward it to people in the Rogue Valley and beyond.
+
+💚 The person who could help her may be reading this today.
+
+#KidneyForHailey #LivingDonorNeeded #DonateLife`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/08/hailey.jpg" as string | null,
+    contact_phone: "503-494-8500",
+    contact_email: "livingdonation@ohsu.edu",
+    social_other: "https://ohsulivingdonor.org/",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-captain-dj-pavasaris",
+    slug: "captain-dj-pavasaris",
+    patient_name: "Captain DJ Pavasaris",
+    title: "A Fire Captain Who Spent 13 Years Saving Lives Now Needs One Hero to Save His",
+    medical_condition: "Advanced Kidney Disease",
+    story_text: `🚒💚 For more than a decade, Captain Donald J. “DJ” Pavasaris answered emergency calls without hesitation, risking his own safety to protect the residents of Berlin, Connecticut.
+
+Today, the man who has spent 13 years serving his community through Kensington Fire-Rescue is facing the toughest battle of his life — not against flames, but against kidney disease.
+
+💚 CAPTAIN DJ NEEDS A LIVING KIDNEY DONOR.
+
+Known as a devoted husband, family man, mentor and trusted firefighter, DJ has spent countless hours protecting complete strangers during their darkest moments. Today, he is battling advanced kidney disease and urgently needs a life-saving kidney transplant.
+
+⏳ TIME IS PRECIOUS
+
+According to Kensington Fire-Rescue, patients on the deceased-donor waiting list often wait 5 to 7 years for a compatible kidney. A living kidney donor could reduce that wait to just a few months — and a donor does not need to be related to DJ to be considered.
+
+❤️ A COMMUNITY IS RALLYING BEHIND ONE OF ITS OWN
+
+His fellow firefighters describe him as a devoted family man, a respected fire captain, a loyal friend, and someone who has always answered the call whenever others needed help. Now, they are asking the public to answer one call for him.
+
+🩺 HOW TO EXPLORE DONATION FOR CAPTAIN DJ
+
+🏥 Hartford Hospital — Living Kidney Donation Program
+
+📞 Living Donor Coordinator: 860-696-2021
+
+🌐 https://hartfordhospital.org/services/transplant/living-kidney-donation
+
+👉 Tell the transplant team you are interested in being evaluated as a living kidney donor for Captain Donald J. “DJ” Pavasaris. Even if you are not a direct match, they can explain whether paired kidney donation may help.
+
+🤝 NOT ABLE TO DONATE? YOU CAN STILL SAVE A LIFE
+
+Share DJ’s story with your family, friends and coworkers. One share could reach the person who becomes DJ’s lifesaving donor.
+
+For years, Captain DJ rushed toward danger to protect his neighbors without asking for anything in return. Today, he’s simply hoping that one compassionate person will step forward.
+
+💚 The hero who can save Captain DJ’s life may be reading this today.
+
+#KidneyForDJ #FirefighterStrong #LivingDonorNeeded #BeTheHero`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/07/HEROCT.jpg" as string | null,
+    contact_phone: "860-696-2021",
+    social_other: "https://hartfordhospital.org/services/transplant/living-kidney-donation",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-tristan-allen",
+    slug: "tristan-allen",
+    patient_name: "Tristan Allen",
+    title: "19-Month-Old Tristan Allen Needs a Kidney: Clovis Family’s Urgent Plea",
+    medical_condition: "End-Stage Renal Disease",
+    story_text: `🚨 A Toddler’s Life Depends on One Miracle 💔🩺
+
+A heartbreaking story out of Clovis, California is touching hearts across the community and beyond.
+
+At just 19 months old, Tristan Allen should be discovering the world, taking tiny steps, and filling his family’s home with laughter. Instead, this little boy is fighting for his life.
+
+Born with end-stage renal disease, Tristan urgently needs a life-saving kidney transplant — and his family is making an emotional public appeal in hopes of finding a living donor.
+
+• 🩺 Tristan was born with end-stage renal disease.
+
+• 💔 His family has faced constant medical uncertainty from the very beginning.
+
+• ⏳ A kidney transplant is now critical for his long-term survival.
+
+• 🌟 A successful transplant could give him the chance to grow, play and simply be a child.
+
+🩺 HOW TO EXPLORE DONATION
+
+🏥 UCSF Living Kidney Donor Program: https://www.ucsfhealth.org/programs/living-kidney-donor-transplant
+
+📞 UCSF Living Donor Program: (415) 353-1888
+
+👉 Mention your interest in living kidney donation and ask about evaluation options.
+
+💚 Support Team Tristan through COTA (Children’s Organ Transplant Association): https://cota.org/
+
+🤝 NOT A DONOR? YOU CAN STILL HELP
+
+Share Tristan’s story widely and talk about living organ donation. One share could reach the right person.
+
+Somewhere, there may be a person who can change Tristan’s future — and that person may be reading this today.
+
+#KidneyForTristan #LivingDonorNeeded #DonateLife`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/06/TRISTANBABY.jpg" as string | null,
+    contact_phone: "(415) 353-1888",
+    social_other: "https://www.ucsfhealth.org/programs/living-kidney-donor-transplant",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
+  },
+  {
+    id: "featured-cleto-rodriguez",
+    slug: "cleto-rodriguez",
+    patient_name: "Cleto Rodriguez",
+    title: "Comedian Cleto Rodriguez Needs a Living Kidney Donor",
+    medical_condition: "Stage 5 Kidney Disease",
+    story_text: `SAVE ONE ALERT — ONE PERSON. ONE ORGAN. ONE LIFE.
+
+San Antonio comedian and TV personality Cleto Rodriguez has been diagnosed with Stage Five Kidney Disease. His kidney function is at only 10%.
+
+Doctors also discovered two serious heart blockages, one at 95% and another at 92%.
+
+Cleto is now on dialysis several times a week while waiting for the right kidney donor match. A living kidney donor could help save his life.
+
+“God’s got more for me to do. More people to make laugh.”
+
+YOU CAN BE THE REASON HE GETS TO SEE TOMORROW.
+
+Living kidney donation is safe. Donors can live a healthy life with one kidney.
+
+TO HELP OR GET TESTED
+
+National Kidney Registry — kidneyregistry.com. This is the recommended way to begin the living donor evaluation process.
+
+Thank you for helping save a life. Please share this message.`,
+    image_url: "https://saveoneperson.org/wp-content/uploads/2026/05/image.png" as string | null,
+    social_other: "https://www.kidneyregistry.com",
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: "open",
   },
   {
     id: 'featured-brittany-hood',
