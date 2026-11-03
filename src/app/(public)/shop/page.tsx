@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/queries'
 import ShopBrowser from '@/components/shop/ShopBrowser'
+import { donationCheckoutUrl } from '@/lib/shop/checkout'
+import { ORG_EIN } from '@/lib/org'
 import type { CardProduct } from '@/components/shop/ProductCard'
 
 export const metadata: Metadata = {
@@ -54,6 +56,23 @@ export default async function ShopPage() {
 
       <div className="page-content">
         <div className="container">
+          {/* Donate first */}
+          <section className="shop-donate" aria-labelledby="shop-donate-h">
+            <div className="shop-donate-text">
+              <div className="section-label">Give</div>
+              <h2 id="shop-donate-h" className="display">Donate to <em>save a life</em></h2>
+              <p>Your gift helps a patient find the donor they need. Save One Person is a 501(c)(3) nonprofit, EIN {ORG_EIN}, so your donation is tax-deductible.</p>
+            </div>
+            <div className="shop-donate-amounts">
+              {[25, 50, 100, 250, 500, 1000].map((a) => (
+                <a key={a} href={donationCheckoutUrl(a) ?? '/donate'} className={a === 100 ? 'amt amt-pop' : 'amt'}>
+                  ${a.toLocaleString()}
+                </a>
+              ))}
+              <Link href="/donate" className="amt amt-other">Other amount</Link>
+            </div>
+          </section>
+
           {/* Featured */}
           {featured.length > 0 && (
             <section style={{ marginBottom: 64 }}>

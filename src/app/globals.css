@@ -1974,3 +1974,15 @@ footer {
 .shop-hero-new { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; padding: 10px 18px 10px 10px; background: #fff; border: 1.5px solid #ecd9a8; border-radius: 999px; color: var(--navy); font-weight: 600; font-size: 15px; text-decoration: none; box-shadow: 0 6px 20px rgba(168,116,15,.12); }
 .shop-hero-new:hover { border-color: var(--gold-ink); }
 .shop-hero-new .tag { background: var(--gold-ink); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; }
+
+/* Shop: donate band */
+.shop-donate { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; align-items: center; margin: 0 0 64px; padding: 36px; border-radius: var(--r-2xl); background: linear-gradient(135deg, #fffaf0 0%, #fdf3dc 100%); border: 1.5px solid #ecd9a8; }
+.shop-donate h2 { font-size: 34px; margin-top: 8px; color: var(--navy); }
+.shop-donate h2 em { font-style: italic; color: var(--gold-ink); }
+.shop-donate p { margin-top: 12px; font-size: 16px; line-height: 1.7; color: #374151; }
+.shop-donate-amounts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.shop-donate .amt { display: flex; align-items: center; justify-content: center; padding: 16px 8px; border-radius: 14px; background: #fff; border: 1.5px solid #ecd9a8; color: var(--navy); font-weight: 700; font-size: 18px; text-decoration: none; }
+.shop-donate .amt:hover { border-color: var(--gold-ink); }
+.shop-donate .amt-pop { background: var(--emerald); border-color: var(--emerald); color: #fff; }
+.shop-donate .amt-other { grid-column: 1 / -1; font-size: 15px; font-weight: 600; }
+@media (max-width: 760px) { .shop-donate { grid-template-columns: 1fr; padding: 24px; } .shop-donate h2 { font-size: 28px; } }
