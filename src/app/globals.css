@@ -1964,3 +1964,4 @@ footer {
 .light-fix .section-label { color: var(--emerald) !important; }
 .light-fix .btn-ghost { border-color: var(--navy) !important; color: var(--navy) !important; }
 .video-frame { background: #f6f1e7; }
+.hero-has-miracle .hero-card .value { color: var(--navy) !important; }

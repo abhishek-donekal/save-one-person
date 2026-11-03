@@ -72,7 +72,7 @@ export default async function HomePage() {
             src="/images/miracles-light.jpg"
             alt="A glowing heart with angel wings in a soft sky, with TV, radio, newspaper and phone icons sending light to it."
             width={1600}
-            height={900}
+            height={640}
             priority
             sizes="100vw"
             className="hero-miracle-img"
@@ -347,7 +347,7 @@ export default async function HomePage() {
           </RevealOnScroll>
           {/* auto-fit keeps this responsive (4→2→1 across breakpoints) after adding the 4th card,
               matching the advisors grid pattern used elsewhere on this page. */}
-          <div className="help-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }}>
+          <div className="help-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
             {[
               { tag: 'Save a Life', title: 'Be A Living Donor', body: 'Give a kidney, part of your liver or bone marrow. Join our donor list and we\u2019ll reach out when someone needs you. Signing up never commits you.', cta: 'Sign Up to Be a Donor →', href: '/become-a-donor', external: false },
               { tag: 'Give', title: 'Donate', body: 'Your tax-deductible contribution helps expand our reach and tell more life-saving stories.', cta: 'Donate Now →', href: DONATE_URL, external: false },
