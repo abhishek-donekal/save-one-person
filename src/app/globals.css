@@ -1965,3 +1965,37 @@ footer {
 .light-fix .btn-ghost { border-color: var(--navy) !important; color: var(--navy) !important; }
 .video-frame { background: #f6f1e7; }
 .hero-has-miracle .hero-card .value { color: var(--navy) !important; }
+
+/* ════════ Opening: "Miracles" grows in with golden light beaming ════════ */
+.glory { position: relative; overflow: hidden; height: min(80svh, 780px); min-height: 540px; padding-top: 76px; display: flex; align-items: center; justify-content: center; text-align: center;
+  background: radial-gradient(ellipse at 50% 56%, #fffdf6 0%, #fdf0d2 30%, #f6dca4 62%, #ecc67e 100%); }
+.glory-rays-wrap { position: absolute; left: 50%; top: 56%; width: 0; height: 0; animation: glory-rays-in 2.6s cubic-bezier(.2,.7,.2,1) both; }
+.glory-rays { position: absolute; left: 50%; top: 50%; width: 260vmax; height: 260vmax; transform: translate(-50%, -50%);
+  background: repeating-conic-gradient(from 0deg, rgba(255,255,255,.75) 0deg 2.2deg, rgba(255,246,214,0) 2.2deg 9deg);
+  -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,.75) 14%, rgba(0,0,0,0) 46%); mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,.75) 14%, rgba(0,0,0,0) 46%);
+  animation: glory-spin 80s linear infinite; }
+.glory-glow { position: absolute; left: 50%; top: 56%; width: 900px; height: 520px; transform: translate(-50%, -50%); border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(255,255,255,.95) 0%, rgba(255,240,196,.7) 35%, rgba(255,226,150,0) 70%); animation: glory-pulse 5s ease-in-out 2.6s infinite, glory-fade 1.6s ease-out both; }
+.glory-sparkles span { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 10px 3px rgba(255,206,110,.9); opacity: 0; animation: glory-twinkle 3.6s ease-in-out infinite; }
+.glory-sparkles span:nth-child(3n) { width: 4px; height: 4px; }
+.glory-sparkles span:nth-child(4n)::before, .glory-sparkles span:nth-child(4n)::after { content: ''; position: absolute; left: 50%; top: 50%; background: #fff; transform: translate(-50%, -50%); }
+.glory-sparkles span:nth-child(4n)::before { width: 30px; height: 1.5px; } .glory-sparkles span:nth-child(4n)::after { width: 1.5px; height: 30px; }
+.glory-text { position: relative; z-index: 2; margin: 0; display: flex; flex-direction: column; align-items: center; font-weight: 400; }
+.glory-kicker { font: 700 clamp(15px, 2.1vw, 24px)/1.2 Inter, sans-serif; letter-spacing: .42em; text-transform: uppercase; color: #1c2b47; animation: glory-up 1s ease-out .2s both; }
+.glory-media { color: #008e40; }
+.glory-word { display: block; padding: 0 .08em .06em; font: italic 700 clamp(92px, 16vw, 250px)/1.05 'Fraunces', 'Liberation Serif', serif;
+  background: linear-gradient(100deg, #b07a12 0%, #e3a93a 22%, #fff3c4 38%, #e3a93a 52%, #a8700c 74%, #f2cd76 100%); background-size: 220% 100%; background-position: 100% 0;
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(0 0 26px rgba(255,196,80,.85)) drop-shadow(0 4px 0 rgba(120,80,10,.12));
+  animation: glory-grow 3s cubic-bezier(.16,.8,.24,1) .5s both, glory-shine 4.5s ease-in-out 3.6s infinite; }
+.glory-tag { margin-top: 18px; font: 600 clamp(11px, 1.35vw, 17px)/1.4 Inter, sans-serif; letter-spacing: .3em; text-transform: uppercase; color: #3a4660; animation: glory-up 1s ease-out 2.6s both; }
+@keyframes glory-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes glory-rays-in { from { opacity: 0; transform: scale(.35); } to { opacity: 1; transform: scale(1); } }
+@keyframes glory-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes glory-pulse { 0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 50% { opacity: .82; transform: translate(-50%, -50%) scale(1.06); } }
+@keyframes glory-twinkle { 0%, 100% { opacity: 0; transform: scale(.4); } 50% { opacity: 1; transform: scale(1); } }
+@keyframes glory-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes glory-grow { 0% { opacity: 0; transform: scale(.35); letter-spacing: -.04em; } 60% { opacity: 1; } 100% { opacity: 1; transform: scale(1); letter-spacing: 0; } }
+@keyframes glory-shine { 0%, 100% { background-position: 100% 0; } 50% { background-position: 0% 0; } }
+@media (max-width: 768px) { .glory { height: 72svh; min-height: 460px; padding-top: 64px; } .glory-kicker { letter-spacing: .28em; } .glory-tag { letter-spacing: .14em; padding: 0 16px; } }
+@media (prefers-reduced-motion: reduce) { .glory *, .glory { animation: none !important; } }

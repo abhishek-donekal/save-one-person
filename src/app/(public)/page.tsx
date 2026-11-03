@@ -67,24 +67,20 @@ export default async function HomePage() {
     <>
       {/* ── HERO ── */}
       <section id="top" className="hero hero-has-miracle" style={{ padding: 0 }}>
-        <div className="hero-miracle">
-          <Image
-            src="/images/miracles-happen.jpg"
-            alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
-            width={1600}
-            height={900}
-            priority
-            sizes="100vw"
-            className="hero-miracle-img"
-          />
+        <div className="glory">
+          <div className="glory-rays-wrap" aria-hidden="true"><div className="glory-rays" /></div>
+          <div className="glory-glow" aria-hidden="true" />
+          <div className="glory-sparkles" aria-hidden="true">
+            {Array.from({ length: 18 }).map((_, i) => <span key={i} style={{ left: `${(i * 53) % 100}%`, top: `${(i * 37) % 90 + 4}%`, animationDelay: `${(i % 6) * 0.6}s` }} />)}
+          </div>
+          <h1 className="glory-text">
+            <span className="glory-kicker">We turn <span className="glory-media">media</span> into</span>
+            <span className="glory-word">Miracles</span>
+            <span className="glory-tag">One story shared &nbsp;•&nbsp; One living donor found &nbsp;•&nbsp; One life saved</span>
+          </h1>
         </div>
 
         <div className="hero-inner">
-          <RevealOnScroll>
-            <h1 className="font-display hero-mission">
-              We turn media into <em>miracles.</em>
-            </h1>
-          </RevealOnScroll>
 
           <RevealOnScroll delay={100}>
             <p className="hero-desc">
