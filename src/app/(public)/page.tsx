@@ -69,10 +69,10 @@ export default async function HomePage() {
       <section id="top" className="hero hero-has-miracle" style={{ padding: 0 }}>
         <div className="hero-miracle">
           <Image
-            src="/images/miracles-light.jpg"
-            alt="A glowing heart with angel wings in a soft sky, with TV, radio, newspaper and phone icons sending light to it."
+            src="/images/miracles-happen.jpg"
+            alt="Miracles happen. Golden angel wings around a glowing heart, two people reaching toward each other beneath it, with TV, radio, newspaper and phone icons sending light to the heart. One story shared, one living donor found, one life saved."
             width={1600}
-            height={640}
+            height={900}
             priority
             sizes="100vw"
             className="hero-miracle-img"

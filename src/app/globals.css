@@ -1933,7 +1933,7 @@ footer {
   --gold-ink: #a8740f;
 }
 /* Top of home page */
-.hero-miracle { background: #f6f1e7; }
+.hero-miracle { background: #05060d; }
 .hero.hero-has-miracle { background: linear-gradient(180deg, #f6f1e7 0%, #fffdf8 100%); color: var(--navy); }
 .hero-has-miracle .hero-overlay, .hero-has-miracle .hero-blob { display: none; }
 .hero-has-miracle .hero-mission { color: var(--navy); }
