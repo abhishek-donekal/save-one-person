@@ -17,21 +17,29 @@ export const metadata: Metadata = {
 const DONATE_URL = '/donate'
 
 export default async function HomePage() {
-  const supabase = await createClient()
-
-  const [{ count: storyCount }, { data: dbRequests }] = await Promise.all([
-    supabase
-      .from('success_stories')
-      .select('*', { count: 'exact', head: true })
-      .eq('published', true),
-    supabase
-      .from('urgent_requests')
-      .select('id, slug, patient_name, medical_condition, image_url, urgent')
-      .eq('status', 'open')
-      .eq('published', true)
-      .order('urgent', { ascending: false })
-      .order('created_at', { ascending: false }),
-  ])
+  // If the database can't be reached (e.g. on a preview copy), still show the page.
+  let storyCount: number | null = null
+  let dbRequests: { id: string; slug: string; patient_name: string; medical_condition: string; image_url: string | null; urgent: boolean }[] | null = null
+  try {
+    const supabase = await createClient()
+    const [stories, requests] = await Promise.all([
+      supabase
+        .from('success_stories')
+        .select('*', { count: 'exact', head: true })
+        .eq('published', true),
+      supabase
+        .from('urgent_requests')
+        .select('id, slug, patient_name, medical_condition, image_url, urgent')
+        .eq('status', 'open')
+        .eq('published', true)
+        .order('urgent', { ascending: false })
+        .order('created_at', { ascending: false }),
+    ])
+    storyCount = stories.count
+    dbRequests = requests.data
+  } catch {
+    // fall back to the requests that ship with the site
+  }
 
   // Same list the Urgent Requests page shows: requests that ship with the
   // site plus published database rows (a database row wins on a shared slug).
