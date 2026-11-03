@@ -1965,3 +1965,12 @@ footer {
 .light-fix .btn-ghost { border-color: var(--navy) !important; color: var(--navy) !important; }
 .video-frame { background: #f6f1e7; }
 .hero-has-miracle .hero-card .value { color: var(--navy) !important; }
+
+/* Shop banner */
+.shop-hero { background: radial-gradient(ellipse at 50% 0%, #fff6dc 0%, rgba(255,246,220,0) 60%), var(--sky); }
+.shop-hero h1 { font-size: clamp(44px, 7vw, 76px); }
+.shop-hero h1 em { font-style: italic; color: var(--gold-ink); }
+.shop-hero .shop-hero-sub { margin: 22px auto 0; font-size: 19px; line-height: 1.7; max-width: 620px; color: #374151 !important; }
+.shop-hero-new { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; padding: 10px 18px 10px 10px; background: #fff; border: 1.5px solid #ecd9a8; border-radius: 999px; color: var(--navy); font-weight: 600; font-size: 15px; text-decoration: none; box-shadow: 0 6px 20px rgba(168,116,15,.12); }
+.shop-hero-new:hover { border-color: var(--gold-ink); }
+.shop-hero-new .tag { background: var(--gold-ink); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; }

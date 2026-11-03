@@ -39,13 +39,16 @@ export default async function ShopPage() {
   return (
     <>
       {/* Hero */}
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #047857 100%)' }}>
+      <div className="page-hero shop-hero">
         <div className="page-hero-inner">
           <div className="section-label section-label-soft">The Save One Person Shop</div>
-          <h1 className="display-lg">Shop with Purpose</h1>
-          <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
+          <h1 className="display-lg">Shop with <em>Purpose</em></h1>
+          <p className="shop-hero-sub">
             Books, wellness offerings, and ways to give. Every purchase helps us share more stories and save more lives.
           </p>
+          <Link href="/shop/go-bless-yourself-t-shirt" className="shop-hero-new">
+            <span className="tag">New</span> The Go Bless Yourself Tee <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
 

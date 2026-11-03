@@ -26,7 +26,7 @@ export default async function UrgentRequestsPage() {
 
   return (
     <>
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #7f1d1d 0%, #1c2029 100%)' }}>
+      <div className="page-hero">
         <div className="page-hero-inner">
           <div className="section-label" style={{ color: '#fca5a5' }}>Help Needed Now</div>
           <h1 className="display-lg">Urgent Requests</h1>

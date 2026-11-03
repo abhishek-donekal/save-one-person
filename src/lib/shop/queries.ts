@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import type { ShopProduct } from './types'
+import { STATIC_PRODUCTS } from './staticProducts'
 
 const PRODUCT_SELECT = `
   id, handle, title, body_html, description_text, vendor, product_type, tags, options,
@@ -19,16 +20,23 @@ function normalize(rows: unknown[]): ShopProduct[] {
 }
 
 export async function getAllProducts(): Promise<ShopProduct[]> {
-  const supabase = await createClient()
-  const { data } = await supabase
-    .from('shop_products')
-    .select(PRODUCT_SELECT)
-    .eq('published', true)
-    .order('position', { ascending: true })
-  return normalize(data || [])
+  let rows: ShopProduct[] = []
+  try {
+    const supabase = await createClient()
+    const { data } = await supabase
+      .from('shop_products')
+      .select(PRODUCT_SELECT)
+      .eq('published', true)
+      .order('position', { ascending: true })
+    rows = normalize(data || [])
+  } catch {}
+  const extra = STATIC_PRODUCTS.filter((s) => !rows.some((r) => r.handle === s.handle))
+  return [...extra, ...rows]
 }
 
 export async function getProductByHandle(handle: string): Promise<ShopProduct | null> {
+  const fixed = STATIC_PRODUCTS.find((p) => p.handle === handle)
+  if (fixed) return fixed
   const supabase = await createClient()
   const { data } = await supabase
     .from('shop_products')

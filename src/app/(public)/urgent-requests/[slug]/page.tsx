@@ -53,7 +53,7 @@ export default async function UrgentRequestPage({ params }: Props) {
 
   return (
     <>
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #7f1d1d 0%, #1c2029 100%)' }}>
+      <div className="page-hero">
         <div className="page-hero-inner">
           <div style={{ display: 'flex', gap: 8, justifyContent: 'center', marginBottom: 16 }}>
             {req.urgent && <span className="badge badge-red">Urgent</span>}

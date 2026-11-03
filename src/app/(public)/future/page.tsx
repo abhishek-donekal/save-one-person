@@ -107,7 +107,7 @@ const TOPICS: Topic[] = [
 export default function FuturePage() {
   return (
     <>
-      <div className="page-hero" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #047857 100%)' }}>
+      <div className="page-hero">
         <div className="page-hero-inner">
           <div className="section-label section-label-soft">Looking Ahead</div>
           <h1 className="display-lg">The Future of Organ Donation</h1>
