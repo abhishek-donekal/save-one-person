@@ -223,12 +223,16 @@ export default async function HomePage() {
 
             <RevealOnScroll>
               <div className="media-alert-band">
-                <div>
-                  <div className="section-label">For Media Outlets</div>
-                  <h3>Sign up to receive our Save One Alerts.</h3>
+                <div className="mab-text">
+                  <div className="mab-label">For TV, Radio, Podcasts &amp; Press</div>
+                  <h3>Media: get our weekly Save One Alerts</h3>
+                  <p>TV stations, radio shows, podcasts, newspapers and online outlets: sign up to receive our <strong>weekly alerts</strong> with urgent patient stories you can share. One story on your air can find the donor who saves a life.</p>
+                  <div className="mab-chips" aria-hidden="true">
+                    <span>TV</span><span>Radio</span><span>Podcasts</span><span>Newspapers</span><span>Online</span>
+                  </div>
                 </div>
-                <Link href="/media-alerts" className="btn btn-navy" style={{ padding: '16px 28px', fontSize: 14 }}>
-                  Get Save One Alerts →
+                <Link href="/media-alerts" className="btn mab-btn">
+                  Media Sign-Up: Weekly Alerts →
                 </Link>
               </div>
             </RevealOnScroll>

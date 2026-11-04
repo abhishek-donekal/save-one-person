@@ -70,7 +70,7 @@ export default async function MediaPage() {
             Save One Person has been featured across television, radio, podcasts, and digital media. Every mention helps reach more people who can save a life.
           </p>
           <Link href="/media-alerts" className="btn btn-emerald" style={{ marginTop: 28, padding: '16px 28px', fontSize: 14 }}>
-            Media: Sign Up for Save One Alerts →
+            TV, Radio &amp; Podcasts: Get Our Weekly Alerts →
           </Link>
         </div>
       </div>
