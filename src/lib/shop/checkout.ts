@@ -30,14 +30,26 @@ export function shopifyCheckoutUrl(lines: CartLine[]): string | null {
   return `https://${SHOP_DOMAIN}/cart/${parts.join(',')}`
 }
 
-/** Donation checkout: pick the nearest available donation tier at or below the amount. */
+// Every tier is a multiple of $25, so any multiple of $25 can be charged exactly
+// by combining tiers in one checkout.
+export const DONATION_STEP = 25
+
+/** The amount a donation is charged at: the entered amount rounded to the nearest $25 (at least $25). */
+export function donationChargeAmount(amount: number): number {
+  return Math.max(DONATION_STEP, Math.round(amount / DONATION_STEP) * DONATION_STEP)
+}
+
+/** Donation checkout for the charged amount, built from as few tier lines as possible. */
 export function donationCheckoutUrl(amount: number): string | null {
-  if (!amount || amount < 25) return null
-  // exact match first, else nearest tier <= amount, else smallest
-  const exact = DONATION_VARIANTS.find((v) => v.amount === amount)
-  const chosen =
-    exact ||
-    [...DONATION_VARIANTS].reverse().find((v) => v.amount <= amount) ||
-    DONATION_VARIANTS[0]
-  return `https://${SHOP_DOMAIN}/cart/${chosen.shopifyId}:1`
+  if (!amount || amount < DONATION_STEP) return null
+  let remaining = donationChargeAmount(amount)
+  const parts: string[] = []
+  for (const v of [...DONATION_VARIANTS].sort((a, b) => b.amount - a.amount)) {
+    const qty = Math.floor(remaining / v.amount)
+    if (qty > 0) {
+      parts.push(`${v.shopifyId}:${qty}`)
+      remaining -= qty * v.amount
+    }
+  }
+  return `https://${SHOP_DOMAIN}/cart/${parts.join(',')}`
 }

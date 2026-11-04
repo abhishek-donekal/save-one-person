@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { donationCheckoutUrl, DONATION_VARIANTS } from '@/lib/shop/checkout'
+import { donationCheckoutUrl, donationChargeAmount } from '@/lib/shop/checkout'
 
 const PRESET_AMOUNTS = [25, 50, 100, 250, 500, 1000] as const
 
@@ -14,19 +14,13 @@ const IMPACT_COPY: Record<number, string> = {
   1000: 'A major gift that funds our technology and expands operations.',
 }
 
-const TIERS = DONATION_VARIANTS.map((v) => v.amount)
-function nearestTier(amount: number): number {
-  const atOrBelow = [...TIERS].reverse().find((t) => t <= amount)
-  return atOrBelow ?? TIERS[0]
-}
-
 export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
   const [selectedAmount, setSelectedAmount] = useState<number>(100)
   const [customAmount, setCustomAmount] = useState<string>('')
 
   const rawAmount = customAmount ? Number(customAmount.replace(/[^0-9.]/g, '')) : selectedAmount
   const isValidAmount = rawAmount >= 25 && rawAmount < 1_000_000
-  const chargedAmount = isValidAmount ? (customAmount ? nearestTier(rawAmount) : selectedAmount) : 0
+  const chargedAmount = isValidAmount ? donationChargeAmount(rawAmount) : 0
   const href = isValidAmount ? donationCheckoutUrl(rawAmount) : null
 
   const impact = customAmount
@@ -83,7 +77,7 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
         </div>
         {customAmount && isValidAmount && chargedAmount !== rawAmount && (
           <span style={{ display: 'block', fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
-            Processed at the nearest available amount: ${chargedAmount.toLocaleString()}.
+            Gifts are processed in steps of $25, so this one is rounded to ${chargedAmount.toLocaleString()}.
           </span>
         )}
       </label>
