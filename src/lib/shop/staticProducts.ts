@@ -55,7 +55,7 @@ export const STATIC_PRODUCTS: ShopProduct[] = [
     key: 'tee', handle: 'go-bless-yourself-t-shirt', title: 'Go Bless Yourself T-Shirt', position: -5, optionName: 'Size',
     lead: '<strong>GO BLESS YOURSELF</strong> on the front. Our blessing hand and <strong>BLESS YOU TOO</strong> on the back.',
     bullets: ['Soft 100% ring-spun cotton', 'Classic unisex fit', 'White, sizes XS to 5XL', 'Printed just for you when you order'],
-    v: variants('gby', 36, [
+    v: variants('gby', 42, [
       ['XS', 67815534002346], ['S', 67815534035114], ['M', 67815534067882], ['L', 67815534100650], ['XL', 67815534133418],
       ['2XL', 67815534166186], ['3XL', 67815534198954], ['4XL', 67815534231722], ['5XL', 67815534264490],
     ]),
@@ -68,7 +68,7 @@ export const STATIC_PRODUCTS: ShopProduct[] = [
     key: 'hoodie', handle: 'go-bless-yourself-hoodie', title: 'Go Bless Yourself Hoodie', position: -4, optionName: 'Size',
     lead: '<strong>GO BLESS YOURSELF</strong> on the front. Our blessing hand and <strong>BLESS YOU TOO</strong> on the back.',
     bullets: ['Soft cotton-poly fleece', 'Front pouch pocket and roomy hood', 'White, sizes S to 5XL', 'Printed just for you when you order'],
-    v: variants('hoodie', 52, [
+    v: variants('hoodie', 58, [
       ['S', 67815643709610], ['M', 67815643742378], ['L', 67815643775146], ['XL', 67815643807914],
       ['2XL', 67815643840682], ['3XL', 67815643873450], ['4XL', 67815643906218], ['5XL', 67815643938986],
     ]),
