@@ -15,13 +15,13 @@ const RENAME: Record<string, string> = {
   "is there a god? one woman's fast track to the divine: from despair to bliss without drugs": "Is There a God? One Woman's Fast Track to the Divine",
 }
 
-export const SECTIONS = ['Give', 'Wear', 'Read', 'Healing & Wellness', 'Planning & Services'] as const
+export const SECTIONS = ['Give', 'Wear & Gifts', 'Read', 'Healing & Wellness', 'Planning & Services'] as const
 export type Section = (typeof SECTIONS)[number]
 
 export function sectionOf(p: Pick<ShopProduct, 'title' | 'product_type' | 'tags'>): Section {
   const t = `${p.title} ${p.product_type || ''} ${(p.tags || []).join(' ')}`.toLowerCase()
   if (/donat/.test(t)) return 'Give'
-  if (/apparel|t-shirt|tee\b/.test(t)) return 'Wear'
+  if (/apparel|t-shirt|tee\b/.test(t)) return 'Wear & Gifts'
   if (/counsel|nutrition|healing|theta/.test(t)) return 'Healing & Wellness'
   if (/\bbook\b|brochure|guide|save me, save the world|is there a god/.test(t)) return 'Read'
   if (/publiciz|asset|legacy|long-term care|coverage|insurance/.test(t)) return 'Planning & Services'

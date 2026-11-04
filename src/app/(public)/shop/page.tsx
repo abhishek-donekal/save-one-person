@@ -54,8 +54,8 @@ export default async function ShopPage() {
           </p>
           <div className="shop-hero-actions">
             <a href="#donate" className="btn btn-emerald shop-hero-donate">Donate Now</a>
-            <Link href="/shop/go-bless-yourself-t-shirt" className="shop-hero-new">
-              <span className="tag">New</span> The Go Bless Yourself Tee <span aria-hidden="true">→</span>
+            <Link href="/shop#wear-gifts" className="shop-hero-new">
+              <span className="tag">New</span> The Go Bless Yourself Collection <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
