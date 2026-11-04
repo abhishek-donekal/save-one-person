@@ -32,6 +32,17 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async rewrites() {
+    const gby = [
+      { type: "host" as const, value: "goblessyourself.org" },
+      { type: "host" as const, value: "www.goblessyourself.org" },
+    ];
+    return {
+      beforeFiles: gby.map((h) => ({ source: "/", has: [h], destination: "/go-bless-yourself" })),
+      afterFiles: [],
+      fallback: [],
+    };
+  },
   async redirects() {
     return [
       // ---- Static WordPress pages -> new IA ----
