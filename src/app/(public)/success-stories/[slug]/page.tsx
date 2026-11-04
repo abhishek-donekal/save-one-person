@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { focusFor } from '@/lib/imageFocus'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -77,7 +78,7 @@ export default async function SuccessStoryPage({ params }: Props) {
                 width={896}
                 height={560}
                 sizes="(max-width: 896px) 100vw, 896px"
-                style={{ width: '100%', height: 'auto', maxHeight: 560, objectFit: 'cover', objectPosition: 'center top' }}
+                style={{ width: '100%', height: 'auto', maxHeight: 560, objectFit: 'cover', objectPosition: focusFor(story.image_url) }}
               />
             </div>
           )}

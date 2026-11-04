@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { focusFor } from '@/lib/imageFocus'
 import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
@@ -46,7 +47,7 @@ export default async function SuccessStoriesPage() {
                       width={400}
                       height={240}
                       sizes="(max-width: 640px) 100vw, 400px"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: focusFor(story.image_url) }}
                     />
                   </div>
                   <div className="story-card-body">
