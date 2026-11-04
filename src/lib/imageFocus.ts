@@ -1,6 +1,6 @@
 // Where to center a cropped photo when the important part (a face) isn't at the top.
 const FOCUS: Record<string, string> = {
-  'images_girl.jpg': 'center 82%', // Hodaya: her face is near the bottom of the photo
+  'images_girl.jpg': 'center 38%', // Hodaya: her face is near the bottom of the photo
 }
 
 export function focusFor(url: string | null | undefined, fallback = 'center top'): string {
