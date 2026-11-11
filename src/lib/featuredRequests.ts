@@ -3,6 +3,112 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-deomat',
+    slug: 'deomat',
+    patient_name: 'Deomat',
+    title: 'A Father of Two Is Running Out of Time: 38-Year-Old Deomat’s Kidney Function Falls Below 13%',
+    medical_condition: 'Stage 5 Chronic Kidney Disease (ADPKD)',
+    story_text: `💔 A FATHER OF TWO IS RUNNING OUT OF TIME: One living donor could give Deomat more years with his children.
+
+🙏 He is just 38 years old. He is a husband, a father of two, and a man who simply wants to be there as his children grow up. But a devastating kidney disease is threatening the future he dreams of sharing with them.
+
+Meet Deomat, a 38-year-old father battling Stage 5 Chronic Kidney Disease (CKD) caused by Autosomal Dominant Polycystic Kidney Disease (ADPKD).
+
+For more than 16 years, Deomat has been living with this progressive genetic condition. Today, his kidney function has fallen to less than 13%. His condition continues to deteriorate, and he expects to begin dialysis soon.
+
+His family is now urgently searching for a living kidney donor—someone who could give him the opportunity to receive a transplant and enjoy more healthy years with his loved ones.
+
+💚 For Deomat, this is about more than a kidney transplant. It is about seeing his children celebrate birthdays, witnessing their milestones, sharing family moments, and being present for the future they deserve together.
+
+🩺 16 YEARS OF FIGHTING — NOW FACING STAGE 5 KIDNEY DISEASE
+
+Deomat's own account of his medical journey reveals the seriousness of his condition:
+
+💔 Diagnosis: Autosomal Dominant Polycystic Kidney Disease (ADPKD).
+
+⏳ 16+ years of illness: He has been battling PKD for more than 16 years.
+
+🩺 Critical kidney function: His kidney function has dropped below 13%.
+
+🚨 Stage 5 CKD: He is now in the most advanced stage of chronic kidney disease.
+
+🏥 Dialysis approaching: His kidney function continues to decline, and he expects to begin dialysis soon.
+
+💙 A transplant is his hope: A successful kidney transplant could offer him more healthy years with his family.
+
+💡 YOU DON'T HAVE TO BE A DIRECT MATCH TO HELP DEOMAT!
+
+Here is something many people don't know: You may be able to help someone receive a kidney even if your blood type or tissue compatibility does not match theirs.
+
+Through the National Kidney Registry (NKR), Deomat's family is exploring two possible pathways:
+
+1. Paired Kidney Exchange: A willing donor who is incompatible with Deomat may donate to another compatible recipient. In exchange, Deomat may receive a compatible kidney from another donor in the exchange network. This can open up possibilities that a direct donation might not offer.
+
+2. NKR Voucher Program: A donor may be able to donate a kidney now on Deomat's behalf. Under the applicable voucher arrangements, Deomat may receive priority access to a future compatible living-donor kidney if the program's requirements are met. This provides another potential pathway for helping him.
+
+💚 Please don't assume that your blood type makes you ineligible to help. Registering your interest allows the transplant professionals to determine what options may be available.
+
+📢 HOW YOU CAN HELP — BECOME PART OF DEOMAT'S STORY
+
+Deomat's family is reaching beyond their immediate circle because his genetic condition means that family members carrying the same gene cannot donate. They are appealing to compassionate strangers, friends, colleagues, and communities to help find a suitable living donor.
+
+❤️ Consider becoming a living donor: If you are interested, learn about the process through the National Kidney Registry.
+
+🤝 Explore the voucher program: Even if you cannot donate directly to Deomat, another donation pathway may be possible.
+
+📲 Share his story: Your post could reach someone who is willing to consider donation.
+
+💌 Spread the message: Send this appeal to friends, family, professional networks, and community groups.
+
+📞 OFFICIAL MEDICAL DONOR REGISTRATION & CONTACT DETAILS
+
+Patient: Deomat
+Age: 38 years
+Medical condition: Autosomal Dominant Polycystic Kidney Disease (ADPKD)
+Current condition: Stage 5 Chronic Kidney Disease
+Kidney function: Less than 13%
+Required treatment: Living kidney transplant
+
+🔗 Direct donor registration and information: https://www.nkr.org/VAK634
+
+🏥 Organization: National Kidney Registry (NKR)
+
+💚 Donation pathways: Direct donation, paired kidney exchange, and potentially the Voucher Program.
+
+Financial support for donors, according to Deomat's family:
+
+His health insurance covers the medical costs associated with living donation.
+
+Assistance is available for certain transplant-related expenses.
+
+Eligible donors may also have access to NKR Donor Shield protections, which can provide assistance with certain expenses, including travel and lost wages, subject to program terms.
+
+All potential donors undergo independent medical and psychosocial evaluation. Living donation is voluntary, and the transplant team will explain the risks, benefits, and applicable financial protections before any decision.
+
+💔 IMAGINE THE YEARS HE STILL WANTS TO SHARE WITH HIS CHILDREN
+
+At just 38, Deomat should be looking forward to years of family adventures, celebrations, and watching his children grow into adulthood. Instead, he is facing the reality of advanced kidney disease and an uncertain future.
+
+His greatest wish is not complicated. He wants more birthdays with his children. More family photographs. More ordinary days that most of us take for granted.
+
+🙏 Somewhere, there may be a person who is willing to consider becoming his living kidney donor. That person may be among your friends, relatives, colleagues, or even someone who sees this for the first time.
+
+We may not all be able to donate a kidney, but we can all help spread the word.
+
+💚 PLEASE SHARE DEOMAT'S STORY. YOUR SHARE COULD REACH THE PERSON WHO CHANGES HIS FUTURE.
+
+One donor. One transplant. More precious years with his children.
+
+#KidneyDonorNeeded #DeomatNeedsAKidney #LivingKidneyDonor #KidneyTransplant #ADPKD #PolycysticKidneyDisease #Stage5CKD #KidneyFailure #NationalKidneyRegistry #NKR #VoucherProgram #PairedKidneyExchange #GiftOfLife #SaveALife #FatherOfTwo #SpreadHope #ShareToSaveALife`,
+    image_url: null as string | null,
+    social_other: 'https://www.nkr.org/VAK634',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-karen-zabriskie',
     slug: 'karen-zabriskie',
     patient_name: 'Karen Zabriskie',
