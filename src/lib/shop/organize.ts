@@ -32,6 +32,18 @@ export function renameTitle(title: string): string {
   return RENAME[title.trim().toLowerCase()] ?? title
 }
 
+/** Products taken off the site entirely (not listed, and their page 404s). */
+// "Save Me, Save the World: A Guide to Becoming a Superhero"
+const REMOVED_HANDLES = ['save-me-save-the-world']
+export function isRemoved(p: Pick<ShopProduct, 'title' | 'handle'>): boolean {
+  return REMOVED_HANDLES.includes(p.handle) || /superhero/i.test(p.title)
+}
+
+/** Books get their whole cover shown instead of a cropped square. */
+export function isBook(p: Pick<ShopProduct, 'title' | 'product_type' | 'tags'>): boolean {
+  return sectionOf(p) === 'Read'
+}
+
 /** Very high-priced programs stay reachable by link but are kept off the main shop list. */
 export function hiddenFromList(p: ShopProduct): boolean {
   return p.variants.length > 0 && p.variants.every((v) => v.price >= 10000)

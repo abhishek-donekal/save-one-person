@@ -4,7 +4,7 @@ import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/qu
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
-import { SECTIONS, sectionOf, hiddenFromList } from '@/lib/shop/organize'
+import { SECTIONS, sectionOf, hiddenFromList, isBook } from '@/lib/shop/organize'
 import type { CardProduct } from '@/components/shop/ProductCard'
 
 export const metadata: Metadata = {
@@ -30,6 +30,7 @@ function toCard(p: Awaited<ReturnType<typeof getAllProducts>>[number]): CardProd
     variantTitle: v?.title ?? null,
     requiresShipping: v?.requires_shipping ?? true,
     multiVariant: p.variants.length > 1,
+    book: isBook(p),
   }
 }
 
@@ -142,7 +143,7 @@ function FeaturedCard({ p }: { p: CardProduct }) {
   return (
     <Link href={`/shop/${p.handle}`} className="hover-lift" style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)', overflow: 'hidden', display: 'flex', flexDirection: 'column', textDecoration: 'none' }}>
       <div style={{ position: 'relative', aspectRatio: '1/1', background: 'var(--secondary)' }}>
-        {p.image && <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 300px" style={{ objectFit: 'cover' }} />}
+        {p.image && <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 300px" style={p.book ? { objectFit: 'contain', padding: 14 } : { objectFit: 'cover' }} />}
         <span style={{ position: 'absolute', top: 10, left: 10, background: 'var(--emerald)', color: 'white', fontSize: 10, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', padding: '4px 8px', borderRadius: 6 }}>Featured</span>
       </div>
       <div style={{ padding: 16 }}>

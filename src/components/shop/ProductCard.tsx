@@ -19,6 +19,7 @@ export type CardProduct = {
   variantTitle: string | null
   requiresShipping: boolean
   multiVariant: boolean
+  book?: boolean
 }
 
 export default function ProductCard({ p }: { p: CardProduct }) {
@@ -48,7 +49,7 @@ export default function ProductCard({ p }: { p: CardProduct }) {
     <div className="hover-lift" style={{ background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
       <Link href={`/shop/${p.handle}`} style={{ position: 'relative', display: 'block', aspectRatio: '1/1', background: 'var(--secondary)' }}>
         {p.image ? (
-          <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 300px" style={{ objectFit: 'cover' }} />
+          <Image src={p.image} alt={p.title} fill sizes="(max-width: 640px) 50vw, 300px" style={p.book ? { objectFit: 'contain', padding: 14 } : { objectFit: 'cover' }} />
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'var(--muted)', fontSize: 13 }}>No image</div>
         )}

@@ -1,7 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import type { ShopProduct } from './types'
 import { STATIC_PRODUCTS } from './staticProducts'
-import { renameTitle } from './organize'
+import { renameTitle, isRemoved } from './organize'
 
 const PRODUCT_SELECT = `
   id, handle, title, body_html, description_text, vendor, product_type, tags, options,
@@ -33,7 +33,7 @@ export async function getAllProducts(): Promise<ShopProduct[]> {
     rows = normalize(data || [])
   } catch {}
   const extra = STATIC_PRODUCTS.filter((s) => !rows.some((r) => r.handle === s.handle))
-  return [...extra, ...rows]
+  return [...extra, ...rows].filter((p) => !isRemoved(p))
 }
 
 export async function getProductByHandle(handle: string): Promise<ShopProduct | null> {
@@ -47,7 +47,8 @@ export async function getProductByHandle(handle: string): Promise<ShopProduct | 
     .eq('published', true)
     .single()
   if (!data) return null
-  return normalize([data])[0]
+  const p = normalize([data])[0]
+  return isRemoved(p) ? null : p
 }
 
 export async function getFeaturedProducts(): Promise<ShopProduct[]> {

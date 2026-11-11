@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { getProductByHandle, getAllProducts, productMinPrice, productCompareAt, formatPrice } from '@/lib/shop/queries'
 import ProductGallery from '@/components/shop/ProductGallery'
+import { isBook } from '@/lib/shop/organize'
 import ProductBuyBox from '@/components/shop/ProductBuyBox'
 import ShareButtons from '@/components/shop/ShareButtons'
 import type { CardProduct } from '@/components/shop/ProductCard'
@@ -51,7 +52,7 @@ export default async function ProductPage({ params }: Props) {
         id: p.id, handle: p.handle, title: p.title, product_type: p.product_type,
         image: p.images[0]?.url ?? null, price: productMinPrice(p), compareAt: productCompareAt(p),
         available: p.variants.some((x) => x.available), variantId: v?.id ?? '', shopifyVariantId: v?.shopify_id ?? null, variantTitle: v?.title ?? null,
-        requiresShipping: v?.requires_shipping ?? true, multiVariant: p.variants.length > 1,
+        requiresShipping: v?.requires_shipping ?? true, multiVariant: p.variants.length > 1, book: isBook(p),
       }
     })
 
@@ -88,7 +89,7 @@ export default async function ProductPage({ params }: Props) {
           </nav>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56, alignItems: 'start' }} className="product-grid">
-            <ProductGallery images={product.images} title={product.title} />
+            <ProductGallery images={product.images} title={product.title} contain={isBook(product)} />
 
             <div>
               {product.product_type && (

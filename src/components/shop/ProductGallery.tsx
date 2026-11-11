@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import type { ShopImage } from '@/lib/shop/types'
 
-export default function ProductGallery({ images, title }: { images: ShopImage[]; title: string }) {
+export default function ProductGallery({ images, title, contain = false }: { images: ShopImage[]; title: string; contain?: boolean }) {
   const [active, setActive] = useState(0)
   const [zoom, setZoom] = useState(false)
   const [origin, setOrigin] = useState('center')
@@ -42,7 +42,7 @@ export default function ProductGallery({ images, title }: { images: ShopImage[];
           fill
           priority
           sizes="(max-width: 900px) 100vw, 500px"
-          style={{ objectFit: 'cover', transition: 'transform 200ms', transform: zoom ? 'scale(1.8)' : 'scale(1)', transformOrigin: origin }}
+          style={{ objectFit: contain ? 'contain' : 'cover', padding: contain ? 20 : 0, transition: 'transform 200ms', transform: zoom ? 'scale(1.8)' : 'scale(1)', transformOrigin: origin }}
         />
       </div>
 
@@ -55,7 +55,7 @@ export default function ProductGallery({ images, title }: { images: ShopImage[];
               aria-label={`View image ${i + 1}`}
               style={{ position: 'relative', width: 68, height: 68, borderRadius: 12, overflow: 'hidden', border: `2px solid ${i === active ? 'var(--emerald)' : 'var(--border)'}`, cursor: 'pointer', background: 'var(--secondary)', padding: 0 }}
             >
-              <Image src={im.url} alt="" fill sizes="68px" style={{ objectFit: 'cover' }} />
+              <Image src={im.url} alt="" fill sizes="68px" style={{ objectFit: contain ? 'contain' : 'cover' }} />
             </button>
           ))}
         </div>
