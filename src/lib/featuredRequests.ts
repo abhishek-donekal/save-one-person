@@ -100,7 +100,7 @@ We may not all be able to donate a kidney, but we can all help spread the word.
 One donor. One transplant. More precious years with his children.
 
 #KidneyDonorNeeded #DeomatNeedsAKidney #LivingKidneyDonor #KidneyTransplant #ADPKD #PolycysticKidneyDisease #Stage5CKD #KidneyFailure #NationalKidneyRegistry #NKR #VoucherProgram #PairedKidneyExchange #GiftOfLife #SaveALife #FatherOfTwo #SpreadHope #ShareToSaveALife`,
-    image_url: null as string | null,
+    image_url: '/images/urgent/deomat.jpg' as string | null,
     social_other: 'https://www.nkr.org/VAK634',
     donation_goal: null,
     donation_raised: 0,
