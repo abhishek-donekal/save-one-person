@@ -19,10 +19,15 @@ export default async function UrgentRequestsPage() {
     .order('urgent', { ascending: false })
     .order('created_at', { ascending: false })
 
-  const requests = [
+  const all = [
     ...FEATURED_REQUESTS.filter((f) => !(dbRequests || []).some((r) => r.slug === f.slug)),
     ...(dbRequests || []),
   ]
+  // Patients pinned to the top of the list, in this order (matched on slug or name).
+  const PINNED = ['william fritts', 'help-william']
+  const pinned = (r: { slug: string; patient_name: string }) =>
+    PINNED.some((p) => `${r.slug} ${r.patient_name}`.toLowerCase().includes(p))
+  const requests = [...all.filter(pinned), ...all.filter((r) => !pinned(r))]
 
   return (
     <>
