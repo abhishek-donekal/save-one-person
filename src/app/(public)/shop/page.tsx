@@ -54,7 +54,9 @@ export default async function ShopPage() {
             Books, wellness offerings, and ways to give. Every purchase helps us share more stories and save more lives.
           </p>
           <div className="shop-hero-actions">
-            <a href="#donate" className="btn btn-emerald shop-hero-donate">Donate Now</a>
+            <a href="#donate" className="btn btn-emerald shop-hero-donate">
+              <HeartIcon /> Donate Now
+            </a>
             <Link href="/shop#wear-gifts" className="shop-hero-new">
               <span className="tag">New</span> The Go Bless Yourself Collection <span aria-hidden="true">→</span>
             </Link>
@@ -65,19 +67,31 @@ export default async function ShopPage() {
       <div className="page-content">
         <div className="container">
           {/* Donate first */}
-          <section id="donate" className="shop-donate" aria-labelledby="shop-donate-h">
-            <div className="shop-donate-text">
-              <div className="section-label">Give</div>
-              <h2 id="shop-donate-h" className="display">Donate to <em>save a life</em></h2>
-              <p>Your gift helps a patient find the donor they need. Save One Person is a 501(c)(3) nonprofit, EIN {ORG_EIN}, so your donation is tax-deductible.</p>
+          <section id="donate" className="give" aria-labelledby="give-h">
+            <div className="give-text">
+              <div className="give-label"><HeartIcon /> Give</div>
+              <h2 id="give-h" className="display">Your gift can help <em>save a life</em></h2>
+              <p>
+                Every donation helps a patient&rsquo;s story reach the person who could become their donor. Pick an amount, check out securely, and you&rsquo;re done.
+              </p>
+              <ul className="give-trust">
+                <li><CheckIcon /> Tax-deductible</li>
+                <li><CheckIcon /> 501(c)(3) nonprofit &middot; EIN {ORG_EIN}</li>
+                <li><CheckIcon /> Secure checkout</li>
+              </ul>
             </div>
-            <div className="shop-donate-amounts">
-              {[25, 50, 100, 250, 500, 1000].map((a) => (
-                <a key={a} href={donationCheckoutUrl(a) ?? '/donate'} className={a === 100 ? 'amt amt-pop' : 'amt'}>
-                  ${a.toLocaleString()}
-                </a>
-              ))}
-              <Link href="/donate" className="amt amt-other">Other amount</Link>
+            <div className="give-panel">
+              <div className="give-panel-h">Choose an amount</div>
+              <div className="give-amounts">
+                {GIFTS.map((g) => (
+                  <a key={g.amount} href={donationCheckoutUrl(g.amount) ?? '/donate'} className={g.amount === 100 ? 'give-amt give-amt-pop' : 'give-amt'}>
+                    {g.amount === 100 && <span className="give-badge">Most popular</span>}
+                    <span className="give-amt-n">${g.amount.toLocaleString()}</span>
+                    <span className="give-amt-d">{g.impact}</span>
+                  </a>
+                ))}
+              </div>
+              <Link href="/donate" className="give-other">Give a different amount <span aria-hidden="true">→</span></Link>
             </div>
           </section>
 
@@ -129,9 +143,48 @@ export default async function ShopPage() {
               </div>
             </section>
           ))}
+
+          {/* Second chance to give, after browsing */}
+          <section className="give-band" aria-label="Donate">
+            <div>
+              <h2 className="display">Not shopping today?</h2>
+              <p>A donation of any size helps share a patient&rsquo;s story with someone who could save their life.</p>
+            </div>
+            <a href="#donate" className="btn btn-emerald give-band-btn"><HeartIcon /> Donate</a>
+          </section>
         </div>
       </div>
+
+      {/* Always-visible donate button */}
+      <a href="#donate" className="give-fab" aria-label="Donate to Save One Person">
+        <HeartIcon /> <span>Donate</span>
+      </a>
     </>
+  )
+}
+
+const GIFTS = [
+  { amount: 25, impact: 'Shares a patient’s story online' },
+  { amount: 50, impact: 'Sends a story to news outlets' },
+  { amount: 100, impact: 'Helps fund a radio segment' },
+  { amount: 250, impact: 'Helps produce a video story' },
+  { amount: 500, impact: 'Supports a TV news pitch' },
+  { amount: 1000, impact: 'Powers our outreach tools' },
+]
+
+function HeartIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.1 5.2 3 1.6-1.9 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z" />
+    </svg>
+  )
+}
+
+function CheckIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M5 12.5l4.5 4.5L19 7.5" />
+    </svg>
   )
 }
 
