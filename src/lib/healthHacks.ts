@@ -2,7 +2,8 @@
 // To add a new Short, put its id (the part after /shorts/) and a title at the top of this list.
 export const YOUTUBE_CHANNEL = 'https://www.youtube.com/@SavePerson1/shorts'
 
-export const HEALTH_HACKS: { id: string; title: string }[] = [
+export const HEALTH_HACKS: { id: string; title: string; src?: string; poster?: string }[] = [
+  { id: 'taught-in-every-school', title: 'This Should Be Taught in Every School', src: '/videos/health-hacks/taught-in-every-school.mp4', poster: '/videos/health-hacks/taught-in-every-school.jpg' },
   { id: 'sbaDLlly7XA', title: '10 Principles' },
   { id: 'gXyz5skHopE', title: 'Getting Ready for Firewalk: Change Your State' },
   { id: '3vb-8rkRXzg', title: 'The Power of Breath' },

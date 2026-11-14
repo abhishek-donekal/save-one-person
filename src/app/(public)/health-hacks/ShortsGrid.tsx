@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-type Short = { id: string; title: string }
+type Short = { id: string; title: string; src?: string; poster?: string }
 
 export default function ShortsGrid({ shorts }: { shorts: Short[] }) {
   const [playing, setPlaying] = useState<string | null>(null)
@@ -11,7 +11,9 @@ export default function ShortsGrid({ shorts }: { shorts: Short[] }) {
       {shorts.map((s) => (
         <article key={s.id} className="short-card">
           <div className="short-frame">
-            {playing === s.id ? (
+            {s.src ? (
+              <video src={s.src} poster={s.poster} controls playsInline preload="none" title={s.title} />
+            ) : playing === s.id ? (
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${s.id}?autoplay=1&rel=0&playsinline=1`}
                 title={s.title}

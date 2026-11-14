@@ -1863,6 +1863,7 @@ footer {
 .shorts-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 22px; }
 .short-card { display: flex; flex-direction: column; gap: 12px; }
 .short-frame { position: relative; aspect-ratio: 9 / 16; border-radius: 20px; overflow: hidden; background: #0b1220; box-shadow: var(--shadow-soft); }
+.short-frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
 .short-frame iframe, .short-frame button { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; background: none; }
 .short-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 300ms; }
 .short-frame button:hover img { transform: scale(1.04); }
