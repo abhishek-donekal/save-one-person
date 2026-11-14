@@ -2,6 +2,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import { CartProvider } from '@/lib/shop/CartContext'
 import CartDrawer from '@/components/shop/CartDrawer'
+import PersonOfTheWeekPopup from '@/components/ui/PersonOfTheWeekPopup'
 
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,6 +11,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
       <main>{children}</main>
       <Footer />
       <CartDrawer />
+      <PersonOfTheWeekPopup />
     </CartProvider>
   )
 }
