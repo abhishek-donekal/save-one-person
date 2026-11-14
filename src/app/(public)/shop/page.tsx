@@ -66,6 +66,25 @@ export default async function ShopPage() {
 
       <div className="page-content">
         <div className="container">
+          <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
+            <video
+              src="/social/2026-11-14/go-bless-yourself-heavenly.mp4"
+              poster="/social/2026-11-14/go-bless-yourself-heavenly.jpg"
+              autoPlay muted loop playsInline controls
+              style={{ width: 280, maxWidth: '80vw', aspectRatio: '9 / 16', borderRadius: 20, background: '#000', boxShadow: 'var(--shadow-soft)' }}
+            />
+            <div style={{ maxWidth: 420 }}>
+              <div className="section-label section-label-soft">New for the holidays</div>
+              <h2 id="gby-video-h" className="display" style={{ fontSize: 40, margin: '8px 0 14px' }}>Go Bless <em>Yourself</em></h2>
+              <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)' }}>
+                &ldquo;Go Bless Yourself&rdquo; on the front, &ldquo;Bless You Too&rdquo; on the back. Each one helps us use the media to save lives for people who need a living organ donor or a medical miracle.
+              </p>
+              <Link href="/shop#wear-gifts" className="btn btn-emerald" style={{ marginTop: 18, padding: '14px 26px', fontSize: 15 }}>
+                Shop the collection &rarr;
+              </Link>
+            </div>
+          </section>
+
           {/* Donate first */}
           <section id="donate" className="give" aria-labelledby="give-h">
             <div className="give-text">
