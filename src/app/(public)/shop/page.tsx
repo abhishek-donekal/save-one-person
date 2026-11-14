@@ -82,6 +82,9 @@ export default async function ShopPage() {
               <Link href="/shop#wear-gifts" className="btn btn-emerald" style={{ marginTop: 18, padding: '14px 26px', fontSize: 15 }}>
                 Shop the collection &rarr;
               </Link>
+              <p style={{ marginTop: 18, fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                <strong>Group orders:</strong> churches, schools, teams and offices can order in bulk at special pricing. Email <a href="mailto:save1person1@gmail.com" style={{ color: 'var(--emerald)' }}>save1person1@gmail.com</a>.
+              </p>
             </div>
           </section>
 
