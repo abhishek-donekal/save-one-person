@@ -38,7 +38,10 @@ Wednesday/Friday social-post tasks read. Lauren (the founder) can change any rul
    draft, the Go Bless Yourself promo, the candidates.
 
 ## Monday / Wednesday / Friday — Social posts
-Read `ops/this-week.md`. Make one post for Instagram, TikTok and X (Twitter) using that day's angle:
-a short vertical video or graphic built from the person's photo and story (or a video Lauren uploaded), plus
-captions with the story link. Send to Lauren to approve. Post only after she says OK, through the browser
-on her computer where she is logged in. If not logged in, ask her to log in.
+Three DIFFERENT kinds of posts each week, every one with a picture and "Saveonepersonnow.org" on it:
+- Monday: Person of the Week (their photo, story, how to help, link to their story page).
+- Wednesday: a Health Hack / health tip (use one of Lauren's Health Hacks videos or a still from it, link to
+  saveonepersonnow.org/health-hacks).
+- Friday: be creative and rotate: Go Bless Yourself gifts (holiday gifts in Nov-Dec), Lauren's two books,
+  a donation ask, a success story, an inspiring quote, a living-donation myth vs fact, a thank-you to supporters.
+Send Lauren the picture/video and captions to approve. Post only after she says OK.
