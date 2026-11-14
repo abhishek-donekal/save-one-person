@@ -3,6 +3,9 @@
 export const YOUTUBE_CHANNEL = 'https://www.youtube.com/@SavePerson1/shorts'
 
 export const HEALTH_HACKS: { id: string; title: string }[] = [
+  { id: 'sbaDLlly7XA', title: '10 Principles' },
+  { id: 'gXyz5skHopE', title: 'Getting Ready for Firewalk: Change Your State' },
+  { id: '3vb-8rkRXzg', title: 'The Power of Breath' },
   { id: 'b6dwVOZIzK0', title: 'Praying to Last Hope' },
   { id: 'QfEm5xWzIBI', title: 'No One Should Die Because Their Story Wasn’t Told' },
   { id: 'KLcc8hLBK28', title: 'When We Saved a Life' },
