@@ -4,10 +4,10 @@ import Link from 'next/link'
 export default function HolidayBanner() {
   return (
     <Link
-      href="/shop#wear-gifts"
+      href="/meaningful-holiday-gifts"
       style={{ display: 'block', background: '#dc2626', color: '#fff', textAlign: 'center', padding: '10px 16px', fontWeight: 700, fontSize: 15, lineHeight: 1.4, textDecoration: 'none' }}
     >
-      🎁 Holiday gifts that save lives: Go Bless Yourself tees, hoodies, hats &amp; mugs. <span style={{ textDecoration: 'underline' }}>Shop now →</span>
+      🎁 Meaningful holiday gifts that help save lives: Go Bless Yourself tees, hoodies, hats &amp; mugs. <span style={{ textDecoration: 'underline' }}>Shop now →</span>
     </Link>
   )
 }

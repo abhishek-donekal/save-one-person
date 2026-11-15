@@ -372,6 +372,30 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── GO BLESS YOURSELF (holiday gifts) ── */}
+      <section aria-labelledby="home-gby-h" style={{ padding: '72px 0', background: 'var(--secondary)' }}>
+        <div className="container" style={{ display: 'flex', flexWrap: 'wrap', gap: 40, alignItems: 'center', justifyContent: 'center' }}>
+          <video
+            src="/social/2026-11-14/go-bless-yourself-heavenly.mp4"
+            poster="/social/2026-11-14/go-bless-yourself-heavenly.jpg"
+            autoPlay muted loop playsInline
+            style={{ width: 260, maxWidth: '75vw', aspectRatio: '9 / 16', borderRadius: 20, background: '#000', boxShadow: 'var(--shadow-soft)' }}
+          />
+          <div style={{ maxWidth: 460 }}>
+            <div className="section-label">Meaningful holiday gifts</div>
+            <h2 id="home-gby-h" className="display" style={{ fontSize: 40, margin: '8px 0 14px' }}>Go Bless <em>Yourself</em></h2>
+            <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)' }}>
+              &ldquo;Go Bless Yourself&rdquo; on the front, &ldquo;Bless You Too&rdquo; on the back. Tees, hoodies, hats and mugs that help us use the media to save lives for people who need a living organ donor or a medical miracle.
+            </p>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 20 }}>
+              <Link href="/meaningful-holiday-gifts" className="btn btn-emerald" style={{ padding: '14px 26px', fontSize: 15 }}>
+                Shop holiday gifts &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── DONATE ── */}
       <section id="donate" className="donate">
         <div className="container">
