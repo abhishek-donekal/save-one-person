@@ -4,6 +4,7 @@ import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/qu
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
+import BuyTeeButton from '@/components/shop/BuyTeeButton'
 import type { CardProduct } from '@/components/shop/ProductCard'
 import { sectionOf, hiddenFromList, isBook } from '@/lib/shop/organize'
 
@@ -124,7 +125,8 @@ export default async function MeaningfulGiftsPage() {
             Gifts with a message and a mission. Every tee, hoodie, mug and book helps Save One Person find living organ donors and medical miracles for people who are running out of time.
           </p>
           <div className="shop-hero-actions">
-            <a href="#wear" className="btn btn-emerald">Shop the gifts &rarr;</a>
+            <Link href="/shop/go-bless-yourself-t-shirt" className="btn" style={{ background: '#FFD500', color: '#111', fontWeight: 900, fontSize: 18, padding: '16px 30px', border: '3px solid #111' }}>🛍️ Buy the T-shirt &rarr;</Link>
+            <a href="#wear" className="btn btn-emerald">See all gifts &rarr;</a>
             <a href="#honor" className="shop-hero-new">Give in someone&rsquo;s honor <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -145,6 +147,7 @@ export default async function MeaningfulGiftsPage() {
               <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)' }}>
                 &ldquo;Go Bless Yourself&rdquo; on the front, &ldquo;Bless You Too&rdquo; on the back. It&rsquo;s a gift they&rsquo;ll love wearing, and each one helps us use the media to save lives for people who need a living organ donor or a medical miracle.
               </p>
+              <BuyTeeButton />
               <p style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--navy)', fontWeight: 700, marginTop: 14 }}>
                 🎁 Order early for the holidays.
               </p>

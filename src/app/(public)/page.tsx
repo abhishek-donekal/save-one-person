@@ -7,6 +7,7 @@ import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
+import BuyTeeButton from '@/components/shop/BuyTeeButton'
 
 export const metadata: Metadata = {
   title: 'Save One Person — One Introduction Can Save a Life',
@@ -387,9 +388,10 @@ export default async function HomePage() {
             <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)' }}>
               &ldquo;Go Bless Yourself&rdquo; on the front, &ldquo;Bless You Too&rdquo; on the back. Tees, hoodies, hats and mugs that help us use the media to save lives for people who need a living organ donor or a medical miracle.
             </p>
-            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 20 }}>
-              <Link href="/meaningful-holiday-gifts" className="btn btn-emerald" style={{ padding: '14px 26px', fontSize: 15 }}>
-                Shop holiday gifts &rarr;
+            <BuyTeeButton />
+            <div style={{ marginTop: 14 }}>
+              <Link href="/meaningful-holiday-gifts" style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 16 }}>
+                See all holiday gifts &rarr;
               </Link>
             </div>
           </div>

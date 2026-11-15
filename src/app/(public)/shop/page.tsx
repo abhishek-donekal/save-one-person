@@ -4,6 +4,7 @@ import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/qu
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
+import BuyTeeButton from '@/components/shop/BuyTeeButton'
 import { SECTIONS, sectionOf, hiddenFromList, isBook } from '@/lib/shop/organize'
 import type { CardProduct } from '@/components/shop/ProductCard'
 
@@ -79,9 +80,12 @@ export default async function ShopPage() {
               <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)' }}>
                 &ldquo;Go Bless Yourself&rdquo; on the front, &ldquo;Bless You Too&rdquo; on the back. Each one helps us use the media to save lives for people who need a living organ donor or a medical miracle.
               </p>
-              <Link href="/shop#wear-gifts" className="btn btn-emerald" style={{ marginTop: 18, padding: '14px 26px', fontSize: 15 }}>
-                Shop the collection &rarr;
-              </Link>
+              <BuyTeeButton />
+              <div style={{ marginTop: 14 }}>
+                <Link href="/shop#wear-gifts" style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 16 }}>
+                  See the whole collection &rarr;
+                </Link>
+              </div>
               <p style={{ marginTop: 18, fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
                 <strong>Group orders:</strong> churches, schools, teams and offices can order in bulk at special pricing. Email <a href="mailto:save1person1@gmail.com" style={{ color: 'var(--emerald)' }}>save1person1@gmail.com</a>.
               </p>
