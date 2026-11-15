@@ -42,29 +42,18 @@ export default async function MediaPage() {
     if (/^shoutoutmiami$/i.test(n)) return 'ShoutoutMiami'
     return n
   }
-  // Some thumbnails point at image files that were never migrated from the old site.
-  // Check each one once a day; missing images fall back to the branded text cover.
+  // A few old thumbnails are tiny logos (e.g. 135x100) that turn into a blurry gray
+  // block when stretched across a card. Show the branded text cover for those instead.
+  const TINY_LOGO_THUMBS = ['1010-e1746811183584.png', 'OUR-TOWN.png']
+  const isTinyLogo = (u: string | null) => !!u && TINY_LOGO_THUMBS.some((f) => u.endsWith(f))
   const items = (media || []) as MediaItem[]
-  const missing = new Set<string>()
-  await Promise.all(
-    items.map(async (m) => {
-      const url = m.thumbnail_url
-      if (!url || !/^https?:\/\//.test(url)) return
-      try {
-        const res = await fetch(url, { method: 'HEAD', next: { revalidate: 86400 } })
-        if (!res.ok) missing.add(url)
-      } catch {
-        // Network hiccup: keep the image rather than hide a good one.
-      }
-    })
-  )
   const cards: MediaCard[] = items.map((m) => ({
     id: m.id,
     title: m.title,
     outlet: fixOutlet(m.outlet_name),
     type: m.media_type,
     href: m.slug ? `/media/${m.slug}` : (m.url || '/media'),
-    thumb: (m.thumbnail_url && !missing.has(m.thumbnail_url) ? m.thumbnail_url : null) || youtubeThumb(m.url),
+    thumb: (isTinyLogo(m.thumbnail_url) ? null : m.thumbnail_url) || youtubeThumb(m.url),
     featured: !!m.featured,
   }))
   const byFeatured = (x: MediaCard, y: MediaCard) => Number(y.featured) - Number(x.featured) || Number(!!y.thumb) - Number(!!x.thumb)
