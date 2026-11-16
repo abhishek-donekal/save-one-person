@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Fraunces } from 'next/font/google'
 import './globals.css'
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -78,7 +79,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://stalwart-puffpuff-744c94.netlify.app" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
-      <body style={{ fontFamily: "'Inter', sans-serif" }}>{children}</body>
+      <body style={{ fontFamily: "'Inter', sans-serif" }}>
+        {children}
+        {/* Google tag (Google Ads / Ad Grant account AW-599305263) */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-599305263" strategy="afterInteractive" />
+        <Script id="google-tag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-599305263');`}
+        </Script>
+      </body>
     </html>
   )
 }
