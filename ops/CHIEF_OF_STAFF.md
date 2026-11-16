@@ -12,17 +12,20 @@ Wednesday/Friday social-post tasks read. Lauren (the founder) can change any rul
 - Only email people on Lauren's own opted-in list. No cold emails, no scraped addresses.
 
 ## Monday — Chief of Staff
-1. **Pick the Person of the Week.** Read `ops/person-of-the-week-log.md`. Pick the next person on the live
-   Urgent Requests list (https://www.saveonepersonnow.org/api/urgent-requests, in list order) who has not
-   been featured in the last 12 weeks. Skip anyone without a photo. If Lauren named someone, use them.
-2. **Update the website pop-up.** Edit `src/lib/personOfTheWeek.ts` (new `weekOf` = this Monday's date,
+1. **Pick the TWO People of the Week** (Lauren, 2026-11-16). **William Fritts is ALWAYS Person of the Week #1
+   until he finds a living kidney donor.** Person #2 rotates: read `ops/person-of-the-week-log.md` and pick the
+   next person on the live Urgent Requests list (https://www.saveonepersonnow.org/api/urgent-requests, in list
+   order) other than William who has not been featured in the last 12 weeks. Skip anyone without a photo. If
+   Lauren named someone, use them as #2.
+2. **Update the website pop-up** (keep William as the pop-up while he needs a donor; feature person #2 in the
+   posts and email). If the pop-up supports only one person, leave William. Edit `src/lib/personOfTheWeek.ts` (new `weekOf` = this Monday's date,
    name, short headline, one-line detail, slug, image). Push to a branch, wait for both Vercel checks to
    pass, then fast-forward `master`. Add a line to `ops/person-of-the-week-log.md`.
 3. **Write this week's plan** in `ops/this-week.md`: Person of the Week (name, link, 3 key facts, photo URL),
    and the angle for each post: Monday = meet them, Wednesday = how to help / living donation facts,
    Friday = share-ask / urgency. Commit it with step 2.
 4. **Fill in the weekly "Save One Alert" email** from the template `ops/email/save-one-alert.html`
-   (goes to Lauren's list of about 10,000). Replace ONLY the Person of the Week section (photo, name,
+   (goes to Lauren's list; she wants it sent from Kit's free Newsletter plan, up to 10,000 subscribers, or her Mailchimp friend). Show BOTH People of the Week (William first, then person #2). Replace ONLY the People of the Week section (photo, name,
    story, button link) and the subject/preview lines; keep the Donate, Go Bless Yourself holiday-gift and
    Lauren's two books sections. If Lauren sent information about a person this week, use that person.
    Save it as `ops/email/YYYY-MM-DD.html`, and send Lauren the finished HTML plus subject line, ready to
