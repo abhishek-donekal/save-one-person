@@ -25,12 +25,13 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Share William's Story — kw: help a child find a donor, share a donor story, help a sick child, living donor stories, transplant stories…
 - Madisyn Shipman Supports William — kw: madisyn shipman, madisyn shipman kidney/william/charity/news (Google accepted)
 - 55 keywords total. Sitelinks (campaign level, pending review): How Living Donation Works (/become-a-donor), Donate to Save a Life (/donate), As Seen on TV (/media), Other Urgent Requests (/urgent-requests), Success Stories (/success-stories).
+- Added 2026-11-16 run 2: Pediatric Dialysis, Living Donation Facts, Help a Sick Child, Kansas City Living Donor (KU Med) — 4 more ad groups, 8 more RSAs, 26 more kw. **Now 10 ad groups / 20 ads / ~81 keywords.**
 - Holiday campaign also got ad group "William - Gift of Life" (8 kw like gift of life christmas, help a sick child this christmas; 2 RSAs -> William page).
 
 ### Policy lessons
 - Google's "Inappropriate content" policy **blocks keywords containing "kidney donor", "kidney donation", "donate a kidney", "organ donation"** (28 rejected 2026-11-16). Use "living donor", "transplant donor", "kidney transplant", "give a kidney" phrasing instead. Ad text with "Kidney Donor" passed upload (some ads still under review — watch for disapprovals).
 - Earlier: "organ donor awareness shirts" rejected (organ + product). Never pair organ/kidney with buy/sell/pay/products.
-- Bulk upload (Tools > Bulk actions > Uploads) works: inject a CSV into the hidden `input[type=file][accept^=".csv"]` via JS DataTransfer. New campaign rows need "EU political ads" = No; rows for an existing campaign may need "Campaign ID". Bulk "Campaign Status: Paused" on P-Max did NOT work (paused in UI instead). Don't click "Verify" after apply (it re-runs the file).
+- Bulk upload (Tools > Bulk actions > Uploads) works: inject a CSV into the hidden `input[type=file][accept^=".csv"]` via JS DataTransfer. New campaign rows need "EU political ads" = No; rows for an existing campaign may need "Campaign ID". Bulk "Campaign Status: Paused" on P-Max did NOT work (paused in UI instead). After Apply, uploads that add ADS show "N verification required": click **Verify** on that row (may trigger "Confirm it's you" → Confirm with a passkey) — only then are the ads created. Campaign negatives via bulk: Criterion Type "Campaign negative phrase" is invalid — add negatives in the UI instead.
 
 ## Daily numbers
 | Date (acct tz) | Spend | Impr | Clicks | CTR | Notes |
@@ -39,6 +40,7 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 
 ## Change log
 - 2026-11-15: Built "Holiday Gifts That Give Back" (27 kw, 1 RSA, 4 sitelinks).
+- 2026-11-16 (run 2, Lauren asked to run overnight): +4 William ad groups (8 ads). Verified holiday "William - Gift of Life" 2 ads (they had not been created in run 1). Passkey check passed.
 - 2026-11-16 (run 1): Built William campaign ($120/day, 6 ad groups, 12 RSAs, 55 kw, 5 sitelinks). Added William ad group to Holiday. Holiday budget $150→$100, Organ Donation $329→$30, Branded $329→$15. Paused P-Max ($200).
 
 ## To-do (next runs)
@@ -48,4 +50,5 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 4. Investigate why Organ Donation & Branded get 0 impressions; fix 6 disapproved ads or pause.
 5. Build "Urgent Requests (other patients)" and "Lauren's books" campaigns (rebalance budget).
 6. Conversion tracking (Donate click, Shop purchase, Share William, sign-up) then consider Maximize conversions.
-7. Daily: search terms, negatives, CTR ≥5%, pause QS 1–2 keywords.
+7. Add William campaign negatives in UI (blood drive, plasma, red cross, for sale, black market, price, jobs).
+8. Daily: search terms, negatives, CTR ≥5%, pause QS 1–2 keywords.
