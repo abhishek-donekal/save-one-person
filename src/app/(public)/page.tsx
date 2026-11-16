@@ -398,6 +398,44 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* ── LAUREN'S BOOKS ── */}
+      <section aria-labelledby="home-books-h" style={{ padding: '72px 0', background: '#fff' }}>
+        <div className="container" style={{ textAlign: 'center' }}>
+          <div className="section-label">By founder Lauren Finkelstein</div>
+          <h2 id="home-books-h" className="display" style={{ fontSize: 40, margin: '8px 0 10px' }}>Inspiring <em>books</em> for the holidays</h2>
+          <p style={{ fontSize: 17, lineHeight: 1.7, color: 'var(--muted)', maxWidth: 620, margin: '0 auto 36px' }}>
+            Lauren&rsquo;s true stories of faith, miracles and turning the impossible into possible. A meaningful gift, and every purchase supports Save One Person.
+          </p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 48, justifyContent: 'center' }}>
+            {[
+              { slug: 'is-there-a-god-one-womans-fast-track-to-the-divine-from-despair-to-bliss-without-drugs', title: 'Is There a God?', sub: 'One Woman’s Fast Track to the Divine' },
+              { slug: 'a-practical-guide-to-turn-the-impossible-possible', title: 'How to Create a Miracle', sub: 'A Practical Guide to Turn the Impossible, Possible' },
+            ].map((b) => (
+              <div key={b.slug} style={{ width: 280, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <Link href={`/shop/${b.slug}`} aria-label={`Buy ${b.title}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/shop/${b.slug}/1.jpg`}
+                    alt={`${b.title} book cover by Lauren Finkelstein`}
+                    width={240}
+                    style={{ width: 240, height: 'auto', borderRadius: 8, boxShadow: '0 18px 40px rgba(0,0,0,.22)' }}
+                    loading="lazy"
+                  />
+                </Link>
+                <h3 style={{ fontSize: 22, fontWeight: 800, margin: '20px 0 4px' }}>{b.title}</h3>
+                <p style={{ fontSize: 15, color: 'var(--muted)', margin: '0 0 16px' }}>{b.sub}</p>
+                <Link
+                  href={`/shop/${b.slug}`}
+                  style={{ display: 'inline-block', background: '#FFD500', color: '#111', border: '3px solid #111', borderRadius: 999, padding: '14px 30px', fontSize: 20, fontWeight: 900, textDecoration: 'none' }}
+                >
+                  📚 BUY THE BOOK · $29.95
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── DONATE ── */}
       <section id="donate" className="donate">
         <div className="container">
