@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { emailLauren } from '@/lib/notify'
+import { trackFormConversion } from '@/lib/adsConversion'
 
 export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   const light = tone === 'light'
@@ -27,7 +28,7 @@ export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'l
         return
       }
       emailLauren(`New Save One Alerts subscriber: ${email}`, { Email: email })
-      setStatus('done')
+      setStatus('done'); trackFormConversion('newsletter')
       setEmail('')
     } catch {
       setStatus('error')

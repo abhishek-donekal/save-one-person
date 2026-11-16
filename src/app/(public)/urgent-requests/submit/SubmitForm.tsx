@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { emailLauren } from '@/lib/notify'
+import { trackFormConversion } from '@/lib/adsConversion'
 
 const FIELD_STYLE: React.CSSProperties = {
   width: '100%',
@@ -50,7 +51,7 @@ export default function SubmitForm() {
         if (k !== 'website' && typeof v === 'string' && v.trim()) fields[k.replace(/_/g, ' ')] = v.slice(0, 5000)
       }
       emailLauren(`New request for help: ${String(body.patient_name || 'patient')}`, fields)
-      setStatus('success')
+      setStatus('success'); trackFormConversion('request-for-help')
       ;(e.target as HTMLFormElement).reset()
     } catch {
       setStatus('error')

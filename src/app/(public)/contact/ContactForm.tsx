@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { emailLauren } from '@/lib/notify'
+import { trackFormConversion } from '@/lib/adsConversion'
 
 export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '', website: '' })
@@ -27,7 +28,7 @@ export default function ContactForm() {
       emailLauren(`New contact message: ${form.subject || form.name}`, {
         Name: form.name, Email: form.email, Subject: form.subject || '—', Message: form.message,
       })
-      setStatus('sent')
+      setStatus('sent'); trackFormConversion('contact')
     } catch {
       setStatus('error')
       setErrMsg('Network error. Please email us directly at Save1Person@aol.com.')

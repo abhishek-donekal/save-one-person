@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { emailLauren } from '@/lib/notify'
+import { trackFormConversion } from '@/lib/adsConversion'
 
 export default function MediaAlertsForm() {
   const [f, setF] = useState({ name: '', email: '', outlet: '', role: '', phone: '', website: '' })
@@ -19,7 +20,7 @@ export default function MediaAlertsForm() {
       emailLauren(`New Save One Alert sign-up (media): ${f.outlet}`, {
         Name: f.name, Email: f.email, 'Media outlet': f.outlet, Role: f.role || '—', Phone: f.phone || '—',
       })
-      setStatus('done')
+      setStatus('done'); trackFormConversion('media-alerts')
     } catch {
       setStatus('error'); setMsg('Network error. Please try again.')
     }
