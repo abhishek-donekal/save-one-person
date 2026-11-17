@@ -3,6 +3,7 @@ import { focusFor } from '@/lib/imageFocus'
 import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
+import DonateCallout from '@/components/ui/DonateCallout'
 
 export const metadata: Metadata = {
   title: 'Success Stories: Living Kidney & Liver Donors Found Through the Media',
@@ -88,6 +89,7 @@ export default async function SuccessStoriesPage() {
           </div>
         </div>
       </div>
+      <DonateCallout />
     </>
   )
 }

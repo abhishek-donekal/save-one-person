@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import DonateCallout from '@/components/ui/DonateCallout'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -116,6 +117,7 @@ export default async function SuccessStoryPage({ params }: Props) {
           </div>
         </div>
       </div>
+      <DonateCallout />
     </>
   )
 }

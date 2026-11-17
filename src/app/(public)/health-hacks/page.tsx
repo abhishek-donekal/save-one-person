@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ShortsGrid from './ShortsGrid'
 import { HEALTH_HACKS, YOUTUBE_CHANNEL } from '@/lib/healthHacks'
+import DonateCallout from '@/components/ui/DonateCallout'
 
 export const metadata: Metadata = {
   title: 'Health Hacks: Short Healthy-Living Videos from Lauren Finkelstein',
@@ -33,6 +34,7 @@ export default function HealthHacksPage() {
           </p>
         </div>
       </div>
+      <DonateCallout />
     </>
   )
 }

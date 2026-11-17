@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { getStaticBlogPost } from '@/lib/blogPosts'
 import HowYouCanHelp from '@/components/ui/HowYouCanHelp'
+import DonateCallout from '@/components/ui/DonateCallout'
 
 const SITE_URL = 'https://www.saveonepersonnow.org'
 
@@ -150,6 +151,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </div>
+      <DonateCallout />
     </>
   )
 }
