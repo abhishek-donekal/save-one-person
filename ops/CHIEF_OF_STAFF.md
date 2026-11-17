@@ -62,3 +62,4 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 ## Google Ad Grants website rule (Nov 17, 2026: account deactivated for Website policy)
 - The website must be mainly about the mission. Lauren wants Shop kept as a tab in the top menu (Nov 17). Keep merch/books out of homepage sections and site-wide banners. Shop pages must say how purchases support the mission.
 - Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).
+- STATUS Nov 17, 2026: the Ad Grants account is DEACTIVATED and under Google review (reactivation requested; Google's Ad Grants team has one-time approval to make compliance changes). Until a Google email says it is reactivated, every task must SKIP all Google Ads changes (account is read-only, and our changes could undo Google's). Just check Gmail for Google's reply and tell Lauren.
