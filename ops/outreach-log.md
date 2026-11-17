@@ -50,6 +50,5 @@ Offer: $5,000 Giving Season Partner (logo on banner/homepage/Partners through De
 | 2026-11-17 | Giving Tuesday news | 1010 WINS | Ben Mevorach, Dir. of News & Programming | Mevorach@wins.com | https://www.audacy.com/1010wins/contact-us | draft |
 | 2026-11-17 | Giving Tuesday news | FOX 5 NY | web contact | https://www.fox5ny.com/contact-us | https://www.fox5ny.com/about | form text given to Lauren |
 | 2026-11-17 | Giving Tuesday news | NY1 | web contact | https://ny1.com/nyc/all-boroughs/about-us/contact-us | https://ny1.com/nyc/all-boroughs/about-us | form text given to Lauren |
-| 2026-11-17 | Celebrity share | Andrew McCarthy | Aevitas Creative (literary agent David Kuhn) | https://www.aevitascreative.com/contact | https://www.aevitascreative.com/client/andrew-mccarthy | form text given to Lauren |
-| 2026-11-17 | Celebrity share | Andy Garcia, Michael Rapaport, Madisyn Shipman | no public rep email found | — | — | Lauren to use her own contacts |
+Celebrity part skipped: Lauren's standing rule (Nov 17) is no celebrity outreach; nothing drafted.
 Note: EOS 3D draft (patrick.boyd@eos-na.com) body wrongly says "Hi Markforged team"; must be fixed before it is ever sent.
