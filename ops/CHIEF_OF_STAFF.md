@@ -50,7 +50,7 @@ Three DIFFERENT kinds of posts each week, every one with a picture and "Saveonep
 Send Lauren the picture/video and captions to approve. Post only after she says OK.
 
 ## Standing rule: no celebrity outreach
-Never email or contact celebrities or their publicists/agents/managers (Andy Garcia, Michael Rapaport, Andrew McCarthy, Madisyn Shipman, etc.). Lauren knows them personally (Nov 17, 2026).
+Never contact Andy Garcia, Michael Rapaport, Andrew McCarthy or Madisyn Shipman or their teams: Lauren knows them personally (Nov 17, 2026). Other celebrities only when Lauren approves the list (she approved 9 video requests on Nov 17: Alonzo Mourning, Selena Gomez, George Lopez, Tracy Morgan, Lionel Messi, Gloria Estefan, Pitbull, DJ Khaled, Dwyane Wade).
 
 ## Where Lauren lives (Nov 17, 2026)
 Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One Person started in New York and Lauren is now based in Miami. Prefer Miami/South Florida media and businesses (WPLG Local 10, NBC 6, WSVN 7, CBS News Miami, Miami Herald, local Miami businesses), while NYC outlets that covered her before are still fine.
