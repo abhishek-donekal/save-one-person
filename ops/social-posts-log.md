@@ -6,3 +6,4 @@ Friday rotation order: (a) donation ask -> (b) Lauren's books -> (c) living-dona
 |---|---|---|---|---|
 | 2026-11-15 | (before this log) | NYC Go Bless Yourself tee video | public/social/2026-11-15/go-bless-yourself-nyc.mp4 | already used (treated as posted; not re-used) |
 | 2026-11-17 | Tue | NYC Go Bless Yourself tee video #2 (tourist / car alarm / pizza / train delayed) | go-bless-yourself-nyc-2.mp4 (22s, 9:16) | DRAFTED, sent to Lauren, awaiting OK |
+| 2026-11-17 | Tue | NYC Go Bless Yourself tee video by Tee Promoter (double-park / express skips stop / bodega sandwich / rent up) | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16) | DRAFTED (11:30 ET run), sent to Lauren as Tuesday option; only ONE of the two Tue drafts gets posted today, the other is saved for Thursday |

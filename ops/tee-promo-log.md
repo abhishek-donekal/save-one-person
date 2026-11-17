@@ -73,3 +73,4 @@ Video placements prepared (submit only after Lauren's OK; no accounts/passwords 
 - Patch NYC (https://patch.com/compose, classified "announcement" or Neighbor News) — needs Lauren's own Patch login; she posts it herself.
 
 Ideas for later (not contacted): Renewal (Boro Park living-kidney-donor org; find email), RIDER Park Slope gift shop, Loop & Tie (Austin, corporate gifting vendor program), Central Synagogue. Skip Gothamist (no response to pitches).
+- 2026-11-17 (daily social post task): public/social/tee-videos/2026-11-17.mp4 sent to Lauren for OK as the Tuesday post. NOT yet posted.
