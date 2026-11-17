@@ -14,6 +14,7 @@ const NAV_LINKS: { href: string; label: string; external?: boolean }[] = [
   { href: '/media', label: 'Media' },
   { href: '/future', label: 'Future' },
   { href: '/faq', label: 'FAQ' },
+  { href: '/shop', label: 'Shop' },
   { href: '/contact', label: 'Contact' },
 ]
 
