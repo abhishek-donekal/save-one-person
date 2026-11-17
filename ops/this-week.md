@@ -27,4 +27,4 @@ Every post ends with "Saveonepersonnow.org".
 
 ## This week (Lauren, Nov 17)
 - WILLIAM: the goal is a LIVING KIDNEY DONOR, not money. Never use William to ask for donations. His page https://www.saveonepersonnow.org/help-william asks people to be his donor or share his story. Every social post this week ends with: "3-year-old William needs a living kidney donor. Could it be you? 👉 saveonepersonnow.org/help-william".
-- DONATIONS: Lauren wants $10,000 in general donations to Save One Person this week (through Sun Nov 22). Donation asks go to https://www.saveonepersonnow.org/donate (Giving Tuesday Dec 1 framing), never tied to William.
+- DONATIONS: Lauren's goal is now $5,000 in general donations to Save One Person this week (through Sun Nov 22). Site-wide top banner points to /donate until then; on Mon Nov 23 switch src/components/ui/HolidayBanner.tsx back to the Go Bless Yourself gifts banner (/meaningful-holiday-gifts). Donation asks go to https://www.saveonepersonnow.org/donate (Giving Tuesday Dec 1 framing), never tied to William.
