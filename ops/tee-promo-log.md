@@ -74,3 +74,7 @@ Video placements prepared (submit only after Lauren's OK; no accounts/passwords 
 
 Ideas for later (not contacted): Renewal (Boro Park living-kidney-donor org; find email), RIDER Park Slope gift shop, Loop & Tie (Austin, corporate gifting vendor program), Central Synagogue. Skip Gothamist (no response to pitches).
 - 2026-11-17 (daily social post task): public/social/tee-videos/2026-11-17.mp4 sent to Lauren for OK as the Tuesday post. NOT yet posted.
+
+## 2026-11-17 — tee outreach SENT (Lauren OK 12:20pm)
+Sent: CBS News New York desk (desk@cbs2ny.com), Secret NYC (hello@secretnyc.co), Time Out New York (tips@timeout.com), The Shop at the Cathedral of St. John the Divine (info@stjohndivine.org), Greater NYC Black Nurses Association (gnycbna@gmail.com), Mount Sinai Recanati/Miller Transplant Outreach (mountsinaitransplant@mountsinai.org), Brick Church Pastoral Care (pastoralcare@brickchurch.org), Women of Emanu-El (we@emanuelnyc.org; rewritten to remove William from a sales pitch).
+Not sent: tee pitch to news@pix11.com (deleted; PIX11 gets the Giving Tuesday pitch today instead, avoid two pitches same day).
