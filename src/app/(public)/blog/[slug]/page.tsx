@@ -151,7 +151,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </div>
-      <DonateCallout />
+      {post.show_donate !== false && <DonateCallout />}
     </>
   )
 }
