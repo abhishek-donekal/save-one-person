@@ -37,5 +37,7 @@ How blog posts are stored: the `blog_posts` Supabase table was empty and this ta
   - NOTE: this campaign shows "Eligible (Limited) – conversion tracking setup is incomplete" and 0 impressions this month: with Maximize conversions and no working conversions it may not spend. Consider switching it to Maximize clicks (needs Lauren's OK / a separate ads task).
 - Next week: ad group for next week's blog post (don't repeat Myth vs Fact).
 
+- 2026-11-17 late: another session added a site-wide DonateCallout to blog posts; hid it on posts with `show_donate: false` (William) so William's post never asks for money.
+
 ## Grants
 - 2026-11-17: first research pass → ops/grants/grants-list.md (12 funders + 13 ruled out). Drafts ready: ops/grants/sanofi-us-healthcare-contributions.md (rolling; needs financial statements), ops/grants/awesome-foundation-nyc.md ($1,000, due Nov 30; proposes a Myth vs Fact video/print project Lauren must OK).
