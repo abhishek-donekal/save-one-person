@@ -25,8 +25,6 @@ Image idea: a mug and folded hoodie wrapped half-open in brown paper with a red 
 
 Every post ends with "Saveonepersonnow.org".
 
-## $10,000 for William — this week (Lauren, Nov 17)
-Lauren's goal: raise $10,000 in donations this week (through Sun Nov 22).
-- Fundraising page (live): https://www.saveonepersonnow.org/help-william
-- EVERY social post this week (all themes, tee days too) ends with: "This week we're raising $10,000 to help 3-year-old William find a kidney donor 👉 saveonepersonnow.org/help-william". Don't show running totals (we can't see live donation numbers).
-- Newsletter/outreach this week: link /help-william as the donate link.
+## This week (Lauren, Nov 17)
+- WILLIAM: the goal is a LIVING KIDNEY DONOR, not money. Never use William to ask for donations. His page https://www.saveonepersonnow.org/help-william asks people to be his donor or share his story. Every social post this week ends with: "3-year-old William needs a living kidney donor. Could it be you? 👉 saveonepersonnow.org/help-william".
+- DONATIONS: Lauren wants $10,000 in general donations to Save One Person this week (through Sun Nov 22). Donation asks go to https://www.saveonepersonnow.org/donate (Giving Tuesday Dec 1 framing), never tied to William.
