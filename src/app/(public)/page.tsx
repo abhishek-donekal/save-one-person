@@ -8,11 +8,13 @@ import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
 import { ORG_EIN } from '@/lib/org'
 import BuyTeeButton from '@/components/shop/BuyTeeButton'
+import { liveImage } from '@/lib/imageFocus'
 
 export const metadata: Metadata = {
-  title: 'Save One Person — One Introduction Can Save a Life',
+  title: { absolute: 'Save One Person — Help Someone Find a Living Kidney Donor' },
   description:
-    'Save One Person uses the power of media, storytelling, and human connection to help people find living kidney donors, liver donors, bone marrow matches, and other life-saving miracles.',
+    'Save One Person uses TV, radio and online stories to help people find living kidney donors, liver donors, bone marrow matches, and other life-saving miracles.',
+  alternates: { canonical: '/' },
 }
 
 const DONATE_URL = '/donate'
@@ -58,6 +60,7 @@ export default async function HomePage() {
     return i === -1 ? PINNED.length : i
   }
   const spotlight = openRequests
+    .map((r) => ({ ...r, image_url: liveImage(r.image_url) }))
     .filter((r) => r.image_url)
     .map((r, i) => ({ r, i }))
     .sort((a, b) => pinRank(a.r) - pinRank(b.r) || a.i - b.i)

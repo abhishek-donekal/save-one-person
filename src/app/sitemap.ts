@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
+import { STATIC_BLOG_POSTS } from '@/lib/blogPosts'
 
 const SITE_URL = 'https://www.saveonepersonnow.org'
 
@@ -18,6 +19,7 @@ const STATIC_ROUTES: { path: string; changeFrequency: MetadataRoute.Sitemap[numb
   { path: '/blog', changeFrequency: 'weekly', priority: 0.6 },
   { path: '/partners', changeFrequency: 'monthly', priority: 0.4 },
   { path: '/faq', changeFrequency: 'monthly', priority: 0.5 },
+  { path: '/living-kidney-donation-myths-facts', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/contact', changeFrequency: 'monthly', priority: 0.5 },
   { path: '/donate', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/help-william', changeFrequency: 'weekly', priority: 0.9 },
@@ -34,6 +36,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: r.changeFrequency,
     priority: r.priority,
   }))
+  for (const p of STATIC_BLOG_POSTS) {
+    entries.push({
+      url: `${SITE_URL}/blog/${p.slug}`,
+      lastModified: new Date(p.published_at),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    })
+  }
 
   try {
     const supabase = await createClient()
@@ -78,6 +88,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
     for (const b of blog.data || []) {
+      if (STATIC_BLOG_POSTS.some((p) => p.slug === b.slug)) continue
       entries.push({
         url: `${SITE_URL}/blog/${b.slug}`,
         lastModified: b.updated_at ? new Date(b.updated_at) : b.published_at ? new Date(b.published_at) : now,

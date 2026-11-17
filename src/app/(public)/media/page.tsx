@@ -10,8 +10,9 @@ function youtubeThumb(url: string | null): string | null {
 }
 
 export const metadata: Metadata = {
-  title: 'In The Media',
-  description: 'Save One Person in the news: TV appearances, podcasts, newspaper features, and more.',
+  title: 'In the Media: PIX11, NY1, FOX 5, 1010 WINS & More',
+  description: 'Save One Person and founder Lauren Finkelstein in the news: TV, radio and podcast appearances on PIX11, NY1, FOX 5, 1010 WINS, the Tony Robbins Podcast and more.',
+  alternates: { canonical: '/media' },
 }
 
 

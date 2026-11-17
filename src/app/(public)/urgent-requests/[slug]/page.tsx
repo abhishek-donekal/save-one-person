@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { getFeaturedRequest } from '@/lib/featuredRequests'
 import SharePanel from '@/components/ui/SharePanel'
+import { liveImage } from '@/lib/imageFocus'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -27,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: data.title,
       description: `${data.patient_name} urgently needs a living donor. Please read and share — one share could reach the person who saves a life.`,
       url: `https://www.saveonepersonnow.org/urgent-requests/${slug}`,
-      images: data.image_url ? [{ url: data.image_url }] : ['/images/og-miracles.jpg'],
+      images: liveImage(data.image_url) ? [{ url: liveImage(data.image_url) as string }] : ['/images/og-miracles.jpg'],
     } : undefined,
   }
 }
@@ -42,7 +43,8 @@ export default async function UrgentRequestPage({ params }: Props) {
     .select('*')
     .eq('slug', slug)
     .single()
-  const req = dbReq ?? getFeaturedRequest(slug)
+  const found = dbReq ?? getFeaturedRequest(slug)
+  const req = found ? { ...found, image_url: liveImage(found.image_url) } : found
 
   if (!req || !req.published || req.submission_status === 'pending') notFound()
 

@@ -3,29 +3,59 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
-
-// NOTE for redirects agent: add a permanent redirect /blog → /success-stories in
-// next.config.ts. Until the blog_posts table has published rows, /blog calls
-// notFound() (returns 404); the redirect gives visitors a graceful destination
-// instead. Remove/keep as desired once posts are published.
+import { STATIC_BLOG_POSTS } from '@/lib/blogPosts'
 
 export const metadata: Metadata = {
-  title: 'Blog — Organ Donation Education & Stories',
-  description: 'Learn about organ donation, living donors, bone marrow matching, and how Save One Person is making a difference.',
+  title: 'Living Donor Stories & Kidney Donation Blog',
+  description:
+    'Real stories of people who need a living kidney donor, how living donation works, paired exchange, and how sharing a story can save a life.',
+  alternates: { canonical: '/blog' },
+}
+
+type ListPost = {
+  id: string
+  title: string
+  slug: string
+  excerpt: string | null
+  featured_image_url: string | null
+  author: string | null
+  category: string | null
+  published_at: string | null
+  created_at: string | null
 }
 
 export default async function BlogPage() {
-  const supabase = await createClient()
-  const { data: posts } = await supabase
-    .from('blog_posts')
-    .select('id, title, slug, excerpt, featured_image_url, author, category, published_at, created_at')
-    .eq('published', true)
-    .order('published_at', { ascending: false })
+  let dbPosts: ListPost[] = []
+  try {
+    const supabase = await createClient()
+    const { data } = await supabase
+      .from('blog_posts')
+      .select('id, title, slug, excerpt, featured_image_url, author, category, published_at, created_at')
+      .eq('published', true)
+      .order('published_at', { ascending: false })
+    dbPosts = (data as ListPost[] | null) || []
+  } catch {
+    // Show the posts stored in code even if the database is unavailable.
+  }
 
-  // No published posts yet: return a 404 rather than showing a bare placeholder,
-  // so the route never looks unfinished. The dynamic listing below runs unchanged
-  // once posts exist.
-  if (!posts || posts.length === 0) {
+  const staticPosts: ListPost[] = STATIC_BLOG_POSTS.map((p) => ({
+    id: p.id,
+    title: p.title,
+    slug: p.slug,
+    excerpt: p.excerpt,
+    featured_image_url: p.featured_image_url,
+    author: p.author,
+    category: p.category,
+    published_at: p.published_at,
+    created_at: p.published_at,
+  }))
+  const dbSlugs = new Set(dbPosts.map((p) => p.slug))
+  const posts = [...dbPosts, ...staticPosts.filter((p) => !dbSlugs.has(p.slug))].sort(
+    (a, b) =>
+      new Date(b.published_at || b.created_at || 0).getTime() - new Date(a.published_at || a.created_at || 0).getTime()
+  )
+
+  if (posts.length === 0) {
     notFound()
   }
 
@@ -34,7 +64,7 @@ export default async function BlogPage() {
       <div className="page-hero">
         <div className="page-hero-inner">
           <div className="section-label section-label-soft">Education & Stories</div>
-          <h1 className="display-lg">Blog</h1>
+          <h1 className="display-lg">Stories &amp; Living Donation</h1>
           <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
             Insights, education, and stories about organ donation, living donors, and building a world where no one waits alone.
           </p>
@@ -59,11 +89,11 @@ export default async function BlogPage() {
                     <div style={{ display: 'flex', gap: 8, marginBottom: 12, flexWrap: 'wrap' }}>
                       {post.category && <span className="badge badge-blue">{post.category}</span>}
                     </div>
-                    <h3>{post.title}</h3>
+                    <h3><Link href={`/blog/${post.slug}`}>{post.title}</Link></h3>
                     {post.excerpt && <p>{post.excerpt}</p>}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 16 }}>
                       <span style={{ fontSize: 12, color: 'var(--muted)' }}>
-                        {new Date(post.published_at || post.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                        {new Date(post.published_at || post.created_at || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                       </span>
                       <Link href={`/blog/${post.slug}`} className="btn btn-navy" style={{ padding: '8px 16px', fontSize: 12 }}>
                         Read More

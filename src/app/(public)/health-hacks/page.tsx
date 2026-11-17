@@ -3,8 +3,8 @@ import ShortsGrid from './ShortsGrid'
 import { HEALTH_HACKS, YOUTUBE_CHANNEL } from '@/lib/healthHacks'
 
 export const metadata: Metadata = {
-  title: 'Health Hacks',
-  description: 'Short videos from Lauren Finkelstein on healthy living, mind, body and faith.',
+  title: 'Health Hacks: Short Healthy-Living Videos from Lauren Finkelstein',
+  description: 'Quick, practical Health Hacks videos from Save One Person founder Lauren Finkelstein on healthy living for mind, body and faith.',
   alternates: { canonical: '/health-hacks' },
 }
 

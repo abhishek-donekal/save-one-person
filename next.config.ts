@@ -11,6 +11,9 @@ const SECURITY_HEADERS = [
 
 const nextConfig: NextConfig = {
   images: {
+    // Vercel's image optimization quota is used up (new image sizes return 402 and show as
+    // broken), so serve images directly from their source instead.
+    unoptimized: true,
     remotePatterns: [
       { protocol: "https", hostname: "stalwart-puffpuff-744c94.netlify.app" },
       { protocol: "https", hostname: "saveoneperson.org" },
@@ -60,7 +63,6 @@ const nextConfig: NextConfig = {
       { source: "/press", destination: "/media", permanent: true },
       { source: "/get-involved", destination: "/contact", permanent: true },
       { source: "/privacy-policy", destination: "/privacy", permanent: true },
-      { source: "/blog", destination: "/success-stories", permanent: false }, // temp: blog_posts empty; /blog notFound()s otherwise
       { source: "/news", destination: "/success-stories", permanent: true },
 
       // ---- Urgent request patient posts (old root slug -> /urgent-requests/:slug) ----

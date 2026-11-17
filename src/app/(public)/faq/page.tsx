@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions',
-  description: 'Common questions about Save One Person: how we help find living donors, submitting a story, donating, becoming a donor, and more.',
+  title: 'Living Kidney Donor FAQ: How to Help, Donate & Share a Story',
+  description:
+    'Answers about becoming a living kidney donor, sharing a patient’s story, donating to Save One Person, and how we use the media to help people find donors.',
+  alternates: { canonical: '/faq' },
 }
 
 const FAQS: { q: string; a: React.ReactNode }[] = [
@@ -35,13 +37,21 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     q: 'How do I become a living donor?',
     a: (
       <>
-        Thank you for considering this life-saving gift. Reach out through our <Link href="/contact" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Contact</Link> page or email <a href="mailto:Save1Person@aol.com" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Save1Person@aol.com</a> and we will help connect you with the patient’s transplant team or the appropriate donor registry. Living donation and bone marrow registration are always coordinated through licensed medical professionals.
+        Thank you for considering this life-saving gift. The easiest first step is to join our <Link href="/become-a-donor" style={{ color: 'var(--emerald)', fontWeight: 600 }}>living kidney donor list</Link> (signing up never commits you). You can also reach out through our <Link href="/contact" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Contact</Link> page or email <a href="mailto:Save1Person@aol.com" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Save1Person@aol.com</a> and we will help connect you with the patient’s transplant team or the appropriate donor registry. Living donation and bone marrow registration are always coordinated through licensed medical professionals.
       </>
     ),
   },
   {
     q: 'Does Save One Person handle the medical or transplant process?',
     a: 'No. We are a media and awareness organization. All medical evaluation, matching, and transplantation is handled by hospitals, transplant centers, and donor registries. Our role is to raise awareness and make the introduction that can lead to a match.',
+  },
+  {
+    q: 'Do I have to be a family member or a perfect match to donate a kidney?',
+    a: (
+      <>
+        No. Friends and even strangers can be living donors, and through paired kidney exchange you can help someone get a kidney even if you are not their match. Read our <Link href="/living-kidney-donation-myths-facts" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Myth vs Fact: Living Kidney Donation</Link> page to learn more.
+      </>
+    ),
   },
   {
     q: 'Can my organization or media outlet partner with Save One Person?',
@@ -70,6 +80,11 @@ export default function FaqPage() {
           <h1 className="display-lg">Frequently Asked Questions</h1>
           <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
             Answers to the questions we hear most about donating, sharing a story, and becoming a living donor.
+          </p>
+          <p style={{ marginTop: 16, fontSize: 16 }}>
+            <Link href="/living-kidney-donation-myths-facts" style={{ color: 'var(--emerald-soft)', fontWeight: 600, textDecoration: 'underline' }}>
+              New: Myth vs Fact about living kidney donation →
+            </Link>
           </p>
         </div>
       </div>

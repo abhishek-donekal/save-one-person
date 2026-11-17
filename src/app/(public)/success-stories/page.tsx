@@ -5,8 +5,9 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 
 export const metadata: Metadata = {
-  title: 'Success Stories',
-  description: 'Read inspiring stories of patients who found living donors and life-saving matches through Save One Person.',
+  title: 'Success Stories: Living Kidney & Liver Donors Found Through the Media',
+  description: 'True stories of people who found a living kidney donor, liver donor or bone marrow match after Save One Person shared their story on TV, radio and online.',
+  alternates: { canonical: '/success-stories' },
 }
 
 export default async function SuccessStoriesPage() {

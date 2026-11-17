@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
+import { liveImage } from '@/lib/imageFocus'
 
 export const metadata: Metadata = {
-  title: 'Urgent Requests — People Who Need Help Now',
-  description: 'These patients urgently need living donors and life-saving matches. Your awareness and generosity could save a life.',
+  title: 'Urgent Requests: People Who Need a Living Kidney Donor Now',
+  description: 'Children and adults who urgently need a living kidney donor, liver donor or bone marrow match. Read their stories, see if you could help, and share.',
+  alternates: { canonical: '/urgent-requests' },
 }
 
 export default async function UrgentRequestsPage() {
@@ -22,7 +24,7 @@ export default async function UrgentRequestsPage() {
   const all = [
     ...FEATURED_REQUESTS.filter((f) => !(dbRequests || []).some((r) => r.slug === f.slug)),
     ...(dbRequests || []),
-  ]
+  ].map((r) => ({ ...r, image_url: liveImage(r.image_url) }))
   // Patients pinned to the top of the list, in this order (matched on slug or name).
   const PINNED = ['william fritts', 'help-william']
   const pinned = (r: { slug: string; patient_name: string }) =>

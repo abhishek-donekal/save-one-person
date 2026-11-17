@@ -6,7 +6,7 @@ const STORY_PATH = '/urgent-requests/help-william-find-a-living-kidney-donor'
 const WILLIAM_IMAGE = 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/william-banner.jpg'
 
 export const metadata: Metadata = {
-  title: 'Could You Be William’s Living Kidney Donor? — Save One Person',
+  title: 'Could You Be William’s Living Kidney Donor?',
   description:
     '3-year-old William Fritts needs a living kidney donor. Learn how you could be his donor, or share his story to help find the one person who is.',
   alternates: { canonical: PAGE_URL },
@@ -54,6 +54,10 @@ export default function HelpWilliamPage() {
               </p>
               <p style={{ marginTop: 16, fontSize: 17, color: 'var(--muted)', lineHeight: 1.85 }}>
                 <Link href={STORY_PATH} style={{ color: 'var(--emerald)', fontWeight: 600 }}>Read William&apos;s full story →</Link>
+                <br />
+                <Link href="/blog/william-fritts-3-year-old-needs-a-living-kidney-donor" style={{ color: 'var(--emerald)', fontWeight: 600 }}>A day in William&apos;s life, and how you can help →</Link>
+                <br />
+                <Link href="/living-kidney-donation-myths-facts" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Myth vs Fact: living kidney donation →</Link>
               </p>
 
               <div style={{ marginTop: 32 }}>

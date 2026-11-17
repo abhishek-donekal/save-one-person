@@ -3,6 +3,30 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
+import { getStaticBlogPost } from '@/lib/blogPosts'
+import HowYouCanHelp from '@/components/ui/HowYouCanHelp'
+
+const SITE_URL = 'https://www.saveonepersonnow.org'
+
+// **bold** and [text](url) inside a paragraph or list item.
+function inline(text: string) {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\[([^\]]+)\]\(((?:\/|https:\/\/|mailto:)[^)\s]*)\)/g, (_m, label: string, href: string) => {
+      const external = href.startsWith('https://')
+      return `<a href="${href}" style="color:var(--emerald);font-weight:600;text-decoration:underline"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${label}</a>`
+    })
+}
+
+async function getDbPost(slug: string, columns: string) {
+  try {
+    const supabase = await createClient()
+    const { data } = await supabase.from('blog_posts').select(columns).eq('slug', slug).eq('published', true).single()
+    return (data as unknown) as Record<string, unknown> | null
+  } catch {
+    return null
+  }
+}
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -10,13 +34,27 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const supabase = await createClient()
-  const { data } = await supabase
-    .from('blog_posts')
-    .select('seo_title, seo_description, title, excerpt')
-    .eq('slug', slug)
-    .eq('published', true)
-    .single()
+  const sp = getStaticBlogPost(slug)
+  if (sp) {
+    const url = `${SITE_URL}/blog/${sp.slug}`
+    return {
+      title: sp.seo_title,
+      description: sp.seo_description,
+      alternates: { canonical: url },
+      openGraph: {
+        type: 'article',
+        title: sp.seo_title,
+        description: sp.seo_description,
+        url,
+        images: [sp.featured_image_url],
+        publishedTime: sp.published_at,
+      },
+      twitter: { card: 'summary_large_image', title: sp.seo_title, description: sp.seo_description, images: [sp.featured_image_url] },
+    }
+  }
+  const data = (await getDbPost(slug, 'seo_title, seo_description, title, excerpt')) as
+    | { seo_title?: string; seo_description?: string; title?: string; excerpt?: string }
+    | null
 
   return {
     title: data?.seo_title || data?.title,
@@ -26,13 +64,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
-  const supabase = await createClient()
-  const { data: post } = await supabase
-    .from('blog_posts')
-    .select('*')
-    .eq('slug', slug)
-    .eq('published', true)
-    .single()
+  const staticPost = getStaticBlogPost(slug)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const post: any = staticPost || (await getDbPost(slug, '*'))
 
   if (!post) notFound()
 
@@ -54,7 +88,7 @@ export default async function BlogPostPage({ params }: Props) {
         <div className="container-md">
           {post.featured_image_url && (
             <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', marginBottom: 48, boxShadow: 'var(--shadow-soft)' }}>
-              <Image src={post.featured_image_url} alt={post.title} width={896} height={480} style={{ width: '100%', height: 480, objectFit: 'cover' }} />
+              <Image src={post.featured_image_url} alt={post.image_alt || post.title} width={896} height={480} priority style={{ width: '100%', height: 'clamp(240px, 50vw, 480px)', objectFit: 'cover', objectPosition: 'center 30%' }} />
             </div>
           )}
 
@@ -73,13 +107,13 @@ export default async function BlogPostPage({ params }: Props) {
                     {items.map((item, j) => (
                       <li key={j} style={{ display: 'flex', gap: 12 }}>
                         <span style={{ color: 'var(--emerald)', marginTop: 4 }}>•</span>
-                        <span dangerouslySetInnerHTML={{ __html: item.slice(2).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+                        <span dangerouslySetInnerHTML={{ __html: inline(item.slice(2)) }} />
                       </li>
                     ))}
                   </ul>
                 )
               }
-              return <p key={i} style={{ marginTop: 24 }} dangerouslySetInnerHTML={{ __html: section.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>') }} />
+              return <p key={i} style={{ marginTop: 24 }} dangerouslySetInnerHTML={{ __html: inline(section) }} />
             })}
           </div>
 
@@ -89,6 +123,25 @@ export default async function BlogPostPage({ params }: Props) {
                 <span key={tag} className="badge badge-gray">{tag}</span>
               ))}
             </div>
+          )}
+
+          <HowYouCanHelp
+            shareUrl={post.share_url || `${SITE_URL}/blog/${post.slug}`}
+            shareText={post.share_text || post.title}
+            showDonate={post.show_donate !== false}
+          />
+
+          {Array.isArray(post.related) && post.related.length > 0 && (
+            <nav aria-label="Related pages" style={{ marginTop: 40 }}>
+              <div className="section-label">Keep Reading</div>
+              <ul style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                {post.related.map((r: { href: string; label: string }) => (
+                  <li key={r.href}>
+                    <Link href={r.href} style={{ color: 'var(--emerald)', fontWeight: 600 }}>{r.label} →</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           )}
 
           <div style={{ marginTop: 48, paddingTop: 40, borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16 }}>

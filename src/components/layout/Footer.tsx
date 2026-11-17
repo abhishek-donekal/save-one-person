@@ -48,6 +48,8 @@ export default function Footer() {
               { href: '/media', label: 'In The Media' },
               { href: '/future', label: 'Future of Organ Donation' },
               { href: '/partners', label: 'Partners' },
+              { href: '/blog', label: 'Blog' },
+              { href: '/living-kidney-donation-myths-facts', label: 'Myth vs Fact: Kidney Donation' },
               { href: '/faq', label: 'FAQ' },
               { href: '/shop', label: 'Shop' },
               { href: '/contact', label: 'Contact' },
