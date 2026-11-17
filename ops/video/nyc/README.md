@@ -8,3 +8,4 @@ Used so far: taxi cuts you off; someone takes your subway seat; pigeon steals yo
 vid6.py (2026-11-17) adds: front+back tee side by side in every punchline, sign text auto-shrinks, and Lauren's exact line "We want all New Yorkers and the world to say GO BLESS YOURSELF!" on the end card. Use vid6.py/sfx6.py as the template from now on.
 
 vid7.py/sfx7.py (2026-11-17): THANKSGIVING spot -> public/social/tee-videos/2026-11-23-thanksgiving.mp4. Scenarios used: aunt asks why you're still single; parade crowd blocks your street; someone took the last slice of pie; train home packed solid.
+vid8.py/sfx8.py (2026-11-17): Lauren's THANKSGIVING BABIES spot (two NYC babies, bleeped curse, turkey drops in, 'tee shirts to gobble up for the holidays') -> public/social/tee-videos/2026-11-23-thanksgiving-babies.mp4.

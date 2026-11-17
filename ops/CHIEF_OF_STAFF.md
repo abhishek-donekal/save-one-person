@@ -75,6 +75,6 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 - The Tee Promoter task (Tue/Thu) already covers group orders and gift guides; both tasks check ops/tee-promo-log.md so nobody is contacted twice.
 
 ## Mon Nov 23, 2026 newsletter + social: THANKSGIVING tee spot (Lauren asked Nov 17)
-- Video: https://www.saveonepersonnow.org/social/tee-videos/2026-11-23-thanksgiving.mp4 (made Nov 17, approved style; not yet posted).
+- Video (Lauren's idea, Nov 17): two NYC babies, one says 'go [bleep] yourself', a turkey drops down: 'GO BLESS YOURSELF', 'tee shirts to gobble up for the holidays' -> https://www.saveonepersonnow.org/social/tee-videos/2026-11-23-thanksgiving-babies.mp4 (not yet posted). Spare Thanksgiving video for another tee day: /social/tee-videos/2026-11-23-thanksgiving.mp4 (aunt/parade/pie/train).
 - NEWSLETTER Nov 23: feature it in the "Gifts That Give" section as a clickable thumbnail (email clients can't play video): image https://www.saveonepersonnow.org/newsletter/thanksgiving-tee-video-thumb.jpg linking to the MP4 above, caption "This Thanksgiving, go bless yourself... and others", plus a button to https://www.saveonepersonnow.org/shop. Every week's newsletter shows the newest tee video the same way.
 - SOCIAL: post this video on Tue Nov 24 (tee day) as the video itself; personal Facebook share only after Lauren's OK that day.
