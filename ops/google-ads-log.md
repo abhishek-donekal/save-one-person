@@ -53,3 +53,10 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 6. Conversion tracking (Donate click, Shop purchase, Share William, sign-up) then consider Maximize conversions.
 7. Add William campaign negatives in UI (blood drive, plasma, red cross, for sale, black market, price, jobs).
 8. Daily: search terms, negatives, CTR ≥5%, pause QS 1–2 keywords.
+
+## 2026-11-17: ACCOUNT DEACTIVATED (Website policy) — reactivation requested
+- 3:16pm ET Google email: Ad Grants account 684-224-8625 deactivated for not complying with the Website policy. Account is now READ-ONLY (can't edit campaigns).
+- Likely cause: homepage had big Go Bless Yourself tee + book sale sections, Shop in top nav, and the "Holiday Gifts That Give Back" campaign pointed to the gifts page.
+- Website fixes (live): removed tee/book sections from homepage; Shop tab renamed "Gifts That Give" (Lauren wants it in the top menu); shop page now has "How the shop supports our mission" (proceeds go to Save One Person, confirmed by Lauren). Broken-link check: 142 sitemap pages + 163 internal links, none broken. Google tag AW-599305263 verified loading on live site.
+- 4:46pm ET: submitted "Request to reactivate a Google Ad Grant account" (support.google.com/nonprofits/contact/Request_for_reactivation_cases_2) with Lauren's OK, and ticked (with her OK) the one-time approval for the Ad Grants team to make compliance changes within 5 business days. Contact: save1person1@gmail.com.
+- Until Google replies: DO NOT edit the account (changes may be lost while Google specialists work). Never point grant ads to /shop, /meaningful-holiday-gifts or product pages again. When reactivated: pause/remove "Holiday Gifts That Give Back", then build "Donate to Save a Life" -> /donate, CTR work, fix disapprovals.
