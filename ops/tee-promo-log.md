@@ -36,3 +36,6 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 
 ## Replies
 - 2026-11-15: no replies yet from the 4 TV stations.
+
+## 2026-11-17 — NYC tee video #2 (made by the daily social post task)
+`go-bless-yourself-nyc-2.mp4` (22s 9:16), scenarios: tourist stops mid-sidewalk; car alarm at 3 AM; pizza slice hits the floor; train delayed again. Sent to Lauren for OK. NOT yet posted.
