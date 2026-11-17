@@ -63,3 +63,13 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 - The website must be mainly about the mission. Lauren wants Shop kept as a tab in the top menu (Nov 17). Keep merch/books out of homepage sections and site-wide banners. Shop pages must say how purchases support the mission.
 - Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).
 - STATUS Nov 17, 2026: the Ad Grants account is DEACTIVATED and under Google review (reactivation requested; Google's Ad Grants team has one-time approval to make compliance changes). Until a Google email says it is reactivated, every task must SKIP all Google Ads changes (account is read-only, and our changes could undo Google's). Just check Gmail for Google's reply and tell Lauren.
+
+## Standing: Gifts That Give promotion (Lauren approved Nov 17, 2026) — NOT through Google Ad Grants
+- NEWSLETTER (Monday task): every Monday Save One Alert includes a "Gifts That Give" section with pictures of the Go Bless Yourself tees and Lauren's two books, linking to https://www.saveonepersonnow.org/shop (say proceeds go to Save One Person). Keep the main story the mission. Frequency: once a week; only one extra short email allowed on special days (Giving Tuesday Dec 1). Never more than 2 emails a week.
+- DAILY OUTREACH (any weekday, through Dec 18): in addition to the day's theme, up to 5 extra pitches per day split between:
+  (a) GROUP ORDERS: churches, schools, offices, sports teams, nurses' associations, hospital staff groups: bulk Go Bless Yourself tees for holiday gifts at group pricing (orders to save1person1@gmail.com), proceeds support Save One Person;
+  (b) GIFT GUIDES: Miami/South Florida and New York magazines, blogs and newspapers' holiday gift guides: "holiday gifts that help save lives" (tees + Lauren's books);
+  (c) BOOKS (Wednesdays, with the podcast theme): book bloggers/podcasts for Lauren's books "Is There a God?" and "How to Create a Miracle".
+  Public business contacts only, check all logs to never repeat, log in ops/tee-promo-log.md.
+- Social: keep the Go Bless Yourself tee videos in the weekday rotation (Thursday video #2 already planned).
+- The Tee Promoter task (Tue/Thu) already covers group orders and gift guides; both tasks check ops/tee-promo-log.md so nobody is contacted twice.

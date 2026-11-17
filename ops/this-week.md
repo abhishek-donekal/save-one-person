@@ -33,11 +33,3 @@ Every post ends with "Saveonepersonnow.org".
 
 - Lauren lives in MIAMI now: never call her "a New Yorker"; favor Miami/South Florida TV and businesses.
 
-## Gifts That Give promotion (Lauren approved Nov 17, 2026) — NOT through Google Ad Grants
-- NEWSLETTER (Monday task): every Monday Save One Alert includes a "Gifts That Give" section with pictures of the Go Bless Yourself tees and Lauren's two books, linking to https://www.saveonepersonnow.org/shop (say proceeds go to Save One Person). Keep the main story the mission. Frequency: once a week; only one extra short email allowed on special days (Giving Tuesday Dec 1). Never more than 2 emails a week.
-- DAILY OUTREACH (any weekday, through Dec 18): in addition to the day's theme, up to 5 extra pitches per day split between:
-  (a) GROUP ORDERS: churches, schools, offices, sports teams, nurses' associations, hospital staff groups: bulk Go Bless Yourself tees for holiday gifts at group pricing (orders to save1person1@gmail.com), proceeds support Save One Person;
-  (b) GIFT GUIDES: Miami/South Florida and New York magazines, blogs and newspapers' holiday gift guides: "holiday gifts that help save lives" (tees + Lauren's books);
-  (c) BOOKS (Wednesdays, with the podcast theme): book bloggers/podcasts for Lauren's books "Is There a God?" and "How to Create a Miracle".
-  Public business contacts only, check all logs to never repeat, log in ops/tee-promo-log.md.
-- Social: keep the Go Bless Yourself tee videos in the weekday rotation (Thursday video #2 already planned).
