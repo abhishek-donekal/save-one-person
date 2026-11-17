@@ -48,3 +48,6 @@ Three DIFFERENT kinds of posts each week, every one with a picture and "Saveonep
 - Friday: be creative and rotate: Go Bless Yourself gifts (holiday gifts in Nov-Dec), Lauren's two books,
   a donation ask, a success story, an inspiring quote, a living-donation myth vs fact, a thank-you to supporters.
 Send Lauren the picture/video and captions to approve. Post only after she says OK.
+
+## Standing rule: no celebrity outreach
+Never email or contact celebrities or their publicists/agents/managers (Andy Garcia, Michael Rapaport, Andrew McCarthy, Madisyn Shipman, etc.). Lauren knows them personally (Nov 17, 2026).
