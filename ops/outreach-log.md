@@ -30,3 +30,26 @@ Check this file AND Gmail "Sent" before choosing targets (some earlier outreach 
 Checked 2026-11-17 midday: 9 of 10 sent 12:16 UTC; no replies or bounces yet. EOS draft left unsent.
 
 Ideas for later 3D Tuesdays (not contacted): Insight Surgery / 3D LifePrints (info@insightsurgery.com, https://insightsurgery.com/partner-with-us/), Axial3D (contact form https://axial3d.com/contact/), Lithoz (sales@lithoz.com in official PDF), HP 3D Printing (mediarelations@hp.com; HP Foundation takes no unsolicited requests), Protolabs (brent.renneke@protolabs.com).
+
+## 2026-11-17 (Tue) — SPECIAL: $5,000 Giving Season drive (extra run; not tied to William or any patient)
+Offer: $5,000 Giving Season Partner (logo on banner/homepage/Partners through Dec 31 + Save One Alert thank-you + IG/FB/TikTok post) or $1,000 Friend of Save One Person. All waiting for Lauren's "OK send".
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-17 | Giving Season | TerraCRG (Brooklyn RE brokerage) | general | info@terracrg.com | https://www.terracrg.com/agent/dan-marks | draft |
+| 2026-11-17 | Giving Season | Jacoby & Meyers (PI law, NYC) | communications | communications@jmlawyer.com | https://www.jmlawyer.com/community/ | draft |
+| 2026-11-17 | Giving Season | Plaza Auto Mall (Brooklyn dealer) | media contact | info@plazacars.com | https://plazaautomall.prod.overfuel.com/plaza-in-the-community | draft |
+| 2026-11-17 | Giving Season | Walker Hotel Greenwich Village | hotel inbox | greenwich@walkerhotels.com | https://www.walkerhotels.com/contact/ | draft |
+| 2026-11-17 | Giving Season | Junior's Restaurant | general | info@juniorscheesecake.com | https://www.juniorscheesecake.com/pages/contact | draft |
+| 2026-11-17 | Giving Season | Lesser, Lesser, Landy & Smith (PI law, Palm Beach) | Stephanie Slater Goldfuss, CMO (media inquiries) | sslatergoldfuss@lesserlawfirm.com | https://lesserlawfirm.com/ | draft |
+| 2026-11-17 | Giving Season | Turnberry (Aventura developer) | general | contact@turnberry.com | https://www.turnberry.com/community | draft |
+| 2026-11-17 | Giving Season | Charles Medical Group (Boca) | general | info@charleshair.com | https://charlesmedicalgroup.com/hair-restoration-office-contact-boca-raton/ | draft |
+| 2026-11-17 | Giving Season | Acqualina Resort (Sunny Isles) | Mauro Pinho, VP Sales & Marketing | mauro.pinho@acqualina.com | https://www.acqualinaresort.com/travel-advisor-portal | draft |
+| 2026-11-17 | Giving Season | Kaluz / Max's Grille (via Red Banyan PR) | press contact | kaluzrestaurant@redbanyan.com | https://www.prweb.com/releases/kaluz-restaurant-pembroke-pines-opening-raises-funds-for-south-broward-foundation-302694118.html | draft |
+| 2026-11-17 | Giving Season | Warren Henry Auto Group (N. Miami) | web form | https://www.warrenhenryauto.com/contact-us/ | https://www.warrenhenryauto.com/contact-us/ | form text given to Lauren |
+| 2026-11-17 | Giving Tuesday news | PIX11 | news desk | news@pix11.com | (same address as tee-promo-log PIX11 draft) | draft (send only ONE PIX11 pitch) |
+| 2026-11-17 | Giving Tuesday news | 1010 WINS | Ben Mevorach, Dir. of News & Programming | Mevorach@wins.com | https://www.audacy.com/1010wins/contact-us | draft |
+| 2026-11-17 | Giving Tuesday news | FOX 5 NY | web contact | https://www.fox5ny.com/contact-us | https://www.fox5ny.com/about | form text given to Lauren |
+| 2026-11-17 | Giving Tuesday news | NY1 | web contact | https://ny1.com/nyc/all-boroughs/about-us/contact-us | https://ny1.com/nyc/all-boroughs/about-us | form text given to Lauren |
+| 2026-11-17 | Celebrity share | Andrew McCarthy | Aevitas Creative (literary agent David Kuhn) | https://www.aevitascreative.com/contact | https://www.aevitascreative.com/client/andrew-mccarthy | form text given to Lauren |
+| 2026-11-17 | Celebrity share | Andy Garcia, Michael Rapaport, Madisyn Shipman | no public rep email found | — | — | Lauren to use her own contacts |
+Note: EOS 3D draft (patrick.boyd@eos-na.com) body wrongly says "Hi Markforged team"; must be fixed before it is ever sent.
