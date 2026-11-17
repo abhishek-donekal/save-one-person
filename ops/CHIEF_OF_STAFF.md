@@ -58,3 +58,7 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 ## Facebook personal page (Lauren, Nov 17)
 - Business social accounts (Save One Person IG/FB Page/TikTok etc.): post without asking.
 - Lauren's PERSONAL Facebook page: share each day's video there ONLY after Lauren says OK that day. Ask at the daily check-in.
+
+## Google Ad Grants website rule (Nov 17, 2026: account deactivated for Website policy)
+- The website must be mainly about the mission. Shop/merch/books stay a small part: not in the top menu, not as homepage sections, not in site-wide banners. Shop pages must say how purchases support the mission.
+- Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).

@@ -67,6 +67,12 @@ export default async function ShopPage() {
 
       <div className="page-content">
         <div className="container">
+          <section aria-labelledby="shop-mission-h" style={{ maxWidth: 760, margin: '0 auto 48px', padding: '24px 28px', borderRadius: 16, background: 'var(--secondary)', lineHeight: 1.7 }}>
+            <h2 id="shop-mission-h" style={{ fontSize: 22, fontWeight: 800, margin: '0 0 8px' }}>How the shop supports our mission</h2>
+            <p style={{ margin: 0, fontSize: 16, color: 'var(--muted)' }}>
+              Save One Person is a 501(c)(3) nonprofit (EIN {ORG_EIN}) that uses TV, radio and social media to help people find a living organ donor or a medical miracle. Our patient stories, donor education and outreach are free for everyone. This small shop is one more way supporters can help: proceeds go to Save One Person and help fund that outreach. To support the work directly, you can <Link href="/donate" style={{ color: 'var(--emerald)', fontWeight: 700 }}>donate</Link>, <Link href="/become-a-donor" style={{ color: 'var(--emerald)', fontWeight: 700 }}>learn about living donation</Link>, or <Link href="/urgent-requests" style={{ color: 'var(--emerald)', fontWeight: 700 }}>share a patient&rsquo;s story</Link>.
+            </p>
+          </section>
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
             <video
               src="/social/2026-11-14/go-bless-yourself-heavenly.mp4"
