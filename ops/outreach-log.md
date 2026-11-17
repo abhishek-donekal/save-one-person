@@ -66,3 +66,8 @@ Never contact Andy Garcia, Michael Rapaport, Andrew McCarthy, Madisyn Shipman. N
 | 2026-11-17 | Tracy Morgan | none: no foundation/official business contact found (only paid databases/speaker bureaus) | — | not contacted |
 | 2026-11-17 | Gloria Estefan | none online: Gloria Estefan Foundation has no website/email; mailing address 420 Jefferson Ave, Miami Beach, FL 33139 (GuideStar) | https://www.guidestar.org/profile/65-0466117 | not contacted |
 | 2026-11-17 | Pitbull | none: pitbullmusic.com and SLAM Miami show no official email (SLAM office line (305) 326-0003) | https://pitbullmusic.com/ | not contacted |
+
+## Sent 2026-11-17 ~2:40pm (Giving Season + Giving Tuesday; rebuilt with Miami wording + current footer w/ FOX Elaine DeLeon video; old drafts deleted)
+Sent: TerraCRG, Jacoby & Meyers, Plaza Auto Mall, Walker Hotel, Junior's, Lesser Law, Turnberry, Charles Medical Group, Acqualina (Mauro Pinho), Kaluz/Max's Grille (Red Banyan), 1010 WINS (Mevorach), PIX11 news desk (only PIX11 pitch today).
+New Miami TV Giving Tuesday pitches sent: CBS News Miami wfornews@cbs.com (https://www.cbsnews.com/miami/have-a-news-tip), NBC 6 wtvjdesk@nbcuni.com (https://www.nbcmiami.com/news/local/about-nbc-6-our-mission-and-story/).
+Not sent: WPLG Local 10 and WSVN 7: no official news-tip email found (only unverified aggregator addresses). EOS draft still skipped.

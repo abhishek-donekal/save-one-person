@@ -54,3 +54,7 @@ Never contact Andy Garcia, Michael Rapaport, Andrew McCarthy or Madisyn Shipman 
 
 ## Where Lauren lives (Nov 17, 2026)
 Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One Person started in New York and Lauren is now based in Miami. Prefer Miami/South Florida media and businesses (WPLG Local 10, NBC 6, WSVN 7, CBS News Miami, Miami Herald, local Miami businesses), while NYC outlets that covered her before are still fine.
+
+## Facebook personal page (Lauren, Nov 17)
+- Business social accounts (Save One Person IG/FB Page/TikTok etc.): post without asking.
+- Lauren's PERSONAL Facebook page: share each day's video there ONLY after Lauren says OK that day. Ask at the daily check-in.
