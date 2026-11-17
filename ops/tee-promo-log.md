@@ -39,3 +39,37 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 
 ## 2026-11-17 — NYC tee video #2 (made by the daily social post task)
 `go-bless-yourself-nyc-2.mp4` (22s 9:16), scenarios: tourist stops mid-sidewalk; car alarm at 3 AM; pizza slice hits the floor; train delayed again. Sent to Lauren for OK. NOT yet posted.
+
+## Status updates (tee-promo task, 2026-11-17 Tue)
+- The 10 church/synagogue/partner emails from 2026-11-15 were SENT on 2026-11-16 (seen in Gmail Sent). No replies yet (checked 2026-11-17).
+- Miami TV pitches (CBS Miami, Local 10, 7 News): no replies yet. NBC 6 bounced. Follow-up due ~2026-11-22.
+
+## Videos
+| Date | File | Scenarios | Status |
+|---|---|---|---|
+| 2026-11-15 | public/social/2026-11-15/go-bless-yourself-nyc.mp4 | taxi cuts you off; subway seat; pigeon steals bagel; $14 oat latte | posted (per social log) |
+| 2026-11-17 | go-bless-yourself-nyc-2.mp4 (daily social task, not committed) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | awaiting Lauren's OK |
+| 2026-11-17 | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16, vid6.py) | someone double-parks you in; express train skips your stop; bodega out of your sandwich ("...bodega cat too."); rent went up again ("...even your landlord.") | made, not yet posted |
+Ideas not yet used: alternate-side parking; $28 cocktail; your team breaks your heart; Times Square Elmo-free crowd jam (no characters!); laundromat steals a sock; scaffolding forever; Citi Bike dock full.
+
+## 2026-11-17 — Outreach drafts (NYC focus), awaiting Lauren's OK (Gmail drafts)
+| Org | Email | Type | Hook | Status |
+|---|---|---|---|---|
+| Park Avenue Synagogue (Bikur Holim) | sredlich@pasyn.org | synagogue | Bikur Holim / pastoral care | draft |
+| The Brick Church (Pastoral Care) | pastoralcare@brickchurch.org | church | Brick Church Fair / outreach partners | draft |
+| Women of Emanu-El | we@emanuelnyc.org | synagogue group | Tribute Fund / Ronald McDonald House meals | draft |
+| Mount Sinai Recanati/Miller Transplant Outreach | mountsinaitransplant@mountsinai.org | transplant group | community talks on organ donation | draft |
+| Greater NYC Black Nurses Association | gnycbna@gmail.com | nurses | U.N.I.T.E. NYC community health | draft |
+| The Shop at the Cathedral (St. John the Divine) | info@stjohndivine.org | faith gift shop | artisan/mission shop; Crafts at the Cathedral Dec 4-6 | draft |
+| Time Out New York | tips@timeout.com | press | editors' holiday wish lists | draft |
+| Secret NYC | hello@secretnyc.co | press | holiday gift guide w/ NYC apparel | draft |
+| PIX11 news desk | news@PIX11.com | press/TV | covered Save One Person before | draft |
+| CBS News New York desk | desk@cbs2ny.com | press/TV | NYC humor + Thanksgiving give-back | draft |
+
+Video placements prepared (submit only after Lauren's OK; no accounts/passwords by us):
+- PIX11 "Send us a Photo or Video" form (https://pix11.com/about-us/contact/) — no account.
+- ABC7 NY Share (https://abc7ny.com/share) — needs name + phone; grants ABC a license.
+- CBS News NY "Share Photos & Videos" upload (https://app.cimediacloud.com/file-request/K9C2AIBW#/add-files).
+- Patch NYC (https://patch.com/compose, classified "announcement" or Neighbor News) — needs Lauren's own Patch login; she posts it herself.
+
+Ideas for later (not contacted): Renewal (Boro Park living-kidney-donor org; find email), RIDER Park Slope gift shop, Loop & Tie (Austin, corporate gifting vendor program), Central Synagogue. Skip Gothamist (no response to pitches).
