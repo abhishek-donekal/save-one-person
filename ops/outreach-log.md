@@ -52,3 +52,17 @@ Offer: $5,000 Giving Season Partner (logo on banner/homepage/Partners through De
 | 2026-11-17 | Giving Tuesday news | NY1 | web contact | https://ny1.com/nyc/all-boroughs/about-us/contact-us | https://ny1.com/nyc/all-boroughs/about-us | form text given to Lauren |
 Celebrity part skipped: Lauren's standing rule (Nov 17) is no celebrity outreach; nothing drafted.
 Note: EOS 3D draft (patrick.boyd@eos-na.com) body wrongly says "Hi Markforged team"; must be fixed before it is ever sent.
+
+## Celebrity video requests (approved by Lauren 2026-11-17, 12:14pm; 20–30 sec phone video ask, example: Madisyn Shipman's William video)
+Never contact Andy Garcia, Michael Rapaport, Andrew McCarthy, Madisyn Shipman. No follow-ups (each email promised "we won't follow up").
+| Date | Star | Contact used | Source URL | Status |
+|---|---|---|---|---|
+| 2026-11-17 | Alonzo Mourning | Overtown Youth Center / Mourning Family Foundation, info@oycmiami.org | https://www.mourningfamilyfoundation.org/contact/ | sent 2026-11-17 |
+| 2026-11-17 | Selena Gomez | Rare Impact Fund, info@rareimpactfund.org | https://rareimpactfund.org/faq | sent 2026-11-17 |
+| 2026-11-17 | George Lopez | George Lopez Foundation, lindas@georgelopez.com (foundation's published contact) | https://georgelopezfoundation.org/contact | sent 2026-11-17 |
+| 2026-11-17 | Lionel Messi | Inter Miami CF Community, community@intermiamicf.com (no public Leo Messi Foundation email found) | https://intermiamicf.com/community | sent 2026-11-17 |
+| 2026-11-17 | Dwyane Wade | Miami HEAT community request form (team, not Wade; no Wade Family Foundation email/form found) | https://www.nba.com/heat/community/requests | form-only, text given to Lauren |
+| 2026-11-17 | DJ Khaled | We The Best Foundation web form | https://www.wethebestfoundation.org/#contact | form-only, text given to Lauren |
+| 2026-11-17 | Tracy Morgan | none: no foundation/official business contact found (only paid databases/speaker bureaus) | — | not contacted |
+| 2026-11-17 | Gloria Estefan | none online: Gloria Estefan Foundation has no website/email; mailing address 420 Jefferson Ave, Miami Beach, FL 33139 (GuideStar) | https://www.guidestar.org/profile/65-0466117 | not contacted |
+| 2026-11-17 | Pitbull | none: pitbullmusic.com and SLAM Miami show no official email (SLAM office line (305) 326-0003) | https://pitbullmusic.com/ | not contacted |
