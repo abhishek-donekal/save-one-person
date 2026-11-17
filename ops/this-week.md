@@ -24,3 +24,9 @@ Caption: "Secret Santa, solved. 🎁 A gift that says 'Go Bless Yourself' on the
 Image idea: a mug and folded hoodie wrapped half-open in brown paper with a red ribbon and a handwritten gift tag reading "Bless You Too", cozy holiday lights in the background, "Saveonepersonnow.org" in the corner.
 
 Every post ends with "Saveonepersonnow.org".
+
+## $10,000 for William — this week (Lauren, Nov 17)
+Lauren's goal: raise $10,000 in donations this week (through Sun Nov 22).
+- Fundraising page (live): https://www.saveonepersonnow.org/help-william
+- EVERY social post this week (all themes, tee days too) ends with: "This week we're raising $10,000 to help 3-year-old William find a kidney donor 👉 saveonepersonnow.org/help-william". Don't show running totals (we can't see live donation numbers).
+- Newsletter/outreach this week: link /help-william as the donate link.
