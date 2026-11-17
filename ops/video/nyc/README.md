@@ -6,3 +6,5 @@ Build: cd here; python3 music.py (writes base.wav); python3 sfx4.py (nyc.wav); p
 Used so far: taxi cuts you off; someone takes your subway seat; pigeon steals your bagel; $14 oat latte; tourist stops mid-sidewalk; car alarm at 3 AM; pizza slice hits the floor; train delayed again (vid5.py); someone double-parks you in; express train skips your stop; bodega out of your sandwich (bodega cat); rent went up again (vid6.py + sfx6.py, 2026-11-17).
 
 vid6.py (2026-11-17) adds: front+back tee side by side in every punchline, sign text auto-shrinks, and Lauren's exact line "We want all New Yorkers and the world to say GO BLESS YOURSELF!" on the end card. Use vid6.py/sfx6.py as the template from now on.
+
+vid7.py/sfx7.py (2026-11-17): THANKSGIVING spot -> public/social/tee-videos/2026-11-23-thanksgiving.mp4. Scenarios used: aunt asks why you're still single; parade crowd blocks your street; someone took the last slice of pie; train home packed solid.
