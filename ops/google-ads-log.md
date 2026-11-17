@@ -39,6 +39,7 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 | Nov 1–15 MTD | $0.00 | 2 | 0 | — | Holiday ads still in review; William launched late Nov 15 |
 
 ## Change log
+- 2026-11-17 (growth task): In "SOP Grant - Living Kidney Donors" (24477469576) added ad group "Myth vs Fact - Living Donation" (203680808313): 12 phrase kw, 2 RSAs → /living-kidney-donation-myths-facts. Both ads Eligible. Campaign is Max conversions with incomplete conversion tracking → Eligible (Limited), 0 impr. "Save One Person- Organ Donation" now shows Paused (some ads disapproved). Note: keyword with >10 words is rejected by Google.
 - 2026-11-15: Built "Holiday Gifts That Give Back" (27 kw, 1 RSA, 4 sitelinks).
 - 2026-11-16 (run 2, Lauren asked to run overnight): +4 William ad groups (8 ads). Verified holiday "William - Gift of Life" 2 ads (they had not been created in run 1). Passkey check passed.
 - 2026-11-16 (run 1): Built William campaign ($120/day, 6 ad groups, 12 RSAs, 55 kw, 5 sitelinks). Added William ad group to Holiday. Holiday budget $150→$100, Organ Donation $329→$30, Branded $329→$15. Paused P-Max ($200).
