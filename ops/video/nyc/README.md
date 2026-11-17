@@ -9,3 +9,4 @@ vid6.py (2026-11-17) adds: front+back tee side by side in every punchline, sign 
 
 vid7.py/sfx7.py (2026-11-17): THANKSGIVING spot -> public/social/tee-videos/2026-11-23-thanksgiving.mp4. Scenarios used: aunt asks why you're still single; parade crowd blocks your street; someone took the last slice of pie; train home packed solid.
 vid8.py/sfx8.py (2026-11-17): Lauren's THANKSGIVING BABIES spot (two NYC babies, bleeped curse, turkey drops in, 'tee shirts to gobble up for the holidays') -> public/social/tee-videos/2026-11-23-thanksgiving-babies.mp4.
+vid9.py/sfx9.py (2026-11-17): REVISED babies spot per Lauren: guy walks by, curses (bleep), babies repeat (2 bleeps), turkey says GO BLESS YOURSELF. Replaces vid8 output at the same path.
