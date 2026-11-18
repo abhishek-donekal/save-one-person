@@ -64,6 +64,12 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 - Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).
 - STATUS Nov 17, 2026: the Ad Grants account is DEACTIVATED and under Google review (reactivation requested; Google's Ad Grants team has one-time approval to make compliance changes). Until a Google email says it is reactivated, every task must SKIP all Google Ads changes (account is read-only, and our changes could undo Google's). Just check Gmail for Google's reply and tell Lauren.
 
+## Standing: every spot carries the giving ask + link (Lauren, Nov 18, 2026)
+- Every video or graphic spot shows a donate banner the WHOLE time, for example "Give a Thanksgiving gift today / saveonepersonnow.org/donate". Do not save it for an end card.
+- Every caption carries a clickable https://saveonepersonnow.org/donate link: in the first line of FB, YouTube and X captions; on IG and TikTok, "link in bio", and keep the bio link pointed at /donate.
+- Exception: patient (William) spots ask for a living donor, never money. On those, the banner points to /become-a-donor.
+- Template: /tmp/ask_banner.png overlay (navy rounded bar, white + yellow Inter text, top of the 1080x1920 frame).
+
 ## Standing: Gifts That Give promotion (Lauren approved Nov 17, 2026) — NOT through Google Ad Grants
 - NEWSLETTER (Monday task): every Monday Save One Alert includes a "Gifts That Give" section with pictures of the Go Bless Yourself tees and Lauren's two books, linking to https://www.saveonepersonnow.org/shop (say proceeds go to Save One Person). Keep the main story the mission. Frequency: once a week; only one extra short email allowed on special days (Giving Tuesday Dec 1). Never more than 2 emails a week.
 - DAILY OUTREACH (any weekday, through Dec 18): in addition to the day's theme, up to 5 extra pitches per day split between:
