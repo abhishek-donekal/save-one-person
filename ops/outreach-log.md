@@ -71,3 +71,21 @@ Never contact Andy Garcia, Michael Rapaport, Andrew McCarthy, Madisyn Shipman. N
 Sent: TerraCRG, Jacoby & Meyers, Plaza Auto Mall, Walker Hotel, Junior's, Lesser Law, Turnberry, Charles Medical Group, Acqualina (Mauro Pinho), Kaluz/Max's Grille (Red Banyan), 1010 WINS (Mevorach), PIX11 news desk (only PIX11 pitch today).
 New Miami TV Giving Tuesday pitches sent: CBS News Miami wfornews@cbs.com (https://www.cbsnews.com/miami/have-a-news-tip), NBC 6 wtvjdesk@nbcuni.com (https://www.nbcmiami.com/news/local/about-nbc-6-our-mission-and-story/).
 Not sent: WPLG Local 10 and WSVN 7: no official news-tip email found (only unverified aggregator addresses). EOS draft still skipped.
+
+## 2026-11-18 (Wed) — Podcasts (guest pitch for Lauren; 2-3 episode angles each; William link only as a donor-awareness angle, no money ask)
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-18 | Podcast | Small & Gutsy (nonprofit stories) | Dr. Laura Scherck Wittcoff, host | Laura@SmallandGutsy.org | https://podcasts.apple.com/us/podcast/id1548212585 | sent 2026-11-18 |
+| 2026-11-18 | Podcast | The Charity Charge Show | Stephen Garten / guest inbox | podcast@charitycharge.com | https://www.charitycharge.com/charity-charge-podcasts | sent 2026-11-18 |
+| 2026-11-18 | Podcast | Ask The Patient Advocate (Pathway Patient Advocates) | Dr. Elena Borrelli | advocate@pathwaypa.com | https://podcasts.apple.com/us/podcast/ask-the-patient-advocate/id1760215730 | sent 2026-11-18 |
+| 2026-11-18 | Podcast | Everyday Miracles Podcast (faith) | Julie Hedenborg | everydaymiraclespodcast@gmail.com | https://podcasts.apple.com/podcast/id1447430033 | sent 2026-11-18 |
+| 2026-11-18 | Podcast | Courageously Kind (kindness/faith) | Maddie & Liz Adams | courageouslykindpodcast@gmail.com | https://www.buzzsprout.com/1291226/episodes/16414790-tell-us-your-story | sent 2026-11-18 |
+| 2026-11-18 | Podcast | Sharing Passion & Purpose (inspiration) | Nancy Moore | sharingpassionandpurpose@gmail.com | https://sharingpassionandpurpose.com/ | sent 2026-11-18 |
+| 2026-11-18 | Podcast | FoundHER Voice (women founders) | Vallerie | foundhervoice@foundhercircle.com | https://podcasts.apple.com/us/podcast/foundher-voice-podcast/id1766212666 | sent 2026-11-18 |
+| 2026-11-18 | Podcast | EO Wonder (Entrepreneurs' Organization) | Kalika Yap / podcast inbox | podcast@eonetwork.org | https://eowonder.libsyn.com/2026/03 | sent 2026-11-18 |
+| 2026-11-18 | Podcast | Kent's Kidney Stories | Kent Bressler (Kidney Solutions) | kent.bressler@kidneysolutions.org | https://kentskidneystories.libsyn.com/episode-117-marc-coronal-living-with-fsgs | sent 2026-11-18 |
+| 2026-11-18 | Podcast | The New Yorkers Podcast (NYC) | Kelly Kopp & Jae Watson | TheNewYorkersPodcast@gmail.com | https://feeds.castos.com/qo3m1 (show RSS owner email) | sent 2026-11-18 |
+All 10 sent ~11:25 UTC from save1person1@gmail.com. Skipped as already contacted: The Gifted Life (info@thegiftedlife.org, Oct 16 + Oct 30), CMG Miami (CMG media relations, Oct 16), Making Miami (Community Newspapers, Nov 2).
+Podcast ideas for later Wednesdays (not contacted): Not Just Patients (info@notjustpatients.com), Empowered Patient Podcast (Karen Jagoda, https://empoweredpatientradio.com/contact), Living Transplant / UHN (livingorgandonation@uhn.ca; inactive since Feb 2025), Entreprenista (form https://entreprenista.com/contact-us), Radio Health Journal (form https://radiohealthjournal.org/contact/), Health UNMUTED (form https://healthunmuted.com/be-a-guest).
+Bounces seen today from other tasks' Nov 18 sends: info@positivepressnews.com, partners@theculturemom.com (both BOUNCED); Info@theazhouse.com (Nov 17) BOUNCED. No real replies to outreach yet (only auto-replies from Rare Impact Fund and Women of Emanu-El).
+Drafts left unsent (fail checks: no standard footer / wrong greeting): 7 workplace "pilot" drafts from Nov 17 (DoNation/Akoya, America's Charities, Gift of Life Marrow, CORE, Southwest Transplant Alliance, AmerenCares, LyondellBasell); EOS draft (says "Hi Markforged team"); Park Avenue Synagogue tee draft (tee task).
