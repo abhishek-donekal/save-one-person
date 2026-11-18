@@ -15,7 +15,7 @@ export default function PersonOfTheWeekPopup() {
   useEffect(() => {
     if (!P.enabled || pathname === storyPath) return
     let seen = false
-    try { seen = localStorage.getItem(KEY) === '1' } catch {}
+    try { seen = sessionStorage.getItem(KEY) === '1' } catch {}
     if (seen) return
     const t = setTimeout(() => setOpen(true), 3500)
     return () => clearTimeout(t)
@@ -23,7 +23,7 @@ export default function PersonOfTheWeekPopup() {
 
   const close = () => {
     setOpen(false)
-    try { localStorage.setItem(KEY, '1') } catch {}
+    try { sessionStorage.setItem(KEY, '1') } catch {}
   }
 
   useEffect(() => {
