@@ -40,7 +40,7 @@ export function donationChargeAmount(amount: number): number {
 }
 
 /** Donation checkout for the charged amount, built from as few tier lines as possible. */
-export function donationCheckoutUrl(amount: number): string | null {
+export function donationCheckoutUrl(amount: number, note?: string): string | null {
   if (!amount || amount < DONATION_STEP) return null
   let remaining = donationChargeAmount(amount)
   const parts: string[] = []
@@ -51,5 +51,6 @@ export function donationCheckoutUrl(amount: number): string | null {
       remaining -= qty * v.amount
     }
   }
-  return `https://${SHOP_DOMAIN}/cart/${parts.join(',')}`
+  const n = note?.trim().slice(0, 200)
+  return `https://${SHOP_DOMAIN}/cart/${parts.join(',')}${n ? `?note=${encodeURIComponent(n)}` : ''}`
 }

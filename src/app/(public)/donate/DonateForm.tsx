@@ -17,11 +17,12 @@ const IMPACT_COPY: Record<number, string> = {
 export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
   const [selectedAmount, setSelectedAmount] = useState<number>(100)
   const [customAmount, setCustomAmount] = useState<string>('')
+  const [honoree, setHonoree] = useState<string>('')
 
   const rawAmount = customAmount ? Number(customAmount.replace(/[^0-9.]/g, '')) : selectedAmount
   const isValidAmount = rawAmount >= 25 && rawAmount < 1_000_000
   const chargedAmount = isValidAmount ? donationChargeAmount(rawAmount) : 0
-  const href = isValidAmount ? donationCheckoutUrl(rawAmount) : null
+  const href = isValidAmount ? donationCheckoutUrl(rawAmount, honoree.trim() ? `In honor of ${honoree.trim()}` : undefined) : null
 
   const impact = customAmount
     ? (isValidAmount ? 'Every dollar directly funds media outreach that helps patients find donors.' : 'Enter an amount of $25 or more.')
@@ -80,6 +81,23 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
             Gifts are processed in steps of $25, so this one is rounded to ${chargedAmount.toLocaleString()}.
           </span>
         )}
+      </label>
+
+      {/* In honor of (optional) */}
+      <label style={{ display: 'block', marginBottom: 24 }}>
+        <span style={{ display: 'block', fontSize: 12, fontWeight: 600, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: 6 }}>Give in someone&apos;s honor (optional)</span>
+        <input
+          type="text"
+          value={honoree}
+          maxLength={120}
+          onChange={(e) => setHonoree(e.target.value)}
+          placeholder="e.g. Grandma Rose, for Thanksgiving"
+          aria-label="Name of the person you are giving in honor of"
+          style={{ width: '100%', padding: '14px 16px', border: '1.5px solid var(--border)', borderRadius: 12, fontSize: 16, fontFamily: 'inherit', background: 'var(--white)', color: 'var(--navy)' }}
+        />
+        <span style={{ display: 'block', fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
+          A meaningful Thanksgiving or holiday gift: we&apos;ll note it on your donation.
+        </span>
       </label>
 
       {/* Impact line */}
