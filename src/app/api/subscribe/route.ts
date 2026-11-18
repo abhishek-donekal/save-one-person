@@ -23,5 +23,19 @@ export async function POST(request: Request) {
     .upsert({ email, source: 'website' }, { onConflict: 'email', ignoreDuplicates: true })
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+
+  // Also add them to the Save One Alert list in Kit (form "Newsletter site").
+  // Kit sends its own confirmation email, so only people who confirm are added.
+  try {
+    await fetch('https://app.kit.com/forms/10194214/subscriptions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
+      body: new URLSearchParams({ email_address: email }).toString(),
+      signal: AbortSignal.timeout(5000),
+    })
+  } catch {
+    // Never let Kit problems break the website sign-up.
+  }
+
   return NextResponse.json({ ok: true }, { status: 201 })
 }
