@@ -19,3 +19,5 @@ Friday rotation order: (a) donation ask -> (b) Lauren's books -> (c) living-dona
 - Media: https://www.saveonepersonnow.org/social/shorts/short-NN.mp4. Each caption opens with "Be someone's miracle 💛 Donate: https://saveonepersonnow.org/donate".
 - Metricool post ids 433443205 (#01) … 433449051 (#55).
 - Next: download and cut the remaining ~110 channel videos (YouTube Studio page 3 onward; skip non-owned clips and the suicide video). Add them after Jan 12.
+- 2026-11-18: Batch 2 Shorts 56–84 made (58 dropped: company out of business; 85 Andy Garcia dropped; 69 Bobby and 73 Mom of Three held until Lauren OKs). 26 scheduled on YouTube 2027-01-13 → 02-07, 12:03 PM. Celebrity spots (74–81, 83, 84) use "Be the Miracle · Donate Today" instead of the living-donor line. Morning reminder task trig_01Wkoxub4GHkxRmhmsXA2rVE (8:13 AM ET) shows Lauren the day's clip in the app and emails save1person@aol.com.
+- Downloaded, not cut yet: Daughtry, Chocolate with a Heart, Julianne Moore, Hugh Jackman, Howard Thompson (PIX), Will Smith, Pitbull, Cinderella, Swap the Biz, Jane Lynch, 2 Miracle Alerts, Oprah, NY1, WPIX, First Hello, Transforming the Face of Media, Tony Robbins.
