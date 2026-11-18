@@ -67,3 +67,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Ads UI check (read only): red banner still "deactivated for not complying with Google Ad Grants' Website policy"; diagnostics "Account is suspended". Nov 1–18: 2 impr, 0 clicks, $0. Second notice: "Improve account security" (not touched).
 - No changes made. Asked Lauren for OK to (1) fix the account to Account-management rules and (2) then send the reply to Google.
 - Fix list (when OK'd): pause "Holiday Gifts That Give Back" (points to gifts/shop); pause "SOP Grant - Living Kidney Donors" or switch to Maximize clicks (Max conversions without working conversion tracking); pause "Save One Person- Organ Donation" (disapprovals) if not fixable; make sure every enabled campaign has ≥2 ad groups × ≥2 ads, ≥2 sitelinks, US geo targeting; no single-word keywords; pause QS 1–2 keywords; add negatives (blood drive, plasma, red cross, for sale, black market, price, jobs); confirm conversion tracking (Google tag AW-599305263) has ≥1 working conversion action (Donate click); confirm the annual Ad Grants program survey is done.
+
+## 2026-11-18 1:02pm ET: replied to Google (case 7-9611000041369, thread 1a1eb797572a012e), Lauren OK'd the text
+- Found: account is READ-ONLY. Banner says "deactivated for not complying with Website policy"; Taqdees's email says "Account management policy". Can't edit campaigns until Google restores access.
+- Reply: committed to Maximize clicks, remove the 2020 campaigns, ≥2 ad groups × 2 ads + sitelinks, no single-word or QS 1–2 keywords, negatives and CTR >5%, conversion tracking; website meets policy. Asked them to restore edit access.
+- NEXT: when Google replies or edit access returns, do all of the above at once, then reply "done".
