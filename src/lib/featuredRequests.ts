@@ -712,13 +712,17 @@ For more than four decades, JJ Gillen answered the call when other people needed
     id: 'featured-jeffrey-sorrell',
     slug: 'jeffrey-sorrell',
     patient_name: 'Jeffrey Sorrell',
-    title: 'Jeffrey Desperately Needs a Living Kidney Donor',
+    title: 'Jeffrey Sorrell Desperately Needs a Living Kidney Donor',
     medical_condition: 'Kidney Disease',
-    story_text: `Jeffrey is a loving husband, son, brother, and friend. He is kind, generous, and always there for others. Now he is the one who needs help.
+    story_text: `Jeffrey (Jeff) Sorrell is a devoted son, brother, uncle, and loyal friend. He works at Dana-Farber Cancer Institute in a research lab focused on multiple myeloma. That is also where he met his girlfriend, who is originally from Tokyo, Japan, and is his biggest champion.
 
-A living kidney donor can give him the gift of life and many more tomorrows with his family.
+Jeff loves music. He plays guitar and likes tinkering with equipment. He is happiest with his close-knit family and friends, cheering on Boston sports teams, and relaxing on Cape Cod. He has always been a proud super-fan of his nephews, often seen at their games as they grew up.
 
-You could be the miracle that saves his life. To learn more or to see if you can donate, please visit nkr.org/WAF939.
+Jeff Sorrell is a childhood cancer survivor, and his kidney disease began about 18 years ago, possibly linked to his cancer treatment. In 2015, after two years on dialysis, he received a kidney through the National Kidney Registry. His sister donated her kidney so he could receive one, and they became part of the longest kidney chain in history: 35 donor-recipient pairs.
+
+That kidney gave Jeff nine good years. Two years ago it began to fail, and he is back on dialysis three days a week, starting before sunrise, while still going to work. No family member or friend tested so far is a match, and Jeff is considered hard to match.
+
+You do not have to be a match to help. Through the National Kidney Registry, you can donate on Jeff Sorrell's behalf and he receives a compatible kidney through a paired exchange. Testing, surgery and hospital costs are covered, and donors can live anywhere in the U.S. To learn more or to get tested, please visit nkr.org/WAF939. Even sharing Jeff's story helps.
 
 No one should die because their story wasn't told.`,
     image_url: '/images/urgent/jeffrey.jpg',
