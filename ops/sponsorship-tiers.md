@@ -12,3 +12,10 @@ What the sponsor gets (proposed; Lauren can adjust):
 - Thank-you announcement across all Save One Person channels
 
 Every outreach email must end with the logo + press footer in ops/email/signature.html (send as htmlBody).
+
+## Quick local tier (approved by Lauren Nov 17, 2026, through Sun Nov 22 only)
+**Thanksgiving Thank-You Partner: $500 one-time** (fast yes for local businesses: restaurants, dental/medical offices, realtors, salons, gyms in Miami/South Florida and NYC).
+- Their name/logo in a "Thank you to our Thanksgiving partners" post on Save One Person's Instagram, Facebook and TikTok (Thanksgiving week)
+- Listed on the Partners page (saveonepersonnow.org/partners) through Dec 31
+- Tax-deductible gift via https://www.saveonepersonnow.org/donate (EIN 84-4214447)
+Pitch: short, confident, "decide by Sunday", never begging. Daily outreach task may send up to 5 of these a day in addition to its theme (public business emails only; log in ops/outreach-log.md; never repeat a contact).
