@@ -91,5 +91,5 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 - SOCIAL: post this video on Tue Nov 24 (tee day) as the video itself; personal Facebook share only after Lauren's OK that day.
 
 
-## Standing: daily Short on Lauren's personal Facebook (approved 2026-11-18)
-Lauren said every day is OK, starting 2026-11-19, so no daily ask is needed for this. Each day after 12:03 PM ET, share that day's Short (ops/shorts-schedule.md) to her personal FB. Do it by sharing the Save One Person page's FB reel, so the post is the video itself and not a link. The SOP page reel for the next day is scheduled in Metricool as a FACEBOOK REEL at 12:03. Any other post on her personal page still needs her OK that day.
+## Standing: Shorts schedule (Lauren, 2026-11-18)
+The Shorts go out every day on all SOP accounts: YouTube (all 55 pre-scheduled), the SOP FB page, IG and TikTok (scheduled one day ahead by the daily scheduled task trig_01NCXvWB4PauWznrF2kzr8mq, 12:31 PM ET). Lauren's PERSONAL FB gets the Short only twice a week, Mondays and Thursdays, as a share of the SOP page reel so the post is the video itself. Any other post on her personal page still needs her OK that day.
