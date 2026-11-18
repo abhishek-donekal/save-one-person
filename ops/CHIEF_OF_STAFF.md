@@ -1,5 +1,10 @@
 # Chief of Staff — weekly playbook for Save One Person
 
+## HARD RULE: never email Lauren's personal contacts (Lauren, Nov 18, 2026)
+- The names in the "Save One Alert – who gets the newsletter" sheet (https://claude.ai/artifact/NChkt1umtViwYri5GdvVBJ), her AOL contacts, and aol-personal-contacts.csv are personal friends and people who don't like her. NEVER email, newsletter, pitch or import any of them, anywhere (Kit, Mailchimp, Gmail, Constant Contact).
+- Outreach goes only to businesses, TV stations and media, one at a time, never to personal contacts.
+
+
 This file is the instruction sheet the Chief of Staff scheduled task follows every Monday, and that the
 Wednesday/Friday social-post tasks read. Lauren (the founder) can change any rule here by telling Claude.
 
