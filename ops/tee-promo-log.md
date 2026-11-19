@@ -80,3 +80,26 @@ Ideas for later (not contacted): Renewal (Boro Park living-kidney-donor org; fin
 ## 2026-11-17 — tee outreach SENT (Lauren OK 12:20pm)
 Sent: CBS News New York desk (desk@cbs2ny.com), Secret NYC (hello@secretnyc.co), Time Out New York (tips@timeout.com), The Shop at the Cathedral of St. John the Divine (info@stjohndivine.org), Greater NYC Black Nurses Association (gnycbna@gmail.com), Mount Sinai Recanati/Miller Transplant Outreach (mountsinaitransplant@mountsinai.org), Brick Church Pastoral Care (pastoralcare@brickchurch.org), Women of Emanu-El (we@emanuelnyc.org; rewritten to remove William from a sales pitch).
 Not sent: tee pitch to news@pix11.com (deleted; PIX11 gets the Giving Tuesday pitch today instead, avoid two pitches same day).
+
+## 2026-11-19 (Thu) — Tee Promoter: 10 outreach drafts, awaiting Lauren's OK (Gmail drafts; logo at top + "What X gains" section per Nov 19 rule)
+| Org | Email | Type | Hook | Source | Gmail draft | Status |
+|---|---|---|---|---|---|---|
+| Loop & Tie (corporate gifting) | hello@loopandtie.com | partner | Brand Collections for small mission brands | https://loopandtie.com/contact | r983833774682435932 | draft |
+| The Faith Gift Shop (Miami, Doral/Kendall) | customercare@thefaithgiftshop.com | partner/faith gift shop | Miami since 1982, saved 2017 | https://thefaithgiftshop.com/pages/about-us | r-4708814209174236549 | draft |
+| Renewal (Brooklyn living kidney donor org) | info@renewal.org | group order | Jewish Press "Bonded for Life"; Hanukkah thank-you for donors/volunteers | https://renewal.org/ | r-5184055486478794887 | draft |
+| Ansche Chesed Chesed Committee (UWS synagogue) | Chesed@anschechesed.org | group order | Chesed Committee visits/meals/rides | https://anschechesed.org/?p=95 | r-3026766868147541535 | draft |
+| Black Nurses Association, Miami Chapter (Dr. Constance H. Miller) | miamibna@gmail.com | group order (nurses) | health fairs, scholarships, disparities | https://nbna.org/?p=4394 | r-5191063510858023362 | draft |
+| The Tablet (Brooklyn diocese) | newstips@desalesmedia.org | press/faith media | covered living kidney donor Petar Vukelich (2024) | https://thetablet.org/contact-us/ | r469170325694843924 | draft |
+| Mommy Poppins (Anna Fader) | mommy@mommypoppins.com | press/parenting | "22 Ways Families Can Volunteer and Donate in NYC for the Holidays" | https://mommypoppins.com/ny-kids/contact-us | r-7326121236285089502 | draft |
+| Kveller (Lior Zaltzman) | lior@kveller.com | press/faith parenting | "Hanukkah Sweaters for the Entire Family: 2026 Edition" | https://www.kveller.com/contact-us/ | r4767923165240603793 | draft |
+| Brooklyn Paper (Meaghan McGoldrick, EIC) | mmcgoldrick@schnepsmedia.com | press NYC | holiday market guide | https://www.brooklynpaper.com/contact-us | r-2135047227968995660 | draft |
+| Miami's Community Newspapers (Michael Miller) | michael@cnews.net | press Miami | Give Miami Day 2026 video interview | https://communitynewspapers.com/submit-a-press-release/ | r-1628986273162586592 | draft |
+Checked and skipped: Gift of Life Marrow Registry (already emailed Nov 5 and Nov 19 by other tasks). Whitestone Branding (misspelled email on site).
+Backups for later: Jewish Press (editor@jewishpress.com), BNA Greater Fort Lauderdale/Broward (gflbcc.nbna@gmail.com).
+
+Video placements prepared (submit only after Lauren's OK; we never create accounts or enter passwords):
+- Community Newspapers press-release form https://communitynewspapers.com/submit-a-press-release/ (no account; name, email, phone, up to 2,000 chars). Use ONLY if Michael Miller doesn't answer the email (don't double-pitch).
+- GreatNonprofits profile https://greatnonprofits.org/pages/about/claim-your-nonprofit/ (Lauren claims/logs in herself, then adds the video under "Your Media").
+- Not a fit right now: WLRN event page and South Florida on the Cheap (events only; no merch sales), Mommy Poppins event submit (account + real event needed).
+
+Replies check (Nov 19, ~3:30 PM UTC): no replies from any tee contacts (Nov 15/16/17). Only auto-reply from Women of Emanu-El. Miami TV follow-up still due ~Nov 22.
