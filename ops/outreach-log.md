@@ -89,3 +89,22 @@ All 10 sent ~11:25 UTC from save1person1@gmail.com. Skipped as already contacted
 Podcast ideas for later Wednesdays (not contacted): Not Just Patients (info@notjustpatients.com), Empowered Patient Podcast (Karen Jagoda, https://empoweredpatientradio.com/contact), Living Transplant / UHN (livingorgandonation@uhn.ca; inactive since Feb 2025), Entreprenista (form https://entreprenista.com/contact-us), Radio Health Journal (form https://radiohealthjournal.org/contact/), Health UNMUTED (form https://healthunmuted.com/be-a-guest).
 Bounces seen today from other tasks' Nov 18 sends: info@positivepressnews.com, partners@theculturemom.com (both BOUNCED); Info@theazhouse.com (Nov 17) BOUNCED. No real replies to outreach yet (only auto-replies from Rare Impact Fund and Women of Emanu-El).
 Drafts left unsent (fail checks: no standard footer / wrong greeting): 7 workplace "pilot" drafts from Nov 17 (DoNation/Akoya, America's Charities, Gift of Life Marrow, CORE, Southwest Transplant Alliance, AmerenCares, LyondellBasell); EOS draft (says "Hi Markforged team"); Park Avenue Synagogue tee draft (tee task).
+
+## 2026-11-19 (Thu) — Start your own Save One Person unit (chapter/partner unit invite; no fees; 15-min call offer)
+All 10 saved as Gmail drafts ~05:40 ET, waiting for Lauren's OK (new rule Nov 18: nothing sent without her OK).
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-19 | Unit | Children's Organ Transplant Association (COTA) | general | COTA@cota.org | https://cota.org/contact-us/ | draft r-7993241446592449747 |
+| 2026-11-19 | Unit | Kidney Health Australia | Care Team | careteam@kidney.org.au | https://kidney.org.au/contact-us/ | draft r-1760405812420735739 |
+| 2026-11-19 | Unit | Transplant Families | general | contact@transplantfamilies.org | https://www.transplantfamilies.org/caregiver | draft r3532481986759939492 |
+| 2026-11-19 | Unit | Give a Kidney (UK) | general | info@giveakidney.org | https://www.giveakidney.org/our-team/contact-us/ | draft r3422953841814049976 |
+| 2026-11-19 | Unit | Kidney Foundation of Canada | national office | info@kidney.ca | https://kidney.ca/about-us/contact-us | draft r-1319464706122116617 |
+| 2026-11-19 | Unit | Donate Life Florida | general | contactus@donatelifeflorida.org | https://www.donatelifeflorida.org/contact-us/ | draft r-6277558909030942078 |
+| 2026-11-19 | Unit | Jackson Health Foundation (Miami) | general | jhf@jhsmiami.org | https://jacksonhealthfoundation.org/contact-us/ | draft r-3982964338676758223 |
+| 2026-11-19 | Unit | The Riverside Church (Social Services & Outreach) | church general inbox | welcome@trcnyc.org | https://www.trcnyc.org/socialservices/ | draft r6967864737640639823 |
+| 2026-11-19 | Unit | Calvary Chapel Fort Lauderdale | Outreach | Outreach@CalvaryFTL.org | https://calvaryftl.org/?p=2765 | draft r-170017315390697533 |
+| 2026-11-19 | Unit | CUNY SPH Harlem Health Initiative | program inbox | harlemhealth@sph.cuny.edu | https://sph.cuny.edu/research/harlem-health-initiative/ | draft r-140474817007313803 |
+Skipped (already contacted earlier, found in Gmail Sent): TRIO (info@trioweb.org, Oct 29), AAKP (media@aakp.org, Oct 29), LiveOnNY (swohl@liveonny.org, Nov 5). NKDO skipped (Lauren already in talks).
+Unit ideas for later Thursdays (not contacted): Junior League of Miami Foundation (foundation@jlmiami.org), Catholic Charities Archdiocese of Miami (info@ccadm.org), Kidney Care UK (form https://kidneycareuk.org/get-involved/share-your-story/), NSU osteopathic medicine (form https://osteopathic.nova.edu/forms/contact.html).
+No real replies to earlier outreach as of 05:40 ET Nov 19. New: delivery delay for hello@miami-shopping.com (other task).
+Old drafts still unsent and NOT re-offered (fail checks): 7 workplace "pilot" drafts (Nov 17), EOS draft ("Hi Markforged team"), Park Avenue Synagogue tee draft (old footer).
