@@ -1,5 +1,11 @@
 # Chief of Staff — weekly playbook for Save One Person
 
+## HARD RULE (Nov 18, 2026, 8:24 PM): Lauren approves EVERYTHING before it goes out
+- Outreach letters: drafted as Gmail drafts, shown to Lauren, sent only after her OK. The Nov 17 "send without asking" permission is withdrawn.
+- Social media: every post on every account (SOP Instagram/Facebook/TikTok/YouTube/X, the daily Shorts, her personal Facebook) is shown to her by 6:30 AM and published only after her OK. Shorts sit in Metricool as DRAFTS until she approves.
+- Newsletter: shown to her Monday morning; sent only after her OK.
+
+
 ## HARD RULE: never email Lauren's personal contacts (Lauren, Nov 18, 2026)
 - The names in the "Save One Alert – who gets the newsletter" sheet (https://claude.ai/artifact/NChkt1umtViwYri5GdvVBJ), her AOL contacts, and aol-personal-contacts.csv are personal friends and people who don't like her. NEVER email, newsletter, pitch or import any of them, anywhere (Kit, Mailchimp, Gmail, Constant Contact).
 - Outreach goes only to businesses, TV stations and media, one at a time, never to personal contacts.
