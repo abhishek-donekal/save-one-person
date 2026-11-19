@@ -109,3 +109,25 @@ The Shorts go out every day on all SOP accounts: YouTube (all 55 pre-scheduled),
 - Do NOT claim "10,000 newsletter subscribers" (not true). Say "our weekly Save One Alert email" with no number.
 - Signature: name, 917-572-6385, Save1Person@aol.com, site, plus 3 press links (FOX 5, Tony Robbins Podcast, 1010 WINS).
 - Model letter: Gmail draft to Memorial (kcarbo@mhs.net), Nov 19.
+
+## Giving Tuesday 2026 (Tue Dec 1) — countdown plan (Lauren approved the plan Nov 18-19, 2026)
+EVERY post and email below is a DRAFT shown to Lauren first. Nothing is posted or sent until she says OK (HARD RULE above).
+- Landing page: https://saveonepersonnow.org/giving-tuesday (branch `giving-tuesday`; goes live only after Lauren's OK). Small Giving Tuesday link on the homepage and /donate hides itself after Dec 2.
+- Every Giving Tuesday post/email links https://saveonepersonnow.org/giving-tuesday and asks for gifts to SAVE ONE PERSON the organization. Never tie money to a patient. William Fritts appears only as "needs a living kidney donor" -> /help-william, kept apart from the money ask.
+- Every graphic/video ends with "Saveonepersonnow.org"; captions follow the "giving ask + link" rule above.
+
+### Daily social-post task: add these (draft for Lauren's OK, all SOP accounts)
+- Mon Nov 23: "Giving Tuesday is next week" (Tue Dec 1). Save the date + link.
+- Fri Nov 27: "4 days until Giving Tuesday."
+- Mon Nov 30: "Giving Tuesday is TOMORROW."
+- Tue Dec 1, 3 posts: MORNING "It's Giving Tuesday: help us save one more life"; NOON "What your gift does" (media outreach + TV pitches, storytelling, website/Save One Alert, education, patient support: the list on /donate, no invented numbers); EVENING "Last hours of Giving Tuesday."
+- Wed Dec 2: thank-you post to everyone who gave or shared.
+- These are in addition to the normal day's posts; if it's too many for one day, ask Lauren which to drop.
+
+### Monday newsletter task (Save One Alert) — draft for Lauren's OK
+- Mon Nov 30 issue = THE Giving Tuesday issue: lead with "Tomorrow is Giving Tuesday", big button to /giving-tuesday, what a gift does, 501(c)(3) EIN 84-4214447 line. William section stays a donor ask only.
+- Tue Dec 1: one short extra email "It's Giving Tuesday today" (the one allowed extra email; never more than 2 emails that week). Draft it Nov 30 so Lauren can OK it the night before or early Dec 1.
+- Mon Dec 7 issue: a thank-you to Giving Tuesday donors and sharers.
+
+### Matching gift (only Lauren can ask)
+- The single biggest boost is a donor or company willing to MATCH gifts on Dec 1 ("every gift doubled up to $X"). Only Lauren asks them. If she lands one, add "Gifts matched" to the page and every post (with her OK).
