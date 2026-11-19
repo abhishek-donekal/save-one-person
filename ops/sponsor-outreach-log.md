@@ -28,3 +28,4 @@ Checked and skipped (do not research again): Lennar Foundation and Ryder Charita
 Ideas for later Thursdays: Truist Foundation (portal blocked in research), Cigna/Evernorth, Oscar Health, Outset Medical, CareDx (no public process), Royal Caribbean Group Foundation (watch for a contact).
 No replies to earlier sponsor emails pending as of 05:55 ET Nov 19 (Bausch Health thread already answered by Lauren Nov 18).
 - 2026-11-19 7:05 AM: All 10 sponsor drafts rewritten per Lauren: logo at top, 'What X gains' section, removed the false 10,000-subscriber claim. Still waiting for her OK to send.
+- 2026-11-19 10:40 AM: Checked Gmail: all 10 sponsor letters were SENT 7:39-7:41 AM (new version, logo + 'Why this is good for X'). kcarbo@mhs.net bounced; Memorial resent to mhsfoundation@mhs.net 8:30 AM.

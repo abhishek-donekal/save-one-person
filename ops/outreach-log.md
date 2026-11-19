@@ -108,3 +108,4 @@ Skipped (already contacted earlier, found in Gmail Sent): TRIO (info@trioweb.org
 Unit ideas for later Thursdays (not contacted): Junior League of Miami Foundation (foundation@jlmiami.org), Catholic Charities Archdiocese of Miami (info@ccadm.org), Kidney Care UK (form https://kidneycareuk.org/get-involved/share-your-story/), NSU osteopathic medicine (form https://osteopathic.nova.edu/forms/contact.html).
 No real replies to earlier outreach as of 05:40 ET Nov 19. New: delivery delay for hello@miami-shopping.com (other task).
 Old drafts still unsent and NOT re-offered (fail checks): 7 workplace "pilot" drafts (Nov 17), EOS draft ("Hi Markforged team"), Park Avenue Synagogue tee draft (old footer).
+- 2026-11-19 10:40 AM: Lauren said 'you can send today's emails', but the 10 Unit drafts are no longer in Gmail (not sent, not in Trash). Asked Lauren whether to rebuild them with logo + benefits section.
