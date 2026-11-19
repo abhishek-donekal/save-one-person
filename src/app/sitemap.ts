@@ -22,6 +22,7 @@ const STATIC_ROUTES: { path: string; changeFrequency: MetadataRoute.Sitemap[numb
   { path: '/living-kidney-donation-myths-facts', changeFrequency: 'monthly', priority: 0.7 },
   { path: '/contact', changeFrequency: 'monthly', priority: 0.5 },
   { path: '/donate', changeFrequency: 'monthly', priority: 0.7 },
+  { path: '/giving-tuesday', changeFrequency: 'weekly', priority: 0.8 },
   { path: '/help-william', changeFrequency: 'weekly', priority: 0.9 },
   { path: '/shop', changeFrequency: 'weekly', priority: 0.7 },
   { path: '/meaningful-holiday-gifts', changeFrequency: 'weekly', priority: 0.8 },
