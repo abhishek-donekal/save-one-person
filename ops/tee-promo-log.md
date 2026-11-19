@@ -51,7 +51,8 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 | 2026-11-17 | go-bless-yourself-nyc-2.mp4 (daily social task, not committed) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | awaiting Lauren's OK |
 | 2026-11-19 | public/social/2026-11-19/go-bless-yourself-nyc-thursday.mp4 (22s, 9:16, vid10.py/sfx10.py; replaces the uncommitted go-bless-yourself-nyc-2.mp4) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | sent to Lauren for OK (Thu post), not yet posted |
 | 2026-11-17 | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16, vid6.py) | someone double-parks you in; express train skips your stop; bodega out of your sandwich ("...bodega cat too."); rent went up again ("...even your landlord.") | posted 2026-11-17 |
-Ideas not yet used: alternate-side parking; $28 cocktail; your team breaks your heart; Times Square Elmo-free crowd jam (no characters!); laundromat steals a sock; scaffolding forever; Citi Bike dock full.
+| 2026-11-19 | public/social/tee-videos/2026-11-19.mp4 (22s, 9:16, vid11.py/sfx11.py, donate banner whole time) | alternate-side parking (...street sweeper too); $28 cocktail (...and the ice cubes); your team breaks your heart (...there's always next year); bike dock full (...keep pedaling) | made, not yet posted (for the next Tue/Thu tee post) |
+Ideas not yet used: Times Square crowd jam (no characters!); laundromat steals a sock; scaffolding forever; someone blocks the subway doors; your Uber/cab driver takes the long way (no brand names); the slow walker in front of you on the stairs; the apartment heat won't turn off; brunch line is 2 hours.
 
 ## 2026-11-17 — Outreach drafts (NYC focus), awaiting Lauren's OK (Gmail drafts)
 | Org | Email | Type | Hook | Status |
