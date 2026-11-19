@@ -72,3 +72,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Found: account is READ-ONLY. Banner says "deactivated for not complying with Website policy"; Taqdees's email says "Account management policy". Can't edit campaigns until Google restores access.
 - Reply: committed to Maximize clicks, remove the 2020 campaigns, ≥2 ad groups × 2 ads + sitelinks, no single-word or QS 1–2 keywords, negatives and CTR >5%, conversion tracking; website meets policy. Asked them to restore edit access.
 - NEXT: when Google replies or edit access returns, do all of the above at once, then reply "done".
+
+## 2026-11-19 daily check (read only)
+- Gmail: no new reply from Google Ad Grants support on case 7-9611000041369 (last message is our Nov 18 1:02pm reply). No new Google Ads/Ad Grants emails.
+- Ads UI (684-224-8625): red banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy". Nov 1–19: 0 clicks, 2 impr, $0.00.
+- No changes made. Still waiting on Google.
