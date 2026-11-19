@@ -99,3 +99,13 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 
 ## Standing: Shorts schedule (Lauren, 2026-11-18)
 The Shorts go out every day on all SOP accounts: YouTube (all 55 pre-scheduled), the SOP FB page, IG and TikTok (scheduled one day ahead by the daily scheduled task trig_01NCXvWB4PauWznrF2kzr8mq, 12:31 PM ET). Lauren's PERSONAL FB gets the Short only twice a week, Mondays and Thursdays, as a share of the SOP page reel so the post is the video itself. Any other post on her personal page still needs her OK that day.
+
+## RULE (Nov 19, 7:00 AM): every outreach/sponsor letter with an ASK
+- Lauren: "it needs our logo and you need to explain how it would benefit the companies not just asking for 25k" / "for all the asks write how it would benefit their company to be associated with us".
+- Every letter that asks for money, a partnership or a favor MUST have:
+  1. The Save One Person heart logo at the top, embedded inline (Gmail drafts strip outside image links). Use ops/email/save-one-person-logo-300.jpg (base64 in ops/email/save-one-person-logo-300.b64) as an inline attachment, with <img src="cid:att0" width="220"> at the top of the HTML.
+  2. A section "What <Company> gains by partnering with us" BEFORE the ask, tailored to that company (brand next to life-saving stories, local goodwill, earned media: named in press releases/pitches to our ~16,000 media contacts, ready-made co-branded content and employee pride, year-end impact report).
+  3. Then the ask and what's included.
+- Do NOT claim "10,000 newsletter subscribers" (not true). Say "our weekly Save One Alert email" with no number.
+- Signature: name, 917-572-6385, Save1Person@aol.com, site, plus 3 press links (FOX 5, Tony Robbins Podcast, 1010 WINS).
+- Model letter: Gmail draft to Memorial (kcarbo@mhs.net), Nov 19.

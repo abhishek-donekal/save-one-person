@@ -27,3 +27,4 @@ Portal/form only (given to Lauren, nothing submitted):
 Checked and skipped (do not research again): Lennar Foundation and Ryder Charitable Foundation (both say no unsolicited proposals); Royal Caribbean (no giving inbox, only sustainability@rccl.com); Raymond James (education-only giving, no email); Burger King/RBI, Bacardi (no contact); NextEra/FPL (only a NW Florida grants inbox); Vantive (research/med-ed funding only).
 Ideas for later Thursdays: Truist Foundation (portal blocked in research), Cigna/Evernorth, Oscar Health, Outset Medical, CareDx (no public process), Royal Caribbean Group Foundation (watch for a contact).
 No replies to earlier sponsor emails pending as of 05:55 ET Nov 19 (Bausch Health thread already answered by Lauren Nov 18).
+- 2026-11-19 7:05 AM: All 10 sponsor drafts rewritten per Lauren: logo at top, 'What X gains' section, removed the false 10,000-subscriber claim. Still waiting for her OK to send.
