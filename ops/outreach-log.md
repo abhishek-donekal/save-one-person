@@ -109,3 +109,17 @@ Unit ideas for later Thursdays (not contacted): Junior League of Miami Foundatio
 No real replies to earlier outreach as of 05:40 ET Nov 19. New: delivery delay for hello@miami-shopping.com (other task).
 Old drafts still unsent and NOT re-offered (fail checks): 7 workplace "pilot" drafts (Nov 17), EOS draft ("Hi Markforged team"), Park Avenue Synagogue tee draft (old footer).
 - 2026-11-19 10:40 AM: Lauren said 'you can send today's emails', but the 10 Unit drafts are no longer in Gmail (not sent, not in Trash). Asked Lauren whether to rebuild them with logo + benefits section.
+
+## 2026-11-19 (Thu) 11:30 AM — CORRECTION from Lauren: "save one units are only for media stations" / "your pitching to wrong group"
+The 10 non-media Unit drafts above (COTA, Kidney Health Australia, Transplant Families, Give a Kidney, Kidney Foundation of Canada, Donate Life Florida, Jackson Health Foundation, Riverside Church, Calvary Chapel FTL, CUNY Harlem Health) were NOT sent. HELD; do not send them as Unit invitations.
+New Unit drafts (media stations only), logo + "What X gains", waiting for Lauren's OK:
+| 2026-11-19 | Unit (media) | WLRN (Miami public radio/TV) | newsroom | news@wlrnnews.org | https://www.wlrn.org/contact-us | draft r6999761032104116528 |
+| 2026-11-19 | Unit (media) | WKMG News 6 (Orlando) | news director inbox | newsmanager@wkmg.com | https://clickorlando.com/station | draft r3595487093453549332 |
+| 2026-11-19 | Unit (media) | FOX 13 (Tampa) | news tips/press releases | FOX13tampanews@fox.com | https://www.fox13news.com/about/contact | draft r-9133863229316486867 |
+| 2026-11-19 | Unit (media) | WUFT News (Gainesville) | newsroom | news@wuft.org | https://www.wuft.org/contact/ | draft r-8318654111773277742 |
+| 2026-11-19 | Unit (media) | News 12 Brooklyn | station inbox | news12bkln@news12.com | https://brooklyn.news12.com/pages/brooklyn-contact | draft r8056162834292437944 |
+| 2026-11-19 | Unit (media) | News 12 Long Island | station inbox | news12li@news12.com | https://longisland.news12.com/about-us-35179010 | draft r-5552998800090855218 |
+| 2026-11-19 | Unit (media) | News 12 New Jersey | station inbox | news12nj@news12.com | https://newjersey.news12.com/pages/new-jersey-contact | draft r-3336126813429501138 |
+| 2026-11-19 | Unit (media) | KDKA (Pittsburgh) | newsdesk | NewsDesk@kdka.com | https://www.cbsnews.com/pittsburgh/news/contact-kdka-tv | draft r472972186256721182 |
+| 2026-11-19 | Unit (media) | News 5 WEWS (Cleveland) | newsdesk | newsdesk@wews.com | https://www.news5cleveland.com/about/contact-us | draft r8305085277099912513 |
+| 2026-11-19 | Unit (media) | WCPO 9 (Cincinnati) | newsdesk | newsdesk@wcpo.com | https://www.wcpo.com/about/contact-us | draft r-8866987469535104904 |
