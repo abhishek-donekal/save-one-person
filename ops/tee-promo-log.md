@@ -49,7 +49,8 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 |---|---|---|---|
 | 2026-11-15 | public/social/2026-11-15/go-bless-yourself-nyc.mp4 | taxi cuts you off; subway seat; pigeon steals bagel; $14 oat latte | posted (per social log) |
 | 2026-11-17 | go-bless-yourself-nyc-2.mp4 (daily social task, not committed) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | awaiting Lauren's OK |
-| 2026-11-17 | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16, vid6.py) | someone double-parks you in; express train skips your stop; bodega out of your sandwich ("...bodega cat too."); rent went up again ("...even your landlord.") | made, not yet posted |
+| 2026-11-19 | public/social/2026-11-19/go-bless-yourself-nyc-thursday.mp4 (22s, 9:16, vid10.py/sfx10.py; replaces the uncommitted go-bless-yourself-nyc-2.mp4) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | sent to Lauren for OK (Thu post), not yet posted |
+| 2026-11-17 | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16, vid6.py) | someone double-parks you in; express train skips your stop; bodega out of your sandwich ("...bodega cat too."); rent went up again ("...even your landlord.") | posted 2026-11-17 |
 Ideas not yet used: alternate-side parking; $28 cocktail; your team breaks your heart; Times Square Elmo-free crowd jam (no characters!); laundromat steals a sock; scaffolding forever; Citi Bike dock full.
 
 ## 2026-11-17 — Outreach drafts (NYC focus), awaiting Lauren's OK (Gmail drafts)
