@@ -140,3 +140,4 @@ Skipped as poor fit: Jim Moran Foundation (no unsolicited health-care/sponsorshi
 Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) — do not contact again. Carnival auto-reply (2-4 weeks). USA TODAY Co: Lark Anton has left; auto-reply says use PR@USATODAYCo.com.
 
 - 2026-11-20 ~11:50 AM: Lauren OK'd the 3 foundation letters (SENT) and the Bezos/Sanchez + Musk letters (drafts r-3458845902868217352, r-7815717277068631612). Those 2 have NO public email; NOT sent. Asked Lauren how she wants to reach them.
+- 2026-11-20 2:21 PM: MISTAKE: the 3 foundation letters (SNF, Altman, Miami Foundation/Pérez) were SENT A SECOND TIME from Lauren's main chat (version with "videos" wording removed), not knowing the 11 AM reminder session had already sent them at 11:47 AM. Each foundation got two near-identical letters. Lauren told.
