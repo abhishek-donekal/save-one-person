@@ -13,7 +13,8 @@ export default function PersonOfTheWeekPopup() {
   const storyPath = `/urgent-requests/${P.slug}`
 
   useEffect(() => {
-    if (!P.enabled || pathname === storyPath) return
+    // Keep the patient pop-up off the Giving Tuesday money page (donor asks stay separate).
+    if (!P.enabled || pathname === storyPath || pathname === '/giving-tuesday') return
     let seen = false
     try { seen = sessionStorage.getItem(KEY) === '1' } catch {}
     if (seen) return

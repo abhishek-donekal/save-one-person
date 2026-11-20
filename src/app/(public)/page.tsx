@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import SharePanel from '@/components/ui/SharePanel'
+import GivingTuesdayBanner from '@/components/ui/GivingTuesdayBanner'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
@@ -130,6 +131,9 @@ export default async function HomePage() {
         </div>
 
       </section>
+
+      {/* Giving Tuesday 2026 link: hides itself after Dec 2, 2026 */}
+      <GivingTuesdayBanner />
 
       {/* ── WATCH: how one story saves a life (video) ── */}
       <section className="vision-video" style={{ paddingTop: 96, paddingBottom: 96 }}>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { ORG_EIN } from '@/lib/org'
 import DonateForm from './DonateForm'
+import GivingTuesdayBanner from '@/components/ui/GivingTuesdayBanner'
 
 export const metadata: Metadata = {
   title: 'Donate — Help Save a Life',
@@ -31,6 +32,9 @@ export default function DonatePage() {
           </p>
         </div>
       </div>
+
+      {/* Giving Tuesday 2026 link: hides itself after Dec 2, 2026 */}
+      <GivingTuesdayBanner />
 
       <div className="page-content">
         <div className="container">
