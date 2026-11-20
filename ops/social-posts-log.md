@@ -39,3 +39,4 @@ NEWVIDEO 2026-11-20
 - 2026-11-20 Short #02 sent for OK
 
 APPROVED 2026-11-20 Short #02 (How You Can Help Save a Life), personal FB: no (Friday). Approved by Lauren at 7:03 AM; YouTube, FB page, IG+TikTok drafts switched live for 12:03 PM.
+| 2026-11-20 | Fri | Friday rotation (a) DONATION ASK: "One TV story. 8 lives saved." Real footage (Bonnie from short-72, Lauren on PIX11 from short-67, Lauren's message from short-07) + what $25/$100/$500 do (from /donate) + give in someone's honor; "Give a Thanksgiving gift today / saveonepersonnow.org/donate" banner the whole time. Built with ops/video/donation/one-story-make.py | public/social/2026-11-20/one-story-8-lives-donate.mp4 (24s, 9:16) | PROPOSED: sent to Lauren for OK (run fired late, ~7:20am ET); proposed time 12:30pm ET; nothing scheduled. Next Friday (Nov 27) = Giving Tuesday "4 days" post; books are next in the normal rotation. |
