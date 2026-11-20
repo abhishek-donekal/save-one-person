@@ -17,7 +17,7 @@ Already contacted before this log (Gmail Sent, Oct-Nov 2026) - do NOT pitch: Hum
 | 2026-11-19 | Carnival Cruise Line | Community engagement team | community@carnival.com | https://www.carnival.com/about-carnival/in-the-community | r-4542434104599985213 | drafted |
 | 2026-11-19 | BankUnited | Donna Crump-Butler (press-release media contact) | dbutler@BankUnited.com | https://ir.bankunited.com/node/13841 | r-4908569194527982189 | drafted |
 | 2026-11-19 | Amerant Bank | Media Relations (press contact) | MediaRelations@amerantbank.com | https://www.amerantbank.com/newsroom/uncategorized/amerant-bank-community-raises-over-100000-to-support-earthquake-relief-efforts-in-venezuela/ | r-5472565546860287087 | drafted |
-| 2026-11-19 | AutoNation | Public Relations (press contact) | PublicRelations@autonation.com | https://s25.q4cdn.com/967621881/files/doc_news/AutoNation-Celebrates-10-Years-of-DRV-PNK-with-1-Million-in-New-Cancer-Grants-and-More-than-50-Million-Raised-and-Donated-Nationwide-2026.pdf | r8817163825976827014 | drafted |
+| 2026-11-19 | AutoNation | Public Relations (press contact) | PublicRelations@autonation.com | https://s25.q4cdn.com/967621881/files/doc_news/AutoNation-Celebrates-10-Years-of-DRV-PNK-with-1-Million-in-New-Cancer-Grants-and-More-than-50-Million-Raised-and-Donated-Nationwide-2026.pdf | r8817163825976827014 | DECLINED Nov 19 (Community@autonation.com) |
 
 Portal/form only (given to Lauren, nothing submitted):
 | 2026-11-19 | Publix Super Markets Charities | grant/sponsorship portal | https://charitabledonations.publix.com (from https://publixcharities.org/request-support/) | - | portal |

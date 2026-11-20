@@ -10,6 +10,7 @@ Check this file AND Gmail "Sent" before choosing targets (some earlier outreach 
 
 ## Declined / do not contact
 - 2026-11-10 The Home Depot Foundation: declined (not a fit). DECLINED.
+- 2026-11-19 AutoNation (Community@autonation.com): "unable to support this request". DECLINED.
 - 2026-11-11 HealthWell Foundation: marked our email as unsolicited. DECLINED.
 
 ## 2026-11-17 (Tue) — 3D printing partners (3D Innovation Partner $5,000/3 mo; big cos also offered $25K Presenting)
@@ -125,3 +126,15 @@ New Unit drafts (media stations only), logo + "What X gains", waiting for Lauren
 | 2026-11-19 | Unit (media) | WCPO 9 (Cincinnati) | newsdesk | newsdesk@wcpo.com | https://www.wcpo.com/about/contact-us | SENT 11:36 AM Nov 19 (draft r-8866987469535104904) |
 
 - 11:36 AM: Lauren OK'd ('delete the one previously and you can send these'). 10 media unit letters SENT. The 10 non-media unit drafts were DELETED.
+
+## 2026-11-20 (Fri) — Major philanthropists (partner/sponsor invite; NO dollar amounts quoted; proposal ops/proposals/major-partner-proposal.md is a DRAFT awaiting Lauren)
+Only 3 fitting foundations publish an email AND accept approaches; drafts saved ~5:25 AM ET, waiting for Lauren's OK.
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-20 | Philanthropy | Stavros Niarchos Foundation (NYC office) | general inbox | info@snf.org (email-protected on page; grants via https://application.snf.org) | https://www.snf.org/en/contact-us/ | draft r-1740722411667950005 |
+| 2026-11-20 | Philanthropy | Altman Foundation (NYC health) | general inbox | info@altman.org | https://www.altmanfoundation.org/contact | draft r-5583780421145173502 |
+| 2026-11-20 | Philanthropy | Jorge M. Pérez Family Foundation (fund at The Miami Foundation) | Miami Foundation general inbox | info@miamifoundation.org | https://miamifoundation.org/who-we-are/contact-us/ | draft r3303746959951197971 |
+Form/portal only (text given to Lauren, nothing submitted): Knight Foundation https://knightfoundation.org/contact-us/ (new funding by invitation); John Templeton Foundation https://portal.templeton.org/; Michael & Susan Dell Foundation https://www.dell.org/partnerships/; Craig Newmark Philanthropies https://craignewmarkphilanthropies.org/apply; Gilbert Family Foundation https://gilbertfamilyfoundation.tfaforms.net/5057490.
+Invitation-only / no public contact (need a personal introduction; do NOT cold email): Arison, Frost, Miguel B. Fernandez, Peterffy, Huizenga, Batchelor, Steven & Alexandra Cohen, Arthur Blank, Ruderman, Laurie Tisch, Tow, Rockefeller, Pershing Square; no public contact: David Koch Jr. Foundation (big kidney donor: Stanford, Columbia), Redstone, Catsimatidis, Kraft, Fund II, Langone, Perelman, Benioff, Pattison, Saban, Braman, Jeff Greene.
+Skipped as poor fit: Jim Moran Foundation (no unsolicited health-care/sponsorship requests; LOIs paused to Jan 3), Sanford Health Foundation (raises for its own hospitals), Engelstad (LOI closed Feb 2026), Golisano (IDD only), Florida Blue Foundation (already pitched Nov 19).
+Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) — do not contact again. Carnival auto-reply (2-4 weeks). USA TODAY Co: Lark Anton has left; auto-reply says use PR@USATODAYCo.com.
