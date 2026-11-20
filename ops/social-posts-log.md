@@ -37,3 +37,5 @@ NEWVIDEO 2026-11-20
 - 2026-11-19 2:25 PM: Lauren said the alert video was "ugly", wants it more creative with a bigger SAVE ONE PERSON ALERT, white halo / beams of light. NEW DESIGN = ops/video/patient-appeals/v2.py (heavenly navy-to-gold background, light beams from the top, soft bokeh, glowing white "SAVE ONE PERSON" + gold "ALERT", photo in a glowing white rounded frame, white caption card, gold band). Run: python3 v2.py <config.json> (same config format as deomat.json). Sent Deomat in v2 for OK.
 - 2026-11-19 2:25 PM: Lauren asked for visuals that MOVE, like a halo of light. v3.py = rotating light rays behind the photo, pulsing white halo around the photo, twinkling sparkles, glowing title (sent: alert-deomat-halo.mp4). She also said 'pretend you're going to win a Promax award' = aim for award-level polish.
 - 2026-11-20 Short #02 sent for OK
+
+APPROVED 2026-11-20 Short #02 (How You Can Help Save a Life), personal FB: no (Friday). Approved by Lauren at 7:03 AM; YouTube, FB page, IG+TikTok drafts switched live for 12:03 PM.
