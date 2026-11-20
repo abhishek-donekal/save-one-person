@@ -1,6 +1,6 @@
 # Save One Person — Major Partner Proposal (DRAFT for Lauren's approval)
 
-Status: DRAFT, written 2026-11-20 by the Friday outreach task. Nothing here has been sent. Numbers marked **[to confirm with Lauren]** must be checked before this goes to anyone. Do not quote these levels in emails until Lauren approves this document.
+Status: Partnership levels SET 2026-11-20 5:51 PM (Lauren: "put the dollar amounts you think best"): $50,000 / $250,000 over 2 years / $1,000,000 over 3 years. These may now be quoted. Still marked **[to confirm with Lauren]**: patients helped/donors found and annual budget (fill before sending the full proposal).
 
 ---
 
@@ -24,7 +24,7 @@ Patient campaigns are only about finding a donor, never about money for the pati
 ## 3. Results and press (from the website)
 
 - Coverage on FOX 5 Good Day New York, PIX11, NY1 News, 1010 WINS ("NYC's Top 50 Heroes: Lauren Finkelstein"), the Tony Robbins Podcast ("The Gift of Gratitude") and ShoutoutMiami.
-- Success stories of living kidney and liver donors found through the media: https://www.saveonepersonnow.org/success-stories (one story describes 8 lives saved after a viewer watched a Save One Alert).
+- Success stories of living kidney and liver donors found through the media: https://www.saveonepersonnow.org/success-stories.
 - Media list of about 16,000 contacts that receive our press releases and pitches.
 - Number of patients helped and donors found since founding: **[to confirm with Lauren]**
 - Annual operating budget: **[to confirm with Lauren]**
@@ -33,21 +33,21 @@ Patient campaigns are only about finding a donor, never about money for the pati
 
 | | **Champion Partner** | **Leadership Partner** | **Founding Partner** |
 |---|---|---|---|
-| Gift | $100,000 over 1 year **[to confirm with Lauren]** | $250,000 over 2 years **[to confirm with Lauren]** | $1,000,000 over 3 years **[to confirm with Lauren]** |
+| Gift | $50,000 for 1 year | $250,000 over 2 years ($125,000 a year) | $1,000,000 over 3 years (about $333,000 a year) |
 | Recognition | Name/logo on homepage, Partners page, weekly Save One Alert | All Champion benefits + "Save One Alerts made possible by ___" on every Person of the Week video and post | All Leadership benefits + naming of the program (e.g., "The ___ Save One Alert Network") |
 | Media | Named in all press releases and pitches | Joint announcement with a TV/radio partner | Annual media event with Lauren and families helped |
 | Reporting | Year-end impact report | Twice-yearly impact report + briefing call | Quarterly impact report + seat on an advisory council |
 
-### Simple budget (how a gift is used) — every line **[to confirm with Lauren]**
+### Simple budget (how a gift is used, per year)
 
-| Use | Champion ($100K/yr) | Leadership ($125K/yr) | Founding (~$333K/yr) |
+| Use | Champion ($50K/yr) | Leadership ($125K/yr) | Founding (~$333K/yr) |
 |---|---|---|---|
-| Media outreach and TV/radio pitching staff | $40,000 | $50,000 | $120,000 |
-| Video production (Person of the Week, Health Hacks) | $25,000 | $30,000 | $80,000 |
-| Website, Save One Alert email, Urgent Requests platform | $15,000 | $20,000 | $50,000 |
-| Patient and family support (story intake, follow-up) | $10,000 | $15,000 | $50,000 |
-| Education (living-donation facts, events) | $10,000 | $10,000 | $33,000 |
-| **Total per year** | **$100,000** | **$125,000** | **$333,000** |
+| Media outreach and TV/radio pitching staff | $20,000 | $50,000 | $120,000 |
+| Video production (Person of the Week, Health Hacks) | $12,000 | $30,000 | $80,000 |
+| Website, Save One Alert email, Urgent Requests platform | $8,000 | $20,000 | $50,000 |
+| Patient and family support (story intake, follow-up) | $5,000 | $15,000 | $50,000 |
+| Education (living-donation facts, events) | $5,000 | $10,000 | $33,000 |
+| **Total per year** | **$50,000** | **$125,000** | **$333,000** |
 
 ## 5. What the partner gains
 
