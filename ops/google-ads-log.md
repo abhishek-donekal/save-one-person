@@ -80,3 +80,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 
 ## 2026-11-19 (Giving Tuesday task) read-only check
 - Ads UI banner for 684-224-8625 still: "Your account is deactivated for not complying with Google Ad Grants' Website policy". No new Google email. Giving Tuesday ad group NOT added (on hold until reactivated).
+
+## 2026-11-20 daily check (read only)
+- Gmail: no new reply from Google Ad Grants support on case 7-9611000041369 (latest message is still our Nov 18 reply). No new Google Ads/Ad Grants emails.
+- Ads UI (684-224-8625): red banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy". Nov 1–20: 0 clicks, 2 impr, $0.00.
+- No changes made. Still waiting on Google.
