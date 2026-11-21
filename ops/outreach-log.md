@@ -141,3 +141,9 @@ Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) â€
 
 - 2026-11-20 ~11:50 AM: Lauren OK'd the 3 foundation letters (SENT) and the Bezos/Sanchez + Musk letters (drafts r-3458845902868217352, r-7815717277068631612). Those 2 have NO public email; NOT sent. Asked Lauren how she wants to reach them.
 - 2026-11-20 2:21 PM: MISTAKE: the 3 foundation letters (SNF, Altman, Miami Foundation/PÃ©rez) were SENT A SECOND TIME from Lauren's main chat (version with "videos" wording removed), not knowing the 11 AM reminder session had already sent them at 11:47 AM. Each foundation got two near-identical letters. Lauren told.
+
+## 2026-11-21 evening: grant applications (Lauren: "apply for anything")
+- All 14 written in Doc "Save One Person Grant Applications (Nov 2026)" https://claude.ai/artifact/Kt6F5sHVAiKFaJ3DnxFYVJ . Budgets ($1M/$250K/$100K/$50K) in Sheet https://claude.ai/artifact/QLKQhUfYZmhALrjGj3RELT . Founder salary included at Lauren's request.
+- Gmail DRAFTS (NOT sent, waiting for Lauren's OK): Veloxis grants@veloxis.com r-2633435666395620259 ($25K); LiveOnNY Foundation info@liveonnyfoundation.org r-4590623092893715428 ($10K). Both have new heart logo + IRS letter attached.
+- Online forms (Pollination, Awesome NYC Nov 30 + Miami Dec 15, Sanofi, Novartis, Bayer, Travere, Vertex, Walmart Spark Good, HFSF, First Horizon, Costco): NOT submitted; need Lauren's login/attestation.
+- IRS determination letter (June 16, 2020) saved: C:\Users\Owner\save-one-person\Save One Person IRS Determination Letter 2020.pdf
