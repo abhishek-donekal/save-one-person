@@ -85,7 +85,7 @@ export default function Header() {
         <div className="nav-inner">
           <Link href="/" className="nav-brand" aria-label="Save One Person">
             <Image
-              src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/logo.png"
+              src="/images/save-one-person-heart-icon.png"
               alt="Save One Person"
               width={40}
               height={40}

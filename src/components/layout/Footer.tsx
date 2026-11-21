@@ -20,7 +20,7 @@ export default function Footer() {
         <div>
           <div className="footer-logo-wrap">
             <Image
-              src="https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/logo.png"
+              src="/images/save-one-person-heart-icon.png"
               alt="Save One Person"
               width={40}
               height={40}
