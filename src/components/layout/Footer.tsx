@@ -109,6 +109,9 @@ export default function Footer() {
               Weekly stories of people in urgent need. One share could save a life.
             </p>
             <NewsletterSignup />
+            <a href="https://save-one-person-inc.kit.com/5c129162dc" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', marginTop: 12, fontSize: 13, color: 'rgba(255,255,255,0.85)', textDecoration: 'underline' }}>
+              Free guide: How to Find a Living Kidney Donor →
+            </a>
           </div>
 
           {/* Social */}
