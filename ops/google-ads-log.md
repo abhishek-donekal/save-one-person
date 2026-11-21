@@ -85,3 +85,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Gmail: no new reply from Google Ad Grants support on case 7-9611000041369 (latest message is still our Nov 18 reply). No new Google Ads/Ad Grants emails.
 - Ads UI (684-224-8625): red banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy". Nov 1–20: 0 clicks, 2 impr, $0.00.
 - No changes made. Still waiting on Google.
+
+## 2026-11-21 daily check (read only)
+- Gmail: no new reply from Google Ad Grants support on case 7-9611000041369 (latest message is still our Nov 18 reply). No new Google Ads/Ad Grants emails.
+- Ads UI (684-224-8625): red banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy". Nov 1–21: 0 clicks, 2 impr, $0.00.
+- No changes made. Still waiting on Google (3 business days since our reply; consider a polite follow-up on the thread if nothing by Nov 25, with Lauren's OK).
