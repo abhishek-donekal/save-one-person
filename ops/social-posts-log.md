@@ -47,3 +47,5 @@ NEWVIDEO 2026-11-21
 - 2026-11-21 12:35 PM (daily routine): personal FB shared: not a share day (Saturday). Tomorrow's drafts (Short #04 "Why I Started Save One Person", 2026-11-22 12:03 PM, all draft): FB reel 436869400, IG+TikTok 436869416 created; YouTube already draft (now 436869379), media swapped to new-layout short-04.mp4. YouTube drafted: Nov 29 "The Secrets to Good Sleep" (now 436869391) was LIVE, switched to draft; Nov 22–28 already draft.
 NEWVIDEO 2026-11-22
 2026-11-22 Short #04 sent for OK (Why I Started Save One Person); drafts 436869400 (FB reel), 436869416 (IG+TikTok), 436869379 (YouTube) still draft, 12:03 PM.
+- 2026-11-22 12:35 PM (daily routine): personal FB shared: not a share day (Sunday). Tomorrow's drafts (Short #05 "On FOX 5 News - One Story Can Save a Life", 2026-11-23 12:03 PM, all draft): FB reel 437773322, IG+TikTok 437773339 created; YouTube already draft (now 437773354), media swapped to new-layout short-05.mp4. YouTube drafted: Nov 30 "Healthy and Active at 93" (now 437773364) was LIVE, switched to draft; Nov 23–29 already draft.
+NEWVIDEO 2026-11-23
