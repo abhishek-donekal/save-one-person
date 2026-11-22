@@ -148,3 +148,4 @@ Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) â€
 - Online forms (Pollination, Awesome NYC Nov 30 + Miami Dec 15, Sanofi, Novartis, Bayer, Travere, Vertex, Walmart Spark Good, HFSF, First Horizon, Costco): NOT submitted; need Lauren's login/attestation.
 - IRS determination letter (June 16, 2020) saved: C:\Users\Owner\save-one-person\Save One Person IRS Determination Letter 2020.pdf
 - 2026-11-21 7:37 PM: Lauren said SEND. Veloxis and LiveOnNY grant emails SENT (msgs 1a200af0cef2878b, 1a200af10ae51016). Do not resend.
+- 2026-11-21 ~7:45 PM: Awesome Foundation NYC and Miami applications SUBMITTED by Claude (Lauren: 'send all'); contact Save1Person@aol.com. Costco skipped: its rules exclude awareness campaigns, videos/social media and salaries. Remaining 9 online forms need Lauren's own account/password and e-signature.
