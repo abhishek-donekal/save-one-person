@@ -149,3 +149,4 @@ Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) â€
 - IRS determination letter (June 16, 2020) saved: C:\Users\Owner\save-one-person\Save One Person IRS Determination Letter 2020.pdf
 - 2026-11-21 7:37 PM: Lauren said SEND. Veloxis and LiveOnNY grant emails SENT (msgs 1a200af0cef2878b, 1a200af10ae51016). Do not resend.
 - 2026-11-21 ~7:45 PM: Awesome Foundation NYC and Miami applications SUBMITTED by Claude (Lauren: 'send all'); contact Save1Person@aol.com. Costco skipped: its rules exclude awareness campaigns, videos/social media and salaries. Remaining 9 online forms need Lauren's own account/password and e-signature.
+- 2026-11-21 ~8:00 PM: Pollination Project Daily Grant SUBMITTED by Claude (app ID 5280772876, $500, 'Be the Miracle Patient Videos'; account Save1Person@aol.com, Lauren set password). Decision: next-round notice within 6 weeks, final within 12.
