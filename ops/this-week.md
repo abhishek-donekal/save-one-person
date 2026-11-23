@@ -51,6 +51,8 @@ EVERY item is a draft for Lauren's OK first. Link in all: https://saveonepersonn
 
 ## For the NEXT Save One Alert newsletter (Lauren, Nov 23)
 Include Elaine DeLeon's story with the FOX 5 clip (short-05), using Lauren's approved wording (her son does NOT want to be mentioned — never name him):
-Elaine DeLeon was in a desperate search for a living kidney donor. When this spot aired on FOX 5, hundreds of people called in wanting to help her, so many that the hospital had to turn people away. Elaine eventually found her living kidney donor! It shows that when a living donor need is shared in the right place, people are ready and willing to help.
+Elaine DeLeon was in a desperate search for a living kidney donor. When this spot aired on FOX 5, hundreds of people called in wanting to help her, so many that the hospital had to turn people away. It shows that when a living donor need is shared in the right place, people are ready and willing to help.
+
+Happy update: Elaine did eventually find her living kidney donor! 💛 (Save One Person did not find her match; keep this as a separate update.)
 
 I always thought that when people call in and aren't a match, we could keep a list and reach out to them later to see if they'd like to donate to someone else in need. — Lauren
