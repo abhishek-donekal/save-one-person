@@ -189,3 +189,5 @@ From save1person1@gmail.com, logo inline + 3 press links (FOX 5, Tony Robbins, 1
 | The Jewish Press | editor@jewishpress.com | newspaper |
 | Orlando Weekly | news@orlandoweekly.com | newspaper |
 Skipped: CBS Miami (pitched Nov 17), AAKP (Oct 29), Community Newspapers/Michael Miller (tee pitch ~Nov 19). Follow up once around Dec 1 if no reply.
+
+- 2026-11-23 11:58 — NeverBounce: Lauren bought 10,000 credits; checked first 10,000 of the remaining media list: 3,825 valid, 1,759 accept-all, 3,824 unknown, 592 invalid (removed). Batch files rebuilt: 01 = 2,500 good (today), 02 = 3,084 good/accept-all, 03–06 unknowns (1,000/day), 07–10 the last 3,494 unchecked (needs ~3,500 credits). Daily task now ends Dec 2 (batch 10). Long Google page titles shortened (commit 46a39f5).
