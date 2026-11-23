@@ -51,3 +51,4 @@ NEWVIDEO 2026-11-22
 NEWVIDEO 2026-11-23
 | 2026-11-23 | Mon | Person of the Week: William Fritts (#1, living donor, /help-william) + Karen Zabriskie (#2, PKD since 17, renewal.org/R26816). v3 halo "SAVE ONE PERSON ALERT" style, no music, no money ask | public/social/2026-11-23/person-of-the-week-william-karen.mp4 (34s, 9:16) | PROPOSED: sent to Lauren ~5:45am ET; proposed 12:30pm ET; nothing scheduled |
 | 2026-11-23 | Mon | Giving Tuesday countdown "Giving Tuesday is next week" (Dec 1): Lauren photo (frame from short-07), donate banner + link on it the whole time | public/social/2026-11-23/giving-tuesday-next-week.jpg (1080x1350) | PROPOSED: sent with the PotW post; proposed 5:00pm ET (kept apart from patient post); nothing scheduled |
+2026-11-23 Short #05 sent for OK (On FOX 5 News - One Story Can Save a Life); drafts 437773322 (FB reel), 437773339 (IG+TikTok), 437773354 (YouTube) still draft, 12:03 PM.
