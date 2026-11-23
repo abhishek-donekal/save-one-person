@@ -20,7 +20,7 @@ Gavin was born at just 30 weeks, weighing three pounds, and spent months in the 
 
 🩺 HOW YOU CAN HELP GAVIN
 
-1. Get screened to be his donor. Gavin's transplant team is at Duke Health. Fill out Duke's free, confidential living-donor screening form (button above) to see if you might qualify.
+1. Get screened to be his living kidney donor. Gavin's transplant team is at Duke Health. Fill out Duke's free, confidential living-donor screening form (button above) to see if you might qualify.
 
 2. Who can donate: donors must be 18 or older, with blood type B or O (positive or negative).
 
@@ -33,7 +33,7 @@ As reported by FOX8 WGHP, November 19, 2026.
 No one should die because their story wasn't told.`,
     image_url: '/images/urgent/gavin-durham.jpg' as string | null,
     donor_form_url: 'https://redcap.duke.edu/redcap/surveys/?s=9EHPAAPMFM',
-    donor_form_label: "Get Screened to Be Gavin's Donor (Duke Health) →",
+    donor_form_label: "Be Gavin's Living Kidney Donor (Duke Health) →",
     social_other: 'https://cota.org/cotaforgavinsfight',
     donation_goal: null,
     donation_raised: 0,
