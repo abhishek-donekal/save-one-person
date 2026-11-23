@@ -9,7 +9,7 @@ const WAYS = ['Kidney', 'Liver', 'Bone marrow', 'Not sure yet'] as const
 const WAY_LABELS: Record<string, string> = { Kidney: 'A kidney', Liver: 'Part of my liver', 'Bone marrow': 'Bone marrow', 'Not sure yet': 'Not sure yet' }
 const BLOOD = ["Don't know", 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'] as const
 
-export default function DonorSignupForm() {
+export default function DonorSignupForm({ source = 'become-a-donor' }: { source?: string }) {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -37,15 +37,16 @@ export default function DonorSignupForm() {
       const res = await fetch('/api/donor-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, location, bloodType, ways, note, adult, contactOk, website }),
+        body: JSON.stringify({ name, email, phone, location, bloodType, ways, note, adult, contactOk, website, source }),
       })
       const json = await res.json().catch(() => ({}))
       if (!res.ok) { setStatus('error'); setMsg(json.error || 'Something went wrong. Please try again.'); return }
-      emailLauren(`New living donor sign-up: ${name}`, {
+      emailLauren(source === 'ready-to-help' ? `New Ready to Help sign-up: ${name}` : `New living donor sign-up: ${name}`, {
+        'Signed up from': source === 'ready-to-help' ? 'Ready to Help list' : 'Be a Living Donor page',
         Name: name, Email: email, Phone: phone || '—', 'City & state': location || '—',
         'Would consider donating': ways.join(', '), 'Blood type': bloodType, Note: note || '—',
       })
-      setStatus('done'); trackFormConversion('donor-signup')
+      setStatus('done'); trackFormConversion(source === 'ready-to-help' ? 'ready-to-help' : 'donor-signup')
     } catch {
       setStatus('error'); setMsg('Network error. Please try again.')
     }

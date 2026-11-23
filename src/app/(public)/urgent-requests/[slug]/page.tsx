@@ -123,6 +123,10 @@ export default async function UrgentRequestPage({ params }: Props) {
             </p>
             <Link href="/become-a-donor" className="btn btn-emerald" style={{ padding: '12px 22px', fontSize: 13 }}>{/kidney|renal|dialysis/i.test(`${req.medical_condition} ${req.title}`) ? 'Be a Kidney Donor →' : 'Be a Donor →'}</Link>
           </div>
+          <p style={{ marginTop: 12, fontSize: 15, color: 'var(--muted)', lineHeight: 1.6 }}>
+            Not a match for {req.patient_name}? Your willingness could still save someone else.{' '}
+            <Link href="/ready-to-help" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Join the Ready to Help list →</Link>
+          </p>
 
           {(req.contact_email || req.contact_phone || req.social_facebook || req.social_instagram || req.social_twitter || req.social_other || req.gofundme_url) && (
             <div style={{ marginTop: 48, padding: 32, background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)' }}>

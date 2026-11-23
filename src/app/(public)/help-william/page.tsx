@@ -95,7 +95,7 @@ export default function HelpWilliamPage() {
                   <a className="btn btn-emerald" href={`https://www.facebook.com/sharer/sharer.php?u=${SHARE_URL}`} target="_blank" rel="noopener noreferrer">Share on Facebook</a>
                   <a className="btn btn-outline-dark" href={`https://twitter.com/intent/tweet?text=${SHARE_TEXT}&url=${SHARE_URL}`} target="_blank" rel="noopener noreferrer">Share on X</a>
                   <a className="btn btn-outline-dark" href={`mailto:?subject=${encodeURIComponent('Please help William')}&body=${SHARE_TEXT}%20${SHARE_URL}`}>Email a Friend</a>
-                  <Link className="btn btn-outline-dark" href="/become-a-donor">Become a Donor</Link>
+                  <Link className="btn btn-outline-dark" href="/ready-to-help">Not a Match? Join the Ready to Help List</Link>
                 </div>
               </div>
             </div>

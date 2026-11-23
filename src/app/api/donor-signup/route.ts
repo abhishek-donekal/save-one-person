@@ -47,6 +47,7 @@ export async function POST(request: Request) {
   const note = String(body.note || '').trim().slice(0, 2000)
   const adult = body.adult === true
   const contactOk = body.contactOk === true
+  const readyToHelp = body.source === 'ready-to-help'
 
   if (!name) return NextResponse.json({ error: 'Please enter your name.' }, { status: 400 })
   if (!EMAIL_RE.test(email)) return NextResponse.json({ error: 'Please enter a valid email address.' }, { status: 400 })
@@ -55,7 +56,7 @@ export async function POST(request: Request) {
   if (!contactOk) return NextResponse.json({ error: 'Please confirm we may contact you.' }, { status: 400 })
 
   const message = [
-    'DONOR SIGN-UP',
+    readyToHelp ? 'READY TO HELP LIST SIGN-UP (willing to be contacted for future patients)' : 'DONOR SIGN-UP',
     `Willing to consider: ${ways.join(', ')}`,
     `Blood type: ${bloodType}`,
     `Phone: ${phone || '—'}`,
@@ -69,7 +70,7 @@ export async function POST(request: Request) {
   const { error } = await supabase.from('contact_messages').insert({
     name,
     email,
-    subject: `Donor sign-up — ${ways.join(', ')}`.slice(0, 200),
+    subject: `${readyToHelp ? 'Ready to Help list' : 'Donor sign-up'} — ${ways.join(', ')}`.slice(0, 200),
     message,
     submitted_by_public: true,
   })
