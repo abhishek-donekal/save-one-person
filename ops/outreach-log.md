@@ -173,3 +173,19 @@ All 10 saved as Gmail drafts ~05:45 ET with inline logo + "What X gains"; waitin
 Skipped, already in Gmail Sent (Oct-Nov): WBUR, WHYY, ABC13 Houston, FOX 32 Chicago, WBTV Charlotte, FOX-owned stations, AKF, NKF, ANNA, ASN, AST, Mayo Clinic.
 Ideas for later Mondays (not contacted): Episcopal News Service (staff only: lwilson@episcopalchurch.org, https://episcopalnewsservice.org/contact-us/), Good News Network (form https://www.goodnewsnetwork.org/contribute/submit-news/), CBN (form https://cbn.com/contact), Hackensack Meridian (press form).
 Replies/bounces since Nov 20: T-Mobile Community Relations (Meryl Dillman, Nov 20) redirected us to the Sponsorships Portal https://intake.koresoftware.com/t-mobile/index.html (no email re-pitch). Transplant Village (Laurie Lee) offered 11/24 10-2 CST; Lauren replied Nov 20 proposing Tue 11/24, awaiting time. Bounced (other tasks): NewProductPartner@givebackgoods.com, hello@miami-shopping.com. SNF + Veloxis auto-replies only.
+
+## 2026-11-23 ~10:35 AM ET — Ready to Help / Elaine / William media pitches SENT (Lauren OK 10:30 AM)
+From save1person1@gmail.com, logo inline + 3 press links (FOX 5, Tony Robbins, 1010 WINS). Angle: FOX 5 Elaine DeLeon (hundreds called; hospital turned people away; Elaine later found her donor, SOP did NOT find the match) -> new Ready to Help list (saveonepersonnow.org/ready-to-help) -> William Fritts. Lauren's son must never be named.
+| Outlet | Email | Type |
+|---|---|---|
+| Woman's World | wwfeatures@womansworldmag.com | magazine |
+| Newsweek My Turn | myturn@newsweek.com | magazine (essay pitch) |
+| Guideposts Everyday Greatness | heroes@guideposts.org | magazine |
+| AARP The Magazine | pubspitches@aarp.org | magazine (plain text, no images per their rules) |
+| Good Good Good | hello@goodgoodgood.co | magazine/news |
+| Upworthy | pitches@upworthy.com | digital |
+| Miami New Times | editorial@miaminewtimes.com | newspaper |
+| Florida Trib | tips@floridatrib.org | newspaper |
+| The Jewish Press | editor@jewishpress.com | newspaper |
+| Orlando Weekly | news@orlandoweekly.com | newspaper |
+Skipped: CBS Miami (pitched Nov 17), AAKP (Oct 29), Community Newspapers/Michael Miller (tee pitch ~Nov 19). Follow up once around Dec 1 if no reply.

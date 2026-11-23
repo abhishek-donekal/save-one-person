@@ -25,6 +25,14 @@ Each funder below was checked on its own website on 2026-11-17 (unless noted). A
 
 **Already have:** Google Ad Grant (keep compliant; no action needed here).
 
+
+## Added 2026-11-23
+| # | Funder | Link | Amount | Deadline | Fit | Eligibility | How to apply | Status |
+|---|---|---|---|---|---|---|---|---|
+| 13 | **The Wawa Foundation: Financial Grants (over $2,500)** | https://www.thewawafoundation.org/ | Median ~$15K; request $15,000 | **January 1–31, 2027** window (also Apr, Jul, Oct) | **Strong.** Health focus; Florida is in Wawa's market | 501(c)(3) in PA, NJ, DE, MD, VA, FL, DC | Online portal www.wawa.com/thewawafoundation/apply-for-support (Lauren makes login) | **Draft ready:** ops/grants/wawa-foundation.md |
+| 14 | **Dr. John T. Macdonald Foundation** (Miami-Dade health) | https://www.jtmacdonaldfdn.org/application-procedure | Up to $50K; request $25,000 | LOI **Apr 15 – Jun 15, 2027** | **Strong.** Miami-Dade health and health education, small community groups | Miami-Dade only; one-year projects | Foundant portal (Lauren makes login) | **Draft ready:** ops/grants/jt-macdonald-foundation.md |
+| 15 | **The Miami Foundation: Community Grants** | https://miamifoundation.org/ | $40K–$70K over 2 years (general operating) | Reopens **2027** (date TBA) | **Good.** "Access to Health and Wellness" category | Greater Miami nonprofits | Online when it opens | **Watch** |
+
 ## Not a fit / checked (don't re-research)
 
 | Funder | Link | Why not (as of 2026-11-17) |
