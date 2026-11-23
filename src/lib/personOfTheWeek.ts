@@ -4,7 +4,7 @@
 // Set `enabled: false` to turn the pop-up off.
 export const PERSON_OF_THE_WEEK = {
   enabled: true,
-  weekOf: '2026-11-16',
+  weekOf: '2026-11-23',
   name: 'William Fritts',
   headline: '3-year-old William needs a living kidney donor.',
   detail: 'End-stage kidney disease. One person could give him his childhood back.',
