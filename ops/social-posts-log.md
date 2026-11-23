@@ -58,3 +58,4 @@ APPROVED 2026-11-23 Short #05 (On FOX 5 News - One Story Can Save a Life), perso
 NEWVIDEO 2026-11-24
 | 2026-11-23 | Mon | Person of the Week: Gavin Durham (13, Randleman NC, FSGS; Duke screening form; FOX8 Nov 19). Graphic public/social/2026-11-23/gavin-durham-post.jpg | Page /urgent-requests/gavin-durham + /gavin live (commit 88a879d); APPROVED by Lauren 12:24 PM (post) and 3:24 PM (page) | SCHEDULED 5:00 PM: FB 439148955, IG+TikTok 439148998. Personal FB share: task declined, waiting for her choice |
 - 2026-11-23 4:52 PM: Lauren: "no don't approve gavin". 5 PM posts switched back to DRAFT (FB 439486196, IG+TikTok 439486205) — NOT posted. Page /urgent-requests/gavin-durham still live pending her answer.
+- 2026-11-23 4:54 PM: Lauren OK on Gavin v2 (Duke form + COTA links, small website). LIVE 5:00 PM: FB 439490505, IG+TikTok 439490524, image gavin-durham-post-v2.jpg. Personal FB: not shared.
