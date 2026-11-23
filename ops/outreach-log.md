@@ -192,3 +192,5 @@ Skipped: CBS Miami (pitched Nov 17), AAKP (Oct 29), Community Newspapers/Michael
 
 - 2026-11-23 11:58 — NeverBounce: Lauren bought 10,000 credits; checked first 10,000 of the remaining media list: 3,825 valid, 1,759 accept-all, 3,824 unknown, 592 invalid (removed). Batch files rebuilt: 01 = 2,500 good (today), 02 = 3,084 good/accept-all, 03–06 unknowns (1,000/day), 07–10 the last 3,494 unchecked (needs ~3,500 credits). Daily task now ends Dec 2 (batch 10). Long Google page titles shortened (commit 46a39f5).
 - 2026-11-23 5:30 PM: NeverBounce part 2 (3,494) checked ($27.95, Lauren OK; saved Visa removed from NeverBounce at her request, Auto-Refill off). Totals for 13,494: 7,241 good (4,912 valid + 2,329 accept-all), 5,460 unknown, 794 invalid removed. Batches rebuilt: 07 = 1,657 good (Nov 29), 08-09 = unknowns (Nov 30, Dec 1); 10-14 empty. Daily task ends Dec 1.
+
+- 2026-11-23 6:23 PM: Lauren APPROVED the Gavin Durham media newsletter ("good to go"). Kit master draft 27246314. Daily media batches now use it (trig_018SdJcUCvQF9JKnDPCW9oif updated); batch 01 retry set for 7:07 PM tonight.
