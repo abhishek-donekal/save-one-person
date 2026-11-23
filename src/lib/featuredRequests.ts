@@ -3,6 +3,66 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-gavin-mains',
+    slug: 'gavin-mains',
+    patient_name: 'Gavin Mains',
+    title: 'Born at 3 Pounds, Fighting at 13: Gavin Needs a Living Kidney Donor',
+    medical_condition: 'Nephrotic Syndrome (FSGS), Stage 4 Kidney Disease',
+    story_text: `🚨 SAVE ONE ALERT: A 13-year-old boy in North Carolina needs a living kidney donor, and his doctors think he needs a transplant within the next six months.
+
+💙 "Here I am today, as a mother, asking the world to help save my son." That is Heather Mains, Gavin's mom.
+
+🩺 GAVIN'S STORY
+
+👶 A fighter from day one: Gavin was born at 30 weeks, weighing just three pounds, and spent about four months in the NICU at UNC Children's Hospital.
+
+💔 Diagnosed at five: He was diagnosed with nephrotic syndrome. A biopsy showed significant scarring in both kidneys (FSGS), and he did not respond to steroid treatment.
+
+⚠️ Stage 4 kidney disease: Gavin's kidneys are failing. He takes up to 15 medications a day, and his doctors do not believe he could tolerate dialysis.
+
+⏳ A short timeline: His doctor has told the family she thinks he will need a transplant within the next six months.
+
+👪 No match in the family: Both of his parents and an aunt have been told they are not matches. That is why the family is reaching out to strangers.
+
+🤝 COULD YOU BE GAVIN'S DONOR?
+
+According to the family, a donor for Gavin must be:
+
+✔️ At least 18 years old
+
+✔️ Blood type B positive, B negative, O positive or O negative
+
+You do not need to be related to Gavin to be his donor. The first step is a short screening, and the transplant team decides who can donate.
+
+📞 HOW TO REACH GAVIN'S FAMILY
+
+Send a message to the family's Facebook page, "COTA for Gavin's Fight." His family is raising money for his transplant costs through the Children's Organ Transplant Association (COTA).
+
+Gavin's story was reported by WFMY News 2 and FOX8 WGHP (Greensboro, N.C.) in November 2026. Potential donors should get independent medical advice and go through formal screening before making any decision.
+
+📢 YOU CAN HELP EVEN IF YOU CAN'T DONATE
+
+📲 Share Gavin's story with friends, family, your church, your coworkers and your community groups.
+
+💬 Talk about living donation. One conversation could reach the person who is a match.
+
+🙏 Keep Gavin and his family in your prayers.
+
+"I'm just your average typical mom with 3 kids and I'm here fighting for my son." — Heather Mains
+
+One boy. One kidney. One person who could change everything.
+
+#GavinsFight #KidneyDonor #LivingKidneyDonor #NorthCarolina #OrganDonation #SaveOnePerson`,
+    image_url: null as string | null,
+    contact_phone: null as string | null,
+    social_other: 'https://www.wfmynews2.com/article/news/local/family-searching-for-living-kidney-donor-for-13-year-old-boy-battling-advanced-kidney-disease-gavin/83-08a57897-05fa-41e8-a113-f248cd5eda3e',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-deomat',
     slug: 'deomat',
     patient_name: 'Deomat',
