@@ -48,3 +48,6 @@ EVERY item is a draft for Lauren's OK first. Link in all: https://saveonepersonn
 - Newsletter: Mon Nov 30 = Giving Tuesday issue; Tue Dec 1 short "It's Giving Tuesday today" email; Mon Dec 7 thank-you.
 - Page status: built on branch giving-tuesday (preview sent to Lauren Nov 19), live only after her OK.
 - Google Ads Giving Tuesday ad group: ON HOLD, Ad Grants account still deactivated (checked Nov 19).
+
+## For the NEXT Save One Alert newsletter (Lauren, Nov 23)
+Include Elaine DeLeon's happy ending with the FOX 5 clip (short-05): "Elaine DeLeon eventually found a living kidney donor! So many people called in wanting to help Elaine that the hospital had to turn people away. It shows that when a living donor need is shared in the right place, people are ready and willing to help. I always thought that when people call in and aren't a match, we could keep a list and reach out to them later to see if they'd like to donate to someone else in need. — Lauren"
