@@ -29,6 +29,89 @@ export interface StaticBlogPost {
 
 export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
   {
+    id: 'static-2026-11-23-find-living-kidney-donor',
+    slug: 'how-to-find-a-living-kidney-donor',
+    title: 'How to Find a Living Kidney Donor: A Step-by-Step Guide for Patients and Families',
+    seo_title: 'How to Find a Living Kidney Donor (Step-by-Step Guide)',
+    seo_description:
+      'Practical steps to find a living kidney donor: talk to your transplant center, choose a donor champion, share your story safely, use paired exchange, and know what donors pay (usually nothing).',
+    excerpt:
+      'Asking someone for a kidney is the hardest ask there is. These are the steps that work, from your transplant center to your story going public, plus what living donors need to know.',
+    featured_image_url: 'https://www.saveonepersonnow.org/images/miracles-light.jpg',
+    image_alt: 'A heart surrounded by a phone, newspaper, TV and microphone: sharing a story to find a living donor',
+    author: 'Save One Person',
+    category: 'Living Donation',
+    published_at: '2026-11-23T12:00:00-05:00',
+    tags: ['Living kidney donor', 'How to find a donor', 'Donor champion', 'Paired exchange', 'Kidney transplant'],
+    share_text: 'Need a living kidney donor, or know someone who does? This step-by-step guide can help:',
+    show_donate: true,
+    related: [
+      { href: '/ready-to-help', label: 'Join the Ready to Help list' },
+      { href: '/urgent-requests/submit', label: 'Ask Save One Person to share your story' },
+      { href: '/living-kidney-donation-myths-facts', label: 'Myth vs Fact: Living Kidney Donation' },
+      { href: '/become-a-donor', label: 'Become a living kidney donor' },
+      { href: '/success-stories', label: 'Success stories' },
+    ],
+    content: `More than 94,000 people in the United States are waiting for a kidney transplant ([HRSA/OPTN data, January 2026](https://hrsa.unos.org/data)). Many will wait years for a kidney from a deceased donor. A **living donor** can change that: a healthy person gives one of their two kidneys, and the patient can get a transplant much sooner. In 2025, [7,237 people became living organ donors](https://unos.org/?p=321603) in the U.S.
+
+But the hardest part is often the ask itself. Some patients say finding a donor is harder than the transplant. Here are the steps that work.
+
+## 1. Start with your transplant center
+
+Before you ask anyone, get evaluated and listed at a transplant center, and ask to meet its **living donor coordinator**. They will tell you:
+
+- What a donor for you would need (for example, blood type and health requirements)
+- How potential donors contact the center confidentially
+- The center's policy on donors who find you through social media or the news
+
+All testing, matching and medical decisions are made by the transplant center, never by the patient or by Save One Person. That protects both you and your donor.
+
+## 2. Choose a donor champion
+
+Many people never ask a single person, because it feels impossible to ask for yourself. A **donor champion** is a family member or friend who asks for you. They learn the basics of living donation, share your story, answer simple questions, and point people to your transplant center. It is often easier for a champion to say "my friend needs a kidney" than for you to say "I need yours."
+
+## 3. Tell your story, and make it easy to act on
+
+People respond to people, not statistics. A good story includes:
+
+- **Who you are**: your name, a photo, your family, what you love
+- **What you need**: a living kidney donor, and your blood type if your center says it helps
+- **How to help**: the transplant center's living donor phone number or email. Share the center's contact, not your personal phone number.
+- **A link** people can share
+
+Then share it everywhere you belong: Facebook, Instagram, WhatsApp groups, your church or synagogue bulletin, your workplace newsletter, your kids' school, your alumni group. Every share reaches a new circle.
+
+**Be careful:** buying or selling organs is illegal. If anyone offers you a kidney for money, don't engage, and tell your transplant center.
+
+## 4. Take your story to the media
+
+TV, radio and newspapers reach people your social circle never will. When FOX 5 aired our Save One Alert for Elaine DeLeon, a mom in a desperate search for a living kidney donor, hundreds of people called in wanting to help her, so many that the hospital had to turn people away. When a living donor need is shared in the right place, people are ready and willing to help.
+
+Local stations and newspapers look for human stories with a clear way to help. Save One Person was created to do exactly this: [tell us your story](/urgent-requests/submit) and we'll help share it.
+
+## 5. Remember paired exchange
+
+Many willing donors find out they aren't a match. That doesn't have to end it. Through **paired kidney exchange**, your donor gives a kidney to another patient who matches them, and in return you receive a kidney from a donor who matches you. Exchanges can create chains that save several lives. Ask your transplant center about it early.
+
+## 6. What donors should know about cost
+
+Donors often worry they can't afford it. In most cases:
+
+- The **recipient's insurance** covers the donor's medical costs for evaluation and surgery.
+- The federal [National Living Donor Assistance Center](https://livingdonorassistance.org/How-to-Apply/How-NLDAC-Helps) can help eligible donors with travel, lost wages and dependent care, up to $6,000.
+- Donors who give through the National Kidney Registry's [Donor Shield](https://www.kidneyregistry.org/for-donors/kidney-donation-blog/donor-shield-and-nldac-who-offers-the-most-support-and-protections-for-kidney-donors/) program can get additional lost-wage reimbursement and protections.
+
+Your transplant center's financial counselor can explain exactly what applies.
+
+## Not a match? You can still save a life
+
+If you stepped forward for someone and weren't the match, your kindness still matters. Join Save One Person's [Ready to Help list](/ready-to-help), and we'll reach out when the next patient needs a living donor. Joining never commits you to donate.
+
+At Save One Person, we believe no one should die because their story wasn't told.
+
+This article is for general information and is not medical advice. Always talk with a transplant center about your situation.`,
+  },
+  {
     id: 'static-2026-11-17-william',
     slug: 'william-fritts-3-year-old-needs-a-living-kidney-donor',
     title: 'William Is 3 Years Old and Needs a Living Kidney Donor',
