@@ -50,4 +50,9 @@ EVERY item is a draft for Lauren's OK first. Link in all: https://saveonepersonn
 - Google Ads Giving Tuesday ad group: ON HOLD, Ad Grants account still deactivated (checked Nov 19).
 
 ## For the NEXT Save One Alert newsletter (Lauren, Nov 23)
-Include Elaine DeLeon's happy ending with the FOX 5 clip (short-05): "Elaine DeLeon eventually found a living kidney donor! Hundreds of people called in wanting to help Elaine, so many that the hospital had to turn people away. It shows that when a living donor need is shared in the right place, people are ready and willing to help. I always thought that when people call in and aren't a match, we could keep a list and reach out to them later to see if they'd like to donate to someone else in need. — Lauren"
+Include Elaine DeLeon's story with the FOX 5 clip (short-05), using Lauren's approved wording:
+Elaine DeLeon was in a desperate search for a living kidney donor. When this spot aired on FOX 5, hundreds of people called in wanting to help her, so many that the hospital had to turn people away. Elaine eventually found her living kidney donor! It shows that when a living donor need is shared in the right place, people are ready and willing to help.
+
+A little shout-out to my son Raphael, who secured this TV segment! We were selling lemonade on a street corner in NYC, and a man he made a sale to said he was Rosanna Scotto's father. Raphael told him about his mommy's work and asked if he could pass the message on to his famous daughter. 🍋💛
+
+I always thought that when people call in and aren't a match, we could keep a list and reach out to them later to see if they'd like to donate to someone else in need. — Lauren
