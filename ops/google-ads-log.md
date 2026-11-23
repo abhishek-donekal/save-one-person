@@ -95,3 +95,9 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Gmail: no new reply from Google Ad Grants support on case 7-9611000041369 (latest message is still our Nov 18 reply). No new Google Ads/Ad Grants emails.
 - Ads UI (684-224-8625): banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy"; "New campaign" greyed out. Nov 1–22: 0 clicks, 2 impr, $0.00.
 - No changes made. Still waiting on Google (follow-up on the thread suggested if nothing by Nov 25, with Lauren's OK).
+
+## 2026-11-23 daily check (read only)
+- Gmail: on Nov 22 11:59am ET a follow-up was sent on case 7-9611000041369 (thread 1a1eb797572a012e) asking Google to restore edit access or make the changes themselves.
+- Nov 23 6:36am ET Google (Taqdees) replied with the SAME canned text as Nov 18: account deactivated for Account management policy; "Once the account is compliant with the policies, please reply back to this email" and they'll restore $329/day. No answer on edit access. Catch-22: they want fixes, the account is read-only.
+- Ads UI (684-224-8625): banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy". Nov 1–23: 0 clicks, 2 impr, $0.00.
+- No changes made. Told Lauren and drafted a short, specific reply for her OK (asks Google to confirm whether we may edit while deactivated, or to turn editing on / make the changes, and to say which policy applies, since banner says Website and email says Account management). Not sent.
