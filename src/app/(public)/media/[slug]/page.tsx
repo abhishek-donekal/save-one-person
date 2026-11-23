@@ -1,3 +1,4 @@
+import { seoTitle } from '@/lib/seoTitle'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const supabase = await createClient()
   const { data } = await supabase.from('media_entries').select('title, outlet_name').eq('slug', slug).single()
   return {
-    title: data?.title || 'Media Coverage',
+    title: seoTitle(data?.title, 'Media Coverage'),
     description: data ? `${data.outlet_name} features Save One Person: ${data.title}` : undefined,
   }
 }

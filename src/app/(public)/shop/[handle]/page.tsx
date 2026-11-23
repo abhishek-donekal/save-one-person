@@ -1,3 +1,4 @@
+import { seoTitle } from '@/lib/seoTitle'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -20,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!p) return { title: 'Product Not Found' }
   const img = p.images[0]?.url
   return {
-    title: p.seo_title || p.title,
+    title: seoTitle(p.seo_title || p.title),
     description: p.seo_description || p.description_text?.slice(0, 200) || undefined,
     alternates: { canonical: `/shop/${p.handle}` },
     openGraph: {

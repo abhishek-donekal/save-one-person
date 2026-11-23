@@ -1,3 +1,4 @@
+import { seoTitle } from '@/lib/seoTitle'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -39,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (sp) {
     const url = `${SITE_URL}/blog/${sp.slug}`
     return {
-      title: sp.seo_title,
+      title: seoTitle(sp.seo_title),
       description: sp.seo_description,
       alternates: { canonical: url },
       openGraph: {
@@ -58,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     | null
 
   return {
-    title: data?.seo_title || data?.title,
+    title: seoTitle(data?.seo_title || data?.title),
     description: data?.seo_description || data?.excerpt || undefined,
   }
 }

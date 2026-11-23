@@ -6,7 +6,7 @@ import { createClient } from '@/lib/supabase/server'
 import DonateCallout from '@/components/ui/DonateCallout'
 
 export const metadata: Metadata = {
-  title: 'Success Stories: Living Kidney & Liver Donors Found Through the Media',
+  title: 'Success Stories: Donors Found Through the Media',
   description: 'True stories of people who found a living kidney donor, liver donor or bone marrow match after Save One Person shared their story on TV, radio and online.',
   alternates: { canonical: '/success-stories' },
 }

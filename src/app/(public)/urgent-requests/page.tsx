@@ -6,7 +6,7 @@ import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 import { liveImage } from '@/lib/imageFocus'
 
 export const metadata: Metadata = {
-  title: 'Urgent Requests: People Who Need a Living Kidney Donor Now',
+  title: 'Urgent Requests: People Who Need a Living Donor Now',
   description: 'Children and adults who urgently need a living kidney donor, liver donor or bone marrow match. Read their stories, see if you could help, and share.',
   alternates: { canonical: '/urgent-requests' },
 }

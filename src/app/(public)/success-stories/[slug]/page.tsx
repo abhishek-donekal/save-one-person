@@ -1,3 +1,4 @@
+import { seoTitle } from '@/lib/seoTitle'
 import type { Metadata } from 'next'
 import { focusFor } from '@/lib/imageFocus'
 import Image from 'next/image'
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .single()
 
   return {
-    title: data?.seo_title || `${data?.patient_name}'s Story`,
+    title: seoTitle(data?.seo_title || `${data?.patient_name}'s Story`),
     description:
       data?.seo_description ||
       (data?.story_text

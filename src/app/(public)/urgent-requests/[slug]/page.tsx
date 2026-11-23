@@ -1,3 +1,4 @@
+import { seoTitle } from '@/lib/seoTitle'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const data = dbData ?? getFeaturedRequest(slug)
 
   return {
-    title: data?.title || 'Urgent Request',
+    title: seoTitle(data?.title, 'Urgent Request'),
     description: data ? `${data.patient_name} urgently needs help with ${data.medical_condition}.` : undefined,
     openGraph: data ? {
       title: data.title,

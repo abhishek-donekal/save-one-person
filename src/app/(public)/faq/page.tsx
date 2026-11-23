@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Living Kidney Donor FAQ: How to Help, Donate & Share a Story',
+  title: 'Living Kidney Donor FAQ: How to Help and Donate',
   description:
     'Answers about becoming a living kidney donor, sharing a patient’s story, donating to Save One Person, and how we use the media to help people find donors.',
   alternates: { canonical: '/faq' },

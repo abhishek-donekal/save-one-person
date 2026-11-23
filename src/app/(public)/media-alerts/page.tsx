@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import MediaAlertsForm from './MediaAlertsForm'
 
 export const metadata: Metadata = {
-  title: 'Weekly Save One Alerts for TV, Radio, Podcasts & Press',
+  title: 'Save One Alerts for TV, Radio, Podcasts & Press',
   description: 'Journalists, producers and media outlets: sign up to receive Save One Alerts with urgent patient stories who need a living donor.',
   alternates: { canonical: '/media-alerts' },
 }

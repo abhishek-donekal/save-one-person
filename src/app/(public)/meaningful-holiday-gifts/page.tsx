@@ -12,7 +12,7 @@ const SITE_URL = 'https://www.saveonepersonnow.org'
 const PATH = '/meaningful-holiday-gifts'
 
 export const metadata: Metadata = {
-  title: 'Meaningful Holiday Gifts That Give Back (and Help Save Lives)',
+  title: 'Meaningful Holiday Gifts That Help Save Lives',
   description:
     'Looking for a meaningful holiday gift? Go Bless Yourself tees, hoodies, hats and mugs, inspiring books, and gifts in someone’s honor. Every purchase helps Save One Person find living organ donors and medical miracles.',
   alternates: { canonical: `${SITE_URL}${PATH}` },

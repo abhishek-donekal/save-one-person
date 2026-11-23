@@ -3,7 +3,7 @@ import Link from 'next/link'
 import DonorSignupForm from '../become-a-donor/DonorSignupForm'
 
 export const metadata: Metadata = {
-  title: 'The Ready to Help List: Living Donors for the Next Patient',
+  title: 'Ready to Help List: Be a Donor for the Next Patient',
   description:
     'Wanted to help a patient but weren’t a match? Join the Save One Person Ready to Help list, and we’ll reach out when someone else needs a living donor.',
   alternates: { canonical: '/ready-to-help' },

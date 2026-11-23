@@ -4,7 +4,7 @@ import { HEALTH_HACKS, YOUTUBE_CHANNEL } from '@/lib/healthHacks'
 import DonateCallout from '@/components/ui/DonateCallout'
 
 export const metadata: Metadata = {
-  title: 'Health Hacks: Short Healthy-Living Videos from Lauren Finkelstein',
+  title: 'Health Hacks Videos by Lauren Finkelstein',
   description: 'Quick, practical Health Hacks videos from Save One Person founder Lauren Finkelstein on healthy living for mind, body and faith.',
   alternates: { canonical: '/health-hacks' },
 }
