@@ -8,7 +8,7 @@ export const FEATURED_REQUESTS = [
     patient_name: 'Gavin Mains',
     title: 'Born at 3 Pounds, Fighting at 13: Gavin Needs a Living Kidney Donor',
     medical_condition: 'Nephrotic Syndrome (FSGS), Stage 4 Kidney Disease',
-    story_text: `🚨 SAVE ONE ALERT: A 13-year-old boy in North Carolina needs a living kidney donor, and his doctors think he needs a transplant within the next six months.
+    story_text: `🚨 SAVE ONE ALERT: A 13-year-old boy in North Carolina needs a living kidney donor, and his doctor thinks he will need a transplant within the next six months.
 
 💙 "Here I am today, as a mother, asking the world to help save my son." That is Heather Mains, Gavin's mom.
 
