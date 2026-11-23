@@ -56,3 +56,5 @@ Elaine DeLeon was in a desperate search for a living kidney donor. When this spo
 Happy update: Elaine did eventually find her living kidney donor! 💛 (Save One Person did not find her match; keep this as a separate update.)
 
 I always thought that when people call in and aren't a match, we could keep a list and reach out to them later to see if they'd like to donate to someone else in need. — Lauren
+
+- 2026-11-23 — WHEN LAUREN IS HOME: publish Kindle edition of "How to Create a Miracle". Files on her computer: C:\Users\Owner\save-one-person\How to Create a Miracle - Kindle.epub and "... - Kindle cover.jpg". She signs in to kdp.amazon.com in Chrome; Claude fills title/description/keywords/price (suggest $0.99 launch, consider KDP Select free days), links to paperback; she reviews and clicks Publish. Keep Saveoneperson.org links as-is (redirects). Then: book marketing plan.
