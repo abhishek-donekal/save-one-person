@@ -82,6 +82,16 @@ export default async function UrgentRequestPage({ params }: Props) {
             </div>
           )}
 
+          {req.donor_form_url && (
+            <div style={{ background: '#fff7d6', border: '2px solid #f5c542', borderRadius: 'var(--r-2xl)', padding: 28, marginBottom: 48, textAlign: 'center' }}>
+              <div className="section-label" style={{ marginBottom: 8 }}>Could you be {req.patient_name}&apos;s donor?</div>
+              <p style={{ fontSize: 17, color: 'var(--navy)', marginBottom: 18 }}>Fill out the free, confidential living-donor screening form to see if you might qualify.</p>
+              <a href={req.donor_form_url} target="_blank" rel="noopener noreferrer" className="btn btn-emerald" style={{ padding: '16px 30px', fontSize: 16 }}>
+                {req.donor_form_label || 'Get Screened to Be a Donor →'}
+              </a>
+            </div>
+          )}
+
           {req.donation_goal && (
             <div style={{ background: 'var(--secondary)', borderRadius: 'var(--r-2xl)', padding: 32, marginBottom: 48 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 12 }}>

@@ -3,6 +3,45 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-gavin-durham',
+    slug: 'gavin-durham',
+    patient_name: 'Gavin Durham',
+    title: '13-Year-Old Gavin Durham of Randleman, North Carolina Needs a Living Kidney Donor',
+    medical_condition: 'FSGS Nephrotic Syndrome',
+    story_text: `💛 PERSON OF THE WEEK: Gavin Durham, 13, needs a living kidney donor.
+
+Gavin is a 13-year-old boy from Randleman, North Carolina. He has FSGS nephrotic syndrome, a kidney disease that has left significant scarring in both of his kidneys. He did not respond to the steroids meant to put his disease in remission, and his doctors now say he will need a kidney transplant, likely within the next six months.
+
+Gavin's parents and aunt have already been tested. None of them is a match.
+
+His mother, Heather Mains, is now asking the world for help: "Here I am today, as a mother, asking the world to help save my son."
+
+Gavin was born at just 30 weeks, weighing three pounds, and spent months in the NICU. He has been through multiple surgeries and treatments, and today he takes up to 15 medications a day. His mom says he rarely complains and stays strong. His doctors have told the family that a transplant would make him feel like a new person.
+
+🩺 HOW YOU CAN HELP GAVIN
+
+1. Get screened to be his donor. Gavin's transplant team is at Duke Health. Fill out Duke's free, confidential living-donor screening form (button above) to see if you might qualify.
+
+2. Who can donate: donors must be 18 or older, with blood type B or O (positive or negative).
+
+3. Can't donate? Please share Gavin's story. Someone you know could be his match.
+
+Gavin's family shares updates on the Facebook page "COTA for Gavin's fight."
+
+As reported by FOX8 WGHP, November 19, 2026.
+
+No one should die because their story wasn't told.`,
+    image_url: '/images/urgent/gavin-durham.jpg' as string | null,
+    donor_form_url: 'https://redcap.duke.edu/redcap/surveys/?s=9EHPAAPMFM',
+    donor_form_label: "Get Screened to Be Gavin's Donor (Duke Health) →",
+    social_other: 'https://cota.org/cotaforgavinsfight',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-deomat',
     slug: 'deomat',
     patient_name: 'Deomat',
