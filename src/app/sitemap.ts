@@ -1,3 +1,4 @@
+import { isRemoved } from '@/lib/shop/organize'
 import type { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { STATIC_BLOG_POSTS } from '@/lib/blogPosts'
@@ -69,7 +70,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         .not('slug', 'is', null),
       supabase
         .from('shop_products')
-        .select('handle, updated_at')
+        .select('handle, title, updated_at')
         .eq('published', true),
     ])
 
@@ -107,6 +108,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
     for (const s of shop.data || []) {
+      if (isRemoved({ handle: s.handle, title: s.title || '' })) continue
       entries.push({
         url: `${SITE_URL}/shop/${s.handle}`,
         lastModified: s.updated_at ? new Date(s.updated_at) : now,

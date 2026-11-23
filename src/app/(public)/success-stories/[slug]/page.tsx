@@ -15,14 +15,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const supabase = await createClient()
   const { data } = await supabase
     .from('success_stories')
-    .select('seo_title, seo_description, patient_name')
+    .select('seo_title, seo_description, patient_name, title, story_text')
     .eq('slug', slug)
     .eq('published', true)
     .single()
 
   return {
     title: data?.seo_title || `${data?.patient_name}'s Story`,
-    description: data?.seo_description || undefined,
+    description:
+      data?.seo_description ||
+      (data?.story_text
+        ? (() => {
+            const t = String(data.story_text).replace(/\s+/g, ' ').trim()
+            return t.length > 155 ? t.slice(0, t.lastIndexOf(' ', 152)) + '…' : t
+          })()
+        : data?.title || undefined),
   }
 }
 
