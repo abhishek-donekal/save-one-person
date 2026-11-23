@@ -155,3 +155,21 @@ Replies since last run: AutoNation DECLINED Nov 19 (Community@autonation.com) �
 - 2026-11-21 ~8:40 PM: SANOFI SUBMITTED by Claude ($250,000; Reference Request #106478589). Lauren turned on auto-approve so uploads worked (W-9, Board, Budget, Formal Proposal). Decision 8-16 weeks.
 
 - 2026-11-22 5:55 PM ET — Save One Alert (Deomat, new full-page graphics design) SENT via Kit broadcast 27206899 from admin@saveonepersonnow.org to 2,502 subscribers: 2,500 media contacts (day 1 of the 16,749-contact "New Media Email List_Concluded_2025.xlsx"; 415 Ft. Lauderdale–Miami media first, then USA by city: FTL-Miami, New York, NJ, Orlando, Tampa, DC, ...) tagged "Media list - day 1", plus Lauren's 2 addresses. Lauren approved ("lets do 2500 daily"). Next batch: contacts 2501-5000 of ops order (Kit free plan cap 10,000 subscribers). Never use aol-personal-contacts.csv.
+
+## 2026-11-23 (Mon) — Share the Save One Alert (ask: share this week's alert / William's donor story with their audience; ready-to-forward link + blurb; no money ask)
+All 10 saved as Gmail drafts ~05:45 ET with inline logo + "What X gains"; waiting for Lauren's OK (nothing sent).
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-23 | Share Alert | WSB-TV Channel 2 (Atlanta) | news tips | newstip@wsbtv.com | https://www.wsbtv.com/contact-us/ | draft r5458714243916652368 |
+| 2026-11-23 | Share Alert | Denver7 KMGH | news tips | newstips@denver7.com | https://www.denver7.com/about/contact-us | draft r-3893877824200321072 |
+| 2026-11-23 | Share Alert | Henry Ford Health | media relations | mediarelations@hfhs.org | https://www.henryford.com/newsroom/media-contacts | draft r2756061852697503903 |
+| 2026-11-23 | Share Alert | Houston Methodist | media | media@houstonmethodist.org | https://www.houstonmethodist.org/newsroom/media-contacts/ | draft r-3604809448009323459 |
+| 2026-11-23 | Share Alert | Ochsner Health | PR team | pr@ochsner.org | https://news.ochsner.org/media-protocols/ | draft r-6300236749659337885 |
+| 2026-11-23 | Share Alert | Dialysis Patient Citizens | general | dpc@dialysispatients.org | https://www.dialysispatients.org/?p=10520 | draft r1445805251879242964 |
+| 2026-11-23 | Share Alert | NephCure | general | info@nephcure.org | https://nephcure.org/aboutus/contact-us/ | draft r-249032648747705264 |
+| 2026-11-23 | Share Alert | Donate Life California | general | info@donatelifecalifornia.org | https://donatelifecalifornia.org/about-us/contact-us/ | draft r1325238794133916478 |
+| 2026-11-23 | Share Alert | UM News (United Methodist News Service) | news desk | newsdesk@umnews.org | https://www.umnews.org/en/news/contact-united-methodist-news-service | draft r-8197246484977432071 |
+| 2026-11-23 | Share Alert | Presbyterian Church (U.S.A.) | general (site footer, email-protected link) | info@pcusa.org | https://pcusa.org/about-pcusa/contact-us/media-inquiries | draft r5199954925024214820 |
+Skipped, already in Gmail Sent (Oct-Nov): WBUR, WHYY, ABC13 Houston, FOX 32 Chicago, WBTV Charlotte, FOX-owned stations, AKF, NKF, ANNA, ASN, AST, Mayo Clinic.
+Ideas for later Mondays (not contacted): Episcopal News Service (staff only: lwilson@episcopalchurch.org, https://episcopalnewsservice.org/contact-us/), Good News Network (form https://www.goodnewsnetwork.org/contribute/submit-news/), CBN (form https://cbn.com/contact), Hackensack Meridian (press form).
+Replies/bounces since Nov 20: T-Mobile Community Relations (Meryl Dillman, Nov 20) redirected us to the Sponsorships Portal https://intake.koresoftware.com/t-mobile/index.html (no email re-pitch). Transplant Village (Laurie Lee) offered 11/24 10-2 CST; Lauren replied Nov 20 proposing Tue 11/24, awaiting time. Bounced (other tasks): NewProductPartner@givebackgoods.com, hello@miami-shopping.com. SNF + Veloxis auto-replies only.
