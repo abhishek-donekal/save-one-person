@@ -106,3 +106,6 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Gmail: no new answer from Ad Grants support. Only new message: Nov 24 6:48am ET no-reply@google.com feedback survey on case 7-9611000041369 ("How'd that go?") — Google may treat the case as closed. Yesterday's drafted reply (asking whether we may edit while deactivated / to turn editing on) has NOT been sent; still waiting on Lauren's OK.
 - Ads UI (684-224-8625): banner still "Your account is deactivated for not complying with Google Ad Grants' Website policy"; "New campaign" greyed out. Nov 1–24: 0 clicks, 2 impr, $0.00.
 - No changes made.
+
+## 2026-11-24 11:20 AM reply sent (Lauren OK)
+- Replied on case 7-9611000041369 (thread 1a1eb797572a012e, msg 1a20e5a0ce3e1482): GA G-8W5DN2825L + Ads tag AW-599305263 now on every page; asked Google to restore edit access or make the fixes; asked which policy applies (Website vs Account management). Backup plan if no help by ~Dec 1: new Ad Grants application via Google for Nonprofits.
