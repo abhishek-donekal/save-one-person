@@ -67,6 +67,35 @@ export default async function ShopPage() {
 
       <div className="page-content">
         <div className="container">
+          {/* Donate first */}
+          <section id="donate" className="give" aria-labelledby="give-h">
+            <div className="give-text">
+              <div className="give-label"><HeartIcon /> Give</div>
+              <h2 id="give-h" className="display">Your gift can help <em>save a life</em></h2>
+              <p>
+                Every donation helps a patient&rsquo;s story reach the person who could become their donor. Pick an amount, check out securely, and you&rsquo;re done.
+              </p>
+              <ul className="give-trust">
+                <li><CheckIcon /> Tax-deductible</li>
+                <li><CheckIcon /> 501(c)(3) nonprofit &middot; EIN {ORG_EIN}</li>
+                <li><CheckIcon /> Secure checkout</li>
+              </ul>
+            </div>
+            <div className="give-panel">
+              <div className="give-panel-h">Choose an amount</div>
+              <div className="give-amounts">
+                {GIFTS.map((g) => (
+                  <a key={g.amount} href={donationCheckoutUrl(g.amount) ?? '/donate'} className={g.amount === 100 ? 'give-amt give-amt-pop' : 'give-amt'}>
+                    {g.amount === 100 && <span className="give-badge">Most popular</span>}
+                    <span className="give-amt-n">${g.amount.toLocaleString()}</span>
+                    <span className="give-amt-d">{g.impact}</span>
+                  </a>
+                ))}
+              </div>
+              <Link href="/donate" className="give-other">Give a different amount <span aria-hidden="true">→</span></Link>
+            </div>
+          </section>
+
           <section aria-labelledby="shop-mission-h" style={{ maxWidth: 760, margin: '0 auto 48px', padding: '24px 28px', borderRadius: 16, background: 'var(--secondary)', lineHeight: 1.7 }}>
             <h2 id="shop-mission-h" style={{ fontSize: 22, fontWeight: 800, margin: '0 0 8px' }}>How the shop supports our mission</h2>
             <p style={{ margin: 0, fontSize: 16, color: 'var(--muted)' }}>
@@ -95,35 +124,6 @@ export default async function ShopPage() {
               <p style={{ marginTop: 18, fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
                 <strong>Group orders:</strong> churches, schools, teams and offices can order in bulk at special pricing. Email <a href="mailto:save1person1@gmail.com" style={{ color: 'var(--emerald)' }}>save1person1@gmail.com</a>.
               </p>
-            </div>
-          </section>
-
-          {/* Donate first */}
-          <section id="donate" className="give" aria-labelledby="give-h">
-            <div className="give-text">
-              <div className="give-label"><HeartIcon /> Give</div>
-              <h2 id="give-h" className="display">Your gift can help <em>save a life</em></h2>
-              <p>
-                Every donation helps a patient&rsquo;s story reach the person who could become their donor. Pick an amount, check out securely, and you&rsquo;re done.
-              </p>
-              <ul className="give-trust">
-                <li><CheckIcon /> Tax-deductible</li>
-                <li><CheckIcon /> 501(c)(3) nonprofit &middot; EIN {ORG_EIN}</li>
-                <li><CheckIcon /> Secure checkout</li>
-              </ul>
-            </div>
-            <div className="give-panel">
-              <div className="give-panel-h">Choose an amount</div>
-              <div className="give-amounts">
-                {GIFTS.map((g) => (
-                  <a key={g.amount} href={donationCheckoutUrl(g.amount) ?? '/donate'} className={g.amount === 100 ? 'give-amt give-amt-pop' : 'give-amt'}>
-                    {g.amount === 100 && <span className="give-badge">Most popular</span>}
-                    <span className="give-amt-n">${g.amount.toLocaleString()}</span>
-                    <span className="give-amt-d">{g.impact}</span>
-                  </a>
-                ))}
-              </div>
-              <Link href="/donate" className="give-other">Give a different amount <span aria-hidden="true">→</span></Link>
             </div>
           </section>
 
