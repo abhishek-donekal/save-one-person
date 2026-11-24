@@ -73,6 +73,15 @@ export default async function MediaPage() {
   ]
   const seen = new Set(cards.map((c) => c.thumb || ''))
   for (const e of EXTRA_TV) if (!seen.has(e.thumb || '')) cards.push(e)
+  // Lauren (Nov 23): use real frames from the broadcasts instead of the cartoon title cards.
+  const FRAME: Record<string, string> = {
+    cPDufd_cEhA: 'hq3', '7wpjH3n4WkM': 'hq1', aVic2Qqg5QY: 'hq1', aguW8OjSI7A: 'hq2',
+    gQxetEWJhJg: 'hq3', ayufzKXUjAE: 'hq3', EBBlcr1IhrY: 'hq3', Vte9KuQuMXs: 'hq2',
+  }
+  for (const c of cards) {
+    const m = c.thumb?.match(/img\.youtube\.com\/vi\/([A-Za-z0-9_-]{11})\/hqdefault\.jpg/)
+    if (m && FRAME[m[1]]) c.thumb = `https://img.youtube.com/vi/${m[1]}/${FRAME[m[1]]}.jpg`
+  }
   const byFeatured = (x: MediaCard, y: MediaCard) => Number(y.featured) - Number(x.featured) || Number(!!y.thumb) - Number(!!x.thumb)
   const SECTIONS = [
     { id: 'tv', label: 'On TV', title: 'Save One Person on television.', items: cards.filter((c) => c.type === 'tv').sort(byFeatured) },
@@ -84,18 +93,31 @@ export default async function MediaPage() {
 
   return (
     <>
-      <div className="page-hero">
-        <div className="page-hero-inner">
-          <div className="section-label section-label-soft">Press & Media</div>
-          <h1 className="display-lg">In The Media</h1>
-          <p style={{ marginTop: 24, fontSize: 18, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
-            Save One Person has been featured across television, radio, podcasts, and digital media. Every mention helps reach more people who can save a life.
-          </p>
-          <Link href="/media-alerts" className="btn btn-emerald" style={{ marginTop: 28, padding: '16px 28px', fontSize: 14 }}>
-            TV, Radio &amp; Podcasts: Get Our Weekly Alerts →
-          </Link>
+      <section className="media-hero">
+        <div className="container media-hero-inner">
+          <div className="media-hero-text">
+            <div className="section-label">Press &amp; Media</div>
+            <h1>Saving lives on TV, radio and in print.</h1>
+            <p>
+              For more than a decade, PIX11, NY1, FOX 5, 1010 WINS and more have shared Save One Person Alerts, and viewers have stepped up to become living kidney donors.
+            </p>
+            <div className="media-hero-btns">
+              <a href="https://save-one-person-inc.kit.com/5c129162dc" className="btn btn-emerald">Free Living Kidney Donor Guide</a>
+              <Link href="/media-alerts" className="btn btn-outline-navy">Get Our Weekly Alerts</Link>
+            </div>
+          </div>
+          <div className="media-hero-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/aVic2Qqg5QY?rel=0"
+              title="PIX11 Unsung Hero: Lauren Finkelstein"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+            <div className="media-hero-caption">PIX11 names Lauren Finkelstein an Unsung Hero</div>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="page-content">
         <div className="container">
@@ -125,10 +147,19 @@ export default async function MediaPage() {
                     <h2>{sec.title}</h2>
                   </div>
                   <div className="media-grid">
-                    {sec.items.map((m, i) => <MediaCardView key={m.id} m={m} big={i === 0 && sec.items.length > 3} />)}
+                    {sec.items.map((m) => <MediaCardView key={m.id} m={m} />)}
                   </div>
                 </section>
-              ))}
+              )).flatMap((el, i) => i === 0 ? [el, (
+                <div key="guide" className="media-guide-band">
+                  <div>
+                    <div className="media-guide-kicker">Free guide</div>
+                    <h3>How to Find a Living Kidney Donor</h3>
+                    <p>Step-by-step help for patients and families: how to tell your story so the right person hears it.</p>
+                  </div>
+                  <a href="https://save-one-person-inc.kit.com/5c129162dc" className="btn btn-emerald">Get the Free Living Kidney Donor Guide</a>
+                </div>
+              )] : [el])}
             </>
           )}
 
