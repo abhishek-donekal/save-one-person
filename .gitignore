@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# generated audio from video builds
+ops/video/**/*.wav
