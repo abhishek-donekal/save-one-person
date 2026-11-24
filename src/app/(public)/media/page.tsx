@@ -62,6 +62,17 @@ export default async function MediaPage() {
     thumb: (m.slug && THUMB_OVERRIDES[m.slug]) || (isTinyLogo(m.thumbnail_url) ? null : m.thumbnail_url) || youtubeThumb(m.url),
     featured: !!m.featured,
   }))
+  // Lauren (Nov 23): more of her TV pieces from the Save One Person YouTube channel, incl. PIX11 "Help Me Howard".
+  const yt = (id: string) => `https://www.youtube.com/watch?v=${id}`
+  const EXTRA_TV: MediaCard[] = [
+    { id: 'yt-aguW8OjSI7A', title: 'Help Me Howard: PIX11\u2019s Howard Thompson Helps Find a Living Kidney Donor', outlet: 'PIX11', type: 'tv', href: yt('aguW8OjSI7A'), thumb: 'https://img.youtube.com/vi/aguW8OjSI7A/hqdefault.jpg', featured: false },
+    { id: 'yt-gQxetEWJhJg', title: 'Help Me Howard: Dr. Ron Richman Finds a Living Kidney Donor', outlet: 'PIX11', type: 'tv', href: yt('gQxetEWJhJg'), thumb: 'https://img.youtube.com/vi/gQxetEWJhJg/hqdefault.jpg', featured: false },
+    { id: 'yt-ayufzKXUjAE', title: 'Help Me Howard: Rebecca Salame Needs a Bone Marrow Match', outlet: 'PIX11', type: 'tv', href: yt('ayufzKXUjAE'), thumb: 'https://img.youtube.com/vi/ayufzKXUjAE/hqdefault.jpg', featured: false },
+    { id: 'yt-EBBlcr1IhrY', title: 'Help Me Howard: Alex Dwek Shares His Daughter\u2019s Story', outlet: 'PIX11', type: 'tv', href: yt('EBBlcr1IhrY'), thumb: 'https://img.youtube.com/vi/EBBlcr1IhrY/hqdefault.jpg', featured: false },
+    { id: 'yt-Vte9KuQuMXs', title: 'Saving Lives on Oprah', outlet: 'Oprah', type: 'tv', href: yt('Vte9KuQuMXs'), thumb: 'https://img.youtube.com/vi/Vte9KuQuMXs/hqdefault.jpg', featured: false },
+  ]
+  const seen = new Set(cards.map((c) => c.thumb || ''))
+  for (const e of EXTRA_TV) if (!seen.has(e.thumb || '')) cards.push(e)
   const byFeatured = (x: MediaCard, y: MediaCard) => Number(y.featured) - Number(x.featured) || Number(!!y.thumb) - Number(!!x.thumb)
   const SECTIONS = [
     { id: 'tv', label: 'On TV', title: 'Save One Person on television.', items: cards.filter((c) => c.type === 'tv').sort(byFeatured) },
