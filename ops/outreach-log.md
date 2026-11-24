@@ -194,3 +194,20 @@ Skipped: CBS Miami (pitched Nov 17), AAKP (Oct 29), Community Newspapers/Michael
 - 2026-11-23 5:30 PM: NeverBounce part 2 (3,494) checked ($27.95, Lauren OK; saved Visa removed from NeverBounce at her request, Auto-Refill off). Totals for 13,494: 7,241 good (4,912 valid + 2,329 accept-all), 5,460 unknown, 794 invalid removed. Batches rebuilt: 07 = 1,657 good (Nov 29), 08-09 = unknowns (Nov 30, Dec 1); 10-14 empty. Daily task ends Dec 1.
 
 - 2026-11-23 6:23 PM: Lauren APPROVED the Gavin Durham media newsletter ("good to go"). Kit master draft 27246314. Daily media batches now use it (trig_018SdJcUCvQF9JKnDPCW9oif updated); batch 01 retry set for 7:07 PM tonight.
+
+## 2026-11-24 (Tue) — 3D printing / regenerative partners (3D Innovation Partner $5,000/3 mo; big cos also offered $25K Presenting)
+9 Gmail drafts saved ~05:40 ET with inline logo + "What X gains"; no William link (money ask). Waiting for Lauren's OK (nothing sent).
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-24 | 3D | Humacyte (lab-grown vessels; dialysis access) | media inbox | media@humacyte.com | https://www.globenewswire.com/news-release/2026/10/12/3378837/0/en/index.html | draft r-288011358211914857 |
+| 2026-11-24 | 3D | Oxford Performance Materials (OsteoFab) | general | info@oxfordpm.com | https://oxfordpm.com/ | draft r3812077819726782674 |
+| 2026-11-24 | 3D | Lithoz | Clara Weissflog (press) | cweissflog@lithoz.com | https://www.lithoz.com/en/first-ever-clinical-long-term-follow-up-study-on-3d-printed-bioceramic-implants-proves-over-92-total-success-rate-with-lithoz-lithabone-material/ | draft r-8912966615048584163 |
+| 2026-11-24 | 3D | HP 3D Printing | Media Relations | mediarelations@hp.com | https://www.hp.com/us-en/newsroom/press-releases/2025/hp-advances-additive-manufacturing.html | draft r-6803198380259346178 |
+| 2026-11-24 | 3D | Protolabs | Brent Renneke (Corp. Comms) | brent.renneke@protolabs.com | https://www.businesswire.com/news/home/20260507881983/en/ | draft r2685939775527888383 |
+| 2026-11-24 | 3D | Renishaw | media team | Communications@Renishaw.com | https://www.renishaw.com/en/--6635 | draft r-5765098248967508992 |
+| 2026-11-24 | 3D | Satellite Bio (bioengineered liver tissue) | Kathy Vincent (outside PR, listed media contact) | kathy@kathyvincent.com | https://www.businesswire.com/news/home/20260804540467/en/ | draft r6461725184959643337 |
+| 2026-11-24 | 3D | Dimension Inx (CMFlex) | Cole Johnson (media contact, 2023 release; may be stale) | colejohnson@dimensioninx.com | https://prnewswire.com/news-releases/dimension-inx-announces-first-surgical-cases-utilizing-cmflex-synthetic-bone-graft---the-first-3d-printed-regenerative-bone-graft-product-cleared-by-the-fda-301946996.html | draft r7878048762523255782 |
+| 2026-11-24 | 3D | Brinter (bioprinting) | Pasi Kaskinen (2022 release; may be stale) | pasi.kaskinen@brinter.com | https://news.cision.com/san-francisco-oy/r/brinter-takes-its-3d-bioprinter-on-a-european-road-show,c3663348 | draft r6809179875405394780 |
+| 2026-11-24 | 3D | Insight Surgery (3D LifePrints) | web form (info@ email not verified) | https://insightsurgery.com/partner-with-us/ | same | form text given to Lauren |
+Ideas for later 3D Tuesdays (not contacted): Axial3D (only a 2019 press email r.kyle@axial3D.com; find current form), IVIVA Medical (kidney), SprintRay, Tethon 3D, Ossiform (no email found).
+Replies/bounces since Nov 23: SNF replied (info@snf.org, Nov 23): apply via grant portal https://www.snf.org/en/grants/information-for-applicants-how-to-apply/ ; more selective due to Global Health Initiative. Good Good Good (Margaux) passed the Ready to Help story to editors, no promise. Transplant Village (Laurie Lee) sent Zoom invite for today Tue 11/24 12:00 ET. BOUNCED: heroes@guideposts.org; tips@floridatrib.org ("group tips may not exist"). Denver7 + Newsweek + AARP: auto-replies only.
