@@ -47,6 +47,11 @@ export default async function MediaPage() {
   // block when stretched across a card. Show the branded text cover for those instead.
   const TINY_LOGO_THUMBS = ['1010-e1746811183584.png', 'OUR-TOWN.png']
   const isTinyLogo = (u: string | null) => !!u && TINY_LOGO_THUMBS.some((f) => u.endsWith(f))
+  // Lauren (Nov 23): show the star themselves as the freeze frame, not the title card.
+  const THUMB_OVERRIDES: Record<string, string> = {
+    'andy-garcia-saves-lives-with-us': 'https://img.youtube.com/vi/R_jTjcJyo4Y/hq1.jpg',
+    'michael-rapaport-endorses-saving-lives-through-the-media': 'https://img.youtube.com/vi/o_IuYMbjO2c/hq2.jpg',
+  }
   const items = (media || []) as MediaItem[]
   const cards: MediaCard[] = items.map((m) => ({
     id: m.id,
@@ -54,7 +59,7 @@ export default async function MediaPage() {
     outlet: fixOutlet(m.outlet_name),
     type: m.media_type,
     href: m.slug ? `/media/${m.slug}` : (m.url || '/media'),
-    thumb: (isTinyLogo(m.thumbnail_url) ? null : m.thumbnail_url) || youtubeThumb(m.url),
+    thumb: (m.slug && THUMB_OVERRIDES[m.slug]) || (isTinyLogo(m.thumbnail_url) ? null : m.thumbnail_url) || youtubeThumb(m.url),
     featured: !!m.featured,
   }))
   const byFeatured = (x: MediaCard, y: MediaCard) => Number(y.featured) - Number(x.featured) || Number(!!y.thumb) - Number(!!x.thumb)
