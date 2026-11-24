@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .single()
 
   return {
-    title: seoTitle(data?.seo_title || `${data?.patient_name}'s Story`),
+    title: seoTitle(data?.seo_title || (/^unnamed/i.test(data?.patient_name || '') ? (data?.title || 'Success Story') : `${data?.patient_name}'s Story`)),
     description:
       data?.seo_description ||
       (data?.story_text
@@ -61,9 +61,11 @@ export default async function SuccessStoryPage({ params }: Props) {
         <div className="page-hero-inner">
           <div className="section-label section-label-soft">Success Story</div>
           <h1 className="display-lg" style={{ fontSize: 'clamp(36px,6vw,72px)' }}>{story.title}</h1>
-          <p style={{ marginTop: 16, fontSize: 18, color: 'rgba(255,255,255,0.65)' }}>
-            {story.patient_name}
-          </p>
+          {!/^unnamed/i.test(story.patient_name || '') && (
+            <p style={{ marginTop: 16, fontSize: 18, color: 'rgba(255,255,255,0.65)' }}>
+              {story.patient_name}
+            </p>
+          )}
         </div>
       </div>
 
@@ -83,7 +85,7 @@ export default async function SuccessStoryPage({ params }: Props) {
             <div style={{ borderRadius: 'var(--r-3xl)', overflow: 'hidden', marginBottom: 48, boxShadow: 'var(--shadow-soft)' }}>
               <Image
                 src={story.image_url}
-                alt={story.patient_name}
+                alt={/^unnamed/i.test(story.patient_name || '') ? story.title : story.patient_name}
                 width={896}
                 height={560}
                 sizes="(max-width: 896px) 100vw, 896px"

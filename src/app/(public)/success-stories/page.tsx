@@ -45,7 +45,7 @@ export default async function SuccessStoriesPage() {
                   <div className="story-card-img">
                     <Image
                       src={story.image_url || 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets/legacy/assets/hero-hands-f9VxfxAk.jpg'}
-                      alt={story.patient_name}
+                      alt={/^unnamed/i.test(story.patient_name || '') ? story.title : story.patient_name}
                       width={400}
                       height={240}
                       sizes="(max-width: 640px) 100vw, 400px"
@@ -58,7 +58,7 @@ export default async function SuccessStoriesPage() {
                         <span className="badge badge-green">Featured</span>
                       </div>
                     )}
-                    <h3>{story.patient_name}</h3>
+                    {!/^unnamed/i.test(story.patient_name || '') && <h3>{story.patient_name}</h3>}
                     <p>
                       {story.story_text.slice(0, 140).trim()}…
                     </p>
