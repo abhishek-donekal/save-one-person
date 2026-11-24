@@ -52,8 +52,9 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 | 2026-11-19 | public/social/2026-11-19/go-bless-yourself-nyc-thursday.mp4 (22s, 9:16, vid10.py/sfx10.py; replaces the uncommitted go-bless-yourself-nyc-2.mp4) | tourist stops mid-sidewalk; car alarm 3 AM; pizza slice hits floor; train delayed again | sent to Lauren for OK (Thu post), not yet posted |
 | 2026-11-17 | public/social/tee-videos/2026-11-17.mp4 (22s, 9:16, vid6.py) | someone double-parks you in; express train skips your stop; bodega out of your sandwich ("...bodega cat too."); rent went up again ("...even your landlord.") | posted 2026-11-17 |
 | 2026-11-19 | public/social/tee-videos/2026-11-19.mp4 (22s, 9:16, vid11.py/sfx11.py, donate banner whole time) | alternate-side parking (...street sweeper too); $28 cocktail (...and the ice cubes); your team breaks your heart (...there's always next year); bike dock full (...keep pedaling) | made, not yet posted (for the next Tue/Thu tee post) |
+| 2026-11-24 | public/social/tee-videos/2026-11-24.mp4 (22s, 9:16, vid12.py/sfx12.py, Thanksgiving donate banner whole time) | laundromat ate your sock (...the lonely sock too); scaffolding still up (...see you in 2040); radiator is 90 degrees (...it's a free sauna); brunch line is 2 hours (...bottomless patience) | made, not yet posted (for the Thu Nov 26 tee post) |
 | 2026-11-24 | public/social/2026-11-24/go-bless-yourself-thanksgiving-donate.mp4 (= tee-videos/2026-11-23-thanksgiving.mp4 + donate banner) | aunt asks why you're single; parade crowd; last slice of pie; packed train home | proposed for Tue Nov 24 tee post, awaiting Lauren's OK |
-Ideas not yet used: Times Square crowd jam (no characters!); laundromat steals a sock; scaffolding forever; someone blocks the subway doors; your Uber/cab driver takes the long way (no brand names); the slow walker in front of you on the stairs; the apartment heat won't turn off; brunch line is 2 hours.
+Ideas not yet used: Times Square crowd jam (no characters!); someone blocks the subway doors; your cab driver takes the long way (no brand names); the slow walker in front of you on the stairs; the guy who claps when the plane lands at LaGuardia; your package was 'delivered' (it wasn't); the dog walker with 9 dogs blocks the sidewalk; the holiday window crowd on Fifth Ave.
 
 ## 2026-11-17 — Outreach drafts (NYC focus), awaiting Lauren's OK (Gmail drafts)
 | Org | Email | Type | Hook | Status |
@@ -104,3 +105,24 @@ Video placements prepared (submit only after Lauren's OK; we never create accoun
 - Not a fit right now: WLRN event page and South Florida on the Cheap (events only; no merch sales), Mommy Poppins event submit (account + real event needed).
 
 Replies check (Nov 19, ~3:30 PM UTC): no replies from any tee contacts (Nov 15/16/17). Only auto-reply from Women of Emanu-El. Miami TV follow-up still due ~Nov 22.
+
+## 2026-11-24 (Tue) — Tee Promoter
+- Gmail check: all 10 Nov 19 tee drafts were SENT Nov 19 (~6:15 PM ET). No replies yet from any tee contact (Nov 15/16/17/19). Only auto-reply: Women of Emanu-El (Nov 17).
+- Miami TV follow-up (CBS Miami, Local 10, 7 News) was due ~Nov 22; not done by this task. Do not double-pitch.
+- New video: public/social/tee-videos/2026-11-24.mp4 (see Videos table).
+
+### Outreach drafts, awaiting Lauren's OK (Gmail drafts; logo at top + "What X gains" section; signature.html footer)
+| Org | Email | Type | Hook | Source | Gmail draft | Status |
+|---|---|---|---|---|---|---|
+| Spectrum Designs Foundation (Port Washington, LI) | sales@spectrumdesigns.org | partner (nonprofit print shop) | employs adults of all abilities; fundraising program no setup fees/minimums; ask = printing quote | https://spectrumdesigns.org/fundraising | r5101541637540830288 | draft |
+| SUNY Downstate Gift Shop (Jasmin Ortiz) | giftshop@downstate.edu | partner (hospital gift shop) | Brooklyn's only kidney transplant center, since 1965 | https://www.downstate.edu/about/our-administration/finance/faculty-student-association/gift-shop.html | r-136352890010286373 | draft |
+| Florida Organ Transplant Association (FOTA) | wetzelandassociates@gmail.com | group order | Heart & Soul Revival "Music & Miracles"; aid to transplant families | https://www.givemiamiday.org/organization/Florida-Organ-Transplant-Association | r1682528078201416314 | draft |
+| Temple Shaaray Tefila (UES) | info@tstnyc.org | group order (synagogue) | Mar 2026 "True Acts of Kindness: Organ Donation and Judaism" | https://shaaraytefilanyc.org/event/true-acts-of-kindness-organ-donation-and-judaism-3-12-2026 | r8406981744352280029 | draft |
+| Marble Collegiate Church (Rev. Susanah Wade, Missions & Outreach) | swade@marblechurch.org | group order (church) | positive-thinking heritage | https://marblechurch.org/staff | r8657476559877782080 | draft |
+| Haitian American Nurses Assn of Florida (HANA) | info@hanaofflorida.org | group order (nurses) | 40+ yrs, health disparities, scholarship gala | https://hanaofi.wildapricot.org/event-5510399 | r-8402060115495854154 | draft |
+| Sun Sentinel (Ben Crandell) | bcrandell@sunsentinel.com | press (gift guide) | "Locals-Only Holiday Gift Guide" (Nov 2025) | https://solwd.net/?p=323605 (syndicated copy) | r-2310484563447833077 | draft |
+| Miami Mom Collective (Cierra) | cierra@miamimomcollective.com | press (parenting) | 2026 Favorite Things Holiday Gift Guide invites businesses | https://miamimomcollective.com/contact-us/ | r2819718522555466626 | draft |
+| West Side Rag | info@westsiderag.com | video placement (tips inbox) | asks readers for tips; December holiday coverage | https://www.westsiderag.com/2024/03/26/its-about-time-you-knew-more-about-us | r-5754201752889381135 | draft |
+| The Riverdale Press newsroom | newsroom@riverdalepress.com | video placement (community announcements) | contact page invites announcements | https://www.riverdalepress.com/contact.html | r-5202968744755108729 | draft |
+Skipped: News 12 (Brooklyn/LI/NJ already pitched Nov 19 by another task; don't add the Bronx desk). Another task drafted 3D-printing companies on Nov 24 (brinter, dimensioninx, protolabs, renishaw, lithoz, oxfordpm, hp, humacyte, kathyvincent): don't contact them from here.
+Backups for later: Norwood News (smoloney@norwoodnews.org), Bronx Times (tips@bxtimes.com), Miami-Dade County Council PTA (vp.organization@mdccpta.net), Marble Church media (CMorano@MarbleChurch.org), Packed with Purpose (no public email found), New York Family (Mia Weber, no public email).
