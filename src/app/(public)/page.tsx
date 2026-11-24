@@ -105,7 +105,7 @@ export default async function HomePage() {
                   <path d="M5 12h14M13 5l7 7-7 7" />
                 </svg>
               </a>
-              <a href="https://save-one-person-inc.kit.com/5c129162dc" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">Free Kidney Donor Guide</a>
+              <a href="https://save-one-person-inc.kit.com/5c129162dc" target="_blank" rel="noopener noreferrer" className="btn btn-ghost">Free Living Kidney Donor Guide</a>
               <a href="mailto:Save1Person@aol.com?subject=Partnership%20Inquiry" className="btn btn-ghost">Partner With Us</a>
               <a href="tel:9175726385" className="btn btn-transparent">Call Lauren</a>
             </div>
@@ -529,7 +529,7 @@ export default async function HomePage() {
                 Email Us Directly
               </a>
               <a href="https://save-one-person-inc.kit.com/5c129162dc" target="_blank" rel="noopener noreferrer" className="btn btn-ghost" style={{ padding: '16px 32px', fontSize: 14, letterSpacing: '0.1em', borderColor: 'rgba(255,255,255,0.4)', color: 'white' }}>
-                Free Guide: Find a Living Donor
+                Free Living Kidney Donor Guide
               </a>
             </div>
           </RevealOnScroll>
