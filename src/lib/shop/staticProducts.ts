@@ -95,7 +95,7 @@ export const STATIC_PRODUCTS: ShopProduct[] = [
     key: 'mug', handle: 'go-bless-yourself-mug', title: 'Go Bless Yourself Mug', position: -1, optionName: 'Size',
     lead: '<strong>GO BLESS YOURSELF</strong> on one side. Our blessing hand and <strong>BLESS YOU TOO</strong> on the other.',
     bullets: ['11 oz ceramic, glossy finish', 'Dishwasher and microwave safe', 'Printed just for you when you order'],
-    v: variants('mug', 20, [['11 oz', 67820996067498]]),
+    v: variants('mug', 25, [['11 oz', 67820996067498]]),
     img: images('mug', [['/images/shop/mug.jpg', 'White mug printed GO BLESS YOURSELF'], ['/images/shop/mug-back.jpg', 'Other side of the mug: blessing hand and BLESS YOU TOO']]),
   }),
 ]
