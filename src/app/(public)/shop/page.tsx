@@ -103,6 +103,17 @@ export default async function ShopPage() {
               Save One Person is a 501(c)(3) nonprofit (EIN {ORG_EIN}) that uses TV, radio and social media to help people find a living organ donor or a medical miracle. Our patient stories, donor education and outreach are free for everyone. This small shop is one more way supporters can help: proceeds go to Save One Person and help fund that outreach. To support the work directly, you can <Link href="/donate" style={{ color: 'var(--emerald)', fontWeight: 700 }}>donate</Link>, <Link href="/become-a-donor" style={{ color: 'var(--emerald)', fontWeight: 700 }}>learn about living donation</Link>, or <Link href="/urgent-requests" style={{ color: 'var(--emerald)', fontWeight: 700 }}>share a patient&rsquo;s story</Link>.
             </p>
           </section>
+          <section aria-labelledby="course-h" style={{ maxWidth: 760, margin: '0 auto 48px', padding: '28px', borderRadius: 16, background: '#0b1f3a', color: '#fff', display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
+            <Image src="/newsletter/book-how-to-create-a-miracle.jpg" alt="How to Create a Miracle by Lauren Finkelstein" width={110} height={170} style={{ borderRadius: 6 }} />
+            <div style={{ flex: 1, minWidth: 240 }}>
+              <div style={{ color: '#f5c542', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>NEW · ONLINE COURSE</div>
+              <h2 id="course-h" style={{ fontSize: 26, fontWeight: 800, margin: '6px 0 8px' }}>How to Create a Miracle</h2>
+              <p style={{ margin: '0 0 16px', fontSize: 16, lineHeight: 1.6, opacity: 0.9 }}>
+                12 days, 12 ingredients to turn the impossible, possible. With the Miracle Workbook and the full book. $47.
+              </p>
+              <Link href="/miracle-course" className="btn btn-emerald">See the course →</Link>
+            </div>
+          </section>
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
             <video
               src="/social/2026-11-14/go-bless-yourself-heavenly.mp4"
