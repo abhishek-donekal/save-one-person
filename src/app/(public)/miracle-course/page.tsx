@@ -6,7 +6,7 @@ const PAGE_URL = 'https://www.saveonepersonnow.org/miracle-course'
 const BUY_URL = 'https://save-one-person-inc.kit.com/products/how-to-create-a-miracle'
 const TITLE = 'How to Create a Miracle: Online Course with Lauren Finkelstein'
 const DESCRIPTION =
-  'A 12-day online course from Lauren Finkelstein, founder of Save One Person: 12 ingredients to turn the impossible, possible. Includes the Miracle Workbook and the full book. $47, and every purchase supports Save One Person.'
+  'A 12-day online course from Lauren Finkelstein, founder of Save One Person: 12 ingredients to turn the impossible, possible. Includes 12 in-depth lessons, guided practices, a 33-page workbook and the full book. $47, and every purchase supports Save One Person.'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -22,9 +22,13 @@ export const metadata: Metadata = {
 
 const INCLUDES = [
   { title: 'A welcome video from Lauren', body: 'Lauren shares why she wrote How to Create a Miracle and how to get the most from the 12 days.' },
-  { title: '12 lessons, one a day', body: 'Each lesson is one ingredient: the big idea, a true story of a miracle, three questions and one Miracle Action.' },
-  { title: 'The Miracle Workbook (PDF)', body: '16 printable pages: a page for each day, a 12-day tracker and your Miracle Maker certificate.' },
-  { title: 'Bonus: the full book (PDF)', body: 'The complete How to Create a Miracle book by Lauren Finkelstein, yours to read and keep.' },
+  { title: '12 in-depth lessons', body: 'One ingredient a day: a full teaching, a true miracle story, why it works, and what to do when you get stuck.' },
+  { title: '12 guided practices', body: 'Simple step-by-step exercises like the One-Sentence Prayer, the Mission Map and the Faith Feed.' },
+  { title: '60 journal questions', body: 'Five questions a day to help you get clear on what you want and what is holding you back.' },
+  { title: '12 affirmations + 12 Miracle Actions', body: 'A daily affirmation to say morning and night, and one action to take before bed.' },
+  { title: 'The Miracle Workbook (33 pages)', body: 'Printable PDF with your My Miracle page, two pages for every day, a 12-day tracker, a 30-Day Miracle Log and your Miracle Maker certificate.' },
+  { title: 'Bonus tools', body: 'The 5-Minute Miracle Morning routine and a guide to starting a Miracle Circle with friends.' },
+  { title: 'Bonus: the full book (PDF)', body: 'The complete How to Create a Miracle by Lauren Finkelstein, yours to read and keep.' },
 ]
 
 function BuyButton({ label = 'Start Creating Your Miracle: $47' }: { label?: string }) {
@@ -74,7 +78,7 @@ export default function MiracleCoursePage() {
             </p>
             <p>
               This course takes the 12 ingredients from her book and turns them into 12 days of simple, practical steps.
-              Each day takes about 15 minutes. By the end, you&apos;ll know exactly what you&apos;re asking for, what
+              Each day takes about 20 to 30 minutes. By the end, you&apos;ll know exactly what you&apos;re asking for, what
               you&apos;re doing about it, and who you&apos;re becoming on the way.
             </p>
           </div>
@@ -113,7 +117,7 @@ export default function MiracleCoursePage() {
           <div style={{ marginTop: 72, marginBottom: 24, textAlign: 'center', background: '#f5f7fb', borderRadius: 20, padding: '40px 24px' }}>
             <h2 className="display" style={{ fontSize: 30 }}>Your miracle starts today.</h2>
             <p style={{ marginTop: 12, marginBottom: 24, fontSize: 17, color: 'var(--muted)' }}>
-              $47 for the full course, the workbook and the book. Instant access after checkout.
+              $47 for the full course: 12 lessons, 12 practices, the 33-page workbook, bonus tools and the book. Instant access after checkout.
             </p>
             <BuyButton />
           </div>

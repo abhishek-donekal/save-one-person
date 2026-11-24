@@ -109,7 +109,7 @@ export default async function ShopPage() {
               <div style={{ color: '#f5c542', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>NEW · ONLINE COURSE</div>
               <h2 id="course-h" style={{ fontSize: 26, fontWeight: 800, margin: '6px 0 8px' }}>How to Create a Miracle</h2>
               <p style={{ margin: '0 0 16px', fontSize: 16, lineHeight: 1.6, opacity: 0.9 }}>
-                12 days, 12 ingredients to turn the impossible, possible. With the Miracle Workbook and the full book. $47.
+                12 days, 12 ingredients to turn the impossible, possible. In-depth lessons, guided practices, a 33-page workbook and the full book. $47.
               </p>
               <Link href="/miracle-course" className="btn btn-emerald">See the course →</Link>
             </div>
