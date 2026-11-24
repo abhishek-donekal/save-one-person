@@ -109,3 +109,4 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 
 ## 2026-11-24 11:20 AM reply sent (Lauren OK)
 - Replied on case 7-9611000041369 (thread 1a1eb797572a012e, msg 1a20e5a0ce3e1482): GA G-8W5DN2825L + Ads tag AW-599305263 now on every page; asked Google to restore edit access or make the fixes; asked which policy applies (Website vs Account management). Backup plan if no help by ~Dec 1: new Ad Grants application via Google for Nonprofits.
+- 11:21 AM second email sent (Lauren asked): "we have now written you four times", asked for edit access / changes or escalation (msg 1a20e5bcc0f5fb03).
