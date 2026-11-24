@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { emailLauren } from '@/lib/notify'
 import { trackFormConversion } from '@/lib/adsConversion'
 
 export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
   const light = tone === 'light'
+  const hpId = `nl-website-${useId().replace(/:/g, '')}`
   const [email, setEmail] = useState('')
   const [website, setWebsite] = useState('') // honeypot
   const [status, setStatus] = useState<'idle' | 'sending' | 'done' | 'error'>('idle')
@@ -47,8 +48,8 @@ export default function NewsletterSignup({ tone = 'dark' }: { tone?: 'dark' | 'l
   return (
     <form onSubmit={onSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
       <div style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, overflow: 'hidden' }} aria-hidden="true">
-        <label htmlFor={`nl-website-${tone}`}>Website</label>
-        <input id={`nl-website-${tone}`} type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+        <label htmlFor={hpId}>Website</label>
+        <input id={hpId} type="text" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
       </div>
       <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
         <input

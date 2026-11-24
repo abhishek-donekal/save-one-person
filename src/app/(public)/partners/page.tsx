@@ -3,8 +3,9 @@ import Image from 'next/image'
 import { createClient } from '@/lib/supabase/server'
 
 export const metadata: Metadata = {
-  title: 'Partners',
-  description: 'Save One Person partners with healthcare organizations, media companies, and philanthropists to save lives.',
+  title: 'Partners: Media, Health and Business Partners',
+  description: 'Save One Person works with TV and radio stations, healthcare organizations, businesses and philanthropists to share life-saving stories. See how your organization can partner with us.',
+  alternates: { canonical: '/partners' },
 }
 
 export default async function PartnersPage() {

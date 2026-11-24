@@ -3,9 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About — Mission, Founder, and Team',
+  title: 'About Us: How We Use the Media to Find Living Donors',
   description:
-    'Meet the people behind Save One Person: Founder & CEO Lauren Finkelstein, Advisor & Mentor Rabbi Simon Jacobson, and Global Outreach Strategist Loren Lahav.',
+    'Save One Person is a 501(c)(3) that uses TV, radio, podcasts and social media to help people find a living organ donor or a medical miracle. Meet founder Lauren Finkelstein and our team.',
+  alternates: { canonical: '/about' },
 }
 
 const STORAGE = 'https://kglvtgohmfulykkspfmj.supabase.co/storage/v1/object/public/site-assets'

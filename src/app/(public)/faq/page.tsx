@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Living Kidney Donor FAQ: How to Help and Donate',
   description:
-    'Answers about becoming a living kidney donor, sharing a patient’s story, donating to Save One Person, and how we use the media to help people find donors.',
+    'Answers about becoming a living kidney donor: who pays, whether you can change your mind, recovery, paired exchange, sharing a patient’s story, and how Save One Person helps.',
   alternates: { canonical: '/faq' },
 }
 
@@ -50,6 +50,58 @@ const FAQS: { q: string; a: React.ReactNode }[] = [
     a: (
       <>
         No. Friends and even strangers can be living donors, and through paired kidney exchange you can help someone get a kidney even if you are not their match. Read our <Link href="/living-kidney-donation-myths-facts" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Myth vs Fact: Living Kidney Donation</Link> page to learn more.
+      </>
+    ),
+  },
+  {
+    q: 'Who pays for a living donor’s medical costs?',
+    a: (
+      <>
+        In most cases, the recipient’s health insurance pays for the donor’s evaluation, surgery and hospital stay. The federal <a href="https://livingdonorassistance.org/How-to-Apply/How-NLDAC-Helps" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--emerald)', fontWeight: 600 }}>National Living Donor Assistance Center</a> can help eligible donors with travel, lost wages and dependent care. The transplant center’s financial coordinator can tell you exactly what applies. Buying or selling organs is illegal: living donation is always a gift.
+      </>
+    ),
+  },
+  {
+    q: 'If I sign up or start testing, can I change my mind?',
+    a: 'Yes. Joining our donor list never commits you, and starting a donor evaluation does not commit you to donate. You can stop at any time. Every transplant center also gives donors an Independent Living Donor Advocate whose job is to protect the donor’s rights and make sure the decision is truly theirs.',
+  },
+  {
+    q: 'What is the surgery and recovery like for a kidney donor?',
+    a: (
+      <>
+        Most living kidney donors have a minimally invasive (laparoscopic) surgery and go home after a short hospital stay, and most people live full, healthy lives with one kidney. Recovery is different for everyone, so the transplant center is the right place for medical questions about your own health. Our blog post <Link href="/blog/how-living-kidney-donation-works" style={{ color: 'var(--emerald)', fontWeight: 600 }}>How Living Kidney Donation Works</Link> walks through every step in plain language.
+      </>
+    ),
+  },
+  {
+    q: 'What is the Save One Alert, and how do I get it?',
+    a: (
+      <>
+        The Save One Alert is our free email with the stories of people who urgently need a living donor or a medical miracle, so you can help or share when it matters most. Sign up in the box at the bottom of any page. TV, radio, podcast and newspaper producers can get our weekly alerts for the media on the <Link href="/media-alerts" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Media Alerts</Link> page.
+      </>
+    ),
+  },
+  {
+    q: 'I wasn’t a match. Can I still help someone else?',
+    a: (
+      <>
+        Yes. Join our <Link href="/ready-to-help" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Ready to Help list</Link> and we’ll reach out when the next patient needs a living donor. You can also ask a transplant center about paired kidney exchange, where you donate to someone who matches you and your loved one receives a kidney from a donor who matches them.
+      </>
+    ),
+  },
+  {
+    q: 'Do you help with bone marrow and liver donation too?',
+    a: (
+      <>
+        Yes. Our stories include people who need a living kidney donor, a living liver donor or a bone marrow match. For bone marrow, the first step is joining the national registry (NMDP, formerly Be The Match). For kidney or liver donation, you start with the patient’s transplant center. See our <Link href="/urgent-requests" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Urgent Requests</Link> to find out who needs help right now.
+      </>
+    ),
+  },
+  {
+    q: 'Can I post a story for a friend or family member?',
+    a: (
+      <>
+        Yes. Many stories are sent to us by a family member or friend (sometimes called a donor champion). Please make sure the patient or their family agrees to share the story first. Then use our <Link href="/urgent-requests/submit" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Post an Urgent Need</Link> page. Read <Link href="/blog/how-to-find-a-living-kidney-donor" style={{ color: 'var(--emerald)', fontWeight: 600 }}>How to Find a Living Kidney Donor</Link> for tips on telling the story so people can act on it.
       </>
     ),
   },

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import SharePanel from '@/components/ui/SharePanel'
 import GivingTuesdayBanner from '@/components/ui/GivingTuesdayBanner'
+import SaveOneAlertSignup from '@/components/ui/SaveOneAlertSignup'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURED_REQUESTS } from '@/lib/featuredRequests'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
@@ -377,6 +378,15 @@ export default async function HomePage() {
               </RevealOnScroll>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── SAVE ONE ALERT SIGN-UP ── */}
+      <section className="save-one-alert-home" style={{ paddingTop: 8, paddingBottom: 72 }}>
+        <div className="container">
+          <RevealOnScroll>
+            <SaveOneAlertSignup />
+          </RevealOnScroll>
         </div>
       </section>
 

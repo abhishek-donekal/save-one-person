@@ -4,8 +4,9 @@ import DonateForm from './DonateForm'
 import GivingTuesdayBanner from '@/components/ui/GivingTuesdayBanner'
 
 export const metadata: Metadata = {
-  title: 'Donate — Help Save a Life',
-  description: 'Your tax-deductible donation to Save One Person funds media outreach, storytelling, and technology that connects patients with life-saving donors. Secure checkout — PayPal, cards, Apple & Google Pay.',
+  title: 'Donate: Help Patients Find a Living Donor',
+  description: 'Give a tax-deductible gift to Save One Person, a 501(c)(3). Your donation funds the media outreach and storytelling that help patients find living donors. Secure checkout.',
+  alternates: { canonical: '/donate' },
 }
 
 const TIERS = [

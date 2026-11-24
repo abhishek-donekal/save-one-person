@@ -29,6 +29,89 @@ export interface StaticBlogPost {
 
 export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
   {
+    id: 'static-2026-11-24-how-living-donation-works',
+    slug: 'how-living-kidney-donation-works',
+    title: 'How Living Kidney Donation Works: From the First Phone Call to Recovery',
+    seo_title: 'How Living Kidney Donation Works: Steps, Surgery, Recovery',
+    seo_description:
+      'Thinking about donating a kidney? Here is how living kidney donation works, step by step: the first call, the donor evaluation, surgery, recovery, costs and follow-up.',
+    excerpt:
+      'What actually happens when you offer to donate a kidney? A plain-language walk through every step, from your first call to a transplant center to life after donation.',
+    featured_image_url: 'https://www.saveonepersonnow.org/images/miracles-happen.jpg',
+    image_alt: 'Two people joined by a glowing heart with wings: one story shared, one living donor found, one life saved',
+    author: 'Save One Person',
+    category: 'Living Donation',
+    published_at: '2026-11-24T12:00:00-05:00',
+    tags: ['Living kidney donation', 'Kidney donor evaluation', 'Donor surgery', 'Donor recovery', 'Paired exchange'],
+    share_text: 'Ever wondered how living kidney donation actually works? This simple step-by-step guide explains it:',
+    show_donate: true,
+    related: [
+      { href: '/become-a-donor', label: 'Join our living kidney donor list' },
+      { href: '/living-kidney-donation-myths-facts', label: 'Myth vs Fact: Living Kidney Donation' },
+      { href: '/blog/how-to-find-a-living-kidney-donor', label: 'How to find a living kidney donor' },
+      { href: '/help-william', label: 'Could you be 3-year-old William’s donor?' },
+      { href: '/faq', label: 'Living donor FAQ' },
+    ],
+    content: `This Thanksgiving, many of us will sit around a table and give thanks for the people we love. For thousands of families, there is one more thing they are hoping for: a kidney. More than 94,000 people in the United States are waiting for a kidney transplant, and a **living donor** is often their fastest path to one.
+
+Most people have never been asked to think about living donation, so it can feel mysterious or scary. Here is what really happens, step by step, in plain language.
+
+## Step 1: The first call (no commitment)
+
+It starts with a phone call or an online form. You contact the **transplant center** where the patient is listed (or, if you want to give to anyone who needs it, a transplant center near you). Usually you answer a confidential health history questionnaire first.
+
+Making that first call does **not** commit you to anything. As NewYork-Presbyterian puts it, going through the evaluation "doesn't mean potential donors are committing to donate." You can stop at any point.
+
+## Step 2: The donor evaluation
+
+If the questionnaire looks good, the center invites you for a full evaluation. According to the [National Kidney Foundation](https://www.kidney.org/kidney-topics/living-kidney-donor-evaluation), most living donor evaluations take about two days. It usually includes:
+
+- **Blood and urine tests** to check your kidney function, blood type and overall health
+- **Imaging**, such as a CT scan, so the surgeons can see your kidneys
+- **Heart and lung checks**, such as an EKG and a chest X-ray
+- **Meetings with the team**: a nurse coordinator, a kidney doctor, a surgeon, a social worker and a financial coordinator
+
+You will also meet an **Independent Living Donor Advocate**. This person is on **your** side, not the patient's. Their job is to make sure your rights as a donor are protected and that your decision is truly yours.
+
+Then a selection committee reviews everything and decides whether donating is safe for you. That decision protects you first.
+
+## Step 3: Not a match? You can still help
+
+Many willing donors learn they are not a match for the person they wanted to help. That is not the end of the story. Through **paired kidney exchange**, you donate to a stranger who matches you, and a donor who matches your loved one gives to them. These swaps can form chains that save several lives.
+
+When Bonnie LaRossa saw a Save One Alert on PIX11, she entered a kidney swap program, and [8 lives were saved](/success-stories/bonnie-watches-save-one-alert-on-pix11-and-enters-kidney-swap-program-8-lives-saved).
+
+## Step 4: The surgery
+
+Almost every living kidney donor today has a **laparoscopic nephrectomy**, a surgery done through small incisions. [University of Utah Health](https://healthcare.utah.edu/transplant/living-donor/kidney/surgery) says the operation usually lasts three to five hours, and most donors stay in the hospital for one to three days.
+
+## Step 5: Recovery
+
+Recovery is different for everyone, and your own surgeon will give you instructions. University of Utah Health tells donors to take it easy for two to three weeks after they go home, and says full recovery usually takes up to four weeks. Most people live full, healthy lives with one kidney.
+
+## Step 6: Follow-up care
+
+Transplant centers check on donors after surgery, typically with visits at about six months, one year and two years. After that, you keep seeing your own doctor every year, like anyone else.
+
+## What about the cost?
+
+Donors often worry about money. In most cases the **recipient's insurance** pays for the donor's evaluation, surgery and hospital stay. The [National Living Donor Assistance Center](https://livingdonorassistance.org/How-to-Apply/How-NLDAC-Helps) can help eligible donors with travel, lost wages and dependent care. Ask the center's financial coordinator what applies to you.
+
+Remember: buying or selling organs is illegal. Living donation is always a gift.
+
+## Who is waiting right now
+
+Three-year-old [William Fritts](/help-william) does 10 hours of dialysis every night and needs a living kidney donor with type O blood. [Karen Zabriskie](/urgent-requests/karen-zabriskie), 56, has lived with polycystic kidney disease since she was 17 and is also hoping for a living donor. You can read their stories and many more on our [Urgent Requests](/urgent-requests) page.
+
+## A conversation worth having at the table
+
+You don't have to decide anything today. But this Thanksgiving, you could talk about it. Ask your family if they've ever thought about living donation. Share this article. One conversation, one share, could reach the person who becomes someone's miracle.
+
+At Save One Person, we believe no one should die because their story wasn't told.
+
+This article is for general information and is not medical advice. Every transplant center has its own rules, so always talk with a transplant center about your situation.`,
+  },
+  {
     id: 'static-2026-11-23-find-living-kidney-donor',
     slug: 'how-to-find-a-living-kidney-donor',
     title: 'How to Find a Living Kidney Donor: A Step-by-Step Guide for Patients and Families',
@@ -50,6 +133,7 @@ export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
       { href: '/urgent-requests/submit', label: 'Ask Save One Person to share your story' },
       { href: '/living-kidney-donation-myths-facts', label: 'Myth vs Fact: Living Kidney Donation' },
       { href: '/become-a-donor', label: 'Become a living kidney donor' },
+      { href: '/blog/how-living-kidney-donation-works', label: 'How living kidney donation works, step by step' },
       { href: '/success-stories', label: 'Success stories' },
     ],
     content: `More than 94,000 people in the United States are waiting for a kidney transplant ([HRSA/OPTN data, January 2026](https://hrsa.unos.org/data)). Many will wait years for a kidney from a deceased donor. A **living donor** can change that: a healthy person gives one of their two kidneys, and the patient can get a transplant much sooner. In 2025, [7,237 people became living organ donors](https://unos.org/?p=321603) in the U.S.

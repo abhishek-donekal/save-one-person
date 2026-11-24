@@ -9,8 +9,9 @@ import { SECTIONS, sectionOf, hiddenFromList, isBook } from '@/lib/shop/organize
 import type { CardProduct } from '@/components/shop/ProductCard'
 
 export const metadata: Metadata = {
-  title: 'Shop — Support the Mission',
-  description: 'Books, wellness offerings, and ways to give. Every purchase supports Save One Person’s life-saving mission.',
+  title: 'Gifts That Give: Shop to Support Our Mission',
+  description: 'Go Bless Yourself tees and Lauren Finkelstein’s books. Proceeds go to Save One Person, the nonprofit that helps people find living organ donors.',
+  alternates: { canonical: '/shop' },
 }
 
 export const revalidate = 300

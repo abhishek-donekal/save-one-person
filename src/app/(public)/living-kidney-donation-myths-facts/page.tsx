@@ -114,6 +114,7 @@ export default function MythsFactsPage() {
             <a href="https://www.kidney.org/transplantation/livingdonors" target="_blank" rel="noopener noreferrer" style={link}>National Kidney Foundation</a>{' '}
             and the{' '}
             <a href="https://www.kidneyregistry.org/" target="_blank" rel="noopener noreferrer" style={link}>National Kidney Registry</a>.
+            Want the whole process step by step? Read <Link href="/blog/how-living-kidney-donation-works" style={link}>How Living Kidney Donation Works</Link>.
             Have another question? See our <Link href="/faq" style={link}>FAQ</Link>.
           </p>
 

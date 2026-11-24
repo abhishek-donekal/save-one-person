@@ -59,6 +59,11 @@ export default function BecomeADonorPage() {
                 <Link href="/urgent-requests" style={{ color: 'var(--emerald)', fontWeight: 600 }}>
                   See who is waiting for a match →
                 </Link>
+                <br />
+                New to this?{' '}
+                <Link href="/blog/how-living-kidney-donation-works" style={{ color: 'var(--emerald)', fontWeight: 600 }}>
+                  How living kidney donation works, step by step →
+                </Link>
                 <p style={{ marginTop: 12, fontSize: 13 }}>
                   Save One Person shares stories and makes introductions. We don&apos;t give medical advice.
                 </p>

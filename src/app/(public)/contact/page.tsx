@@ -2,8 +2,9 @@ import type { Metadata } from 'next'
 import ContactForm from './ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch with Lauren Finkelstein at Save One Person. Whether you need help, want to donate, or want to partner with us.',
+  title: 'Contact Us: Get Help Finding a Living Donor',
+  description: 'Need help finding a living kidney donor, want to share a story, volunteer, donate or partner? Contact Lauren Finkelstein and the Save One Person team.',
+  alternates: { canonical: '/contact' },
 }
 
 export default function ContactPage() {

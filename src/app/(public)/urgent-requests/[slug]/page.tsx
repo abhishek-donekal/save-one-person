@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { getFeaturedRequest } from '@/lib/featuredRequests'
 import SharePanel from '@/components/ui/SharePanel'
+import SaveOneAlertSignup from '@/components/ui/SaveOneAlertSignup'
 import { liveImage } from '@/lib/imageFocus'
 
 interface Props {
@@ -24,7 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: seoTitle(data?.title, 'Urgent Request'),
-    description: data ? `${data.patient_name} urgently needs help with ${data.medical_condition}.` : undefined,
+    description: data ? `${data.patient_name} needs help: ${data.medical_condition}. Read their story, see if you could be a living donor, and share it. One share could reach the person who saves a life.` : undefined,
+    alternates: { canonical: `https://www.saveonepersonnow.org/urgent-requests/${slug}` },
     openGraph: data ? {
       title: data.title,
       description: `${data.patient_name} urgently needs a living donor. Please read and share — one share could reach the person who saves a life.`,
@@ -50,6 +52,8 @@ export default async function UrgentRequestPage({ params }: Props) {
   if (!req || !req.published || req.submission_status === 'pending') notFound()
 
   const paragraphs = req.story_text.split('\n\n').filter(Boolean)
+  // Lauren: William's ask is a living donor, never money.
+  const noMoneyAsk = /william fritts/i.test(req.patient_name || '') || slug.includes('william')
   const pct = req.donation_goal && req.donation_goal > 0
     ? Math.min(100, Math.round((req.donation_raised / req.donation_goal) * 100))
     : 0
@@ -139,6 +143,10 @@ export default async function UrgentRequestPage({ params }: Props) {
             <Link href="/ready-to-help" style={{ color: 'var(--emerald)', fontWeight: 600 }}>Join the Ready to Help list →</Link>
           </p>
 
+          <div style={{ marginTop: 48 }}>
+            <SaveOneAlertSignup patientName={req.patient_name} />
+          </div>
+
           {(req.contact_email || req.contact_phone || req.social_facebook || req.social_instagram || req.social_twitter || req.social_other || req.gofundme_url) && (
             <div style={{ marginTop: 48, padding: 32, background: 'var(--white)', border: '1.5px solid var(--border)', borderRadius: 'var(--r-2xl)' }}>
               <div className="section-label" style={{ marginBottom: 12 }}>Reach {req.patient_name} Directly</div>
@@ -186,9 +194,11 @@ export default async function UrgentRequestPage({ params }: Props) {
           <div style={{ marginTop: 64, padding: 40, background: 'var(--grad-navy)', borderRadius: 'var(--r-3xl)', color: 'white', textAlign: 'center' }}>
             <div className="section-label section-label-soft">Take Action</div>
             <h2 style={{ fontFamily: "'Fraunces', serif", fontSize: 32, marginTop: 12, marginBottom: 16 }}>Help {req.patient_name} Today</h2>
-            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>Share this story, make a donation, or reach out to Lauren to discuss how you can help directly.</p>
+            <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>{noMoneyAsk ? 'Share this story, ask about becoming a living donor, or reach out to Lauren to discuss how you can help directly.' : 'Share this story, make a donation, or reach out to Lauren to discuss how you can help directly.'}</p>
             <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '14px 28px' }}>Donate Now</a>
+              {noMoneyAsk
+                ? <Link href="/become-a-donor" className="btn btn-emerald" style={{ padding: '14px 28px' }}>Become a Living Donor</Link>
+                : <a href={DONATE_URL} className="btn btn-emerald" style={{ padding: '14px 28px' }}>Donate Now</a>}
               <a href="mailto:Save1Person@aol.com" className="btn btn-ghost" style={{ padding: '14px 28px' }}>Contact Lauren</a>
             </div>
           </div>
