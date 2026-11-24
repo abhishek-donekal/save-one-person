@@ -78,32 +78,16 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://stalwart-puffpuff-744c94.netlify.app" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        {/* Google Tag Manager container GTM-PS3W8BTB */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PS3W8BTB');`}
-        </Script>
       </head>
       <body style={{ fontFamily: "'Inter', sans-serif" }}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PS3W8BTB"
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
         {children}
-        {/* Google tag (Google Ads / Ad Grant account AW-599305263) */}
+        {/* Google tag: Google Analytics G-8W5DN2825L and Google Ads AW-599305263 */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=AW-599305263" strategy="afterInteractive" />
         <Script id="google-tag" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
+gtag('config', 'G-8W5DN2825L');
 gtag('config', 'AW-599305263');`}
         </Script>
       </body>
