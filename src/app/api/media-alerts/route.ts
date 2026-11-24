@@ -42,5 +42,22 @@ export async function POST(request: Request) {
   // Also add to the alerts email list (ignore if already there).
   await supabase.from('newsletter_subscribers').upsert({ email, source: 'media' }, { onConflict: 'email', ignoreDuplicates: true })
 
+  // Add them in Kit through the Save One Person Unit form (10233792): they get the free
+  // newsroom guide email and the "Save One Alert subscribers" tag for the weekly alert.
+  try {
+    await fetch('https://app.kit.com/forms/10233792/subscriptions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
+      body: new URLSearchParams({
+        email_address: email,
+        first_name: name,
+        'fields[station_or_outlet]': outlet,
+      }).toString(),
+      signal: AbortSignal.timeout(5000),
+    })
+  } catch {
+    // Never let Kit problems break the website sign-up.
+  }
+
   return NextResponse.json({ ok: true }, { status: 201 })
 }

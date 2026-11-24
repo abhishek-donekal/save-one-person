@@ -31,7 +31,7 @@ export default function MediaAlertsForm() {
       <div style={{ padding: 40, background: '#dcfce7', borderRadius: 'var(--r-2xl)', textAlign: 'center' }}>
         <div style={{ fontSize: 44, marginBottom: 12 }}>✓</div>
         <h3 style={{ fontFamily: "'Fraunces', serif", fontSize: 26, color: '#166534', marginBottom: 10 }}>You&apos;re signed up for Save One Alerts.</h3>
-        <p style={{ color: '#166534', fontSize: 16, lineHeight: 1.7 }}>We&apos;ll send you urgent patient stories as they come in. Thank you for helping us reach the person who can save a life.</p>
+        <p style={{ color: '#166534', fontSize: 16, lineHeight: 1.7 }}>Please check your email and confirm your sign-up. Then you&apos;ll get our free newsroom guide right away and the Save One Person Alert every week. Thank you for helping us reach the person who can save a life.</p>
       </div>
     )
   }
