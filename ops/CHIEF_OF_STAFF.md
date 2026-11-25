@@ -131,3 +131,10 @@ EVERY post and email below is a DRAFT shown to Lauren first. Nothing is posted o
 
 ### Matching gift (only Lauren can ask)
 - The single biggest boost is a donor or company willing to MATCH gifts on Dec 1 ("every gift doubled up to $X"). Only Lauren asks them. If she lands one, add "Gifts matched" to the page and every post (with her OK).
+
+## AI drama videos (Lauren, Nov 25, 2026)
+- Free only: Meta AI (meta.ai, signed in as lauren.finkelstein1; free daily limit resets each day; do NOT pay). Kling free credits as backup.
+- Every drama shows SAVE ONE ALERT, saveonepersonnow.org, "Dramatization" (small). Org spots end with Donate; patient spots end with "Could YOU be <Name>'s living kidney donor?" and NO money ask.
+- Weekly: Person of the Week in a newsroom (breaking-news style with their real photo), Monday.
+- Billionaire series ("starts Save One stations across the globe"): Fridays, ep 1 Nov 27, ep 2 Dec 4, ep 3 Dec 11, ep 4 Dec 18. Swear word bleeped/masked.
+- At most ~2 posts per account per day (daily Short + one other).
