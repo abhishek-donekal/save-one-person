@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import CoursePromo from '@/components/course/CoursePromo'
 
 export const metadata: Metadata = {
   title: 'About Us: How We Use the Media to Find Living Donors',
@@ -242,8 +241,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-
-      <CoursePromo />
 
       <style>{`
         @media (max-width: 700px) {

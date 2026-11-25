@@ -122,6 +122,10 @@ export default function MiracleCoursePage() {
             <p style={{ marginTop: 12, marginBottom: 24, fontSize: 17, color: 'var(--muted)' }}>
               $47 for the full course: 12 lessons, 12 practices, the 33-page workbook, bonus tools and the book. Instant access after checkout.
             </p>
+            <p style={{ marginTop: -8, marginBottom: 24, fontSize: 14, color: 'var(--muted)', maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
+              All proceeds go to Save One Person, a 501(c)(3) nonprofit (EIN 84-4214447), and pay for our media outreach that helps
+              people who need a living organ donor or a medical miracle find the person who can save them.
+            </p>
             <BuyButton />
           </div>
         </div>

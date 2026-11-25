@@ -37,6 +37,9 @@ export default function CoursePromo({ compact = false }: { compact?: boolean }) 
             told not to hope for. In 12 short daily lessons, she shares the 12 ingredients she saw again and again, with
             a practice, journal questions and a Miracle Action for each day.
           </p>
+          <p style={{ fontSize: 14, lineHeight: 1.6, opacity: 0.75, margin: '12px 0 0' }}>
+            All proceeds go to Save One Person, a 501(c)(3) nonprofit, and fund our work sharing the stories of people who need a living organ donor.
+          </p>
           <div style={{ marginTop: 22, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
             <Link href="/miracle-course/free-lesson" className="btn btn-emerald">Try Day 1 free →</Link>
             <Link href="/miracle-course" style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline' }}>
