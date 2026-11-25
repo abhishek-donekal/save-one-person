@@ -136,5 +136,6 @@ EVERY post and email below is a DRAFT shown to Lauren first. Nothing is posted o
 - Free only: Meta AI (meta.ai, signed in as lauren.finkelstein1; free daily limit resets each day; do NOT pay). Kling free credits as backup.
 - Every drama shows SAVE ONE ALERT, saveonepersonnow.org, "Dramatization" (small). Org spots end with Donate; patient spots end with "Could YOU be <Name>'s living kidney donor?" and NO money ask.
 - Weekly: Person of the Week in a newsroom (breaking-news style with their real photo), Monday.
+- Weekly: a family watches a SAVE ONE ALERT on air and says "Let's save a life" (new family each week), Wednesday 5 PM, starting Dec 2.
 - Billionaire series ("starts Save One stations across the globe"): Fridays, ep 1 Nov 27, ep 2 Dec 4, ep 3 Dec 11, ep 4 Dec 18. Swear word bleeped/masked.
 - At most ~2 posts per account per day (daily Short + one other).
