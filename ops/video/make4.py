@@ -8,7 +8,9 @@ import numpy as np
 from PIL import Image
 sys.path.insert(0, '/tmp/clean'); from detect import detect
 src, out = sys.argv[1], sys.argv[2]
-hook = (float(sys.argv[3]), float(sys.argv[4])) if len(sys.argv) > 4 else None
+# or: python3 make4.py src out start S   -> start the video at S seconds (a strong sentence), play to the end card
+start_at = float(sys.argv[4]) if len(sys.argv) > 4 and sys.argv[3] == 'start' else 0.0
+hook = (float(sys.argv[3]), float(sys.argv[4])) if len(sys.argv) > 4 and sys.argv[3] != 'start' else None
 TOP, BOT = 200, 110; VH = 1280 - TOP - BOT
 
 def dur(f):
@@ -38,7 +40,7 @@ def seg(a, b, crop, path):
 
 tmp = tempfile.mkdtemp(); parts = []
 if hook: parts.append((hook[0], hook[1], True))
-parts.append((0, card, True))
+parts.append((start_at, card, True))
 if D - card > 0.3: parts.append((card, D, False))
 files = []
 for i, (a, b, cr) in enumerate(parts):
