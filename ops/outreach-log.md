@@ -12,6 +12,7 @@ Check this file AND Gmail "Sent" before choosing targets (some earlier outreach 
 - 2026-11-10 The Home Depot Foundation: declined (not a fit). DECLINED.
 - 2026-11-19 AutoNation (Community@autonation.com): "unable to support this request". DECLINED.
 - 2026-11-11 HealthWell Foundation: marked our email as unsolicited. DECLINED.
+- 2026-11-24 Florida Blue / Florida Blue Foundation (Michelle Hamilton, CSR): unable to be Presenting Sponsor. DECLINED.
 
 ## 2026-11-17 (Tue) — 3D printing partners (3D Innovation Partner $5,000/3 mo; big cos also offered $25K Presenting)
 | Date | Theme | Org | Contact | Email/form | Source URL | Status |
@@ -213,3 +214,23 @@ Ideas for later 3D Tuesdays (not contacted): Axial3D (only a 2019 press email r.
 Replies/bounces since Nov 23: SNF replied (info@snf.org, Nov 23): apply via grant portal https://www.snf.org/en/grants/information-for-applicants-how-to-apply/ ; more selective due to Global Health Initiative. Good Good Good (Margaux) passed the Ready to Help story to editors, no promise. Transplant Village (Laurie Lee) sent Zoom invite for today Tue 11/24 12:00 ET. BOUNCED: heroes@guideposts.org; tips@floridatrib.org ("group tips may not exist"). Denver7 + Newsweek + AARP: auto-replies only.
 
 Save One Alert media send: 2026-11-24 ~8:53 AM ET, batch 01 (2,500 NeverBounce-good), Gavin version, Kit broadcast 27257606 (copy of master 27246314), tag "Media batch 01" (26378444) only, from admin@saveonepersonnow.org. Sent manually on Lauren's "SEND OUT NOW BATCH 1" (the Nov 23 auto-send never went out). Batch 02 goes with the 5:39 PM daily task tonight.
+
+## 2026-11-25 (Wed) — Podcasts (guest pitch for Lauren; 3 episode angles each; inline logo + "What X gains"; William link only on donor-awareness pitches, no money ask)
+All 10 saved as Gmail drafts ~05:25 ET; waiting for Lauren's OK (nothing sent).
+| Date | Theme | Org | Contact | Email/form | Source URL | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-25 | Podcast | Not Just Patients | Caitlin Rich & Clarinda Cerejo | info@notjustpatients.com | https://www.buzzsprout.com/2343267 | draft r1175903965845207178 |
+| 2026-11-25 | Podcast | Empowered Patient Podcast | Karen Jagoda | kjagoda@turtlebackinteractive.com | https://empoweredpatient.libsyn.com/contact | draft r2024008635815352537 |
+| 2026-11-25 | Podcast | The Divine In Our Time (faith/miracles) | Brittany Neal | thedivineinourtime@gmail.com | https://podcasts.apple.com/podcast/id1810819758 | draft r2559094314460746256 |
+| 2026-11-25 | Podcast | Inspire Hope (faith) | Samuel Bernard | inspirehopepodcast@gmail.com | https://podcasts.apple.com/us/podcast/inspire-hope/id1626486498 | draft r8638854369728976633 |
+| 2026-11-25 | Podcast | Heaven Meets Earth (CBN) | Abigail Robertson / CBN podcasts inbox | cbnpodcasts@gmail.com | https://feeds.megaphone.fm/heaven-meets-earth (itunes:email) | draft r6017030179268629714 |
+| 2026-11-25 | Podcast | Sparks of Gratitude | Randy Sparks | info@sparksofgratitude.com | https://podcasts.apple.com/podcast/id1725414927 | draft r-3853187349926874821 |
+| 2026-11-25 | Podcast | The Female CEO Podcast | Mark Sephton | mark@thefemaleceo.com | https://anchor.fm/s/10faf1300/podcast/rss (itunes:email) | draft r5751266935334466755 |
+| 2026-11-25 | Podcast | The Story Exchange Podcast (NYC, women founders) | Colleen DeBaise / info inbox | info@thestoryexchange.org | https://thestoryexchange.org/podcast/ | draft r4457778281602851935 |
+| 2026-11-25 | Podcast | Nonprofit Leadership Podcast | Dr. Rob Harter | parkcityrob1@gmail.com | https://nonprofitleadershippodcast.org/feed/podcast/ (itunes:email) | draft r6424121149982163635 |
+| 2026-11-25 | Podcast | Culturally Speaking: South Florida Sunday (Urban League of Palm Beach County / Hubbard Radio) | show contact | info@ulpbc.org | https://ulpbc.org/south-florida-sunday-radio-show | draft r4402396250520352091 |
+| 2026-11-25 | Podcast | Radio Health Journal (syndicated radio) | web form | https://radiohealthjournal.org/contact/ | same | form text given to Lauren |
+Skipped: Kidney Transplant Conversations (rolftaylor@projectadvocacy.com already emailed earlier, found in Gmail Sent); Donor Diaries (Laurie Lee, already in talks via Transplant Village); Transplant Talks (email listed for sponsors only).
+Podcast ideas for later Wednesdays (not contacted): Purposely Podcast (mark@purposelypodcast.com, NZ), Cause & Purpose (info@altruous.org), Driven by Cause (gabriella.salemi@arreva.com), Witness the Wonder (form https://christinasmithofficial.com/apply-to-be-a-guest), Health UNMUTED (form), Entreprenista (form), Kidney Fighter Show / Let's Talk Transplant (no email found yet).
+Replies/bounces since Nov 24: Florida Blue (Michelle Hamilton, Sr. Dir. CSR, Nov 24) DECLINED Presenting Sponsor ("current funding commitments") — do not re-pitch. Benevity (Nov 25, AI support bot): register/claim Save One Person on the Benevity Causes Portal (needs authorization letter + bank info; Lauren must do it). BOUNCED (other tasks, Nov 24): bcrandell@sunsentinel.com, pasikaskinen@brinter.com, comericacorpcontributionscmail@comerica.com. Denver7/Newsweek/AARP: auto-replies only.
+Still unsent from Mon Nov 23 (Share the Alert): 10 drafts (WSB-TV, Denver7, Henry Ford, Houston Methodist, Ochsner, Dialysis Patient Citizens, NephCure, Donate Life California, UM News, PCUSA) re-offered to Lauren today.
