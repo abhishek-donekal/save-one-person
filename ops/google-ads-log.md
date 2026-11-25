@@ -111,3 +111,10 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Replied on case 7-9611000041369 (thread 1a1eb797572a012e, msg 1a20e5a0ce3e1482): GA G-8W5DN2825L + Ads tag AW-599305263 now on every page; asked Google to restore edit access or make the fixes; asked which policy applies (Website vs Account management). Backup plan if no help by ~Dec 1: new Ad Grants application via Google for Nonprofits.
 - 11:21 AM second email sent (Lauren asked): "we have now written you four times", asked for edit access / changes or escalation (msg 1a20e5bcc0f5fb03).
 - 11:22 AM third email sent (Lauren asked): "you keep saying fix the problems while we cannot; please respond to what we are actually asking" + 3 numbered questions (msg 1a20e5d05010035a).
+
+## 2026-11-25 daily check (read only)
+- Gmail: Nov 25 9:13am ET Google (Taqdees) replied on case 7-9611000041369 (thread 1a1eb797572a012e, msg 1a2130e44b9e4f2f), first specific ask: "the bid strategy has not yet been updated". Change **Save One Person- Branded** and **Save One Person- Organ Donation** to "Maximize Conversions" or "Maximize Conversion Value", status "Enabled", then notify them.
+- Also Nov 24 11:09pm ET: "Ads disapproved (1)" for campaign Save One Person- Blog (Misleading content / unreliable claims).
+- Ads UI (684-224-8625): banner still "deactivated for not complying with Google Ad Grants' Website policy"; page says "You have read-only access to this account", so we CANNOT make Google's change. Nov 1-25: 2 impr, $0.
+- Current state: Save One Person- Branded = Eligible, Maximize clicks, $15/day. Save One Person- Organ Donation = Paused, Maximize clicks, $30/day, some ads disapproved. Still Eligible: SOP Grant - Living Kidney Donors (Max conv), Help William Find a Kidney Donor, Holiday Gifts That Give Back (must be paused when editable). Old 2020 campaigns + 2 "Algorithm" campaigns now show Removed.
+- No changes made. Sent Lauren Google's ask + a draft reply (asks Google to restore edit access or make the bid change themselves). Not sent to Google; waiting for her OK. Note: Google's ask overrides our "keep Maximize clicks" plan for these 2 campaigns; Lauren told.
