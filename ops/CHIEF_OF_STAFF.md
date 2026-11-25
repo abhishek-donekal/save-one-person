@@ -138,5 +138,6 @@ EVERY post and email below is a DRAFT shown to Lauren first. Nothing is posted o
 - Weekly: Person of the Week in a newsroom (breaking-news style with their real photo), Monday.
 - Weekly: a family watches a SAVE ONE ALERT on air and says "Let's save a life" (new family each week), Wednesday 5 PM, starting Dec 2.
 - Weekly: a newsroom collects lists of people willing to be a living kidney donor for someone else (not a match -> paired exchange) and hands the list to hospitals and organizations, Thursday 5 PM, starting Dec 3.
+- Weekly: "Brands That Save Lives" (MADE-UP brands carrying a SAVE ONE ALERT on cups, trucks, cereal boxes, apps), Tuesday 5 PM, starting Dec 8. Also use in sponsor outreach.
 - Billionaire series ("starts Save One stations across the globe"): Fridays, ep 1 Nov 27, ep 2 Dec 4, ep 3 Dec 11, ep 4 Dec 18. Swear word bleeped/masked.
 - At most ~2 posts per account per day (daily Short + one other).
