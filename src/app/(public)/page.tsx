@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import RevealOnScroll from '@/components/ui/RevealOnScroll'
 import SharePanel from '@/components/ui/SharePanel'
+import CoursePromo from '@/components/course/CoursePromo'
 import GivingTuesdayBanner from '@/components/ui/GivingTuesdayBanner'
 import SaveOneAlertSignup from '@/components/ui/SaveOneAlertSignup'
 import { createClient } from '@/lib/supabase/server'
@@ -469,6 +470,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── ONLINE COURSE ── */}
+      <CoursePromo />
 
       {/* ── FOR FAMILIES: what happens after you share ── */}
       <section id="how" className="how">

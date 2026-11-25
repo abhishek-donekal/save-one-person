@@ -29,6 +29,127 @@ export interface StaticBlogPost {
 
 export const STATIC_BLOG_POSTS: StaticBlogPost[] = [
   {
+    id: 'static-2026-11-25-how-to-pray-for-a-miracle',
+    slug: 'how-to-pray-for-a-miracle',
+    title: 'How to Pray for a Miracle: 5 Simple Steps From Someone Who Has Seen Them Happen',
+    seo_title: 'How to Pray for a Miracle: 5 Simple Steps',
+    seo_description:
+      'Need a miracle? Here is a simple, practical way to pray for one, from Lauren Finkelstein, founder of Save One Person, who has watched strangers become living kidney donors.',
+    excerpt:
+      'You don’t need special words or a special place to pray for a miracle. Here are five simple steps, and the true story of a prayer that found a living kidney donor.',
+    featured_image_url: 'https://www.saveonepersonnow.org/images/miracles-light.jpg',
+    image_alt: 'Warm light shining through, a symbol of hope and miracles',
+    author: 'Lauren Finkelstein',
+    category: 'Miracles',
+    published_at: '2026-11-25T12:00:00-05:00',
+    tags: ['Prayer', 'Miracles', 'Faith', 'Hope', 'How to Create a Miracle'],
+    share_text: 'Need a miracle? This simple way to pray for one might help someone you love:',
+    show_donate: true,
+    related: [
+      { href: '/miracle-course/free-lesson', label: 'Free lesson: Day 1 of How to Create a Miracle' },
+      { href: '/miracle-course', label: 'The 12-day online course: How to Create a Miracle' },
+      { href: '/success-stories', label: 'Real miracles from Save One Person' },
+      { href: '/urgent-requests', label: 'People who need a miracle right now' },
+    ],
+    content: `Most of us start praying for a miracle the same way: late at night, scared, asking for everything at once. That's human. But over years of helping people find living kidney donors through the media, I've noticed that the people who receive miracles often pray in a particular way: clearly, honestly, and with their sleeves rolled up.
+
+Here is a simple way to pray for a miracle, whatever your faith or tradition.
+
+## 1. Say exactly what you need
+
+A miracle starts with a clear request. Instead of "please let things get better," finish this sentence: **"Please help me with..."** Keep rewriting it until it's one specific sentence. When you name what you need, you stop drifting and start moving toward it.
+
+## 2. Speak honestly, the way you'd talk to someone who loves you
+
+You don't need special words or a special place. Speak to G-d, to the universe, or to whatever you feel is bigger than you. Say what scares you. Say what you want. Prayer isn't a performance; it's a conversation.
+
+## 3. Add a promise: "And I will do my part by..."
+
+Heshy Fellig needed a living kidney donor and couldn't find one. He flew to the Holy Land to pray at the graves of righteous souls. Then he kept doing his part. Soon after, a Save One Person alert about him ran in an email called Joke of the Day, and a Catholic woman from Alabama who had never met a Jew became his living kidney donor.
+
+Prayer and action aren't opposites. They are two hands clapping. Write down one thing you will do this week, then do it.
+
+## 4. Hand over what you can't control
+
+Part of prayer is letting go. You give the part you can't control to something bigger, so you can put your full energy into the part you can. Many people describe a calm that arrives before anything outside them changes. That calm is the ground you stand on while you wait.
+
+## 5. Pray for someone else's miracle too
+
+The surest way to find a miracle is to be one for someone else. Pick one person who is struggling and pray for them by name. Tell them you're praying for them. Better yet, ask what they need.
+
+## A simple practice for the next 12 days
+
+- Sit quietly for three minutes with a hand on your heart.
+- Say your one-sentence request out loud.
+- Add: "And I will do my part by..."
+- Do one small action before bed.
+
+This is Day 1 of my 12-day online course, **How to Create a Miracle**. You can [try the Day 1 lesson free](/miracle-course/free-lesson), or [see the full course](/miracle-course).
+
+## If you know someone who needs a miracle
+
+Save One Person shares the stories of people who need a living organ donor or a medical miracle, so the person who can save them finds out. [Read this week's urgent requests](/urgent-requests) and share one story with three people. That's a prayer with legs.`,
+  },
+  {
+    id: 'static-2026-11-25-how-to-keep-hope',
+    slug: 'how-to-keep-hope-when-someone-you-love-is-sick',
+    title: 'How to Keep Hope When Someone You Love Is Sick',
+    seo_title: 'How to Keep Hope When Someone You Love Is Sick',
+    seo_description:
+      'When someone you love is seriously ill, hope can feel impossible. Here are gentle, practical ways to hold on to hope, from the founder of Save One Person.',
+    excerpt:
+      'When someone you love is seriously ill, hope can feel foolish. It isn’t. Here are practical ways to hold on to it, and why sometimes hope is the most realistic thing you have.',
+    featured_image_url: 'https://www.saveonepersonnow.org/images/og-miracles.jpg',
+    image_alt: 'Save One Person: miracles happen when one story is shared',
+    author: 'Lauren Finkelstein',
+    category: 'Miracles',
+    published_at: '2026-11-25T12:00:00-05:00',
+    tags: ['Hope', 'Caregivers', 'Faith', 'Miracles', 'Living donors'],
+    share_text: 'For anyone with a loved one who is sick right now, this is worth reading:',
+    show_donate: true,
+    related: [
+      { href: '/miracle-course/free-lesson', label: 'Free lesson: Day 1 of How to Create a Miracle' },
+      { href: '/miracle-course', label: 'The 12-day online course: How to Create a Miracle' },
+      { href: '/urgent-requests/submit', label: 'Does your loved one need a living donor? Tell us their story' },
+      { href: '/blog/how-to-find-a-living-kidney-donor', label: 'How to find a living kidney donor' },
+    ],
+    content: `When someone you love is seriously ill, the days get long and the news can be hard. People may tell you to "be realistic." Some may even tell you to stop hoping.
+
+A doctor once told me that families of patients in a coma should stop hoping and let go. A week later, the woman translating a class for me hugged her seven-year-old son and said, "He was in a coma for several months, and now he's back with me. He's my miracle child." I've never forgotten it.
+
+Hope isn't the same as denial. You can listen carefully to the doctors, make hard decisions, and still hold on to hope. Here are some ways that help.
+
+## Feed your hope on purpose
+
+Fear and hope are both stories about a future that hasn't happened yet. Since you're telling yourself a story either way, choose one that gives you strength. Collect true stories of people who recovered or received a miracle, and read them when doubt creeps in. Limit the scary late-night searching.
+
+## Do one thing, then the next thing
+
+Looking at the whole mountain is overwhelming. Look at the next step instead: one phone call, one question for the medical team, one person to ask for help. Small actions turn helpless waiting into hopeful doing.
+
+## Use your voice
+
+Ask the extra question. Ask for a second opinion if you want one. If your loved one needs a living kidney donor, tell their story. Many living donors are found because someone was willing to share. Save One Person can help: [tell us their story](/urgent-requests/submit).
+
+## Let yourself have a moment of joy
+
+It can feel wrong to laugh when someone you love is sick. But joy refuels you so you can keep going. One song, one funny show, one walk outside. You're allowed.
+
+## Don't do it alone
+
+Ask friends to take on specific jobs: meals, rides, sharing a story online, sitting with you in the waiting room. People want to help; they're waiting to be asked.
+
+## Notice the miracles you already have
+
+Even in the hardest seasons, there are small miracles: a kind nurse, a good day, a stranger who offers to help. Write three down each night. Gratitude doesn't replace hope; it keeps you steady while you hope.
+
+## A 12-day path for hard times
+
+I put everything I've learned about miracles into a 12-day online course, **How to Create a Miracle**: a short lesson, a practice and a few journal questions each day. [Try Day 1 free](/miracle-course/free-lesson), or [see the full course](/miracle-course).
+
+*If you or someone you love is struggling emotionally, please reach out to a doctor, counselor or someone you trust. You don't have to carry this alone.*`,
+  },
+  {
     id: 'static-2026-11-24-how-living-donation-works',
     slug: 'how-living-kidney-donation-works',
     title: 'How Living Kidney Donation Works: From the First Phone Call to Recovery',
