@@ -461,7 +461,7 @@ export const LESSONS: Lesson[] = [
     "n": 12,
     "name": "Dream",
     "idea": "Dream big again, look for the miracles already in front of you, and notice the miracles that came even when your exact prayer wasn't answered.",
-    "story": "A doctor told Lauren that families should stop hoping. A week later, the woman translating a class for her hugged her seven-year-old and said he'd been in a coma for months: \"He's my miracle child.\" Lauren's own dream of Save One Person units in every newsroom isn't finished yet, and so many miracles have happened on the way.",
+    "story": "A doctor told Lauren that families of patients in a coma should stop hoping and let go. A week later, the woman translating a class for her hugged her seven-year-old and said he'd been in a coma for months: \"He's my miracle child.\" Lauren's own dream of Save One Person units in every newsroom isn't finished yet, and so many miracles have happened on the way.",
     "questions": [
       "What did you stop dreaming about, and why?",
       "What miracle is already in front of you that you've stopped seeing?",
@@ -472,7 +472,7 @@ export const LESSONS: Lesson[] = [
     "action": "Write your biggest dream without limits. Then write three miracles you already have.",
     "teaching": [
       "Life can teach us to stop dreaming. Disappointments pile up and we start protecting our hearts by wanting less. The last ingredient asks you to dream big again, without apologizing.",
-      "A doctor once told Lauren that families should stop hoping. A week later, the woman translating a class for her hugged her seven-year-old son and said he'd been in a coma for months: \"He's my miracle child.\" Hope isn't foolish. Sometimes it's the only realistic thing to hold on to.",
+      "A doctor once told Lauren that families of patients in a coma should stop hoping and let go. A week later, the woman translating a class for her hugged her seven-year-old son and said he'd been in a coma for months: \"He's my miracle child.\" Hope isn't foolish. Sometimes it's the only realistic thing to hold on to.",
       "Dreaming also means opening your eyes to the miracles already in front of you, and noticing the miracles that came even when your exact prayer wasn't answered. Lauren's dream of a Save One Person unit in every newsroom isn't finished yet, and so many miracles have happened along the way. Keep dreaming, and keep counting the miracles you already have."
     ],
     "why": "Big dreams give direction and energy. Gratitude for what you already have keeps you grounded and happy while you work toward what's next. Together they make a powerful combination: hope for the future and peace in the present.",
