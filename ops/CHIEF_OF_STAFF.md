@@ -137,10 +137,10 @@ EVERY post and email below is a DRAFT shown to Lauren first. Nothing is posted o
 - Every drama shows SAVE ONE ALERT, saveonepersonnow.org, "Dramatization" (small). Org spots end with Donate; patient spots end with "Could YOU be <Name>'s living kidney donor?" and NO money ask.
 - Weekly: Person of the Week in a newsroom (breaking-news style with their real photo), Monday.
 - Weekly: a family watches a SAVE ONE ALERT on air and says "Let's save a life" (new family each week), Wednesday 5 PM, starting Dec 2.
-- Weekly: a newsroom collects lists of people willing to be a living kidney donor for someone else (not a match -> paired exchange) and hands the list to hospitals and organizations, Thursday 5 PM, starting Dec 3.
+- Weekly: after the Person of the Week airs, a newsroom collects a list of people who want to be a living kidney donor for them but are NOT a match, or want a paired exchange, and hands it to hospitals and organizations, Thursday 5 PM, starting Dec 3.
 - Weekly: "Brands That Save Lives" (MADE-UP brands carrying a SAVE ONE ALERT on cups, trucks, cereal boxes, apps), Tuesday 5 PM, starting Dec 8. Also use in sponsor outreach.
 - Weekly: a FICTIONAL rockstar at a stadium tells the crowd about a real person from Urgent Requests (real photo on the jumbotron, no money ask), Saturday 5 PM, starting Nov 28.
-- Weekly: "Stars read a Save One Alert" — INVENTED celebrities around the world (never real people or look-alikes) read a Save One Alert to their fans, Sunday 5 PM, starting Nov 29.
+- Weekly: "Stars read a Save One Alert" — INVENTED celebrities around the world (never real people or look-alikes) read a REAL Save One Alert (real Urgent Requests person, real photo, no money ask) to their fans, Sunday 5 PM, starting Nov 29.
 - EVERY drama/spot ends with the website address saveonepersonnow.org on screen (Lauren, Nov 25).
 - Billionaire series ("starts Save One stations across the globe"): Fridays, ep 1 Nov 27, ep 2 Dec 4, ep 3 Dec 11, ep 4 Dec 18. Swear word bleeped/masked.
 - At most ~2 posts per account per day (daily Short + one other).
