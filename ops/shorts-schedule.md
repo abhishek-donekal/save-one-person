@@ -10,7 +10,7 @@ YouTube posts at 12:03 PM ET via Metricool (blog 7834403). Video: https://www.sa
 | 04 | 2026-11-22 | Why I Started Save One Person |
 | 05 | 2026-11-23 | On FOX 5 News - One Story Can Save a Life |
 | 06 | 2026-11-24 | Health Tip of the Day - Dr. Oleg Gozenpud |
-| 07 | 2026-11-25 | A Message from Lauren Finkelstein |
+| 15 | 2026-11-25 | A Simple Shower Hack for Your Health (v4, hook-first) |
 | 08 | 2026-11-26 | Why Lemon Water Is My Secret |
 | 09 | 2026-11-27 | Food Is Medicine |
 | 10 | 2026-11-28 | Rosacea Transformation with Natural Remedies |
@@ -18,7 +18,7 @@ YouTube posts at 12:03 PM ET via Metricool (blog 7834403). Video: https://www.sa
 | 12 | 2026-11-30 | Healthy and Active at 93 |
 | 13 | 2026-12-01 | Turning Personal Tragedy into a Mission |
 | 14 | 2026-12-02 | When a Little Light Sparks Big Changes |
-| 15 | 2026-12-03 | A Simple Shower Hack for Your Health |
+| 07 | 2026-12-03 | A Message from Lauren Finkelstein (needs re-edit: old boxed banners in the video) |
 | 16 | 2026-12-04 | How Energy Soup Transformed My Health |
 | 17 | 2026-12-05 | How Giving More Can Transform Your Life |
 | 18 | 2026-12-06 | A Natural Way to Detox - Glutathione |
