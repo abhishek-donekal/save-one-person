@@ -67,6 +67,9 @@ export default function MiracleCoursePage() {
             <p style={{ marginTop: 12, fontSize: 14, color: 'var(--muted)' }}>
               Secure checkout. Instant access. Every purchase supports Save One Person, a 501(c)(3) nonprofit.
             </p>
+            <p style={{ marginTop: 8, fontSize: 15 }}>
+              Not sure yet? <a href="/miracle-course/free-lesson" style={{ color: 'var(--emerald)', fontWeight: 700, textDecoration: 'underline' }}>Try Day 1 free</a>
+            </p>
           </div>
 
           <div style={{ marginTop: 72, fontSize: 18, lineHeight: 1.8, color: 'var(--muted)', display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -118,6 +121,10 @@ export default function MiracleCoursePage() {
             <h2 className="display" style={{ fontSize: 30 }}>Your miracle starts today.</h2>
             <p style={{ marginTop: 12, marginBottom: 24, fontSize: 17, color: 'var(--muted)' }}>
               $47 for the full course: 12 lessons, 12 practices, the 33-page workbook, bonus tools and the book. Instant access after checkout.
+            </p>
+            <p style={{ marginTop: -8, marginBottom: 24, fontSize: 14, color: 'var(--muted)', maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
+              All proceeds go to Save One Person, a 501(c)(3) nonprofit (EIN 84-4214447), and pay for our media outreach that helps
+              people who need a living organ donor or a medical miracle find the person who can save them.
             </p>
             <BuyButton />
           </div>

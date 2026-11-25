@@ -105,6 +105,13 @@ export default async function ProductPage({ params }: Props) {
                 💚 <strong>Your purchase gives back.</strong> Proceeds support Save One Person&apos;s mission to connect patients with life-saving donors.
               </div>
 
+              {isBook(product) && /miracle/i.test(product.title) && (
+                <div style={{ marginTop: 16, padding: 18, background: '#0b1f3a', borderRadius: 14, color: '#fff', fontSize: 14, lineHeight: 1.6 }}>
+                  <strong style={{ color: '#f5c542' }}>Go deeper with the online course.</strong> Turn the 12 ingredients into 12 days of practice, with lessons, a workbook and the full book as a PDF.{' '}
+                  <Link href="/miracle-course/free-lesson" style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline' }}>Try Day 1 free</Link>
+                </div>
+              )}
+
               <div style={{ marginTop: 20 }}>
                 <ShareButtons title={product.title} handle={product.handle} />
               </div>

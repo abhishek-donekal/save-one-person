@@ -51,6 +51,7 @@ export default function Footer() {
               { href: '/blog', label: 'Blog' },
               { href: '/living-kidney-donation-myths-facts', label: 'Myth vs Fact: Kidney Donation' },
               { href: '/faq', label: 'FAQ' },
+              { href: '/miracle-course', label: 'Online Course: How to Create a Miracle' },
               { href: '/shop', label: 'Shop' },
               { href: '/contact', label: 'Contact' },
               { href: '/privacy', label: 'Privacy Policy' },
