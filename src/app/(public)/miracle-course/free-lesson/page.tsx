@@ -5,7 +5,7 @@ import LessonCard from '@/components/course/LessonCard'
 import NewsletterSignup from '@/components/layout/NewsletterSignup'
 
 const PAGE_URL = 'https://www.saveonepersonnow.org/miracle-course/free-lesson'
-const BUY_URL = 'https://save-one-person-inc.kit.com/products/how-to-create-a-miracle'
+const BUY_URL = '/miracle-course'
 const TITLE = 'Free Lesson: How to Pray for a Miracle (Day 1 of How to Create a Miracle)'
 const DESCRIPTION =
   'Try Day 1 of Lauren Finkelstein’s 12-day online course, How to Create a Miracle, free: the One-Sentence Prayer, a true miracle story, journal questions and today’s Miracle Action.'
