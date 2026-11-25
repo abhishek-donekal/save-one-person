@@ -1,4 +1,5 @@
 # Person of the Week log (newest first)
+- 2026-11-25: SAVE ONE PERSON ALERT video: Gavin Durham — gavin-durham (drafts for 11-25 1:03 PM, awaiting Lauren's OK)
 - 2026-11-23: William Fritts (#1, pop-up) — help-william-find-a-living-kidney-donor
 - 2026-11-23: Karen Zabriskie (#2, posts + email) — karen-zabriskie
 - 2026-11-16: William Fritts (#1, pop-up) — help-william-find-a-living-kidney-donor
