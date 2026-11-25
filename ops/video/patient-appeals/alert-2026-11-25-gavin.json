@@ -1,0 +1,11 @@
+{"photo": "/home/claude/save-one-person/public/images/urgent/gavin-durham.jpg", "crop": [10, 40, 380, 719], "valign": 0.0,
+ "name": "Gavin", "side": "left",
+ "band1": "HELP GAVIN FIND A", "band2": "LIVING KIDNEY DONOR",
+ "caps": [["MEET GAVIN DURHAM, 13", "FROM RANDLEMAN, NORTH CAROLINA"],
+          ["HIS KIDNEYS ARE FAILING", "FSGS HAS SCARRED BOTH OF THEM"],
+          ["HE NEEDS A TRANSPLANT", "LIKELY WITHIN THE NEXT SIX MONTHS"],
+          ["HIS FAMILY GOT TESTED", "NOT ONE OF THEM IS A MATCH"],
+          ["BORN AT 30 WEEKS, 3 POUNDS", "TODAY HE TAKES UP TO 15 MEDICATIONS A DAY"],
+          ["COULD YOU BE HIS DONOR?", "18 OR OLDER, BLOOD TYPE B OR O"],
+          ["“HELP SAVE MY SON.”", "HEATHER, GAVIN'S MOM. PLEASE SHARE HIS STORY."]],
+ "seg": 4.6, "music": "/tmp/pa/music.wav", "out": "/tmp/pa/alert-gavin-durham.mp4", "out_wide": "/tmp/pa/alert-gavin-durham-wide.mp4"}

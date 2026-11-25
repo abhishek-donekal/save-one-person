@@ -1,0 +1,5 @@
+{"photo": "/home/claude/save-one-person/public/images/urgent/deomat.jpg", "crop": [0, 0, 600, 900], "valign": 0.0,
+ "name": "Deomat", "side": "left",
+ "band1": "HELP DEOMAT FIND A", "band2": "LIVING KIDNEY DONOR",
+ "caps": [["MEET DEOMAT, 38", "A HUSBAND AND FATHER OF TWO"], ["...", "..."]],
+ "seg": 4.6, "music": "/tmp/pa/music.wav", "out": "/tmp/pa/alert-deomat.mp4"}
