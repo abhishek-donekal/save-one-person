@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Free lesson: How to pray for a miracle',
     description: 'Day 1 of the 12-day course How to Create a Miracle, free.',
     url: PAGE_URL,
-    images: ['/videos/course/intro-lauren-poster.jpg'],
+    images: ['/videos/course/intro-lauren-poster.jpg?v=2'],
   },
 }
 

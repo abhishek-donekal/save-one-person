@@ -28,7 +28,7 @@ export default function MiracleCourseHome() {
         <div className="container-md">
           <video
             src="/videos/course/intro-lauren.mp4?v=2"
-            poster="/videos/course/intro-lauren-poster.jpg"
+            poster="/videos/course/intro-lauren-poster.jpg?v=2"
             controls
             playsInline
             preload="metadata"

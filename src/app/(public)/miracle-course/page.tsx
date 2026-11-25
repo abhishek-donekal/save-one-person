@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'How to Create a Miracle: a 12-day online course',
     description: '12 ingredients to turn the impossible, possible. With Lauren Finkelstein, founder of Save One Person.',
     url: PAGE_URL,
-    images: ['/videos/course/intro-lauren-poster.jpg'],
+    images: ['/videos/course/intro-lauren-poster.jpg?v=2'],
   },
 }
 
@@ -56,7 +56,7 @@ export default function MiracleCoursePage() {
         <div className="container-md">
           <video
             src="/videos/course/intro-lauren.mp4?v=2"
-            poster="/videos/course/intro-lauren-poster.jpg"
+            poster="/videos/course/intro-lauren-poster.jpg?v=2"
             controls
             playsInline
             preload="metadata"
