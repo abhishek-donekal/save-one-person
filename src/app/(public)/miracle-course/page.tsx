@@ -55,7 +55,7 @@ export default function MiracleCoursePage() {
       <div className="page-content">
         <div className="container-md">
           <video
-            src="/videos/course/intro-lauren.mp4"
+            src="/videos/course/intro-lauren.mp4?v=2"
             poster="/videos/course/intro-lauren-poster.jpg"
             controls
             playsInline
