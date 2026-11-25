@@ -88,7 +88,7 @@ export const STATIC_PRODUCTS: ShopProduct[] = [
     key: 'tote', handle: 'go-bless-yourself-tote-bag', title: 'Go Bless Yourself Tote Bag', position: -2, optionName: 'Size',
     lead: '<strong>GO BLESS YOURSELF</strong> on the front of a natural organic cotton tote. Our blessing hand and <strong>BLESS YOU TOO</strong> on the back.',
     bullets: ['100% organic cotton', 'Roomy enough for groceries, books and more', 'Printed just for you when you order'],
-    v: variants('tote', 36, [['One size', 67815638991018]]),
+    v: variants('tote', 41, [['One size', 67815638991018]]),
     img: images('tote', [['/images/shop/tote.jpg', 'Natural cotton tote bag printed GO BLESS YOURSELF'], ['/images/shop/tote-back.jpg', 'Back of the tote: blessing hand and BLESS YOU TOO']]),
   }),
   product({
