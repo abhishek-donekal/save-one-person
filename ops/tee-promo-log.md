@@ -54,7 +54,8 @@ Miami Shores Presbyterian, Perrine SDA (health ministry), First Baptist Fort Lau
 | 2026-11-19 | public/social/tee-videos/2026-11-19.mp4 (22s, 9:16, vid11.py/sfx11.py, donate banner whole time) | alternate-side parking (...street sweeper too); $28 cocktail (...and the ice cubes); your team breaks your heart (...there's always next year); bike dock full (...keep pedaling) | made, not yet posted (for the next Tue/Thu tee post) |
 | 2026-11-24 | public/social/tee-videos/2026-11-24.mp4 (22s, 9:16, vid12.py/sfx12.py, Thanksgiving donate banner whole time) | laundromat ate your sock (...the lonely sock too); scaffolding still up (...see you in 2040); radiator is 90 degrees (...it's a free sauna); brunch line is 2 hours (...bottomless patience) | made, not yet posted (for the Thu Nov 26 tee post) |
 | 2026-11-24 | public/social/2026-11-24/go-bless-yourself-thanksgiving-donate.mp4 (= tee-videos/2026-11-23-thanksgiving.mp4 + donate banner) | aunt asks why you're single; parade crowd; last slice of pie; packed train home | proposed for Tue Nov 24 tee post, awaiting Lauren's OK |
-Ideas not yet used: Times Square crowd jam (no characters!); someone blocks the subway doors; your cab driver takes the long way (no brand names); the slow walker in front of you on the stairs; the guy who claps when the plane lands at LaGuardia; your package was 'delivered' (it wasn't); the dog walker with 9 dogs blocks the sidewalk; the holiday window crowd on Fifth Ave.
+| 2026-11-26 | public/social/tee-videos/2026-11-26.mp4 (22s, 9:16, vid13.py/sfx13.py, "THIS HOLIDAY" + holiday donate banner whole time) | package says "delivered" (...wherever it really went); someone holds the subway doors (...stand clear, with love); dog walker with 9 dogs blocks you (...all nine of them); holiday window crowd on Fifth Ave (...the view is worth it) | made, not yet posted (for the next Tue/Thu tee post) |
+Ideas not yet used: Times Square crowd jam (no characters!); your cab driver takes the long way (no brand names); the slow walker in front of you on the stairs; the guy who claps when the plane lands at LaGuardia; your umbrella flips inside out; the ice skating rink line; your neighbor's 6 AM drilling; the deli guy calls you 'boss' and gets your order wrong.
 
 ## 2026-11-17 — Outreach drafts (NYC focus), awaiting Lauren's OK (Gmail drafts)
 | Org | Email | Type | Hook | Status |
@@ -126,3 +127,25 @@ Replies check (Nov 19, ~3:30 PM UTC): no replies from any tee contacts (Nov 15/1
 | The Riverdale Press newsroom | newsroom@riverdalepress.com | video placement (community announcements) | contact page invites announcements | https://www.riverdalepress.com/contact.html | r-5202968744755108729 | draft |
 Skipped: News 12 (Brooklyn/LI/NJ already pitched Nov 19 by another task; don't add the Bronx desk). Another task drafted 3D-printing companies on Nov 24 (brinter, dimensioninx, protolabs, renishaw, lithoz, oxfordpm, hp, humacyte, kathyvincent): don't contact them from here.
 Backups for later: Norwood News (smoloney@norwoodnews.org), Bronx Times (tips@bxtimes.com), Miami-Dade County Council PTA (vp.organization@mdccpta.net), Marble Church media (CMorano@MarbleChurch.org), Packed with Purpose (no public email found), New York Family (Mia Weber, no public email).
+
+## 2026-11-26 (Thu, Thanksgiving) — Tee Promoter
+- Gmail check: all 10 Nov 24 tee drafts were SENT Nov 24 (~10:42 PM ET).
+- REPLY: Spectrum Designs (Jay Marquez, Director of Art & Customer Service, Jay@spectrumdesigns.org, Nov 25) wants to help: asks our fulfillment platform, base cost + fundraising structure, shirt blank, item number and imprint sizes; offers print-on-demand storefront (DTF, no minimum, 5-7 business days + delivery). Reply DRAFTED for Lauren's OK (r2589180744651244423): says Printful + Shopify; Lauren must supply blank/item #/base cost from Printful.
+- No other tee replies (only Women of Emanu-El auto-reply, Nov 17). No "no thanks" so far.
+- New video: public/social/tee-videos/2026-11-26.mp4 (see Videos table).
+
+### Outreach drafts, awaiting Lauren's OK (Gmail drafts; inline logo at top + "What X gains" section; signature.html footer)
+| Org | Email | Type | Hook | Source | Gmail draft | Status |
+|---|---|---|---|---|---|---|
+| Pauline Books & Media / Librería Paulinas (Miami) | miami@paulinemedia.com | partner (faith bookstore) | 65th anniversary; Fiesta del Niño Jesús Sat Dec 5 | https://pauline.org/miami | r-5282614381342758552 | draft |
+| Merchloop (Kevin Oakley) | hello@merchloop.com | partner (nonprofit merch) | "6 Best Branded Merch Platforms for Nonprofits (2026)" | https://merchloop.com/blogs/news/best-branded-merch-platforms-for-nonprofits-2026 | r-8177130817853545156 | draft |
+| NAHN Miami Chapter (nurses) | nahnmiamichapter305@gmail.com | group order | gala honoring UM nursing faculty | https://nahn.memberclicks.net/florida | r3373272331784426924 | draft |
+| Park Slope Jewish Center, Rodfei Tzedek | rodfei.tzedek@psjc.org | group order (synagogue) | social action committee; Hanukkah Dec 4 | https://www.psjc.org/committees | r-1420576121714856831 | draft |
+| Center for Jewish Life at Beth David (Noah Schalit) | nschalit@centerbbd.org | group order (synagogue) | Hanukkah week on GMJF calendar | https://jewishmiami.org/events/hanukkah_is_lighting_up_the_center_for_jewish_life_at_bd | r-4452722905357829269 | draft |
+| Boca magazine (Christiana Lilly, EIC) | christiana@bocamag.com | press (gift guide) | "Our 2025 Holiday Wish List and Gift Guide" | https://bocamag.com/?p=14014 | r-2734450373924166731 | draft |
+| OutSFL | Editorial@OutSFL.com | press (gift guide) | "Holiday Shopping Gift Guide" (Dec 2024) | https://outsfl.com/local/holiday-shopping-gift-guide | r-431585459290083261 | draft |
+| Brownstoner (Susan De Vries) | tips@brownstoner.com | press NYC | "11 Brooklyn Holiday Markets" (Dec 2025) | https://www.brownstoner.com/brooklyn-life/brooklyn-holiday-markets-2025 | r-4540153098946116715 | draft |
+| Harlem America | editor@harlemamerica.com | video placement (email video submissions) | content-submissions page; Health & Wellness | https://www.harlemamerica.com/content-submissions/ | r2007161042066322046 | draft |
+| South Florida Caribbean News | sflcnmedia1@gmail.com | video placement (community news by email) | contact page invites submissions | https://sflcn.com/contact-us | r4931070992143100816 | draft |
+Note: Pauline, NAHN Miami, Beth David and SFLCN emails were behind Cloudflare email protection on their pages (decoded); double-check before sending if any bounce.
+Backups for later: Cool Hunting ("Gifts That Give Back"), The Wave Rockaway (editor@rockawave.com), Philippine Nurses Assn of NY, Transplant Support Organization (Bronx/SI), Lime & Cocoa (Miami gift baskets), PSJC G'mach (gmach@psjc.org - same synagogue, don't double up).
