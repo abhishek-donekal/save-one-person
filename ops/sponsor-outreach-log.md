@@ -31,3 +31,28 @@ No replies to earlier sponsor emails pending as of 05:55 ET Nov 19 (Bausch Healt
 - 2026-11-19 10:40 AM: Checked Gmail: all 10 sponsor letters were SENT 7:39-7:41 AM (new version, logo + 'Why this is good for X'). kcarbo@mhs.net bounced; Memorial resent to mhsfoundation@mhs.net 8:30 AM.
 
 - 2026-11-24: Florida Blue (Michelle Hamilton, Sr Director CSR) DECLINED the $25k presenting sponsorship ("current funding commitments"). Do not re-pitch.
+
+## 2026-11-26 (Thu, Thanksgiving) - 9 drafts waiting for Lauren's OK (nothing sent)
+Rotation this week: transplant center (NYC), insurers, banks, largest South Florida employers / brands. All emails seen printed on the source page (re-checked 05:50 ET).
+| Date | Company | Contact (name/role) | Email / portal | Source URL | Gmail draft | Status |
+|---|---|---|---|---|---|---|
+| 2026-11-26 | NYU Langone Health | Marc Scarduffa, VP Government & Community Affairs | Marc.Scarduffa@NYULangone.org | https://nyulangone.org/our-story/government-community-affairs-at-nyu-langone-health | r-7850429016450067568 | drafted |
+| 2026-11-26 | Southern Glazer's Wine & Spirits | Sofia Monaco, Sr Manager Communications & CSR | sofia.monaco@sgws.com | https://newsroom.southernglazers.com/press-releases/press-release-details/2026/Southern-Glazers-Wine--Spirits-Announces-2025-VolunCheer-of-the-Year-and-VolunCheers-Ambassador-of-the-Year-Award-Winners/default.aspx | r549249948364789030 | drafted |
+| 2026-11-26 | Kaseya (Kaseya Cares) | PR team (page invites partnership inquiries) | pr@kaseya.com | https://www.kaseya.com/press-release/ | r-3703539180010003402 | drafted |
+| 2026-11-26 | Miami Dolphins Foundation | Foundation inbox | Foundation@Dolphins.com | https://www.miamidolphins.com/community/donations | r5355688122889495460 | drafted |
+| 2026-11-26 | Northern Trust | Corporate Philanthropy inbox | corporate_philanthropy@ntrs.com | https://www.northerntrust.com/united-states/about-us/corporate-social-responsibility/corporate-philanthropy/frequently-asked-questions | r-5314019091286969002 | drafted |
+| 2026-11-26 | Centene Foundation (Sunshine Health) | Foundation inbox (takes sponsorship requests) | Foundation@centene.com | https://www.centene.com/who-we-are/centene-foundation/become-a-partner.html | r4353828907750820959 | drafted |
+| 2026-11-26 | United Health Foundation (UnitedHealth Group) | Foundation inbox | unitedhealthfoundationinfo@uhg.com | https://unitedhealthgroup.com/contact-us.html | r4852367693670275282 | drafted |
+| 2026-11-26 | PNC Bank (Southeast Florida) | Cynthia Pilloni, charitable sponsorships contact for SE Florida incl. Miami-Dade | cynthia.pilloni@pnc.com | https://www.pnc.com/en/about-pnc/corporate-responsibility/philanthropy/charitable-sponsorships.html | r5431852153161560234 | drafted |
+| 2026-11-26 | Oscar Health | Kristen Prestano, VP of Communications (press contact) | press@hioscar.com | https://www.businesswire.com/news/home/20251103591312/en/ | r-6234129545282422653 | drafted |
+
+Portal/form only (given to Lauren, nothing submitted):
+| 2026-11-26 | Labcorp Charitable Foundation | portal (register on YourCause first) | https://apply.yourcausegrants.com/apply/programs/84fe6f21-f3af-437f-b9de-b3ba1ff79361 (from https://www.labcorp.com/about/our-impact/charitable-foundation) | - | portal |
+| 2026-11-26 | Wells Fargo | sponsorship portal (90 days ahead) | https://sponsorships.wf.com | - | portal |
+| 2026-11-26 | Regions Bank | sponsorship/contribution portal | https://www.cybergrants.com/regionsbank/RCECOrganizationEligibility | - | portal |
+| 2026-11-26 | Broward Health | community sponsorship form (Broward nonprofits, up to 120 days) | https://www.browardhealth.org/about-broward-health/community/community-relations | - | form |
+| 2026-11-26 | Baxter Foundation | eligibility quiz (email on page is obfuscated, could not confirm) | http://www.cybergrants.com/baxter/community_grant_quiz | - | portal |
+| 2026-11-26 | Seminole Hard Rock Hollywood | donation request page (not checked, blocked) | https://casino.hardrock.com/en/hollywood/donations | - | form |
+
+Checked and skipped (do not research again): CVS Health/Aetna (invitation only, "do not accept unsolicited event sponsorship requests"); Medtronic Foundation (invitation only); Quest Diagnostics Foundation (targeted RFPs only; nice Miami-Dade angle if an RFP opens); The Cigna Group (sponsorships invite-only, foundation doesn't sponsor); Chewy (pets only); ODP/Office Depot, Watsco, JPMorgan Chase, Walgreens, Elevance (no public giving contact); Florida Panthers Foundation (grant cycle closed, no email requests); Northwell (giving office raises money for Northwell; email hidden); Assurant, Brightline (press contacts only).
+Replies check 05:50 ET Nov 26: no new replies to sponsor letters. Earlier: T-Mobile (Nov 20) pointed to its Sponsorships Portal https://intake.koresoftware.com/t-mobile/index.html (already in outreach-log); SNF (Nov 23) -> grant portal, stage 1 submitted Nov 25.
