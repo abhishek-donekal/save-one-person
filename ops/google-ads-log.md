@@ -118,3 +118,12 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Ads UI (684-224-8625): banner still "deactivated for not complying with Google Ad Grants' Website policy"; page says "You have read-only access to this account", so we CANNOT make Google's change. Nov 1-25: 2 impr, $0.
 - Current state: Save One Person- Branded = Eligible, Maximize clicks, $15/day. Save One Person- Organ Donation = Paused, Maximize clicks, $30/day, some ads disapproved. Still Eligible: SOP Grant - Living Kidney Donors (Max conv), Help William Find a Kidney Donor, Holiday Gifts That Give Back (must be paused when editable). Old 2020 campaigns + 2 "Algorithm" campaigns now show Removed.
 - No changes made. Sent Lauren Google's ask + a draft reply (asks Google to restore edit access or make the bid change themselves). Not sent to Google; waiting for her OK. Note: Google's ask overrides our "keep Maximize clicks" plan for these 2 campaigns; Lauren told.
+
+## 2026-11-26 daily check: account REACTIVATED in Google Ads (Ad Grants not yet restored)
+- Gmail: 6:07am ET ads-account-noreply@google.com "Your Google Ads account has been reactivated" (generic; account is editable again).
+- 6:11am ET new case 4-0316000041441 (agent Rajani): grant still "deactivated for Website Policy"; "We cannot approve ... saveonepersonnow.org since it does not comply with Ad Grants Website policy." Asks us to tell them once the domain is compliant (or remove ads to that domain), then reply so they restore $329/day.
+- 10:10am ET case 7-9611000041369 (Taqdees): same ask again — change **Save One Person- Branded** to Maximize Conversions (or Max Conv. Value), status Enabled, then reply.
+- Ads UI: red deactivation banner GONE; "New campaign" active; edit menus work. Billing: "We don't bill you" (no cost risk). Nov 1–26: 2 impr, 0 clicks, $0.
+- CHANGE: paused **Holiday Gifts That Give Back** (pointed to gifts/shop pages) — "Your change has been saved".
+- Still enabled: Save One Person- Branded (Eligible, Max clicks, $15/day), Help William Find a Kidney Donor (Max clicks, $120/day), SOP Grant - Living Kidney Donors (Max conv, $329/day).
+- NOT done, waiting on Lauren: switching Branded to Maximize Conversions (Google's ask; on the "tell Lauren first" list); replies to both Google cases (draft sent to Lauren). Bigger work (Donate campaign, CTR, sitelinks) on hold until Google confirms grant restored.
