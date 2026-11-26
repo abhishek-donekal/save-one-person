@@ -34,9 +34,15 @@ export function renameTitle(title: string): string {
 
 /** Products taken off the site entirely (not listed, and their page 404s). */
 // "Save Me, Save the World: A Guide to Becoming a Superhero"
-const REMOVED_HANDLES = ['save-me-save-the-world']
+// "A Year Journey of Growth, Learning and Health" ($19,995) — removed Nov 26, 2026 (Lauren)
+// "Publicize Your Need: Find Your Miracle Match" ($499 membership) — removed Nov 26, 2026 (Lauren)
+const REMOVED_HANDLES = [
+  'save-me-save-the-world',
+  'a-year-journey-of-growth-learning-and-health',
+  'one-membership',
+]
 export function isRemoved(p: Pick<ShopProduct, 'title' | 'handle'>): boolean {
-  return REMOVED_HANDLES.includes(p.handle) || /superhero/i.test(p.title)
+  return REMOVED_HANDLES.includes(p.handle) || /superhero|publiciz|year journey/i.test(p.title)
 }
 
 /** Books get their whole cover shown instead of a cropped square. */
