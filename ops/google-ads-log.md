@@ -127,3 +127,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - CHANGE: paused **Holiday Gifts That Give Back** (pointed to gifts/shop pages) — "Your change has been saved".
 - Still enabled: Save One Person- Branded (Eligible, Max clicks, $15/day), Help William Find a Kidney Donor (Max clicks, $120/day), SOP Grant - Living Kidney Donors (Max conv, $329/day).
 - NOT done, waiting on Lauren: switching Branded to Maximize Conversions (Google's ask; on the "tell Lauren first" list); replies to both Google cases (draft sent to Lauren). Bigger work (Donate campaign, CTR, sitelinks) on hold until Google confirms grant restored.
+
+## 2026-11-26 6:14 PM ET: Branded bid strategy changed (Lauren OK in chat)
+- Found Save One Person- Branded still on Maximize clicks although the 1:33 PM reply to Taqdees said it was switched. With Lauren's explicit OK, changed Bidding to Maximize conversions and saved. Campaign now "Eligible (Learning)", $15/day.
+- Organ Donation ($30/day) still Paused, Max clicks, some ads disapproved. Help William ($120/day) Max clicks. Living Kidney Donors ($329/day) Max conversions.
+- Shop cleanup today (removed $19,995 program, $499 membership, 3 free referral items) not yet reported to Rajani (case 4-0316000041441); draft pending Lauren's OK.
