@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { donationCheckoutUrl, donationChargeAmount } from '@/lib/shop/checkout'
+import { donationCheckoutUrl, DONATION_STEP } from '@/lib/shop/checkout'
+import { ANY_AMOUNT_DONATION_URL } from '@/lib/shop/kitProducts'
 
 const PRESET_AMOUNTS = [25, 50, 100, 250, 500, 1000] as const
 
@@ -20,12 +21,15 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
   const [honoree, setHonoree] = useState<string>('')
 
   const rawAmount = customAmount ? Number(customAmount.replace(/[^0-9.]/g, '')) : selectedAmount
-  const isValidAmount = rawAmount >= 25 && rawAmount < 1_000_000
-  const chargedAmount = isValidAmount ? donationChargeAmount(rawAmount) : 0
-  const href = isValidAmount ? donationCheckoutUrl(rawAmount, honoree.trim() ? `In honor of ${honoree.trim()}` : undefined) : null
+  const isValidAmount = rawAmount >= 1 && rawAmount < 1_000_000
+  // Multiples of $25 go through the Shopify donation checkout (keeps the honor note);
+  // any other amount goes to a pay-what-you-want checkout where the donor enters it.
+  const anyAmount = isValidAmount && (rawAmount < DONATION_STEP || rawAmount % DONATION_STEP !== 0)
+  const chargedAmount = isValidAmount ? rawAmount : 0
+  const href = !isValidAmount ? null : anyAmount ? ANY_AMOUNT_DONATION_URL : donationCheckoutUrl(rawAmount, honoree.trim() ? `In honor of ${honoree.trim()}` : undefined)
 
   const impact = customAmount
-    ? (isValidAmount ? 'Every dollar directly funds media outreach that helps patients find donors.' : 'Enter an amount of $25 or more.')
+    ? (isValidAmount ? 'Every dollar directly funds media outreach that helps patients find donors.' : 'Enter any amount.')
     : (IMPACT_COPY[selectedAmount] ?? 'Every dollar directly funds media outreach that helps patients find donors.')
 
   return (
@@ -76,9 +80,9 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
             style={{ width: '100%', padding: '14px 16px 14px 32px', border: '1.5px solid var(--border)', borderRadius: 12, fontSize: 16, fontFamily: 'inherit', background: 'var(--white)', color: 'var(--navy)' }}
           />
         </div>
-        {customAmount && isValidAmount && chargedAmount !== rawAmount && (
+        {customAmount && anyAmount && (
           <span style={{ display: 'block', fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
-            Gifts are processed in steps of $25, so this one is rounded to ${chargedAmount.toLocaleString()}.
+            Any amount is welcome. On the secure checkout page, enter ${chargedAmount.toLocaleString()}.
           </span>
         )}
       </label>
@@ -113,11 +117,11 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
           className="btn btn-emerald"
           style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '18px 24px', fontSize: 15, fontWeight: 700, letterSpacing: '0.08em' }}
         >
-          Donate ${chargedAmount.toLocaleString()} — Secure Checkout →
+          Donate ${chargedAmount.toLocaleString()}: Secure Checkout →
         </a>
       ) : (
         <button type="button" disabled className="btn btn-emerald" style={{ width: '100%', display: 'flex', justifyContent: 'center', padding: '18px 24px', fontSize: 15, fontWeight: 700, opacity: 0.5, cursor: 'not-allowed' }}>
-          Enter an Amount ($25+)
+          Enter an Amount
         </button>
       )}
 

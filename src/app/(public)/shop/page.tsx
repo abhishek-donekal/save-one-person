@@ -94,7 +94,7 @@ export default async function ShopPage() {
                   </a>
                 ))}
               </div>
-              <Link href="/donate" className="give-other">Give a different amount <span aria-hidden="true">→</span></Link>
+              <Link href="/donate" className="give-other">Other amount: give whatever you like <span aria-hidden="true">→</span></Link>
             </div>
           </section>
 
@@ -155,7 +155,7 @@ export default async function ShopPage() {
                 12 days, 12 ingredients to turn the impossible, possible. In-depth lessons, guided practices, a 33-page workbook and the full book. $47.
               </p>
               <Link href="/miracle-course" className="btn btn-emerald">See the course →</Link>
-              <a href={MIRACLE_EBOOK_URL} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', marginLeft: 16 }}>Or just the eBook (PDF), $9.99</a>
+              <a href={MIRACLE_EBOOK_URL} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', marginLeft: 16 }}>Or just the eBook (PDF): pay what you want, from $2.99</a>
             </div>
           </section>
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
