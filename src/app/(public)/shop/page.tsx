@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/queries'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
-import { MONTHLY_GIFTS, MIRACLE_EBOOK_URL } from '@/lib/shop/kitProducts'
+import { MONTHLY_GIFTS, MIRACLE_EBOOK_URL, DONOR_KIT_URL } from '@/lib/shop/kitProducts'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
 import BuyTeeButton from '@/components/shop/BuyTeeButton'
@@ -121,6 +121,22 @@ export default async function ShopPage() {
                 Donate in the name of someone you love, then make a free card to print or send telling them about your life-saving gift.
               </p>
               <Link href="/honor-card" className="btn btn-emerald">Give in their honor &rarr;</Link>
+            </div>
+            <div style={{ padding: 28, borderRadius: 20, background: '#f1f5fb', border: '1.5px solid #d6e0ee' }}>
+              <div style={{ color: 'var(--navy)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>DONATE YOUR BIRTHDAY</div>
+              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Ask for gifts that save lives</h2>
+              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                Ask friends to give to Save One Person instead of birthday gifts. We wrote the posts and texts for you.
+              </p>
+              <Link href="/donate-your-birthday" className="btn btn-emerald">Get started &rarr;</Link>
+            </div>
+            <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
+              <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>FOR PATIENTS AND FAMILIES</div>
+              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Find a Living Kidney Donor Campaign Kit</h2>
+              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                Ready-to-use letters, social posts, a printable flyer and a news pitch to help you find a living kidney donor. Instant PDF download. $19.
+              </p>
+              <a href={DONOR_KIT_URL} className="btn btn-emerald">Get the kit &rarr;</a>
             </div>
           </section>
 

@@ -5,3 +5,4 @@ export const MONTHLY_GIFTS = [
   { amount: 50, url: 'https://save-one-person-inc.kit.com/products/miracle-maker-50', impact: 'Helps put a patient on TV or radio' },
 ]
 export const MIRACLE_EBOOK_URL = 'https://save-one-person-inc.kit.com/products/how-to-create-a-miracle-ebook'
+export const DONOR_KIT_URL = 'https://save-one-person-inc.kit.com/products/find-a-living-kidney-donor-kit'
