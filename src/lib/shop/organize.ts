@@ -40,6 +40,10 @@ const REMOVED_HANDLES = [
   'save-me-save-the-world',
   'a-year-journey-of-growth-learning-and-health',
   'one-membership',
+  // Free items that bring no money to Save One Person — removed Nov 26, 2026 (Lauren)
+  'estate-planning',
+  'long-term-health-insurance',
+  'ann-wigmore-health-institute-discount-code',
 ]
 export function isRemoved(p: Pick<ShopProduct, 'title' | 'handle'>): boolean {
   return REMOVED_HANDLES.includes(p.handle) || /superhero|publiciz|year journey/i.test(p.title)
