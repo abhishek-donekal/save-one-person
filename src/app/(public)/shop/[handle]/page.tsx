@@ -7,6 +7,7 @@ import { getProductByHandle, getAllProducts, productMinPrice, productCompareAt, 
 import ProductGallery from '@/components/shop/ProductGallery'
 import { isBook } from '@/lib/shop/organize'
 import ProductBuyBox from '@/components/shop/ProductBuyBox'
+import { AMAZON_BOOKS } from '@/lib/shop/kitProducts'
 import ShareButtons from '@/components/shop/ShareButtons'
 import type { CardProduct } from '@/components/shop/ProductCard'
 import ProductCard from '@/components/shop/ProductCard'
@@ -99,6 +100,11 @@ export default async function ProductPage({ params }: Props) {
               <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: 'clamp(26px,4vw,38px)', color: 'var(--navy)', lineHeight: 1.15, marginBottom: 20 }}>{product.title}</h1>
 
               <ProductBuyBox product={product} />
+              {AMAZON_BOOKS[product.handle] && (
+                <a href={AMAZON_BOOKS[product.handle]} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ width: '100%', justifyContent: 'center', marginTop: 12 }}>
+                  Also on Amazon: Paperback &amp; Kindle &rarr;
+                </a>
+              )}
 
               {/* Impact */}
               <div style={{ marginTop: 24, padding: 18, background: '#ecfdf5', border: '1.5px solid #a7f3d0', borderRadius: 14, fontSize: 14, color: '#065f46', lineHeight: 1.6 }}>

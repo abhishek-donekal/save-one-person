@@ -89,6 +89,20 @@ export default function DonatePage() {
                   <li>Every gift funds media outreach that helps save lives</li>
                 </ul>
               </div>
+
+              <div id="daf-stock" style={{ marginTop: 24, padding: 24, background: 'var(--secondary)', borderRadius: 'var(--r-2xl)' }}>
+                <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--emerald)', marginBottom: 8 }}>Other ways to give</div>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: 'var(--navy)', margin: '0 0 8px' }}>Donor-advised fund (DAF)</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.7, color: 'var(--muted)', margin: '0 0 14px' }}>
+                  Recommend a grant from your fund at Fidelity Charitable, Schwab Charitable, Vanguard Charitable or your community foundation. Search for <strong style={{ color: 'var(--navy)' }}>Save One Person Inc</strong>, or use our EIN: <strong style={{ color: 'var(--navy)' }}>{ein}</strong>.
+                </p>
+                <h3 style={{ fontSize: 18, fontWeight: 800, color: 'var(--navy)', margin: '0 0 8px' }}>Gifts of stock</h3>
+                <p style={{ fontSize: 14, lineHeight: 1.7, color: 'var(--muted)', margin: 0 }}>
+                  Giving appreciated stock can be a tax-smart way to give. Email{' '}
+                  <a href="mailto:save1person1@gmail.com?subject=Stock%20gift%20to%20Save%20One%20Person" style={{ color: 'var(--emerald)', fontWeight: 700 }}>save1person1@gmail.com</a>{' '}
+                  and we&rsquo;ll send transfer instructions. Please check with your tax advisor about your situation.
+                </p>
+              </div>
             </div>
           </div>
         </div>

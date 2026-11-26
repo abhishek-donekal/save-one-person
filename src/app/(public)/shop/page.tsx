@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/queries'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
-import { MONTHLY_GIFTS, MIRACLE_EBOOK_URL, DONOR_KIT_URL } from '@/lib/shop/kitProducts'
+import { MONTHLY_GIFTS, MIRACLE_EBOOK_URL, DONOR_KIT_URL, WORKBOOK_URL, AMAZON_BOOKS } from '@/lib/shop/kitProducts'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
 import BuyTeeButton from '@/components/shop/BuyTeeButton'
@@ -156,6 +156,10 @@ export default async function ShopPage() {
               </p>
               <Link href="/miracle-course" className="btn btn-emerald">See the course →</Link>
               <a href={MIRACLE_EBOOK_URL} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', marginLeft: 16 }}>Or just the eBook (PDF): pay what you want, from $2.99</a>
+              <div style={{ marginTop: 12, fontSize: 15, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+                <a href={WORKBOOK_URL} style={{ color: '#f5c542', fontWeight: 700, textDecoration: 'underline' }}>The Miracle Workbook (printable PDF), $7</a>
+                <a href={AMAZON_BOOKS['a-practical-guide-to-turn-the-impossible-possible']} target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline' }}>Paperback &amp; Kindle on Amazon</a>
+              </div>
             </div>
           </section>
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>

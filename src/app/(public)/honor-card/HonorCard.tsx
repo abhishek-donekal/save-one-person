@@ -13,9 +13,11 @@ export default function HonorCard() {
   const [from, setFrom] = useState('')
   const [occasion, setOccasion] = useState('this holiday season')
   const [message, setMessage] = useState('')
+  const [memory, setMemory] = useState(false)
+  const kind = memory ? 'In loving memory of' : 'In honor of'
 
   const name = to.trim() || 'Someone Special'
-  const note = to.trim() ? `In honor of ${to.trim()}` : undefined
+  const note = to.trim() ? `${kind} ${to.trim()}` : undefined
 
   return (
     <div className="honor-wrap" style={{ display: 'flex', flexWrap: 'wrap', gap: 40, alignItems: 'flex-start', justifyContent: 'center' }}>
@@ -30,8 +32,16 @@ export default function HonorCard() {
       <div className="no-print" style={{ flex: 1, minWidth: 280, maxWidth: 440 }}>
         <h2 className="display" style={{ fontSize: 26, marginBottom: 6 }}>1. Make your gift</h2>
         <p style={{ color: 'var(--muted)', lineHeight: 1.6, marginBottom: 16 }}>Type their name first, so it&rsquo;s noted on your tax-deductible donation.</p>
+        <div role="radiogroup" aria-label="Type of gift" style={{ display: 'flex', gap: 8, marginBottom: 14 }}>
+          {[false, true].map((m) => (
+            <button key={String(m)} type="button" role="radio" aria-checked={memory === m} onClick={() => { setMemory(m); if (m && occasion === 'this holiday season') setOccasion('') }}
+              style={{ flex: 1, padding: '10px 8px', borderRadius: 12, border: `2px solid ${memory === m ? 'var(--emerald)' : 'var(--border)'}`, background: memory === m ? 'var(--emerald)' : 'var(--white)', color: memory === m ? '#fff' : 'var(--navy)', fontWeight: 700, cursor: 'pointer' }}>
+              {m ? 'In loving memory' : 'In honor'}
+            </button>
+          ))}
+        </div>
         <label style={{ display: 'block', marginBottom: 16 }}>
-          <span style={lbl}>In honor of</span>
+          <span style={lbl}>{kind}</span>
           <input style={field} value={to} maxLength={80} onChange={(e) => setTo(e.target.value)} placeholder="e.g. Grandma Rose" />
         </label>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8, marginBottom: 28 }}>
@@ -47,10 +57,12 @@ export default function HonorCard() {
           <span style={lbl}>From</span>
           <input style={field} value={from} maxLength={80} onChange={(e) => setFrom(e.target.value)} placeholder="Your name" />
         </label>
+        {!memory && (
         <label style={{ display: 'block', marginBottom: 14 }}>
           <span style={lbl}>Occasion</span>
           <input style={field} value={occasion} maxLength={60} onChange={(e) => setOccasion(e.target.value)} placeholder="e.g. your birthday, Hanukkah, Christmas" />
         </label>
+        )}
         <label style={{ display: 'block', marginBottom: 20 }}>
           <span style={lbl}>Personal message (optional)</span>
           <textarea style={{ ...field, minHeight: 90 }} value={message} maxLength={240} onChange={(e) => setMessage(e.target.value)} />
@@ -68,10 +80,12 @@ export default function HonorCard() {
         style={{ flex: 1, minWidth: 280, maxWidth: 520, aspectRatio: '7 / 5', background: 'linear-gradient(160deg,#ffffff 0%,#eef7f3 100%)', border: '2px solid #cfe7dc', borderRadius: 20, boxShadow: 'var(--shadow-soft)', padding: '28px 30px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: '#0b1f3a' }}
       >
         <Image src="/images/save-one-person-heart-logo.png" alt="Save One Person" width={72} height={72} style={{ height: 'auto' }} />
-        <div style={{ fontSize: 12, letterSpacing: 3, fontWeight: 700, color: '#1b8a5a', marginTop: 10 }}>A LIFE-SAVING GIFT</div>
-        <div style={{ fontFamily: "'Fraunces', serif", fontSize: 30, fontWeight: 600, lineHeight: 1.15, margin: '8px 0' }}>In honor of {name}</div>
+        <div style={{ fontSize: 12, letterSpacing: 3, fontWeight: 700, color: '#1b8a5a', marginTop: 10 }}>{memory ? 'A GIFT OF LIFE IN THEIR NAME' : 'A LIFE-SAVING GIFT'}</div>
+        <div style={{ fontFamily: "'Fraunces', serif", fontSize: 30, fontWeight: 600, lineHeight: 1.15, margin: '8px 0' }}>{kind} {name}</div>
         <p style={{ fontSize: 15, lineHeight: 1.55, margin: '4px 0 0', maxWidth: 400 }}>
-          {occasion.trim() ? `For ${occasion.trim()}, ` : ''}a gift was made in your name to Save One Person, helping people find a living kidney donor and medical miracles through the media.
+          {memory
+            ? `A gift was made to Save One Person in loving memory of ${name}, helping people find a living kidney donor and medical miracles through the media.`
+            : `${occasion.trim() ? `For ${occasion.trim()}, ` : ''}a gift was made in your name to Save One Person, helping people find a living kidney donor and medical miracles through the media.`}
         </p>
         {message.trim() && <p style={{ fontSize: 15, fontStyle: 'italic', margin: '12px 0 0', maxWidth: 400 }}>&ldquo;{message.trim()}&rdquo;</p>}
         {from.trim() && <p style={{ fontSize: 15, fontWeight: 700, margin: '12px 0 0' }}>With love, {from.trim()}</p>}
