@@ -97,6 +97,7 @@ export default function DonateForm({ ein }: { pgfUrl?: string; ein?: string }) {
         />
         <span style={{ display: 'block', fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
           A meaningful Thanksgiving or holiday gift: we&apos;ll note it on your donation.
+          {' '}<a href="/honor-card" style={{ color: 'var(--emerald)', fontWeight: 700 }}>Make a free card to send them</a>.
         </span>
       </label>
 

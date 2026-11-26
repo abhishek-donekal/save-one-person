@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllProducts, productMinPrice, productCompareAt } from '@/lib/shop/queries'
 import { donationCheckoutUrl } from '@/lib/shop/checkout'
+import { MONTHLY_GIFTS, MIRACLE_EBOOK_URL } from '@/lib/shop/kitProducts'
 import { ORG_EIN } from '@/lib/org'
 import ProductCard from '@/components/shop/ProductCard'
 import BuyTeeButton from '@/components/shop/BuyTeeButton'
@@ -97,6 +98,32 @@ export default async function ShopPage() {
             </div>
           </section>
 
+          {/* Monthly giving + honor cards */}
+          <section aria-labelledby="more-give-h" style={{ maxWidth: 980, margin: '0 auto 48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+            <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
+              <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>BECOME A MIRACLE MAKER</div>
+              <h2 id="more-give-h" style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give every month</h2>
+              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                A small monthly gift keeps patients&rsquo; stories on TV, radio and social media all year. Cancel anytime.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                {MONTHLY_GIFTS.map((g) => (
+                  <a key={g.amount} href={g.url} className="btn btn-emerald" style={{ padding: '12px 0', justifyContent: 'center', flexDirection: 'column', gap: 0 }}>
+                    <span style={{ fontSize: 18 }}>${g.amount}</span><span style={{ fontSize: 11, opacity: 0.9 }}>a month</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+            <div style={{ padding: 28, borderRadius: 20, background: '#fff8e6', border: '1.5px solid #f3dfa5' }}>
+              <div style={{ color: '#a87a00', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>THE PERFECT HOLIDAY GIFT</div>
+              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give in someone&rsquo;s honor</h2>
+              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                Donate in the name of someone you love, then make a free card to print or send telling them about your life-saving gift.
+              </p>
+              <Link href="/honor-card" className="btn btn-emerald">Give in their honor &rarr;</Link>
+            </div>
+          </section>
+
           <section aria-labelledby="shop-mission-h" style={{ maxWidth: 760, margin: '0 auto 48px', padding: '24px 28px', borderRadius: 16, background: 'var(--secondary)', lineHeight: 1.7 }}>
             <h2 id="shop-mission-h" style={{ fontSize: 22, fontWeight: 800, margin: '0 0 8px' }}>How the shop supports our mission</h2>
             <p style={{ margin: 0, fontSize: 16, color: 'var(--muted)' }}>
@@ -112,6 +139,7 @@ export default async function ShopPage() {
                 12 days, 12 ingredients to turn the impossible, possible. In-depth lessons, guided practices, a 33-page workbook and the full book. $47.
               </p>
               <Link href="/miracle-course" className="btn btn-emerald">See the course →</Link>
+              <a href={MIRACLE_EBOOK_URL} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', marginLeft: 16 }}>Or just the eBook (PDF), $9.99</a>
             </div>
           </section>
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
