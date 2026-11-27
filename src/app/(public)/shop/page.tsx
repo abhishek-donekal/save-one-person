@@ -98,47 +98,6 @@ export default async function ShopPage() {
             </div>
           </section>
 
-          {/* Monthly giving + honor cards */}
-          <section aria-labelledby="more-give-h" style={{ maxWidth: 980, margin: '0 auto 48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-            <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
-              <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>BECOME A MIRACLE MAKER</div>
-              <h2 id="more-give-h" style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give every month</h2>
-              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
-                A small monthly gift keeps patients&rsquo; stories on TV, radio and social media all year. Cancel anytime.
-              </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
-                {MONTHLY_GIFTS.map((g) => (
-                  <a key={g.amount} href={g.url} className="btn btn-emerald" style={{ padding: '12px 0', justifyContent: 'center', flexDirection: 'column', gap: 0 }}>
-                    <span style={{ fontSize: 18 }}>${g.amount}</span><span style={{ fontSize: 11, opacity: 0.9 }}>a month</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div style={{ padding: 28, borderRadius: 20, background: '#fff8e6', border: '1.5px solid #f3dfa5' }}>
-              <div style={{ color: '#a87a00', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>THE PERFECT HOLIDAY GIFT</div>
-              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give in someone&rsquo;s honor</h2>
-              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
-                Donate in the name of someone you love, then make a free card to print or send telling them about your life-saving gift.
-              </p>
-              <Link href="/honor-card" className="btn btn-emerald">Give in their honor &rarr;</Link>
-            </div>
-            <div style={{ padding: 28, borderRadius: 20, background: '#f1f5fb', border: '1.5px solid #d6e0ee' }}>
-              <div style={{ color: 'var(--navy)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>DONATE YOUR BIRTHDAY</div>
-              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Ask for gifts that save lives</h2>
-              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
-                Ask friends to give to Save One Person instead of birthday gifts. We wrote the posts and texts for you.
-              </p>
-              <Link href="/donate-your-birthday" className="btn btn-emerald">Get started &rarr;</Link>
-            </div>
-            <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
-              <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>FOR PATIENTS AND FAMILIES</div>
-              <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Find a Living Kidney Donor Campaign Kit</h2>
-              <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
-                Ready-to-use letters, social posts, a printable flyer and a news pitch to help you find a living kidney donor. Instant PDF download. $19.
-              </p>
-              <a href={DONOR_KIT_URL} className="btn btn-emerald">Get the kit &rarr;</a>
-            </div>
-          </section>
 
           <section aria-labelledby="gby-video-h" style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'center', justifyContent: 'center', margin: '0 0 56px' }}>
             <video
@@ -228,12 +187,60 @@ export default async function ShopPage() {
             ))}
           </nav>
           {grouped.map((g) => (
-            <section key={g.name} id={g.name.toLowerCase().replace(/[^a-z]+/g, '-')} className="shop-section">
+            <div key={g.name}>
+            {g.name === 'Healing & Wellness' && (
+              <div style={{ margin: '0 0 56px' }}>
+          {/* Monthly giving + honor cards */}
+            <section aria-labelledby="more-give-h" style={{ maxWidth: 980, margin: '0 auto 48px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+              <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
+                <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>BECOME A MIRACLE MAKER</div>
+                <h2 id="more-give-h" style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give every month</h2>
+                <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                  A small monthly gift keeps patients&rsquo; stories on TV, radio and social media all year. Cancel anytime.
+                </p>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8 }}>
+                  {MONTHLY_GIFTS.map((g) => (
+                    <a key={g.amount} href={g.url} className="btn btn-emerald" style={{ padding: '12px 0', justifyContent: 'center', flexDirection: 'column', gap: 0 }}>
+                      <span style={{ fontSize: 18 }}>${g.amount}</span><span style={{ fontSize: 11, opacity: 0.9 }}>a month</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+              <div style={{ padding: 28, borderRadius: 20, background: '#fff8e6', border: '1.5px solid #f3dfa5' }}>
+                <div style={{ color: '#a87a00', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>THE PERFECT HOLIDAY GIFT</div>
+                <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Give in someone&rsquo;s honor</h2>
+                <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                  Donate in the name of someone you love, then make a free card to print or send telling them about your life-saving gift.
+                </p>
+                <Link href="/honor-card" className="btn btn-emerald">Give in their honor &rarr;</Link>
+              </div>
+              <div style={{ padding: 28, borderRadius: 20, background: '#f1f5fb', border: '1.5px solid #d6e0ee' }}>
+                <div style={{ color: 'var(--navy)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>DONATE YOUR BIRTHDAY</div>
+                <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Ask for gifts that save lives</h2>
+                <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                  Ask friends to give to Save One Person instead of birthday gifts. We wrote the posts and texts for you.
+                </p>
+                <Link href="/donate-your-birthday" className="btn btn-emerald">Get started &rarr;</Link>
+              </div>
+              <div style={{ padding: 28, borderRadius: 20, background: '#eef7f3', border: '1.5px solid #cfe7dc' }}>
+                <div style={{ color: 'var(--emerald)', fontWeight: 700, fontSize: 13, letterSpacing: 1 }}>FOR PATIENTS AND FAMILIES</div>
+                <h2 style={{ fontSize: 24, fontWeight: 800, margin: '6px 0 8px', color: 'var(--navy)' }}>Find a Living Kidney Donor Campaign Kit</h2>
+                <p style={{ margin: '0 0 16px', fontSize: 15, lineHeight: 1.6, color: 'var(--muted)' }}>
+                  Ready-to-use letters, social posts, a printable flyer and a news pitch to help you find a living kidney donor. Instant PDF download. $19.
+                </p>
+                <a href={DONOR_KIT_URL} className="btn btn-emerald">Get the kit &rarr;</a>
+              </div>
+            </section>
+  
+              </div>
+            )}
+            <section id={g.name.toLowerCase().replace(/[^a-z]+/g, '-')} className="shop-section">
               <h2 className="display">{g.name}</h2>
               <div className="shop-grid">
                 {g.items.map((p) => <ProductCard key={p.id} p={p} />)}
               </div>
             </section>
+            </div>
           ))}
 
           {/* Second chance to give, after browsing */}
