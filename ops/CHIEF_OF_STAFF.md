@@ -75,6 +75,14 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 - Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).
 - STATUS Nov 27, 2026: Ad Grants REACTIVATED. Google Ad Grants support (case 7-9611000041369, Nov 27 7:45am ET) confirmed the account is fully compliant, deactivation lifted, $10,000/month restored. Normal daily Google Ads work resumes (see daily routine). Keep the website rule above so it stays compliant.
 
+## RULE: Claude is the Google Ads expert (Lauren, Nov 27, 2026)
+- Lauren: "I don't know anything about Google Ads... we need to protect ourselves and you should be the expert." Make Google Ads decisions yourself. Do NOT ask Lauren about Ads settings, bidding, campaigns or ads. Tell her in plain words afterward, in one line, only if it matters.
+- Top priority is protecting the $10,000/month grant: follow every Google Ad Grants rule (working sign-up/conversion tracking; 5% account click rate; at least 2 ad groups per campaign, 2 ads per ad group, 2 sitelinks; ads point only to mission pages, never the shop; answer Google emails quickly).
+- Only ONE Claude program changes Google Ads: the daily Google Ads routine. Every other routine (weekly report, social, outreach) only LOOKS. Nov 27 confusion: another Claude program edited the account at 9 AM and the daily check thought it might be Lauren. Log every change in ops/google-ads-log.md with the time.
+- Never add a payment method or anything that could cost money (the grant account says "We don't bill you"; keep it that way).
+- Still tell Lauren right away (as news, not a question) if Google sends a warning, threatens to suspend the grant, or asks for something only she can give (her login code, a signature).
+- Next Ads run, decided by Claude (Nov 27): 1) finish sign-up (conversion) tracking first; 2) then turn "Save One Person- Branded" back on (Maximize conversions, as Google asked). It is the ad people see when they search our name and normally has the best click rate, which helps keep the account above Google's 5% rule.
+
 ## Standing: every spot carries the giving ask + link (Lauren, Nov 18, 2026)
 - Every video or graphic spot shows a donate banner the WHOLE time, for example "Give a Thanksgiving gift today / saveonepersonnow.org/donate". Do not save it for an end card.
 - Every caption carries a clickable https://saveonepersonnow.org/donate link: in the first line of FB, YouTube and X captions; on IG and TikTok, "link in bio", and keep the bio link pointed at /donate.
