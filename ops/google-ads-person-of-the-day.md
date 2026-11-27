@@ -1,7 +1,9 @@
 # Google Ads: a different person every day (proposal, Nov 27, 2026)
 
 Lauren asked (Nov 27): "Can you post a different Google ad for a different person every day of the week?"
-STATUS: PROPOSAL, waiting for Lauren's YES. Nothing built in Google Ads yet. Only the morning/night Google Ads checkup task makes Ads changes.
+STATUS: PROPOSAL, waiting for Lauren's YES.
+
+CLAUDE'S RECOMMENDATION (Lauren then asked "or should it be one person a week?"): one person a week, matching that week's Person of the Week, as the main ad. Also keep 2–3 other people's ads (from the table below) running alongside, and let Google show the ones people click most. Why: Google needs several days of clicks to learn which ad works. Switching every day resets that and makes the 5% click rate harder to keep. A weekly person also matches social and the newsletter, so people see the same face everywhere. The daily table below stays as the pool of ready-made ads. Nothing built in Google Ads yet. Only the morning/night Google Ads checkup task makes Ads changes.
 
 ## How it works
 - Google ads show up when someone searches. Almost nobody searches a patient's name, so the ads keep using the general searches people really make ("how to become a living kidney donor", "donate a kidney to a stranger", "living kidney donor").
