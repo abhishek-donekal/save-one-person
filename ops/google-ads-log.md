@@ -132,3 +132,6 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Found Save One Person- Branded still on Maximize clicks although the 1:33 PM reply to Taqdees said it was switched. With Lauren's explicit OK, changed Bidding to Maximize conversions and saved. Campaign now "Eligible (Learning)", $15/day.
 - Organ Donation ($30/day) still Paused, Max clicks, some ads disapproved. Help William ($120/day) Max clicks. Living Kidney Donors ($329/day) Max conversions.
 - Shop cleanup today (removed $19,995 program, $499 membership, 3 free referral items) not yet reported to Rajani (case 4-0316000041441); draft pending Lauren's OK.
+
+## 2026-11-26 10:30 PM ET: follow-up sent to Rajani (Lauren OK)
+- Replied on case 4-0316000041441 (thread 1a21459e9e899206, msg 1a21b0d2d3edac7a): shop cleanup (removed $19,995 program, $499 membership, 3 free referral items), proceeds statement, dedicated donate page, Branded now Maximize conversions. Asked for re-review. Expect reply within ~5 business days.
