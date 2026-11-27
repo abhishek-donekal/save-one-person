@@ -148,3 +148,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 ## 2026-11-27 (later): who made this morning's edits
 - Lauren's side confirmed: the 9:03–9:20 AM ET Ads edits (made with Lauren's OK; Branded ads pointed to old saveoneperson.org and said "8 lives") (Branded PAUSED, Help William switched to Maximize conversions, Branded ads edited, old ads removed) were made by ANOTHER Claude program/session, not by Lauren by hand. Nothing changed by the weekly-report run.
 - Not yet decided: whether to keep those edits (especially Branded staying paused). Next Ads run: check with Lauren before reversing anything, and make sure only one Claude session edits the Ads account at a time.
+
+## 2026-11-27 ~7 PM ET: Lauren's instruction — keep Maximize conversions
+- Lauren: "don't undo it ... don't get us kicked off." Do NOT switch any campaign to Maximize clicks. Google (Taqdees, case 7-9611000041369) required Maximize conversions to restore the grant; Rajani's "begin with Maximize clicks" line (case 4-0316000041441) is boilerplate, not a request.
+- Rajani's Nov 27 1:27 PM email (case 4-0316000041441) still says saveonepersonnow.org not approved / remove ads to it. Reply DRAFTED in Gmail (draft r-6380932194766076519, thread 1a21459e9e899206): new site replaces approved saveoneperson.org (Lauren confirmed it forwards to saveonepersonnow.org), cites case 7-... "fully compliant", asks Google to approve the domain and confirm no ads need removing. Not sent; waiting on Lauren.
+- Next fix (needs Lauren's YES): finish conversion tracking (sign-ups/donations counted) so Maximize conversions campaigns get shown.
