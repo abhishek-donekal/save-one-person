@@ -144,3 +144,7 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Problem: every campaign shows "Conversion tracking setup is incomplete". Ad Grants requires valid conversion tracking, and Max-conversions campaigns with no working conversions tend to get almost no impressions (explains 0 traffic).
 - No changes made by this routine today (someone was editing the account this morning; avoided overlapping edits). Next run: confirm with Lauren, then fix conversion tracking, enforce 2 ad groups/2 ads/2 sitelinks + CTR rules, and build "Donate to Save a Life" -> /donate.
 - CHIEF_OF_STAFF.md status line updated to "reactivated".
+
+## 2026-11-27 (later): who made this morning's edits
+- Lauren's side confirmed: the 9:03–9:20 AM ET Ads edits (Branded PAUSED, Help William switched to Maximize conversions, Branded ads edited, old ads removed) were made by ANOTHER Claude program/session, not by Lauren by hand. Nothing changed by the weekly-report run.
+- Not yet decided: whether to keep those edits (especially Branded staying paused). Next Ads run: check with Lauren before reversing anything, and make sure only one Claude session edits the Ads account at a time.
