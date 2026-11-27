@@ -3,6 +3,43 @@
 // unless a database row with the same slug exists, which takes precedence.
 export const FEATURED_REQUESTS = [
   {
+    id: 'featured-walker-danek',
+    slug: 'walker-danek',
+    patient_name: 'Walker Danek',
+    title: '19-Month-Old Walker Danek of East Longmeadow, Massachusetts Needs a Living Kidney Donor',
+    medical_condition: 'Stage 4 Chronic Kidney Disease',
+    story_text: `💛 PERSON OF THE WEEK: Walker Danek, 19 months old, needs a living kidney donor.
+
+Walker is a little boy from East Longmeadow, Massachusetts. Doctors first saw a problem with his kidneys at his mom's 20-week ultrasound, before he was born. Today he has stage 4 chronic kidney disease, close to stage 5. He takes several medications every day, relies partly on a feeding tube, and isn't walking yet.
+
+His doctors say he could need a kidney transplant within about six months, before his second birthday, and he may need dialysis first.
+
+His mom, Courtney, says he is "the happiest, happiest kid." A transplant, she says, "would be like our Christmas miracle."
+
+🩺 HOW YOU CAN HELP WALKER
+
+1. Get screened to be his living kidney donor. Fill out the free, confidential screening form (button above). Starting the screening does not commit you to donating.
+
+2. Who can donate: donors must be 18 or older. Walker's blood type is AB, so people of ANY blood type may be able to help.
+
+3. Not a match? Through a paired kidney exchange, you can donate to someone else while another person donates to Walker.
+
+4. Can't donate? Please share Walker's story. Someone you know could be his match.
+
+As reported by Western Mass News (WGGB/WSHM), November 25, 2026.
+
+No one should die because their story wasn't told.`,
+    image_url: '/images/urgent/walker-danek.jpg' as string | null,
+    donor_form_url: 'https://hhchealth.donorscreen.org/new-dash/register/now',
+    donor_form_label: "Be Walker's Living Kidney Donor →",
+    social_other: 'https://www.westernmassnews.com/2026/11/25/east-longmeadow-family-asks-help-finding-suitable-kidney-donor-their-toddler/',
+    donation_goal: null,
+    donation_raised: 0,
+    urgent: true,
+    published: true,
+    status: 'open',
+  },
+  {
     id: 'featured-gavin-durham',
     slug: 'gavin-durham',
     patient_name: 'Gavin Durham',

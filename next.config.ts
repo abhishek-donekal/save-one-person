@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      { source: "/walker", destination: "/urgent-requests/walker-danek", permanent: false },
       { source: "/gavin", destination: "/urgent-requests/gavin-durham", permanent: false },
       // ---- Static WordPress pages -> new IA ----
       { source: "/about-us", destination: "/about", permanent: true },
