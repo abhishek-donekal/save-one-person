@@ -146,5 +146,5 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - CHIEF_OF_STAFF.md status line updated to "reactivated".
 
 ## 2026-11-27 (later): who made this morning's edits
-- Lauren's side confirmed: the 9:03–9:20 AM ET Ads edits (Branded PAUSED, Help William switched to Maximize conversions, Branded ads edited, old ads removed) were made by ANOTHER Claude program/session, not by Lauren by hand. Nothing changed by the weekly-report run.
+- Lauren's side confirmed: the 9:03–9:20 AM ET Ads edits (made with Lauren's OK; Branded ads pointed to old saveoneperson.org and said "8 lives") (Branded PAUSED, Help William switched to Maximize conversions, Branded ads edited, old ads removed) were made by ANOTHER Claude program/session, not by Lauren by hand. Nothing changed by the weekly-report run.
 - Not yet decided: whether to keep those edits (especially Branded staying paused). Next Ads run: check with Lauren before reversing anything, and make sure only one Claude session edits the Ads account at a time.
