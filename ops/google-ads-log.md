@@ -144,3 +144,8 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 - Problem: every campaign shows "Conversion tracking setup is incomplete". Ad Grants requires valid conversion tracking, and Max-conversions campaigns with no working conversions tend to get almost no impressions (explains 0 traffic).
 - No changes made by this routine today (someone was editing the account this morning; avoided overlapping edits). Next run: confirm with Lauren, then fix conversion tracking, enforce 2 ad groups/2 ads/2 sitelinks + CTR rules, and build "Donate to Save a Life" -> /donate.
 - CHIEF_OF_STAFF.md status line updated to "reactivated".
+
+## 2026-11-27 afternoon: who made the 9 AM edits (answered) + new Rajani email
+- The 9:03–9:20 AM ET edits were made by another Claude session (session_01QWtLC4b23LASfZ97zDFarp) in Lauren's signed-in browser on her laptop, which is why change history shows save1person1@gmail.com. Lauren's messages in that session: 9:03 "Switch william to maximize conversions"; 9:17 "clear out the old ads?"; 9:18 "Yes to 3". The 2x-daily checkup task says Branded was paused because its ads pointed to the old domain saveoneperson.org and said "save up to 8 lives". Lauren didn't recognize the edits when asked later in a different chat; no sign of an outside login.
+- Unrelated item to check: Nov 25 3:05 PM ET "Your Google Account was recovered successfully" (no-reply@accounts.google.com). Ask Lauren if she did this recovery; if not, secure the account.
+- Nov 27 1:27 PM ET Rajani (case 4-0316000041441) sent the same Website-policy text again ("cannot approve saveonepersonnow.org"), although Taqdees (case 7-9611000041369) confirmed full reactivation at 7:45 AM. Probably a stale second case; check the Ads UI before acting.
