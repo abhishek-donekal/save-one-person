@@ -123,6 +123,14 @@ export default async function ShopPage() {
               </p>
             </div>
           </section>
+          {grouped.filter((g) => g.name === 'Wear & Gifts').map((g) => (
+            <section key={g.name} id="wear-gifts" className="shop-section" style={{ marginTop: -24 }}>
+              <h2 className="display">{g.name}</h2>
+              <div className="shop-grid">
+                {g.items.map((p) => <ProductCard key={p.id} p={p} />)}
+              </div>
+            </section>
+          ))}
           <section aria-labelledby="course-h" style={{ maxWidth: 760, margin: '0 auto 48px', padding: '28px', borderRadius: 16, background: '#0b1f3a', color: '#fff', display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
             <Image src="/newsletter/book-how-to-create-a-miracle.jpg" alt="How to Create a Miracle by Lauren Finkelstein" width={110} height={170} style={{ borderRadius: 6 }} />
             <div style={{ flex: 1, minWidth: 240 }}>
@@ -186,7 +194,7 @@ export default async function ShopPage() {
               <a key={g.name} href={`#${g.name.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{g.name}</a>
             ))}
           </nav>
-          {grouped.map((g) => (
+          {grouped.filter((g) => g.name !== 'Wear & Gifts').map((g) => (
             <div key={g.name}>
             {g.name === 'Healing & Wellness' && (
               <div style={{ margin: '0 0 56px' }}>
