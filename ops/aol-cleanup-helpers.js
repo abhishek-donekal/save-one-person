@@ -2,7 +2,7 @@
 // Rows: main [role=row]; sender email in a [title*="@"] attribute; toolbar buttons in <header> (aria-label Delete).
 // Run long jobs in the background (runQ(...) then poll QOUT) - a foreground call times out after 45s.
 window.sleep=ms=>new Promise(r=>setTimeout(r,ms));
-window.STRIP=/[\p{Cf}\u{E0000}-\u{E007F}︀-️\u{E0100}-\u{E01EF}ᅟᅠㅤﾠ⠀͏᠎￹-￻]/gu;
+window.STRIP=/[\p{Cf}\p{Cn}\p{Co}\u{E0000}-\u{E0FFF}︀-️\u{E0100}-\u{E01EF}ᅟᅠㅤﾠ⠀͏᠎￹-￻]/gu;
 window.KEEP0=/insur|coverage|medicare|medicaid|loan|lend|credit|card|bank|debt|mortgage|refinanc|\bADT\b|vivint|simplisafe|brinks|security|secure (option|login|your account|message)|warrant|GLP|ozempic|semaglutide|tirzepatide|medical|dental|vision|\bIRS\b|\btax|lawsuit|settlement|social security|retire|\bCOLA\b|account|password|verif|\border|shipped|shipping|deliver|receipt|invoice|payment|reservation|booking|itinerar|confirm|ticket|enroll|course|chargeback|\bRe:|\bFwd?:|claim|eligib|\bjob|approv|membership|benefit|prescri|pharmac|AARP|obamacare|home shield|funeral|burial|annuit|veteran|save one person|donat|rabbi|chabad|torah|synagog|church|dating|singles|refund|subscription|renew|doctor|clinic|hospital|cancer|diabet|lauren/i;
 // also test a homoglyph-normalised copy (0->o, 1/í->i) so "lnsurance", "Iíberty MutuaI", "Cred1t" are kept
 window.KEEP={test:t=>{const n=t.replace(/0/g,'o').replace(/[íìï1|]/g,'i');return KEEP0.test(t)||KEEP0.test(n)||/[il1|í]nsur|mutua[il1]|cred[il1]t|[l1i]oan|cloud|storage|required|action needed|suspend|expir|quote|wealth|invest|stock|share|crypto|gold|silver/i.test(n);}};
