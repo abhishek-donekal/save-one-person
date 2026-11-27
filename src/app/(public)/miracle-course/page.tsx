@@ -6,7 +6,7 @@ const PAGE_URL = 'https://www.saveonepersonnow.org/miracle-course'
 const BUY_URL = 'https://save-one-person-inc.kit.com/products/how-to-create-a-miracle'
 const TITLE = 'How to Create a Miracle: Online Course with Lauren Finkelstein'
 const DESCRIPTION =
-  'A 12-day online course from Lauren Finkelstein, founder of Save One Person: 12 ingredients to turn the impossible, possible. Includes 12 in-depth lessons, guided practices, a 33-page workbook and the full book. $47, and every purchase supports Save One Person.'
+  'A 12-day online course from Lauren Finkelstein, founder of Save One Person: 12 ingredients to turn the impossible, possible. Includes 12 in-depth lessons, guided practices, a 33-page workbook and the full book. $37 this Black Friday weekend (reg. $47), and every purchase supports Save One Person.'
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -31,7 +31,7 @@ const INCLUDES = [
   { title: 'Bonus: the full book (PDF)', body: 'The complete How to Create a Miracle by Lauren Finkelstein, yours to read and keep.' },
 ]
 
-function BuyButton({ label = 'Start Creating Your Miracle: $47' }: { label?: string }) {
+function BuyButton({ label = 'Start Creating Your Miracle: $37 (Black Friday, reg. $47)' }: { label?: string }) {
   return (
     <a href={BUY_URL} className="btn btn-emerald" style={{ fontSize: 18, padding: '16px 32px' }}>
       {label} →
@@ -120,7 +120,7 @@ export default function MiracleCoursePage() {
           <div style={{ marginTop: 72, marginBottom: 24, textAlign: 'center', background: '#f5f7fb', borderRadius: 20, padding: '40px 24px' }}>
             <h2 className="display" style={{ fontSize: 30 }}>Your miracle starts today.</h2>
             <p style={{ marginTop: 12, marginBottom: 24, fontSize: 17, color: 'var(--muted)' }}>
-              $47 for the full course: 12 lessons, 12 practices, the 33-page workbook, bonus tools and the book. Instant access after checkout.
+              Black Friday weekend: $37 (reg. $47) for the full course: 12 lessons, 12 practices, the 33-page workbook, bonus tools and the book. Instant access after checkout.
             </p>
             <p style={{ marginTop: -8, marginBottom: 24, fontSize: 14, color: 'var(--muted)', maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
               All proceeds go to Save One Person, a 501(c)(3) nonprofit (EIN 84-4214447), and pay for our media outreach that helps

@@ -43,7 +43,7 @@ export default function CoursePromo({ compact = false }: { compact?: boolean }) 
           <div style={{ marginTop: 22, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
             <Link href="/miracle-course/free-lesson" className="btn btn-emerald">Try Day 1 free →</Link>
             <Link href="/miracle-course" style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline' }}>
-              See the full course ($47)
+              See the full course ($37 Black Friday weekend, reg. $47)
             </Link>
           </div>
         </div>

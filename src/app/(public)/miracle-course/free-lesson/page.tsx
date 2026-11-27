@@ -63,7 +63,7 @@ export default function FreeLessonPage() {
             </ol>
             <div style={{ marginTop: 28, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href={BUY_URL} className="btn btn-emerald" style={{ fontSize: 18, padding: '16px 32px' }}>
-                Get the Full Course: $47 →
+                Get the Full Course: $37 Black Friday (reg. $47) →
               </a>
               <Link href="/miracle-course" style={{ color: '#fff', textDecoration: 'underline', alignSelf: 'center' }}>
                 See everything included
