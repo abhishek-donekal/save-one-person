@@ -22,5 +22,6 @@ CLAUDE'S RECOMMENDATION (Lauren then asked "or should it be one person a week?")
 | Fri | Capt. DJ Pavasaris | A Fire Captain Needs a Kidney · He Saved Lives for 13 Years · Be His Living Kidney Donor | Captain DJ Pavasaris needs one living kidney donor. Could you be his hero? | /urgent-requests/captain-dj-pavasaris |
 | Sat | Cristian Butler, 21 | Cristian, 21, Needs a Kidney · A Dallas Man Needs a Donor · Be a Living Kidney Donor | Cristian Butler, 21, needs a living kidney donor. See if you could be his match. | /urgent-requests/cristian-butler |
 | Sun | Justin Lepri, 19 | Justin, 19, Needs a Kidney · Stage 5 Kidney Failure at 19 · Be Justin's Living Donor | Justin Lepri, 19, needs a living kidney donor. Read his story and see how to help. | /urgent-requests/justin-lepri |
+| Week of Nov 30 (main, with William) | Nicholas Rodriguez, 46 | Nicholas Needs a Kidney · Are You Blood Type O? · Montefiore Patient Needs You | Nicholas Rodriguez, 46, of New York needs a type O living kidney donor. Can you help? | /urgent-requests/nicholas-rodriguez (to build) |
 
 Next weeks: rotate in the other people on /urgent-requests (Deomat, Sofia de la Lastra, Ethan Hackney, Elizabeth Gutierrez, Tristan Allen, Cleto Rodriguez, Brittany Hood, JJ Gillen, Jeffrey Sorrell). Re-check each page's facts before building, and drop anyone whose page says they found a donor.
