@@ -73,7 +73,7 @@ Lauren now lives in MIAMI. Never call her "a New Yorker" in emails. Say Save One
 ## Google Ad Grants website rule (Nov 17, 2026: account deactivated for Website policy)
 - The website must be mainly about the mission. Lauren wants Shop kept as a tab in the top menu (Nov 17). Keep merch/books out of homepage sections and site-wide banners. Shop pages must say how purchases support the mission.
 - Grant ads only point to mission pages (never /shop, /meaningful-holiday-gifts, product pages).
-- STATUS Nov 26, 2026: Google Ads says account 684-224-8625 is REACTIVATED and editable again (red banner gone), BUT the Ad Grants team (cases 7-9611000041369 and 4-0316000041441) still lists the grant as deactivated and has not restored the $329/day limit. Make only the specific compliance fixes Google asked for (with Lauren's OK where needed), then reply to Google. Do not build new campaigns until Google confirms the grant is restored.
+- STATUS Nov 27, 2026: Ad Grants REACTIVATED. Google Ad Grants support (case 7-9611000041369, Nov 27 7:45am ET) confirmed the account is fully compliant, deactivation lifted, $10,000/month restored. Normal daily Google Ads work resumes (see daily routine). Keep the website rule above so it stays compliant.
 
 ## Standing: every spot carries the giving ask + link (Lauren, Nov 18, 2026)
 - Every video or graphic spot shows a donate banner the WHOLE time, for example "Give a Thanksgiving gift today / saveonepersonnow.org/donate". Do not save it for an end card.

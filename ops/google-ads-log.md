@@ -135,3 +135,12 @@ All other campaigns are Paused / Removed / Ended (old 2020 Spanish campaigns, Ta
 
 ## 2026-11-26 10:30 PM ET: follow-up sent to Rajani (Lauren OK)
 - Replied on case 4-0316000041441 (thread 1a21459e9e899206, msg 1a21b0d2d3edac7a): shop cleanup (removed $19,995 program, $499 membership, 3 free referral items), proceeds statement, dedicated donate page, Branded now Maximize conversions. Asked for re-review. Expect reply within ~5 business days.
+
+## 2026-11-27 daily check: AD GRANTS RESTORED
+- Gmail: Nov 27 7:45am ET googlegrants-support@google.com on case 7-9611000041369 (thread 1a1eb797572a012e, msg 1a21d0a2f7e3eaa1): "fully compliant", deactivation lifted, spending limit back to $10,000/month. No new message on case 4-0316000041441.
+- Ads UI (684-224-8625): no deactivation banner; editable. Nov 1–27: 2 impr, 0 clicks, $0.
+- Change history shows manual edits TODAY by save1person1@gmail.com (not by this routine): 9:03 AM ET Save One Person- Branded PAUSED; 9:04 AM ET Help William campaign changed (now Maximize conversions); 9:19–9:20 AM ET Branded ads edited and several old ads removed. Asked Lauren to confirm these were hers.
+- Campaign state now: Enabled = SOP Grant - Living Kidney Donors ($329/day, Max conv, Eligible (Limited)) and Help William Find a Kidney Donor ($120/day, Max conv, Eligible (Limited)). Paused: Branded ($15), Organ Donation ($30, some ads disapproved), Holiday Gifts That Give Back ($100), P-Max and old Target CPA campaigns. Enabled daily budgets add up to $449 (LKD $329 + HW $120). Google caps grant spend at $329/day so no cost risk; did not raise anything.
+- Problem: every campaign shows "Conversion tracking setup is incomplete". Ad Grants requires valid conversion tracking, and Max-conversions campaigns with no working conversions tend to get almost no impressions (explains 0 traffic).
+- No changes made by this routine today (someone was editing the account this morning; avoided overlapping edits). Next run: confirm with Lauren, then fix conversion tracking, enforce 2 ad groups/2 ads/2 sitelinks + CTR rules, and build "Donate to Save a Life" -> /donate.
+- CHIEF_OF_STAFF.md status line updated to "reactivated".
